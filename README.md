@@ -3,4 +3,4 @@ Repositorio que abriga construcao de uma VN de desenvolvimento colaborativo.
 
 
 
-Rakugo Framework por Jeremi Biernacki Copyright (c) 2016-2019 - MIT LICENSE.
+Rakugo Framework por Jeremi Biernacki Copyright (c) 2016-2019 - MIT LICENSE. <code>https://rakugoteam.github.io/</code>
