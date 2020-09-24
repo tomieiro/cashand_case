@@ -3,4 +3,5 @@ Repositorio que abriga construcao de uma VN de desenvolvimento colaborativo.
 
 
 
-Rakugo Framework por Jeremi Biernacki Copyright (c) 2016-2019 - MIT LICENSE. <code>https://rakugoteam.github.io/</code>
+A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy
+A licença do RenPy pode ser consultada https://www.renpy.org/doc/html/license.html
