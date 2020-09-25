@@ -14,7 +14,7 @@ label CENA11:
     drc "Ora ... Senhor Sheppard!"
     shp "Fico grato que tenha vindo detetive. Estamos com sérios problemas por aqui!"
     drc "Não sei dos detalhes, mas de fato ouvi do chefe ser um caso complexo e perigoso."
-    shep "Sim, exato. Vamos até o escritório, é a edificação logo a frente."
+    shp "Sim, exato. Vamos até o escritório, é a edificação logo a frente."
     "*Vão para o escritório*"
     shp "Sente-se detetive."
     drc "Agradeço."
