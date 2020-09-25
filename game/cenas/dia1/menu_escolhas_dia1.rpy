@@ -1,2 +1,0 @@
-label MENU_ESCOLHAS_DIA1:
-    
