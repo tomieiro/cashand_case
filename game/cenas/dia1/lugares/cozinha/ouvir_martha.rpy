@@ -25,5 +25,11 @@ label OUVIR_MARTHA:
     "*Martha acena com a cabeça*"
     drc "Vamos voltar senhor Sheppard."
     shp "Certo, detetive."
-    
-    jump MENU_ESCOLHAS_DIA1
+
+    $cluepoints = cluepoints + 1
+
+    if primeira_visita:
+        $primeira_visita = False
+        jump TRANSICAO1
+    else:
+        jump TRANSICAO2
