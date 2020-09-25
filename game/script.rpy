@@ -1,3 +1,3 @@
-﻿label start:
+label start:
     jump CENA11
     return
