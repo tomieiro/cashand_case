@@ -6,10 +6,12 @@ label CENA11:
     "Preciso me apressar, marquei de me encontrar às três em ponto!"
     "E já tardam duas e quarenta …"
     "Pegar casos seguidos é realmente um péssimo hábito…"
+    scene montanhas
     "*Chega na cidade*"
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
     "*Ouve alguém chamado*"
+    show sheppard neutro
     shp "Detetive Rightclue!"
     drc "Ora ... Senhor Sheppard!"
     shp "Fico grato que tenha vindo detetive. Estamos com sérios problemas por aqui!"
