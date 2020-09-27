@@ -27,7 +27,11 @@ label COZINHA:
         "Voltar para a sala e decidir":
             drc "Creio que já ouvi o bastante por aqui, vamos voltar, senhor Sheppard."
             shp "Certo, detetive."
-            jump MENU_ESCOLHAS_DIA1
+            if primeira_visita:
+                $primeira_visita = False
+                jump TRANSICAO1
+            else:
+                jump TRANSICAO2
 
         "Pedir mais informações à Martha":
             jump OUVIR_MARTHA
