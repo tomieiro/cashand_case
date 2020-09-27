@@ -1,5 +1,8 @@
 # Cashand Case
 
+Repositorio que abriga construcao de uma VN de desenvolvimento colaborativo.
+
+
 <ul>
 <li>
 Programadores
@@ -21,9 +24,6 @@ Programadores
 <li>Licença das artes: CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes, verificar LICENSE.md em game/images/</li>
 </ul>
 
-
-
-Repositorio que abriga construcao de uma VN de desenvolvimento colaborativo.
 
 <br><br>
 A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy<br>
