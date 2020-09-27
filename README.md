@@ -1,5 +1,20 @@
 # Cashand Case
 
+<ul>
+<li>
+Programadores
+<ul>
+<li>Mateus Prado Santos</li>
+<li>Matheus Lopes Rigato</li>
+<li>Matheus Tomieiro de Oliveira</li>
+<li>Vinicius Ricardo Carvalho</li>
+</ul>
+</li>
+<li>Artista : Murilo Engler - https://www.youtube.com/muriloengler</li>
+</ul>
+
+
+
 <h1>LICENÇAS</h1>
 <ul>
 <li>Licença do software: MIT - Para detalhes, verificar LICENSE.md deste diretório</li>
