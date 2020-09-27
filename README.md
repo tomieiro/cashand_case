@@ -2,8 +2,8 @@
 
 <h1>LICENÇAS</h1>
 <ul>
-<li>Licença do software: MIT - Para detalhes verificar LICENSE.md deste diretório</li>
-<li>Licença das artes: CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes verificar LICENSE.md em game/images/</li>
+<li>Licença do software: MIT - Para detalhes, verificar LICENSE.md deste diretório</li>
+<li>Licença das artes: CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes, verificar LICENSE.md em game/images/</li>
 </ul>
 
 
