@@ -23,13 +23,17 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Equipe de desenvolvimento:
+Mateus Prado, Vinícius, Matheus Tomieiro, Matheus Rigato, Engler
+
+Jogo desenvolvido durante a disciplina de Desenvolvimento de Jogos Eletrônicos no segundo semestre de 2020, no Instituto de Ciências Matemáticas e de Computação.
 """)
 
 
@@ -61,7 +65,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/musicas/teste_menu_principal.ogg"
 
 
 ## Transitions #################################################################
