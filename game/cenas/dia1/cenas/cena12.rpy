@@ -8,7 +8,7 @@ label CENA12:
     drc "Se possível, não o exalte tanto em minha presença senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
     shp "De fato. Tentarei me segurar ao máximo."
     "*Entram pelo portão da mansão*"
-    "*Encontram [ind_a_info[1]] com roupas fúnebres parades junto à entrada, sobre o jardim*"
+    "*Encontram [ind_a_info[0]] em roupas fúnebres, junto à entrada, sobre o jardim*"
     shp "Boa tarde [ind_a_info[1]], como está."
     ind_a "Péssima tarde Sheppard. Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
     shp "Perdão [ind_a_info[1]], este é o detetive Rightclue. Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
