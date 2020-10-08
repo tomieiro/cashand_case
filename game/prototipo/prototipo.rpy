@@ -21,11 +21,14 @@ label PROTOTIPO:
             sg "Sou o Sheppard Gordo"
 
         "Puzzle":
-            call screen point_and_click_test()
+            show screen point_and_click_test() with dissolve
+            jump PUZZLE_TESTE
+
 
     jump PROTOTIPO
 
     return
+
 
 
 label DIALOGO_ROLE:
@@ -33,3 +36,7 @@ label DIALOGO_ROLE:
     per_role "bla bla"
     per_role "bla bla bla bla"
     return
+
+label PUZZLE_TESTE:
+    window hide
+    $renpy.pause(hard=True)
