@@ -13,7 +13,10 @@ label CENA11:
     "*Ouve alguém chamado*"
     show sheppard neutro
     shp "Detetive Rightclue!"
-    drc "Ora ... Senhor Sheppard!"
+    drc "Ora ... Senhor Sheppard?"
+    shp "Sim, exatamente."
+    drc "É um prazer!"
+    shp "Prazer!"
     shp "Fico grato que tenha vindo detetive. Estamos com sérios problemas por aqui!"
     drc "Não sei dos detalhes, mas de fato ouvi do chefe ser um caso complexo e perigoso."
     shp "Sim, exato. Vamos até o escritório, é a edificação logo a frente."
