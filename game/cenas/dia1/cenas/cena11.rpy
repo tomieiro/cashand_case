@@ -11,7 +11,8 @@ label CENA11:
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
     "*Ouve alguém chamado*"
-    show sheppard neutro
+    #Tamanho ideal : 650px x 460px
+    show sheppard neutro at center:
     shp "Detetive Rightclue!"
     drc "Ora ... Senhor Sheppard?"
     shp "Sim, exatamente."

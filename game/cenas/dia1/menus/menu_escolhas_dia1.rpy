@@ -2,6 +2,7 @@ label MENU_ESCOLHAS_DIA1:
     default visCoz = False
     default visBiblio = False
     default visQuartoHougin = False
+    default maisInfos = False
     menu:
         "Locais para visitar:"
 
@@ -20,9 +21,21 @@ label MENU_ESCOLHAS_DIA1:
                     jump MENU_ESCOLHAS_DIA1
 
         "Cozinha" if not visCoz:
-            $visCoz = False
+            $visCoz = True
             jump COZINHA
 
         "Quarto de Hougin" if not visQuartoHougin:
-            $visQuartoHougin = False
+            $visQuartoHougin = True
             jump QUARTO_HOUGIN
+
+        "Pedir mais informações ao Sheppard" if not maisInfos:
+            $maisInfos = True
+            shp "Bom por onde posso começar..."
+            shp "O quarto do senhor Hougin, foi onde ele foi encontrado, talvez haja algo interessante por lá."
+            shp "Além dele temos os quartos dos demais residentes, mas acredito que nenhum deles queira ser perturbado no momento ..."
+            "Realmente, dada a minha recente \"recepção\" não acho que eles tenham muito oque falar no momento"
+            shp "Temos também a velha biblioteca da mansão, faz anos que ninguém, fora o senhor Hougin, entrar nela, não vejo como pode haver alguma pista dentro dela."
+            shp "Por fim temos a cozinha, acredito que a senhora Martha, a empregada da família, esteja por lá."
+            shp "Ela pode saber de alguma coisa, já que ela está sempre atarefada indo de um lado ao outro da mansão."
+            shp "Basicamente é isso..."
+            jump MENU_ESCOLHAS_DIA1
