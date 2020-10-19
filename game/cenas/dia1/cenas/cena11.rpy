@@ -6,7 +6,8 @@ label CENA11:
     "Preciso me apressar, marquei de me encontrar às três em ponto!"
     "E já tardam duas e quarenta …"
     "Pegar casos seguidos é realmente um péssimo hábito…"
-    scene montanhas
+    #Tamanho ideal: 1280px x 720px
+    scene cidade
     "*Chega na cidade*"
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
