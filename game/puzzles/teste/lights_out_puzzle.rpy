@@ -2,6 +2,7 @@ default lop_fim = False
 default lop_pecas = [False] * 9
 default lop_x = 0
 default lop_y = 0
+default lop_tam_peca = 200
 
 label lights_out_puzzle_3:
     #Variáveis necessárias:
@@ -14,10 +15,24 @@ label lights_out_puzzle_3:
     call screen lights_out_puzzle(3)
     return
 
-screen lights_out_puzzle(dim):
+screen lights_out_puzzle(dim,
+img_bg = "#000",
+img_bot_idle="images/teste/dogbutton_idle.jpg",
+img_bot_hover="images/teste/dogbutton_hover.jpg",
+img_bot_selected_idle="images/teste/dogbutton_selected_idle.jpg",
+img_bot_selected_hover="images/teste/dogbutton_selected_hover.jpg"):
 
-    window:
+    default bot_idle = im.Scale(img_bot_idle, lop_tam_peca, lop_tam_peca)
+    default bot_hover = im.Scale(img_bot_hover, lop_tam_peca, lop_tam_peca)
+    default bot_selected_idle = im.Scale(img_bot_selected_idle, lop_tam_peca, lop_tam_peca)
+    default bot_selected_hover = im.Scale(img_bot_selected_hover, lop_tam_peca, lop_tam_peca)
+
+    if lop_fim:
+        timer 1.0 action Return()
+
+    frame:
         style "lop_tela_cheia"
+        background img_bg
         vbox:
             at truecenter
             frame:
@@ -27,19 +42,22 @@ screen lights_out_puzzle(dim):
                     style "lop_grid"
                     for i in range(dim*dim):
                         $lop_x, lop_y = converte_para_duas_dimensoes(i, dim)
-                        window:
+                        frame:
                             style "lop_fundo_branco"
                             imagebutton:
                                 action [Function(seleciona_e_propaga, dim, lop_x, lop_y), Function(confere_fim_puzzle, dim), renpy.restart_interaction]
                                 selected (lop_pecas[i])
-                                auto "images/teste/dogbutton_%s.jpg"
-            if lop_fim:
-                window:
-                    at truecenter
-                    style "lop_fundo_branco"
-                    textbutton "Finalizar":
-                        action Return()
-                        at surge_botao_final
+                                idle bot_idle
+                                hover bot_hover
+                                selected_idle bot_selected_idle
+                                selected_hover bot_selected_hover
+            #if lop_fim:
+                #frame:
+                    #at truecenter
+                    #style "lop_fundo_branco"
+                    #textbutton "Finalizar":
+                        #action Return()
+                        #at surge_botao_final
 
 
 
@@ -76,6 +94,7 @@ init python:
         for i in range(dim*dim):
             retorno = retorno and lop_pecas[i]
         lop_fim = retorno
+
 
 
 style lop_grid:
