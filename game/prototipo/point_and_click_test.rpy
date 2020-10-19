@@ -1,4 +1,3 @@
-image img_bg = "images/teste/bg_test.png"
 define img_puzzle = "images/teste/puzzle_%s.png"
 define img_estante = "images/teste/estante_%s.png"
 define img_copo = "images/teste/water_%s.png"

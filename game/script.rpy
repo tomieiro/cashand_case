@@ -2,7 +2,7 @@
 label start:
 
     #Para de tocar música do menu inicial:
-    #stop music
+    stop music
 
     #Vai para o protótipo
     call PROTOTIPO

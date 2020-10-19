@@ -5,6 +5,8 @@ label LIGHTS_OUT_TEST:
         lop_pecas = [False] * 9
         lop_x = 0
         lop_y = 0
+    stop music
+    play music "audio/musicas/Puzzles.ogg" fadeout 1
     show screen previa_puzzle() with dissolve
     "Hmmm, que interessante..."
     "Parece que temos que resolver um puzzle..."
