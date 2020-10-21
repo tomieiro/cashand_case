@@ -4,6 +4,7 @@ init offset = 0
 define drc = Character("Rightclue")
 define shp = Character("Sheppard")
 define mrth = Character("Martha")
+define vnc = Character("Carlo Venchinni")
 
 #Definindo Informações dos personagens aleatórios
 define joe_info =  ["Joe Cashand","Joe","pai"]
