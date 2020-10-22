@@ -247,20 +247,28 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
+        #MUDOU AQUI - essa window foi adicionada
+        window:
+
             style_prefix "quick"
+            ysize 18
+            background "#000"
+        #Termina aqui a mudança
+            hbox:
 
-            xalign 0.5
-            yalign 1.0
+                style_prefix "quick"
 
-            textbutton _("Voltar") action Rollback()
-            textbutton _("História") action ShowMenu('history')
-            textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Salvar") action ShowMenu('save')
-            textbutton _("S. Rápido") action QuickSave()
-            textbutton _("C. Rápido") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+                xalign 0.5
+                yalign 1.0
+
+                textbutton _("Voltar") action Rollback()
+                textbutton _("História") action ShowMenu('history')
+                textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
+                textbutton _("Auto") action Preference("auto-forward", "toggle")
+                textbutton _("Salvar") action ShowMenu('save')
+                textbutton _("S. Rápido") action QuickSave()
+                textbutton _("C. Rápido") action QuickLoad()
+                textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
