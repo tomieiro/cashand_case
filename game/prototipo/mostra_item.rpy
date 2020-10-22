@@ -1,8 +1,6 @@
 screen mostra_item(img = "#000"):
     modal True
 
-    default item = im.Scale(img, 200, 400)
-
     frame:
         background "#000"
         xsize 450
@@ -14,7 +12,8 @@ screen mostra_item(img = "#000"):
             xsize 440
             ysize 440
             at truecenter
-            add item at truecenter
+            #add item at truecenter
+            add img maxsize (400, 400) at truecenter
 
     key "mousedown_1" action Return()
     #timer 3.0 action Return()
