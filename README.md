@@ -29,4 +29,4 @@ Programadores
 A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy<br>
 A licença do RenPy pode ser consultada em: https://www.renpy.org/doc/html/license.html
 
-As musicas foram produzidas em sua maioria, pelos próprios integrantes do grupo, utilizando instrumentos particulares. Todavia, algumas das músicas foram feitas utilizando o BoscaCeoil: https://boscaceoil.net/
+As musicas foram produzidas em sua maioria, pelos próprios integrantes do grupo, utilizando instrumentos particulares. Todavia, algumas das músicas foram feitas utilizando o BoscaCeoil (https://boscaceoil.net/) e alguns efeitos sonoras na ferramenta PixiTracker(https://warmplace.ru/soft/pixitracker/).
