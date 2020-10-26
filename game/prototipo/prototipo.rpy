@@ -15,7 +15,8 @@ define drc = Character("Rightclue", who_color="#c8c8ff", callback=character_beep
 image img_bg = "images/teste/bg_test.png"
 image img_bg2 = "images/teste/bg_test_2.png"
 
-default per_role = shp
+default per_role1 = shp
+default per_role2 = kmr
 
 transform kam_center:
     xalign 0.5
@@ -36,14 +37,16 @@ label ESCOLHA1:
         "O que devo fazer?"
 
         "Diálogo A":
-            "(ROLE: Sheppard)"
-            $per_role = shp
+            "(Diálogos com roles)"
+            $per_role1 = shp
+            $per_role2 = kmr
             call DIALOGO_ROLE
             jump FIM_ESCOLHA1
 
         "Diálogo B":
-            "(ROLE: Kamira)"
-            $per_role = kmr
+            "(Diálogos com roles)"
+            $per_role1 = kmr
+            $per_role2 = shp
             call DIALOGO_ROLE
             jump FIM_ESCOLHA1
 
@@ -58,13 +61,13 @@ label ESCOLHA1:
 
 #Parte de diálogos específicos dos personagens
 label FIM_ESCOLHA1:
-    "(Diálogo sem roles)"
-    show sheppard neutro at center with dissolve
-    shp "Estou consciente!"
-    hide sheppard neutro with dissolve
-    show kamira neutra at kam_center with dissolve
-    kmr "Não acho conveniente a sua chegada por aqui!"
-    hide kamira neutra with dissolve
+    "(Diálogos sem roles)"
+    show sheppard neutro at center
+    shp "Eu sou Sheppard"
+    hide sheppard neutro
+    show kamira neutra at kam_center
+    kmr "Eu sou Kamira"
+    hide kamira neutra
 
     jump ESCOLHA1
     return
@@ -72,14 +75,23 @@ label FIM_ESCOLHA1:
 
 #Parte de diálogo para a role
 label DIALOGO_ROLE:
-    if per_role == shp:
-        show sheppard neutro at center with dissolve
+
+    if per_role1 == shp:
+        show sheppard neutro at center
     else:
-        show kamira neutra at kam_center with dissolve
-    per_role "Me encarrego de te demitir..."
-    per_role "Você realmente não se encaixa a este caso."
-    hide sheppard neutro with dissolve
-    hide kamira neutra with dissolve
+        show kamira neutra at kam_center
+    per_role1 "Eu sou a role 1"
+    hide sheppard neutro
+    hide kamira neutra
+
+    if per_role2 == shp:
+        show sheppard neutro at center
+    else:
+        show kamira neutra at kam_center
+    per_role2 "Eu sou a role 2"
+    hide sheppard neutro
+    hide kamira neutra
+
     return
 
 #Essa label existe para possibilitar uma tela point and click

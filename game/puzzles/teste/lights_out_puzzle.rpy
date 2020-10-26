@@ -36,6 +36,10 @@ img_bot_selected_hover="images/teste/dogbutton_selected_hover.jpg"):
     #default bot_selected_idle = im.Scale(img_bot_selected_idle, lop_tam_peca, lop_tam_peca)
     #default bot_selected_hover = im.Scale(img_bot_selected_hover, lop_tam_peca, lop_tam_peca)
 
+    modal True
+
+    sensitive (not lop_fim)
+
     frame:
         style "lop_tela_cheia"
         background img_bg
