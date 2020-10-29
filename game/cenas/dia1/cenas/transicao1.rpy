@@ -10,7 +10,7 @@ label TRANSICAO1:
         shp "Agradeço com todas as forças sua presença, detetive."
         drc "O senhor parece ser muito apegado a essa família, senhor Sheppard."
         "*Sheppard suspira*"
-        shp "Correto. Esta família me acolheu, quando eu já não tinha mais nada. O senhor Hougin era como um irmão pra mim. Seus filhos, são como meus filhos."
+        shp "Correto. Esta família me acolheu, quando eu já não tinha mais nada. O senhor Hougin era como um irmão pra mim. Seus filhos, são como meus filhos. Esta casa, é minha casa."
         drc "O senhor não teve filhos senhor Sheppard?"
         "*Os dois param, Sheppard encara um relógio do corredor*"
         shp "Eu já tive família senhor detetive. Esposa, um filho e uma filha."
