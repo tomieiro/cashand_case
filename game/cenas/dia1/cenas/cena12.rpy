@@ -35,7 +35,26 @@ label CENA12:
     drc "Estão realmente muito incomodados com minha presença senhor Sheppard, e parecem também desfazer um pouco do senhor."
     shp "Creio ser somente o momento. Acabam de perder dois familiares. As coisas se acalmarão, eu creio."
     drc "Tomara que sim."
-    "*Entram na casa e encontram Hugo em roupas sociais pretas*"
+
+    ## ROTEIRINHO DE EDICAO PARA O VINI
+    # delicious vini
+    # -> VOCE PRECISA CRIAR UMA CENA ABAIXO PRO IND_D
+    # -> PRECISA COLOCAR UM IF LA NA CENA DO IND_A E AQUI ABAIXO NO IND_D, SE, CASO ELE FOR O HUGO,
+    #CHAMA ESSE COMANDO: call FALA_DO_HUGO    ... CASO NAO SEJA, EXIBE O DIALOGO NORMAL(O DE CIMA JA TA LA)
+    # E O DO IND_D VC CRIA ALGO, DE PREFERENCIA IGUALMENTE RUDE AO IND_A, JA QUE ELE SO PODERIA SER TROCADO DE LUGAR...
+    # TENTE PUXAR ALGO MEIO ANOS 60 NA FALA, IGUAL EU VENHO TENTANDO, NA HORA DE ESCREVER;
+    #JA ACRESCENTEI LA NO PERSONAGENS.RPY QUE O NEM O IND_B NEM O IND_C PODEM SER O HUGO NESSE PRIMEIRO DIA
+    #VINI EDITE AQUI
+    "*Entram na casa e encontram #INDIVIDUO FULANO AQUI VINI# em vestes escuras*"
+    "..."
+    "*#INDIVIDUO FULANO AQUI VINI# sai*"
+    #VINI PARE AQUI
+    shp "Vamos conhecer a casa, senhor Rightclue?"
+    drc "Precisamente."
+
+jump CENA13
+
+label FALA_DO_HUGO:
     shp "Boa tarde Hugo!"
     hugo "Olá, boa tarde senhor Sheppard."
     hugo "Quem é o cavalheiro?"
@@ -48,8 +67,4 @@ label CENA12:
     shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
     hugo "É um bom rapaz."
     hugo "Bom, se me dão licença...."
-    "*Hugo sai*"
-    shp "Vamos conhecer a casa, senhor Rightclue?"
-    drc "Precisamente."
-
-jump CENA13
+    return
