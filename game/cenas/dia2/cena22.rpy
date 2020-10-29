@@ -20,12 +20,16 @@ label CENA22:
     "..."
     "Algo me chama atenção..."
     "Preciso investigar mais sobre as relações dos herdeiros com cada membro da família."
-    "Não tenho necessaria..."
+    "Hugo está vindo..."
+    "..."
+    "Parou próximo. Irei até ele."
+    "Não tenho necessariamen..."
     desconhecido "Senhor Rightclue, eu suponho?"
     "..."
+    "*Rightclue se vira*"
     #show carlo aqui
     drc "Sim, exato. E qual seria sua graça, senhor?"
-    desconhecido "O Senhor me conhece, Senhor Rightclue. E sugiro que se lembre rapidamente."
+    desconhecido "O Senhor me conhece, Senhor Rightclue. E sugiro que se lembre rapidamente. E falemos baixo, sim?"
     drc "Suponho, pela voz, que o senhor seja Carlo Venchinni."
     carlo "Vejo que o senhor tem astúcia."
     carlo "Senhor Rightclue, deixe-me dizer uma coisa..."
@@ -45,5 +49,8 @@ label CENA22:
     drc "Estou de acordo, Senhor Venchinni."
     carlo "Ótimo. Que assim seja."
     #hide carlo com um dissolve talvez
+    "Meu deus. Tenho um fardo a carregar."
+    "..."
+    "Hugo se foi."
     "O tempo está correndo. Preciso me apressar. Hoje e amanhã serão cruciais."
     jump CENA23
