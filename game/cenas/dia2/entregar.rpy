@@ -1,0 +1,2 @@
+label ENTREGAR(individuo):
+    
