@@ -24,6 +24,8 @@ transform kam_center:
 
 label PROTOTIPO:
 
+    #call screen slider_puzzle(3) with dissolve
+
     $quick_menu = True
 
     play music "audio/musicas/Tensao.ogg" fadeout 1
