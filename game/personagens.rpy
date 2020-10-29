@@ -5,6 +5,7 @@ define drc = Character("Rightclue")
 define shp = Character("Sheppard")
 define mrth = Character("Martha")
 define vnc = Character("Carlo Venchinni")
+define hugo = Character("Hugo T. Cashand")
 
 #Definindo Informações dos personagens aleatórios
 define joe_info =  ["Joe Cashand","Joe","pai"]
@@ -22,6 +23,7 @@ define possiveis_culpados = [hugo_info]
 define ind_a_info = []
 define ind_b_info = []
 define ind_c_info = []
+define assassino_info = []
 
 #Culpado...
 
@@ -32,6 +34,7 @@ init python:
     global ind_a_info
     global ind_b_info
     global ind_c_info
+    global assassino_info
     global possiveis_inocentes
     #Sorteia as roles dos inocentes
     ind_a_info = renpy.random.choice(possiveis_inocentes)
@@ -39,15 +42,13 @@ init python:
     ind_b_info = renpy.random.choice(possiveis_inocentes)
     possiveis_inocentes.remove(ind_b_info)
     ind_c_info = renpy.random.choice(possiveis_inocentes)
-    print(ind_a_info, ind_b_info, ind_c_info)
-
+    assassino_info = renpy.random.choice(possiveis_culpados)
+    #Trocar o assassino para tratar casos
 
 init offset = 2
 define ind_a = Character(ind_a_info[0])
 define ind_b = Character(ind_b_info[0])
 define ind_c = Character(ind_c_info[0])
-
-#Inicialmente, há apenas 1 possível culpado
-define hugo = Character(possiveis_culpados[0][0])
+define assassino = Character(assassino_info[0])
 
 init offset = 0
