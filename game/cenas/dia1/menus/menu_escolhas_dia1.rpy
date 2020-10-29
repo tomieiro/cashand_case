@@ -1,8 +1,4 @@
 label MENU_ESCOLHAS_DIA1:
-    default visCoz = False
-    default visBiblio = False
-    default visQuartoHougin = False
-    default maisInfos = False
     menu:
         "Locais para visitar:"
 

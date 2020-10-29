@@ -7,6 +7,8 @@ define mrth = Character("Martha")
 define vnc = Character("Carlo Venchinni")
 define hugo = Character("Hugo T. Cashand")
 define carlo = Character("Carlo Venchinni")
+define kmr = Character("Kamira Cashand")
+define cth = Character("Catherine V. Cashand")
 define desconhecido = Character("???")
 
 #Definindo Informações dos personagens aleatórios
