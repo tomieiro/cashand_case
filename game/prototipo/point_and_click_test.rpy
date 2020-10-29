@@ -22,7 +22,7 @@ screen point_and_click_test():
         style "fundo_tela"
 
         imagebutton:
-            action Jump("LIGHTS_OUT_TEST")
+            action Jump("SLIDER_TEST")
             auto img_puzzle
             focus_mask True
             xalign 0.8
