@@ -38,7 +38,7 @@ label CENA22:
     drc "..."
     vnc "Porém, o Senhor Sheppard realmente tinha apreço por essa família. E confiava em você para resolver o caso."
     vnc "Deixe-me dizer mais uma coisa..."
-    vnc "O senhor tem até o anoitecer de amanhã. Seu horário limite são as 10 da noite."
+    vnc "O senhor tem até o anoitecer de amanhã. Seu horário limite é oito da noite."
     vnc "Se o senhor não me entregar o culpado até lá, matarei todos esses vermes."
     vnc "Um após um..."
     vnc "Sem nenhuma piedade."
