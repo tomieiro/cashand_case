@@ -46,6 +46,8 @@ label CENA23:
             ind_a "Sou nesse momento, uma pessoa horrorizada por tudo isso... Meu [ind_a_info[2]], meu [ind_a_info[3]] e agora Sheppard."
             drc "Compreendo."
             drc "Certo... Acho que já é suficiente por agora. Até mais [ind_a_info[1]]."
+            if ind_a_info[1] == "Catherine":
+                hide catherine neutra
             "..."
             "Certo, já tenho um destino."
             jump ESCOLHA_CONV_DIA2C3
@@ -83,6 +85,8 @@ label CENA23:
             ind_b "É horrível, senhor"
             drc "Compreendo."
             drc "Bom, era só isso que eu precisava escutar por agora. Descanse um pouco [ind_a_info[1]]."
+            if ind_a_info[1] == "Catherine":
+                hide catherine neutra
             "..."
             "Certo, já tenho um destino."
             jump ESCOLHA_CONV_DIA2C3
@@ -139,22 +143,23 @@ label CENA23:
             drc "..."
             kmr "Com licença."
             drc "Senhorita?"
+            #hide kamira neutra
             "Ela se foi..."
             "Chorando."
             "Não posso errar. Minha decisão é crucial."
-            menu:
-                "Ligar para Carlo e entregar Kamira":
-                    call ENTREGAR(kamira_info)
-
-                "Continuar a investigar, e ter certeza":
-                    "Não posso me apressar e condenar alguém inocente."
-                    "Talvez eu deva dar uma volta pela parte externa e ver se consigo notar algo na edificação, pode ser uma possibilidade para acesso e fuga."
-                    "Joe chegou."
-                    "Ele irá direto para dentro."
-                    "Bom, que seja, falarei com ele em breve."
-                    "Bom... agora ao estudo da edificação."
-                    "..."
-                    jump CENA24
+            #menu:
+            #    "Ligar para Carlo e entregar Kamira":
+            #        call ENTREGAR(kamira_info)
+            #
+            #    "Continuar a investigar, e ter certeza":
+            "Mas também não posso me apressar e condenar alguém inocente."
+            "Talvez eu deva dar uma volta pela parte externa e ver se consigo notar algo na edificação, pode ser uma possibilidade para acesso e fuga."
+            "Joe chegou."
+            "Ele irá direto para dentro."
+            "Bom, que seja, falarei com ele em breve."
+            "Bom... agora ao estudo da edificação."
+            "..."
+            jump CENA24
 
 
 
@@ -165,10 +170,11 @@ label CONV_HUGO_D2C3(whoIs):
         if ind_a_info[1] == "Catherine":
             show catherine neutra:
                 xalign 0.7 yalign 0.99
-            show sheppard neutro:
-                xalign 0.3 yalign 0.99
     else:
         drc "[ind_b_info[1]], com licença, podemos conversar um instante?"
+        if ind_b_info[1] == "Catherine":
+            show catherine neutra:
+                xalign 0.7 yalign 0.99
 
     if whoIs == hugo:
         hugo "Senhor Rightclue..."
