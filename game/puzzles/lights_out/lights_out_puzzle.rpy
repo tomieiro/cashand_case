@@ -4,40 +4,23 @@ default lop_x = 0
 default lop_y = 0
 default lop_tam_peca = 200
 
-label lights_out_puzzle_3:
-    #Variáveis necessárias:
-    python:
-        lop_fim = False
-        lop_pecas = [False] * 9
-        lop_x = 0
-        lop_y = 0
-    #Chama a tela
-    call screen lights_out_puzzle(3)
-    return
-
 default lop_img_pecas = ["images/teste/puzzle/9.png", "images/teste/puzzle/8.png", "images/teste/puzzle/7.png",
                          "images/teste/puzzle/6.png", "images/teste/puzzle/5.png", "images/teste/puzzle/4.png",
                          "images/teste/puzzle/3.png", "images/teste/puzzle/2.png", "images/teste/puzzle/1.png"]
 
-transform lop_img_tr:
-    size (200, 200)
+default lop_configuracoes = [[]]
+
+
+transform lop_img_tr(tam=200):
+    size (tam, tam)
     xalign 0.5
     yalign 0.5
 
-screen lights_out_puzzle(dim,
-img_bg = "#fff",
-img_bot_idle="images/teste/dogbutton_idle.jpg",
-img_bot_hover="images/teste/dogbutton_hover.jpg",
-img_bot_selected_idle="images/teste/dogbutton_selected_idle.jpg",
-img_bot_selected_hover="images/teste/dogbutton_selected_hover.jpg"):
-
-    #default bot_idle = im.Scale(img_bot_idle, lop_tam_peca, lop_tam_peca)
-    #default bot_hover = im.Scale(img_bot_hover, lop_tam_peca, lop_tam_peca)
-    #default bot_selected_idle = im.Scale(img_bot_selected_idle, lop_tam_peca, lop_tam_peca)
-    #default bot_selected_hover = im.Scale(img_bot_selected_hover, lop_tam_peca, lop_tam_peca)
+screen lights_out_puzzle(dim, img_bg = "#fff"):
 
     modal True
 
+    #Sensível apenas quando não há diálogo ocorrendo
     sensitive (not lop_fim)
 
     frame:
@@ -60,19 +43,12 @@ img_bot_selected_hover="images/teste/dogbutton_selected_hover.jpg"):
                                 idle "#000"
                                 selected_idle lop_img_pecas[i]
                                 selected_hover lop_img_pecas[i]
-                                at lop_img_tr
-            #if lop_fim:
-                #frame:
-                    #at truecenter
-                    #style "lop_fundo_branco"
-                    #textbutton "Finalizar":
-                        #action Return()
-                        #at surge_botao_final
-
+                                at lop_img_tr(lop_tam_peca)
 
     if lop_fim:
         add "images/teste/puzzle/cc.png" maxsize (630, 630) at truecenter
         timer 3.0 action Return()
+
 
 init python:
 
