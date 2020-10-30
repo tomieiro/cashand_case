@@ -6,14 +6,19 @@ label CENA11:
     "Preciso me apressar, marquei de me encontrar às três em ponto!"
     "E já tardam duas e quarenta …"
     "Pegar casos seguidos é realmente um péssimo hábito…"
-    scene montanhas
+    #Tamanho ideal: 1280px x 720px
+    scene cidade
     "*Chega na cidade*"
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
     "*Ouve alguém chamado*"
-    show sheppard neutro
+    #Tamanho ideal : 650px x 460px
+    show sheppard neutro at center:
     shp "Detetive Rightclue!"
-    drc "Ora ... Senhor Sheppard!"
+    drc "Ora ... Senhor Sheppard?"
+    shp "Sim, exatamente."
+    drc "É um prazer!"
+    shp "Prazer!"
     shp "Fico grato que tenha vindo detetive. Estamos com sérios problemas por aqui!"
     drc "Não sei dos detalhes, mas de fato ouvi do chefe ser um caso complexo e perigoso."
     shp "Sim, exato. Vamos até o escritório, é a edificação logo a frente."
@@ -41,10 +46,10 @@ label CENA11:
     shp "Mas alguém há de tomar seu lugar, herdar sua fortuna"
     shp "Pois bem. Haviam cinco pessoas que estão na lista para reivindicar o tesouro do senhor Hougin Cashand."
     shp "São eles:"
-    shp "Joe Cashand, filho legítimo de Hougin com sua primeira esposa. Temperamental, direto, e acima de tudo, consumido pela soberba."
-    shp "Catherine Vladita Cashand, sobrinha do senhor Hougin, decidida, fria, porém com forte senso de justiça."
+    shp "Joe Cashand, filho legítimo de Hougin com sua primeira esposa. Temperamental, um pouco atacado pela soberba, mas é um bom rapaz. Garanto ao senhor."
+    shp "Kamira Thereza Cashand, sobrinha do senhor Hougin, decidida, fria, porém com forte senso de justiça."
     shp "Hugo Theodore Cashand, segundo filho desse senhor da máfia, sem ligar muito para etiqueta, hoje ele vive com seu cachorro em uma Kombi, próximo à mansão dos Cashand, podemos dizer que é do tipo rebelde com a família."
-    shp "Kamira Thereza Cashand, irmã mais nova do senhor Hougin, apesar de um tom sereno e maduro, é apenas 8 anos mais velha que seu sobrinho Hugo."
+    shp "Catherine Vladita Cashand, irmã mais nova do senhor Hougin, apesar de um tom sereno e maduro, é apenas 8 anos mais velha que seu sobrinho Hugo."
     shp "O último herdeiro era Lostie Annou Cashand, segundo irmão mais novo do senhor Hougin Cashand, que fora assassinado esta noite."
     drc "Intrigante... Podemos afirmar que os assassinatos ocorreram pelo interesse nos bens do senhor Hougin, creio eu. Talvez alguém interessado em lesar a família e ficar com o dinheiro?"
     shp "De fato. Acredito ser totalmente coerente com a situação, visto que o senhor Hougin andava ruim de saúde."

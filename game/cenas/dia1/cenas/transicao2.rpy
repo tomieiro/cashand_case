@@ -19,6 +19,6 @@ label TRANSICAO2:
     "Foi um excelente banho. Também já estou satisfeito com o jantar."
 
     if cluepoints >= 2:
-        call CONCLUINDO_DIA1
+        call CONCLUINDO_DIA1 from _call_CONCLUINDO_DIA1
 
     jump CENA14

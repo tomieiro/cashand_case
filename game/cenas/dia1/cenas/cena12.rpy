@@ -8,8 +8,8 @@ label CENA12:
     drc "Se possível, não o exalte tanto em minha presença senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
     shp "De fato. Tentarei me segurar ao máximo."
     "*Entram pelo portão da mansão*"
-    "*Encontram [ind_a_info[1]] com roupas fúnebres parades junto à entrada, sobre o jardim*"
-    if ind_a == hugo:
+    "*Encontram [ind_a_info[0]] em roupas fúnebres, junto à entrada, sobre o jardim*"
+     if ind_a_info[1] == "Hugo":
         call DIALOGO_HUGO11
     else:
         shp "Boa tarde [ind_a_info[1]], como está?"
@@ -39,10 +39,10 @@ label CENA12:
     shp "Creio ser somente o momento. Acabam de perder dois familiares. As coisas se acalmarão, eu creio."
     drc "Tomara que sim."
     "*Entram na casa e encontram [ind_d_info[0]]*"
-    if ind_d == hugo:    
+    if ind_d_info[1] == "Hugo":
         call DIALOGO_HUGO11
     else:
-        ind_d "Olá, senhor Sheppard e senhor?"
+        ind_d "Olá, senhor Sheppard e ... Senhor?"
         drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
         ind_d "imaginino que o isso seja coisa sua senhor Sheppard."
         shp "Estou apenas fazendo o meu trabalho [ind_d_info[0]]"
@@ -53,10 +53,9 @@ label CENA12:
 
     shp "Vamos conhecer a casa, senhor Rightclue?"
     drc "Precisamente."
+    jump CENA13
 
-jump CENA13
-
-label DIALOGO_HUGO11:  
+label DIALOGO_HUGO11:
     shp "Boa tarde Hugo!"
     hugo "Olá, boa tarde senhor Sheppard."
     hugo "Quem é o cavalheiro?"
@@ -69,5 +68,4 @@ label DIALOGO_HUGO11:
     shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
     hugo "É um bom rapaz."
     hugo "Bom, se me dão licença...."
-    "*Hugo sai*"
     return
