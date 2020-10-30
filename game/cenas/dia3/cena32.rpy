@@ -55,4 +55,6 @@ label CENA32:
     "Preciso ser paciente."
     "Cada ato será fundamental. Irreversível. Calma. Preciso de calma."
     "..."
+    ##scene quarto
+    #with Fade(5, 3, 0.5)
     jump CENA33

@@ -2,9 +2,16 @@ label CENA22:
     scene velorio
     with Fade(3, 2, 0.5)
     "*Funeral ao fundo é mostrado*"
+    "Como fomos parar nisso..."
+    "Como fomos parar nisso..."
+    "Senhor Sheppard está morto."
+    "Foi morto dentro de minha investigação."
+    "É tudo minha culpa... Se eu tivesse sido mais cauteloso..."
+    "Por segurança, pediram que Martha se retirasse do serviço por algum tempo."
+    "Preciso ser rápido e descobrir quem está por trás de tudo isso."
     "*A se aproxima do senhor Rightclue*"
     ind_a "Senhor Rightclue."
-    "*Rightclue se recompõe de seus pensamentos e com tom investigativo, indaga*"
+    "É [ind_a_info[0]], preciso me recompor."
     drc "Olá [ind_a_info[1]]. Meus pêsames pela perda. O senhor Sheppard realmente se importava com vocês."
     ind_a "Sim, senhor Rightclue. Apesar de tudo, Sheppard era como um membro da família. Vou sentir sua falta."
     "*[ind_a_info[0]] enxuga uma lágrima*"
