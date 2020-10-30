@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("CASHAND CASE")
+define config.name = _("PROTÓTIPO")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -53,7 +53,6 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
-
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
@@ -65,7 +64,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/musicas/teste_menu_principal.ogg"
+define config.main_menu_music = "audio/musicas/Menu.ogg"
 
 
 ## Transitions #################################################################

@@ -247,20 +247,28 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
+        #MUDOU AQUI - essa window foi adicionada
+        window:
+
             style_prefix "quick"
+            ysize 18
+            background "#000"
+        #Termina aqui a mudança
+            hbox:
 
-            xalign 0.5
-            yalign 1.0
+                style_prefix "quick"
 
-            textbutton _("Voltar") action Rollback()
-            textbutton _("História") action ShowMenu('history')
-            textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Salvar") action ShowMenu('save')
-            textbutton _("S. Rápido") action QuickSave()
-            textbutton _("C. Rápido") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+                xalign 0.5
+                yalign 1.0
+
+                textbutton _("Voltar") action Rollback()
+                textbutton _("História") action ShowMenu('history')
+                textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
+                textbutton _("Auto") action Preference("auto-forward", "toggle")
+                textbutton _("Salvar") action ShowMenu('save')
+                textbutton _("S. Rápido") action QuickSave()
+                textbutton _("C. Rápido") action QuickLoad()
+                textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -591,14 +599,14 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use file_slots(_("Salvar"))
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_("Carregar"))
 
 
 screen file_slots(title):
@@ -720,7 +728,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferências"), scroll="viewport"):
 
         vbox:
 
@@ -890,7 +898,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
+    use game_menu(_("História"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0):
 
         style_prefix "history"
 
@@ -979,7 +987,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Ajuda"), scroll="viewport"):
 
         style_prefix "help"
 
