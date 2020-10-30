@@ -5,6 +5,6 @@ label start:
     stop music
 
     #Vai para a primeira cena do dia 1
-    jump CENA21
+    jump CENA25
 
     return
