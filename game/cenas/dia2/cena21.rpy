@@ -13,9 +13,16 @@ label CENA21:
     drc "Não..."
     "*Rightclue entra no quarto de Sheppard, ao lado*"
     drc "Não... Não..."
-    "--->*Rightclue encontra Sheppard caido, com sangue em volta*"
+    # show sheppard morto
     drc "Sheppard.... Por que? Por que?"
     drc "*Por que?"
     drc "Por que eu tomei aquela decisão em relação a contá-lo. Me desculpe Sheppard. Me desculpe..."
+    "Meu deus. Meu deus."
+    "Por que?"
+    "Ele segurava um lenço."
+    "*Rightclue guarda o lenço*"
+    "Me desculpe senhor Sheppard.."
+    "Eu não cheguei a tempo."
+    "Não cheguei..."
     "..."
     jump CENA22

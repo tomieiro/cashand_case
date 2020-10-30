@@ -122,7 +122,7 @@ label CENA25:
     "Tenho o controle da situação."
     "Por hoje descansarei. Tenho profunda certeza que o culpado não arriscaria matar outro membro da família."
     "Pela manhã, após o velório, será minha cartada final."
-    "É tudo ou nada, senhor ou senhora."
+    "É tudo ou nada."
     "É só uma questão de tempo..."
     "..."
     jump CENA31
