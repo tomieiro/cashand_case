@@ -1,9 +1,22 @@
 init offset = 0
 
+#Sons dos diálogos dos personagens:
+init python:
+    def character_beeps(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show_done":
+            renpy.sound.play("audio/voices/voice_test.wav", loop="True", channel="sound")
+        #elif event == "slow_done" or event == "end":
+        elif event == "slow_done":
+            renpy.sound.stop(channel="sound")
+
+#EXEMPLO: define shp = Character("Sheppard", who_color="#c8ffc8", callback=character_beeps)
+
 #Definindo personagens fixos
-define drc = Character("Rightclue")
-define shp = Character("Sheppard")
-define mrth = Character("Martha")
+define drc = Character("Rightclue", callback=character_beeps)
+define shp = Character("Sheppard", callback=character_beeps)
+define mrth = Character("Martha", callback=character_beeps)
 
 #Definindo Informações dos personagens aleatórios
 define joe_info =  ["Joe Cashand","Joe","pai"]
@@ -42,9 +55,9 @@ init python:
 
 
 init offset = 2
-define ind_a = Character(ind_a_info[0])
-define ind_b = Character(ind_b_info[0])
-define ind_c = Character(ind_c_info[0])
+define ind_a = Character(ind_a_info[0], callback=character_beeps)
+define ind_b = Character(ind_b_info[0], callback=character_beeps)
+define ind_c = Character(ind_c_info[0], callback=character_beeps)
 
 #Inicialmente, há apenas 1 possível culpado
 define hugo = Character(possiveis_culpados[0][0])
