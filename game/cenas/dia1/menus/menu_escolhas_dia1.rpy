@@ -17,9 +17,20 @@ label MENU_ESCOLHAS_DIA1:
                     jump MENU_ESCOLHAS_DIA1
 
         "Cozinha" if not visCoz:
-            $visCoz = False
-            jump COZINHA
+            shp "O senhor tem certeza?"
+            "Ir para a cozinha":
+                $visCoz = False
+                jump COZINHA
+            "Pensar melhor":
+                jump MENU_ESCOLHAS_DIA1
 
         "Quarto de Hougin" if not visQuartoHougin:
-            $visQuartoHougin = False
-            jump QUARTO_HOUGIN
+            shp "O senhor tem certeza?"
+            "Ir para o Quarto de Hougin":
+                $visQuartoHougin = False
+                jump QUARTO_HOUGIN
+            "Pensar melhor":
+                jump MENU_ESCOLHAS_DIA1
+
+        "Perguntar sobre os Locais":
+            jump MENU_ESCOLHAS_DIA1

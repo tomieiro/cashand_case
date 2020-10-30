@@ -10,7 +10,7 @@ label COZINHA:
     drc "Senhora Martha, espero que a senhora não se importe que eu te faça algumas perguntas?"
     mrth "Por favor, faça à vontade. O que eu puder contribuir para a investigação, assim farei."
     drc "A senhora teve muito contato com o senhor Hougin?"
-    mrth "Claro que sim, estou trabalhando aqui há 32 anos."
+    mrth "Claro que sim, estou trabalhando aqui há 30 anos."
     drc "A senhora tinha boa relação com seu empregador, o senhor Hougin?"
     mrth "O senhor Hougin sempre foi como um parente. Estimo muito esse trabalho e essa família."
     drc "A senhora tinha conhecimento das movimentações da casa?"

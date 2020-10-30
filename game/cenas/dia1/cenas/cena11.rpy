@@ -35,7 +35,7 @@ label CENA11:
     shp "Tudo começou há 38 anos atrás, quando Hougin Cashand inicia com os negócios."
     drc "Que tipo de negócios o senhor diz?"
     shp "Negócios, senhor Rightclue. Hougin era, e creio que por muito tempo ainda será, o maior mafioso desse estado. O senhor compreende?"
-    shp "Não é por nada que o senhor Cashand possui tantos bens. Um jogo obscuro foi jogado senhor detetive, por três longas décadas."
+    shp "Não é por nada que o senhor Cashand possui tantos bens. Um jogo obscuro foi jogado senhor detetive, por quatro longas décadas."
     drc "Pois então, devo considerar que estou entrando em terreno obscuro."
     shp "Não há motivo para alarde detetive. O homem qual sustava esse reino está, nesse exato momento, há um metro e oitenta sob a terra qual reinou."
     shp "Mas alguém há de tomar seu lugar, herdar sua fortuna"
