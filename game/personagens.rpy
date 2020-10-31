@@ -1,5 +1,18 @@
 init offset = 0
 
+#Sons dos diálogos dos personagens:
+init python:
+    def character_beeps(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show_done":
+            renpy.sound.play("audio/voices/voice_test.wav", loop="True", channel="sound")
+        #elif event == "slow_done" or event == "end":
+        elif event == "slow_done":
+            renpy.sound.stop(channel="sound")
+
+#EXEMPLO: define shp = Character("Sheppard", who_color="#c8ffc8", callback=character_beeps)
+
 #Definindo personagens fixos
 define drc = Character("Rightclue")
 define shp = Character("Sheppard")
