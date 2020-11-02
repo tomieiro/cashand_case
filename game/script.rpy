@@ -5,7 +5,7 @@ label start:
     stop music
 
     #Vai para o protótipo
-    call PROTOTIPO
+    call CENA25
 
     #Vai para a primeira cena do dia 1
     #jump CENA11
