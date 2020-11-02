@@ -9,7 +9,7 @@ label CENA12:
     shp "De fato. Tentarei me segurar ao máximo."
     "*Entram pelo portão da mansão*"
     "*Encontram [ind_a_info[0]] em roupas fúnebres, junto à entrada, sobre o jardim*"
-     if ind_a_info[1] == "Hugo":
+    if ind_a_info[1] == "Hugo":
         call DIALOGO_HUGO11
     else:
         shp "Boa tarde [ind_a_info[1]], como está?"
