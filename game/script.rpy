@@ -6,6 +6,8 @@ label start:
 
     #Vai para a área de testagem de telas
     call TESTES_TELAS
+    #Vai para o protótipo
+    call CENA25
 
     #Vai para a primeira cena do dia 1
     #jump CENA11
