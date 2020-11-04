@@ -23,7 +23,6 @@ label MENU_CONTAR_SHEPPARD:
             drc "Até mais, senhor Sheppard. Se mantenha de olhos abertos esta noite."
             shp "Com toda certeza."
 
-
         "Não contar ao Sheppard":
             drc "Senhor Sheppard. Não posso te contar exatamente quem seja. Me nego, por políticas pessoais, envolver o senhor neste risco. Mas saiba que pode ser mais que uma pessoa apenas. E está dentro dessa casa."
             shp "Compreendo, detetive.  Fico grato ao senhor, de toda a forma."

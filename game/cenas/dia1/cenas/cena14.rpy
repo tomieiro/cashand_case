@@ -8,7 +8,7 @@ label CENA14:
     shp "Perfeito, fico feliz, detetive."
     shp "Bom. Vamos aos negócios..."
 
-    #Garantindo demissao se nao atingir mais que 1 cluepoint
+    #Garantindo demissao se nao atingir mais que 2 cluepoint
     if cluepoints < 2:
         jump DEMISSAO
 
@@ -40,7 +40,7 @@ label CENA14:
     vnc "Mas em que posso ajudar, Sheppard?"
     shp "Venho pedir um favor ao senhor."
     vnc "Pois peça. Não tenho como negar nada ao senhor."
-    shp "Gostaria que o senhor desse um jeito no maldito traidor que matou o senhor Hougin. Estou pedindo por mim mesmo, e não em nome de ninguém."
+    shp "Gostaria que o senhor desse um jeito no maldito que matou o senhor Hougin. Estou pedindo por mim mesmo, e não em nome de ninguém."
     vnc "Não tenho afinidade nenhuma com essa família, senhor Sheppard, mas devo muito ao senhor. Então, farei o que me pedir."
     shp "Agradeço muito meu amigo."
     shp "Contratei um detetive, muito experiente e astuto, por sinal. É o senhor Rightclue."

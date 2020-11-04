@@ -20,6 +20,7 @@ label CENA21:
     "Meu deus. Meu deus."
     "Por que?"
     "Ele segurava um lenço."
+    #Coleta lenço e coloca "..." quando ele clicar.
     "*Rightclue guarda o lenço*"
     "Me desculpe senhor Sheppard.."
     "Eu não cheguei a tempo."

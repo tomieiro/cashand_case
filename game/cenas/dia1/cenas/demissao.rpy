@@ -12,6 +12,6 @@ label DEMISSAO:
     drc "..."
     drc "Eu deveria ter pensado melhor sobre minhas escolhas..."
 
-    window hide dissolve
-    show ending bad
-    with Dissolve(8.0)
+    #window hide dissolve
+    #show ending bad
+    #with Dissolve(8.0)

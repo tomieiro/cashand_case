@@ -1,3 +1,6 @@
+#Hugo ter uma justificativa pra matar geral
+#Ia ficar de fora da herança por ser rebelde, e nao seguir a linha da familia.
+
 label CENA33:
     "Ainda restou-me o lenço do senhor Sheppard."
     "..."
@@ -9,8 +12,8 @@ label CENA33:
     "Ele deve estar lá embaixo."
     ##scene corredor
     #with Fade(5, 3, 0.5)
-    "Claro, deixe-me retirar isso"
-    "Deixe me retirar isso..."
+    "Claro..."
+    "Deixe me retirar isso..." #-> Coletou um item ???
     ##scene hall
     #with Fade(5, 3, 0.5)
     "Ali está ele."
@@ -37,17 +40,18 @@ label CENA33:
     hugo "Exato. Tenho suspeita de uma pessoa, quem conversei algum tempo há pouco."
     "Ele está incriminando Catherine."
     "O assassino não arriscaria dizer toda essa informação sobre Kamira, eu acho."
-    "Ou arriscaria. No desespero para ."
+    "Ou arriscaria. No desespero para ..."
     drc "Obrigado pela informação Hugo. Peço que, se possivel, vá para seu quarto."
     hugo "Detetive, e qual seria a finalidade?"
     drc "Eu tenho um assunto a resolver."
-    drc "Há algo grande envolvido. Por favor, confie em mim."
+    drc "Há algo grande envolvido. Por favor, confie em mim. É pra sua segurança."
     drc "Se o senhor não tiver a o que se opor, é claro."
     hugo "Não."
     hugo "Está bem. Assim farei."
     drc "Conto com você."
     "..."
     #hide hugo
+    "..."
     "..."
     #toca musica de mais suspense...
     cth "Senhor Rightclue."
@@ -60,29 +64,35 @@ label CENA33:
     cth "E o que seria senhor?"
     drc "..."
     #dar um wait de uns 3 segundos
-    drc "Você poderia pegar o molho de chaves que a Martha usava?"
+    drc "Você poderia me acompanhar?"
     cth "E por que desse pedido?"
     # show item lenço do sheppard com fio de cabelo no meio
+
+    #call inventario_de_escolha -> a chave e lenço(eoq sai)
+
     cth "O que é isso, detetive?"
     drc "..."
+
+    #puzzle palavras |pelo de| cachorro
+
     drc "Pelo de cachorro."
-    drc "Busque as chaves. E rápido."
+    drc "Venha. E rápido."
     cth "Sim... Sim senhor."
     "Um simples fio de cabelo. Porém, mais grosso."
     "Um detalhe. Desprezei. Não há por que se atentar a isso."
     "Ao menos se..."
     "Se não for cabelo."
-    "Ninguém tem um cabelo tão grosso. Mas isso não é discriminante. Pelo menos não é"
+    "Ninguém tem um cabelo tão grosso. Mas isso não é discriminante. Pelo menos não foi na hora."
     "Um dia se passou. O suficiente para o cheiro do animal se sobressair..."
     "... por um único pelo."
     "Maldito. Você é meu."
-    cth "Aqui está senhor."
     ##scene corredor
     #with Fade(5, 3, 0.5)
 
     #play barulho de traca
 
-    hugo "O que é isso. Quem está ai?"
+    cth "Algum problema com o quarto do Hugo, senhor?."
+    hugo "O que é isso? Quem está ai?"
     "..."
     drc "Seu maldito..."
     drc "Como pode. Fazer isso com seu próprio pai."
@@ -102,7 +112,7 @@ label CENA33:
     cth "Hugo não faria isso. Por favor deixe ele ir."
     drc "Você é a pior escória."
     drc "Um lixo. Uma praga."
-    cth "Por favor Rightclue, não foi ele."
+    cth "Por favor Senhor Rightclue, não foi ele."
     joe "O que está acontecendo aqui."
     drc "Boa noite Joe."
     drc "Acabo de prender o maldito traidor."
@@ -116,14 +126,14 @@ label CENA33:
     drc "Cale a boca!"
     drc "E cale agora. Seu maldito. Se acha mais inteligente do que eu."
     drc "A ponto de armar todo esse esquema."
-    drc "Catherine brada mais alto aqui para te libertar. Você mais faria isso? Canalha. Sabe que Carlo virá buscá-lo."
+    drc "Catherine brada mais alto aqui para te libertar. Você também faria isso? Canalha. Sabe que Carlo virá buscá-lo."
     drc "Acha que não percebi quando você se aproximou no velório do senhor Sheppard? Sorrateiramente, escutou toda a conversa."
     drc "Não me matou porque sabia que a polícia se envolveria. Sabia que o senhor Sheppard conhecia a todos muito bem, ele notaria qualquer coisas diferente. Chegariamos em você em um piscar de olhos."
     drc "Você não presta."
     drc "Precisava incriminar alguém. Sabia disso. E estava desesperado."
     drc "Matou Kamira e fez ela parece que tinha se matado, pois nao queria chamar mais a atencao. Ela sabia de algumas coisas e colaboraria comigo."
     drc "Kamira amava seu tio como se fosse seu próprio pai, brigou na noite de sua morte por exigir que ele se cuidasse mais."
-    drc "Jamais seria capaz de cometar uma atrocidade desse tipo."
+    drc "Jamais seria capaz de cometer uma atrocidade desse tipo."
     drc "Seu desgraçado."
     drc "E quanto ao Joe?"
     drc "Joe jamais mataria Sheppard. Jamais. Sheppard cuidou dele. Ele o amava como pai. Estou errado Joe?"
@@ -147,6 +157,7 @@ label CENA33:
     hugo "Pois tente, querido irmão!"
     joe "Aaaaaaaaaaaaaaaaahhhhhhhhhhh"
     #play murro na porta
+    #tacar o cachorro aqui
     drc "Vou ligar para o senhor Venchinni."
     drc "Joe. Não abra. Me prometa. Não abra."
     drc "Eu vou salvar vocês. Eu jurei pra mim mesmo, depois da morte do senhor Sheppard."
