@@ -1,3 +1,5 @@
+#Desbloquear conquista -> "Bom detetive!"
+#DAORA DEMAIS
 label TRANSICAO1:
     if cluepoints < 1:
         shp "O senhor acha que conseguimos algo, senhor Rightclue?"

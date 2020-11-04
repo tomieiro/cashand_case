@@ -3,8 +3,8 @@ label CENA23:
     $flag_kamira = 0
     $visCoz = False
 
-    scene cidade
-    with Fade(3, 2, 0.5)
+    #scene jardim
+    #with Fade(3, 2, 0.5)
 
     "Certo..."
     "Preciso agir rapido e começar a investigar quem já chegou do enterro."
@@ -22,7 +22,7 @@ label CENA23:
             "Bom... acho que melhor começar com [ind_a_info[1]]."
             "Vou tentar me aproximar na cozinha."
             "Talvez eu descubra algo..."
-            #scene cidade
+            #scene cozinha
             #with Fade(3, 2, 0.5)
             call CONV_HUGO_D2C3(ind_a)
             drc "Confie em mim, [ind_a_info[1]], acharei o culpado. Mas preciso de sua cooperação."
@@ -53,9 +53,7 @@ label CENA23:
             jump ESCOLHA_CONV_DIA2C3
 
         "Conversar com [ind_b_info[0]]" if not visHall:
-
             $visHall = True
-
             "Tentarei com [ind_b_info[1]], no Hall. Talvez eu consiga ligar as coisas obtendo detalhes de cada um."
             call CONV_HUGO_D2C3(ind_b)
             drc "Estou ciente, [ind_b_info[1]]. Mas peço colaboração."
@@ -68,14 +66,14 @@ label CENA23:
             ind_b "Passado algum tempo vi descerem Kamira e [ind_a_info[1]]."
             drc "O que faziam?"
             ind_b "Kamira estava chorando ao canto e [ind_a_info[1]] a consolava."
-            if not visHall:
+            if not visCoz:
                 drc "Sabe me dizer o motivo?"
                 ind_b "Parece que houve uma discussão entre ela e meu [ind_b_info[2]]."
                 drc "Certo. Mais alguma coisa?"
                 ind_b "É tudo o que eu sei..."
                 "Verificarei com [ind_a_info[1]] depois..."
             else:
-                drc "Parece que [ind_a_info[1]] falava a verdade."
+                "Parece que [ind_a_info[1]] falava a verdade."
             drc "Entendo."
             drc "Mais uma coisa..."
             drc "Pode me contar como era o shenhor Sheppard? Digo, no dia a dia da família."

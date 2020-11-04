@@ -16,6 +16,8 @@ label CENA25:
     "Está todo rasgado."
     "Talvez se eu..."
 
+    #call inventario escolher bilhete
+
     #call puzzle slider com fundo do bilhete
 
     "Gravador comoda senha culpado"
@@ -111,6 +113,10 @@ label CENA25:
     drc "..."
     drc "Meu deus..."
     drc "Foi o momento exato."
+
+    #call puzzle palavras |kamira| inocente
+
+    "Meu Deus. Ela era inocente."
     "Sobraram três indivíduos. Joe, Hugo e Catherine."
     "O culpado está aqui. Dentro dessa casa. Quem será a próxima vítima."
     "..."

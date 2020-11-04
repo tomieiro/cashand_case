@@ -10,3 +10,4 @@ label CENA35:
     #play fim
     #scene fim
     #with Fade(4, 4, 0.5)
+    #puxa creditos. E arma na boca do cachorro.

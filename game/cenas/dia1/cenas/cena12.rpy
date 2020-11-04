@@ -1,5 +1,5 @@
 label CENA12:
-
+    #Editar apresentaçoes -> prado vai mexer
     "*Sheppard e Rightclue se dirigem para a mansão dos Cashand*"
     drc "É uma bela mansão."
     shp "Certamente senhor Rightclue. Este foi o castelo que sustentou Hougin ao longo dos ultimos 30 anos."
@@ -24,6 +24,7 @@ label CENA12:
         drc "Creio que serei considerado intruso em meio a esse imbróglio, senhor Sheppard."
         shp "Não se acanhe detetive, ainda há muitas outras saudações calorosas pela frente."
     "*Os dois seguem até a entrada*"
+    #Joe respeitar o Sheppard -> Repensar a role -> Tentamos deixar mais natural
     "*Encontram [ind_b_info[0]] e [ind_c_info[0]] em vestes pretas, ao lado da porta*"
     shp "Boa tarde a vocês, [ind_b_info[1]] e [ind_c_info[1]]."
     ind_b "Olá Sheppard. Quem é o cavalheiro?"
@@ -31,7 +32,7 @@ label CENA12:
     drc "Boa tarde, sou o detetive Rightclue, estou aqui a pedido sigiloso do senhor Sheppard para resolver a situação."
     ind_c "Perdão senhor detetive, mas creio não ter assuntos a tratar aqui. O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
     shp "Sinto muito [ind_c_info[1]], mas o detetive já está ciente de toda a situação. Tenho ordem retroativas de seu [ind_c_info[2]] para cuidar desta família, e assim farei!"
-    ind_c "Sempre te achei intrometido demais. Faça como quiser."
+    ind_c "Não concordo Sheppard, acho que você está atraindo uma atenção desnecessária. Mas faça como quiser."
     shp "Não tem nada a dizer [ind_b_info[1]]?"
     ind_b "Espero que ele traga novos dias a essa casa, senhor Sheppard."
     "*[ind_b_info[0]] e [ind_c_info[0]] vão em direção ao portão*"
