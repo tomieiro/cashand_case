@@ -1052,9 +1052,6 @@ screen keyboard_help():
         label "S"
         text _("Captura a tela.")
 
-    hbox:
-        label "V"
-        text _("Toggle assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
 
 
 screen mouse_help():
