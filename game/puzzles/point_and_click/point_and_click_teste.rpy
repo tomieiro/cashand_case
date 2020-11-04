@@ -5,18 +5,21 @@ define pact_img_estante = "images/teste/estante_%s.png"
 define pact_img_copo = "images/teste/water_%s.png"
 define pact_img_inv_but = "images/teste/inv_but_idle.png"
 
-#Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi selecionado]
-define pact_item_copo = ["images/teste/water_idle.png", "Um copo com água.", False]
-define pact_item_cookie = ["images/teste/cookie.png", "Um cookie aparentemente 'Delicious'!", False]
+#ATENÇÃO: GARANTIR QUE OS ITENS POSSUEM ID'S DIFERENTES
+#Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
+#                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
+default pact_item_copo = ["images/teste/water_idle.png", "Um copo com água.", False, 0, False, "IDE_ESCOLHEU_COPO"]
+default pact_item_cookie = ["images/teste/cookie.png", "Um cookie aparentemente 'Delicious'!", False, 1, False, "IDE_ESCOLHEU_COOKIE"]
+default pact_item_seiji = ["#fff", "Não está presente...", True, 2, False, "IDE_ESCOLHEU_SEIJI"]
 
-default pact_itens_no_inventario = []
+default pact_itens_no_inventario = [pact_item_seiji]
 
 #Label responsável por inicializar variáveis e chamar a tela
 label CHAMA_TELA_PAC_TESTE:
     python:
         pact_item_copo[2] = False
         pact_item_cookie[2] = False
-        pact_itens_no_inventario = []
+        pact_itens_no_inventario = [pact_item_seiji]
     #Chama a tela de point and click
     show screen point_and_click_teste() with dissolve
     jump POINT_AND_CLICK
@@ -34,7 +37,8 @@ screen point_and_click_teste():
 
         #Exemplo de botão que chama um puzzle
         imagebutton:
-            action Jump("LIGHTS_OUT_TEST")
+            #action Jump("LIGHTS_OUT_TEST")
+            action Jump("FIM_PAC_TESTE")
             auto pact_img_puzzle
             focus_mask True
             xalign 0.8

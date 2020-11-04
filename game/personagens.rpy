@@ -14,15 +14,15 @@ init python:
 #EXEMPLO: define shp = Character("Sheppard", who_color="#c8ffc8", callback=character_beeps)
 
 #Definindo personagens fixos
-define drc = Character("Rightclue")
-define shp = Character("Sheppard")
-define hgin = Character("Hougin Cashand")
-define mrth = Character("Martha")
-define vnc = Character("Carlo Venchinni")
-define hugo = Character("Hugo T. Cashand")
-define kmr = Character("Kamira Cashand")
-define cth = Character("Catherine V. Cashand")
-define desconhecido = Character("???")
+define drc = Character("Rightclue", callback=character_beeps)
+define shp = Character("Sheppard", callback=character_beeps)
+define hgin = Character("Hougin Cashand", callback=character_beeps)
+define mrth = Character("Martha", callback=character_beeps)
+define vnc = Character("Carlo Venchinni", callback=character_beeps)
+define hugo = Character("Hugo T. Cashand", callback=character_beeps)
+define kmr = Character("Kamira Cashand", callback=character_beeps)
+define cth = Character("Catherine V. Cashand", callback=character_beeps)
+define desconhecido = Character("???", callback=character_beeps)
 
 #Definindo Informações dos personagens aleatórios
 define joe_info =  ["Joe Cashand","Joe","pai","irmão"]
@@ -63,10 +63,10 @@ init python:
     #Trocar o assassino para tratar casos
 
 init offset = 2
-define ind_a = Character(ind_a_info[0])
-define ind_b = Character(ind_b_info[0])
-define ind_c = Character(ind_c_info[0])
-define assassino = Character(assassino_info[0])
+define ind_a = Character(ind_a_info[0], callback=character_beeps)
+define ind_b = Character(ind_b_info[0], callback=character_beeps)
+define ind_c = Character(ind_c_info[0], callback=character_beeps)
+define assassino = Character(assassino_info[0], callback=character_beeps)
 
 init offset = 0
 
