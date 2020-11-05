@@ -22,6 +22,7 @@ define vnc = Character("Carlo Venchinni", callback=character_beeps)
 define hugo = Character("Hugo T. Cashand", callback=character_beeps)
 define kmr = Character("Kamira Cashand", callback=character_beeps)
 define cth = Character("Catherine V. Cashand", callback=character_beeps)
+define joe = Character("Joe Cashand", callback=character_beeps)
 define desconhecido = Character("???", callback=character_beeps)
 
 #Definindo Informações dos personagens aleatórios
@@ -31,7 +32,7 @@ define kamira_info = ["Kamira T. Cashand","Kamira","tio","primo"]
 define hugo_info = ["Hugo T. Cashand","Hugo","pai","irmão"]
 
 #Definindo informações de personagens aleatórios que podem ser inocentes e/ou culpados
-define possiveis_inocentes = [joe_info, catherine_info, kamira_info]
+define possiveis_inocentes = [joe_info, catherine_info, kamira_info, hugo_info]
 define possiveis_culpados = [hugo_info]
 
 #Definindo roles aleatorias
@@ -40,6 +41,7 @@ define possiveis_culpados = [hugo_info]
 define ind_a_info = []
 define ind_b_info = []
 define ind_c_info = []
+define ind_d_info = []
 define assassino_info = []
 
 #Culpado...
@@ -51,6 +53,7 @@ init python:
     global ind_a_info
     global ind_b_info
     global ind_c_info
+    global ind_d_info
     global assassino_info
     global possiveis_inocentes
     #Sorteia as roles dos inocentes
@@ -59,6 +62,8 @@ init python:
     ind_b_info = renpy.random.choice(possiveis_inocentes)
     possiveis_inocentes.remove(ind_b_info)
     ind_c_info = renpy.random.choice(possiveis_inocentes)
+    possiveis_inocentes.remove(ind_c_info)
+    ind_d_info = renpy.random.choice(possiveis_inocentes)
     assassino_info = renpy.random.choice(possiveis_culpados)
     #Trocar o assassino para tratar casos
 
@@ -66,6 +71,7 @@ init offset = 2
 define ind_a = Character(ind_a_info[0], callback=character_beeps)
 define ind_b = Character(ind_b_info[0], callback=character_beeps)
 define ind_c = Character(ind_c_info[0], callback=character_beeps)
+define ind_d = Character(ind_d_info[0], callback=character_beeps)
 define assassino = Character(assassino_info[0], callback=character_beeps)
 
 init offset = 0

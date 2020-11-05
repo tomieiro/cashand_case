@@ -44,18 +44,9 @@ label CENA11:
     shp "Não há motivo para alarde detetive. O homem qual sustava esse reino está, nesse exato momento, há um metro e oitenta sob a terra qual reinou."
     shp "Mas alguém há de tomar seu lugar, herdar sua fortuna"
     shp "Pois bem. Haviam cinco pessoas que estão na lista para reivindicar o tesouro do senhor Hougin Cashand."
-    shp "São eles:"
-    #Ver de trocar a apresentacao pra hora que eles se encontrarem
-    shp "Joe Cashand, filho legítimo de Hougin com sua primeira esposa. Temperamental, um pouco atacado pela soberba, mas é um bom rapaz. Garanto ao senhor."
-    shp "Kamira Thereza Cashand, sobrinha do senhor Hougin, decidida e com forte senso de justiça."
-    shp "Hugo Theodore Cashand, segundo filho desse senhor da máfia, sem ligar muito para etiqueta, hoje ele vive com seu cachorro em uma Kombi, próximo à mansão dos Cashand, podemos dizer que é do tipo rebelde com a família."
-    shp "Catherine Vladita Cashand, irmã mais nova do senhor Hougin, apesar de um tom sereno e maduro, é apenas 8 anos mais velha que seu sobrinho Hugo."
-    shp "O último herdeiro era Lostie Annou Cashand, segundo irmão mais novo do senhor Hougin Cashand, que fora assassinado esta noite."
-    drc "Intrigante... Podemos afirmar que os assassinatos ocorreram pelo interesse nos bens do senhor Hougin, creio eu. Talvez alguém interessado em lesar a família e ficar com o dinheiro?"
-    shp "De fato. Acredito ser totalmente coerente com a situação, visto que o senhor Hougin andava ruim de saúde."
-    shp "Todavia, ele não morreu devido à sua doença. Foi encontrado no terceiro quarto do segundo andar da mansão dos Cashand, apunhalado no peito."
-    drc "E o senhor Lostie?"
-    shp "Com o pescoço quebrado, próximo ao jardim da mansão." #revisar
+
+    #COMEÇA A MUDAR AQUI
+    shp "Logo, você irá conhecê-los..."
     drc "Entendo. Estou desde o início de nossa conversa pensando, por que se envolveu senhor Sheppard?"
     shp "O fato é que como advogado e amigo do senhor Hougin, digo que essa situação não pode continuar."
     shp "Pouco antes de morrer ele me pagou uma excelente quantia extra por todos meus anos de serviço, e me pediu para que cuidasse de sua família caso ele viesse a falecer devido a sua doença."
