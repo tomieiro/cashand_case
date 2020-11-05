@@ -1,3 +1,5 @@
+#Ver de trocar a apresentacao pra hora que eles se encontrarem
+
 label CENA12:
     #Editar apresentaçoes -> prado vai mexer
     "*Sheppard e Rightclue se dirigem para a mansão dos Cashand*"
@@ -8,65 +10,33 @@ label CENA12:
     drc "Se possível, não o exalte tanto em minha presença senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
     shp "De fato. Tentarei me segurar ao máximo."
     "*Entram pelo portão da mansão*"
-    "*Encontram [ind_a_info[0]] em roupas fúnebres, junto à entrada, sobre o jardim*"
-    if ind_a_info[1] == "Hugo":
-        call DIALOGO_HUGO11
-    else:
-        shp "Boa tarde [ind_a_info[1]], como está?"
-        ind_a "Péssima tarde Sheppard. Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
-        shp "Perdão [ind_a_info[1]], este é o detetive Rightclue. Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
-        ind_a "Ultimamente tem se envolvido demais em nossa vida pessoal Sheppard. Não acha?"
-        ind_a "Não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
-        shp "Mil perdões [ind_a_info[1]], mas como fiel companheiro de seu tão estimado [ind_a_info[2]], insisto que o senhor Rightclue ajude a família neste momento."
-        shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-        ind_a "Humph. Até depois Sheppard, não estou com ânimo para continuar essa discussão com você, faça o que bem entender, contanto que esses ataques cessem."
-        "*[ind_a_info[0]] se afasta dos dois*"
-        drc "Creio que serei considerado intruso em meio a esse imbróglio, senhor Sheppard."
-        shp "Não se acanhe detetive, ainda há muitas outras saudações calorosas pela frente."
-    "*Os dois seguem até a entrada*"
-    #Joe respeitar o Sheppard -> Repensar a role -> Tentamos deixar mais natural
-    "*Encontram [ind_b_info[0]] e [ind_c_info[0]] em vestes pretas, ao lado da porta*"
-    shp "Boa tarde a vocês, [ind_b_info[1]] e [ind_c_info[1]]."
-    ind_b "Olá Sheppard. Quem é o cavalheiro?"
-    ind_c "Me parece ser alguém envolvido com as autoridades..."
-    drc "Boa tarde, sou o detetive Rightclue, estou aqui a pedido sigiloso do senhor Sheppard para resolver a situação."
-    ind_c "Perdão senhor detetive, mas creio não ter assuntos a tratar aqui. O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
-    shp "Sinto muito [ind_c_info[1]], mas o detetive já está ciente de toda a situação. Tenho ordem retroativas de seu [ind_c_info[2]] para cuidar desta família, e assim farei!"
-    ind_c "Não concordo Sheppard, acho que você está atraindo uma atenção desnecessária. Mas faça como quiser."
-    shp "Não tem nada a dizer [ind_b_info[1]]?"
-    ind_b "Espero que ele traga novos dias a essa casa, senhor Sheppard."
-    "*[ind_b_info[0]] e [ind_c_info[0]] vão em direção ao portão*"
-    drc "Estão realmente muito incomodados com minha presença senhor Sheppard, e parecem também desfazer um pouco do senhor."
+
+    call DIALOGO_IND_A_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_a_info)
+
+    call DIALOGO_IND_B_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_b_info)
+
+    call DIALOGO_IND_C_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_c_info)
+
+    drc "Estão, realmente, muito incomodados com minha presença senhor Sheppard, e parecem também desfazer um pouco do senhor."
     shp "Creio ser somente o momento. Acabam de perder dois familiares. As coisas se acalmarão, eu creio."
     drc "Tomara que sim."
-    "*Entram na casa e encontram [ind_d_info[0]]*"
-    if ind_d_info[1] == "Hugo":
-        call DIALOGO_HUGO11
-    else:
-        ind_d "Olá, senhor Sheppard e ... Senhor?"
-        drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
-        ind_d "imaginino que o isso seja coisa sua senhor Sheppard."
-        shp "Estou apenas fazendo o meu trabalho [ind_d_info[0]]"
-        shp "O senhor Rightclue já está a par de toda a nossa situação."
-        ind_d "Certo. Não concordo com a sua presença aqui, mas espero que consigo nos ajudar com o nosso problema."
-        ind_d "Bom, se me dão licença eu tenho que ir..."
-        "*[ind_d_info[0]] sai*"
 
-    shp "Vamos conhecer a casa, senhor Rightclue?"
+    call DIALOGO_IND_D_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_d_info)
+
+    shp "Bom, acho que você já viu todos os herdeiros..."
+    drc "Espera um segundo, Sheppard. Não eram cinco? Onde está o último?"
+    shp "O último herdeiro era Lostie Annou Cashand, segundo irmão mais novo do senhor Hougin Cashand, que fora assassinado esta noite."
+    drc "Intrigante... Podemos afirmar que os assassinatos ocorreram pelo interesse nos bens do senhor Hougin, creio eu. Talvez alguém interessado em lesar a família e ficar com o dinheiro?"
+    shp "De fato. Acredito ser totalmente coerente com a situação, visto que o senhor Hougin andava ruim de saúde."
+    shp "Todavia, ele não morreu devido à sua doença. Foi encontrado no terceiro quarto do segundo andar da mansão dos Cashand, apunhalado no peito."
+    drc "E o senhor Lostie?"
+    shp "Com o pescoço quebrado, próximo ao jardim da mansão."
+    shp "..."
+    drc "..."
+    shp "Vamos conhecer o restante da casa, senhor Rightclue?"
     drc "Precisamente."
     jump CENA13
-
-label DIALOGO_HUGO11:
-    shp "Boa tarde Hugo!"
-    hugo "Olá, boa tarde senhor Sheppard."
-    hugo "Quem é o cavalheiro?"
-    drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
-    hugo "Está a par de tudo senhor Rightclue?"
-    drc "Sim. Sheppard me instruiu. Tem minha palavra de sigilo."
-    hugo "Certo. Não acho que sua presença seja bem vinda, principalmente por parte de meu irmão, tia e prima. Mas contanto que nos ajude a desvendar o que está acontecendo. Estamos de acordo."
-    "*Cão vem correndo e cheira a perna do detetive*"
-    drc "Olá amigo."
-    shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
-    hugo "É um bom rapaz."
-    hugo "Bom, se me dão licença...."
-    return
