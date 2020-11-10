@@ -1,4 +1,5 @@
 label TESTES_TELAS:
+    jump APP_TESTE
     "Coleta os itens aí, bro!"
     jump CHAMA_TELA_PAC_TESTE
 
