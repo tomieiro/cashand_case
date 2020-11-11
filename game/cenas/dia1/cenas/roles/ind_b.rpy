@@ -11,7 +11,7 @@ label DIALOGO_IND_B_CENA12:
     shp "Imagino..."
 
     if ind_b_info[1] == "Hugo":
-        call DIALOGO_HUGO12_B
+        call DIALOGO_HUGO_12_B
     else:
         ind_b "Quem é o cavalheiro?"
         drc "Boa tarde, sou o detetive Rightclue, estou aqui a pedido sigiloso do senhor Sheppard para resolver a situação."
@@ -27,7 +27,7 @@ label DIALOGO_IND_B_CENA12:
     return
 
 
-label DIALOGO_HUGO12_B:
+label DIALOGO_HUGO_12_B:
     hugo "Quem é esse senhor?"
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"
@@ -58,4 +58,10 @@ label DIALOGO_JOE_12_B:
     joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
     joe "Péssima tarde..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    return
+
+label DIALOGO_KAMIRA_12_D:
+    return
+
+label DIALOGO_CATHERINE_12_D:
     return
