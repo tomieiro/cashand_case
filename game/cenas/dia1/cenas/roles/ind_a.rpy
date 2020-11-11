@@ -9,7 +9,7 @@ label DIALOGO_IND_A_CENA12():
     shp "Entendo..."
 
     if ind_a_info[1] == "Hugo":
-        call DIALOGO_HUGO12_A
+        call DIALOGO_HUGO_12_A
     else:
         ind_a "Me diga, Sheppard..."
         shp "...?"
@@ -81,4 +81,11 @@ label DIALOGO_JOE_12_A:
     #joe "Estragou até o bonito ambiente deste jardim."
     joe "Péssima tarde..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    return
+
+
+label DIALOGO_KAMIRA_12_D:
+    return
+
+label DIALOGO_CATHERINE_12_D:
     return

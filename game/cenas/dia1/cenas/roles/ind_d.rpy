@@ -10,7 +10,7 @@ label DIALOGO_IND_D_CENA12():
     shp "Sei..."
 
     if ind_d_info[1] == "Hugo":
-        call DIALOGO_HUGO12_D
+        call DIALOGO_HUGO_12_D
     else:
         ind_d "Quem é este senhor ao seu lado?"
         drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
@@ -72,4 +72,10 @@ label DIALOGO_JOE_12_D:
     joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
     joe "Péssima tarde..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    return
+
+label DIALOGO_KAMIRA_12_D:
+    return
+
+label DIALOGO_CATHERINE_12_D:
     return

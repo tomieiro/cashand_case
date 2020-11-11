@@ -81,10 +81,5 @@ define assassino = Character(assassino_info[0], callback=character_beeps)
 init offset = 0
 
 ## OBSERVACOES IMPORTANTES
-#
-# -> CENA12 O HUGO NAO PODE SER NEM O IND_B E NEM O IND_C
-# -> CENA22 O JOE NAO PODE SER O IND_A
-# -> CENA 23 A KAMIRA PODE SER NEM IND_A E NEM IND_B.
-#
-#
+# -> CENA22 E CENA23 A KAMIRA E O JOE NAO PODEM SER NEM IND_A E NEM IND_B.
 ## FIM
