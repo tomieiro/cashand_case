@@ -46,13 +46,13 @@ label DIALOGO_HUGO12_C:
 label DIALOGO_JOE_12_C:
     joe "Me diga, Sheppard..."
     shp "...?"
-    joe "Quem ordenou para que trouxesse esse indivíduo para nossa casa?"
+    joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
     shp "Perdão Joe, este é o detetive Rightclue."
     shp "Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
-    joe "Ultimamente tem se envolvido demais em nossa vida pessoal Sheppard. Não acha?"
-    joe "Não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
+    joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
     shp "Mil perdões Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
     shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-    joe "Humph, não estou com ânimo para continuar essa discussão com você."
-    joe "Faça o que bem entender, contanto que esses ataques cessem."
+    joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
+    joe "Péssima tarde..."
+    joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
     return
