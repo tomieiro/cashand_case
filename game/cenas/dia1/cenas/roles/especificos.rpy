@@ -28,7 +28,7 @@ label INTRODUCAO_PERSONAGEM_CENA12(role):
     elif(role[1] == "Hugo"):
         shp "Este era Hugo Theodore Cashand, segundo filho de Hougin."
         shp "Hugo não liga muito para etiqueta."
-        shp "Hoje, ele vive com seu cachorro em uma Kombi, próximo à mansão dos Cashand."
+        shp "Hoje, ele vive com seu cachorro em uma Kombi, próximo aqui à mansão."
         shp "Podemos dizer que é do tipo rebelde com a família."
     elif(role[1] == "Kamira"):
         shp "Você acabou de conversar com Kamira Thereza Cashand, sobrinha do senhor Hougin."
