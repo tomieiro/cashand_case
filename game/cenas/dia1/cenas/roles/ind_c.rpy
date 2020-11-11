@@ -7,7 +7,7 @@ label DIALOGO_IND_C_CENA12:
     ind_c "Me parece ser alguém envolvido com as autoridades..."
 
     if ind_c_info[1] == "Hugo":
-        call DIALOGO_HUGO12_C
+        call DIALOGO_HUGO_12_C
     else:
         shp "Este é o nosso detetive contratado. Se apresente..."
         drc "Boa tarde, me..."
@@ -24,7 +24,7 @@ label DIALOGO_IND_C_CENA12:
     return
 
 
-label DIALOGO_HUGO12_C:
+label DIALOGO_HUGO_12_C:
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"
     drc "Sim. Sheppard me instruiu. Tem minha palavra de sigilo."
@@ -55,4 +55,10 @@ label DIALOGO_JOE_12_C:
     joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
     joe "Péssima tarde..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    return
+
+label DIALOGO_KAMIRA_12_C:
+    return
+
+label DIALOGO_CATHERINE_12_C:
     return
