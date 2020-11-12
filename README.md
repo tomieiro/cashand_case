@@ -22,12 +22,13 @@ Programadores
 <ul>
 <li>Licença do software: MIT - Para detalhes, verificar LICENSE.md deste diretório</li>
 <li>Licença das artes: CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes, verificar LICENSE.md em game/images/engler</li>
+<li>Licença dos cenários originais: Pixabay. Verifique em https://pixabay.com/pt/service/license/.</li>
 </ul>
 
 <br><br>
 
-Licença dos cenários: Todos os cenários são fotos reais e foram adquiridos no Pixabay. Possuem licença para seu uso liberado comercialmente e sem necessidade de atribuição. Todavia, creditos dedicados aos autores das imagens.
-Foi utilizado também, o software FotoSketcher (https://fotosketcher.com/) para torná-los aquarelas. 
+Todos os cenários são fotos reais e foram adquiridos no Pixabay. Possuem licença citada acima (uso liberado comercialmente e sem necessidade de atribuição). Creditos dedicados aos autores das imagens.
+Foi utilizado também, o software FotoSketcher (https://fotosketcher.com/) para torná-los aquarelas.
 
 <br><br>
 A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy<br>
