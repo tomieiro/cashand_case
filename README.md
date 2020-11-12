@@ -20,7 +20,7 @@ Programadores
 
 <h1>Licenças</h1>
 <ul>
-<li>Licença do software: MIT - Para detalhes, verificar LICENSE.md deste diretório</li>
+<li>Licença do código e roteiro: MIT - Para detalhes, verificar LICENSE.md deste diretório</li>
 <li>Licença das artes: CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes, verificar LICENSE.md em game/images/engler</li>
 <li>Licença dos cenários originais: Pixabay. Verifique em https://pixabay.com/pt/service/license/.</li>
 <li>A licença do RenPy pode ser consultada em: https://www.renpy.org/doc/html/license.html</li>
