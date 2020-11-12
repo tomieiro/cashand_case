@@ -26,8 +26,8 @@ Programadores
 
 <br><br>
 
-Licença dos cenários: Todos os cenários são fotos reais e foram adquiridos no Pixabay. Possuem licença para seu uso liberado comercialmente e sem necessidade de atribuição.
-Todavia foi utilizado o software FotoSketcher (https://fotosketcher.com/) para torná-los aquarelas. 
+Licença dos cenários: Todos os cenários são fotos reais e foram adquiridos no Pixabay. Possuem licença para seu uso liberado comercialmente e sem necessidade de atribuição. Todavia, creditos dedicados aos autores das imagens.
+Foi utilizado também, o software FotoSketcher (https://fotosketcher.com/) para torná-los aquarelas. 
 
 <br><br>
 A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy<br>
