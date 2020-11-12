@@ -26,6 +26,10 @@ label DIALOGO_IND_D_CENA12():
 
 
 label DIALOGO_HUGO12_D:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show hugo neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     hugo "Mesmo ficando mais tempo na minha Kombi..."
     shp "Não se sente solitário quando fica por lá tanto tempo?"
     hugo "Claro que não. Tenho meu amigão, Thorn."

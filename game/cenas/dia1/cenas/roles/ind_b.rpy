@@ -28,6 +28,10 @@ label DIALOGO_IND_B_CENA12:
 
 
 label DIALOGO_HUGO12_B:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show hugo neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     hugo "Quem é esse senhor?"
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"

@@ -25,6 +25,10 @@ label DIALOGO_IND_C_CENA12:
 
 
 label DIALOGO_HUGO12_C:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show hugo neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"
     drc "Sim. Sheppard me instruiu. Tem minha palavra de sigilo."
