@@ -21,7 +21,7 @@ Programadores
 <h1>Licenças</h1>
 <ul>
 <li>Licença do código e roteiro: MIT - Para detalhes, verificar LICENSE.md deste diretório</li>
-<li>Licença das artes: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a> CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes, verificar LICENSE.md em game/images/engler</li>
+<li>Licença das artes: <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png" /></a><br /></a> CC-BY-NC (Creditos requeridos ao artista e uso não comercial) - Para detalhes, verificar LICENSE.md em game/images/engler</li>
 <li>Licença dos cenários originais: Pixabay. Verifique em https://pixabay.com/pt/service/license/.</li>
 <li>A licença do RenPy pode ser consultada em: https://www.renpy.org/doc/html/license.html</li>
 
