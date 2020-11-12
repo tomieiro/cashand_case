@@ -31,6 +31,10 @@ label DIALOGO_IND_A_CENA12():
 
 
 label DIALOGO_HUGO12_A:
+    show sheppard neutro:
+        xalign 0.2 yalign 0.99999
+    show hugo neutro:
+        xalign 0.7 yalign 0.99999
     hugo "Estava aqui pensando em levar o Thorn pra passear um pouco também."
     shp "Olha lá, por falar nele..."
     "*Cão vem correndo e cheira a perna do detetive*"
@@ -61,6 +65,10 @@ label DIALOGO_HUGO12_A:
 
 
 label DIALOGO_JOE_12_A:
+    show sheppard neutro:
+        xalign 0.2 yalign 0.99999
+    show joe neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     joe "Me diga, Sheppard..."
     shp "...?"
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"

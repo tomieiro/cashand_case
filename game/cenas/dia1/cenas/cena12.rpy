@@ -1,9 +1,10 @@
 #Ver de trocar a apresentacao pra hora que eles se encontrarem
 
 label CENA12:
-    #Editar apresentaçoes -> prado vai mexer
-    "*Sheppard e Rightclue se dirigem para a mansão dos Cashand*"
+    play music "audio/musicas/Onde.mp3"
     drc "É uma bela mansão."
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
     shp "Certamente senhor Rightclue. Este foi o castelo que sustentou Hougin ao longo dos ultimos 30 anos."
     drc "Pois então, oito anos foram necessários para elevar um humilde jovem à posição de senhor desse imperio."
     shp "Precisamente. O senhor verá quando lhe digo que nada é por acaso. A genialidade deste homem para era fascinante."

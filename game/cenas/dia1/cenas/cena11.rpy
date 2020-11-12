@@ -7,6 +7,7 @@ label CENA11:
     "Pegar casos seguidos é realmente um péssimo hábito…"
     #Tamanho ideal: 1280px x 720px
     scene cidade
+    play music "audio/musicas/Ambiente.mp3" fadeout 1.0 fadein 1.0
     "*Chega na cidade*"
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
@@ -21,10 +22,10 @@ label CENA11:
     shp "Fico grato que tenha vindo detetive. Estamos com sérios problemas por aqui!"
     drc "Não sei dos detalhes, mas de fato ouvi do chefe ser um caso complexo e perigoso."
     shp "Sim, exato. Vamos até o escritório, é a edificação logo a frente."
-    "*Vão para o escritório*"
+    scene escritorio
+    with Fade(1, 2, 0.5)
     shp "Sente-se detetive."
     drc "Agradeço."
-    "*Ambos sentam*"
     shp "Senhor Rightclue, o que aconteceu aqui é um caso sério. Uma pessoa importante foi assassinada."
     drc "Pelo que consta no relatório, Senhor Cashand, correto?"
     shp "Exato! Os Cashand são famosos em Anothertown por serem ricos há certas décadas."
@@ -44,8 +45,6 @@ label CENA11:
     shp "Não há motivo para alarde detetive. O homem qual sustava esse reino está, nesse exato momento, há um metro e oitenta sob a terra qual reinou."
     shp "Mas alguém há de tomar seu lugar, herdar sua fortuna"
     shp "Pois bem. Haviam cinco pessoas que estão na lista para reivindicar o tesouro do senhor Hougin Cashand."
-
-    #COMEÇA A MUDAR AQUI
     shp "Logo, você irá conhecê-los..."
     drc "Entendo. Estou desde o início de nossa conversa pensando, por que se envolveu senhor Sheppard?"
     shp "O fato é que como advogado e amigo do senhor Hougin, digo que essa situação não pode continuar."
@@ -53,7 +52,11 @@ label CENA11:
     drc "O senhor fala como se tivesse esse dever. Todavia, ele não está mais aqui para o senhor argumentar que estaria se envolvendo em um caso de assassinato."
     shp "De fato. Mas ainda sim, meu orgulho fala mais alto senhor Rightclue, meu dever terá de ser cumprido."
     shp "Hum Hum. O senhor tem meu respeito senhor Sheppard. Pode contar comigo nesse caso."
-    "*Sheppard se levanta*"
     shp "Estava certo que poderia contar com o senhor, detetive."
-
+    scene cidade
+    with Fade(1, 1, 0.5)
+    shp "Vamo para a mansão. Siga-me."
+    drc "Certo."
+    scene jardim
+    with Fade(2, 2, 0.5)
 jump CENA12
