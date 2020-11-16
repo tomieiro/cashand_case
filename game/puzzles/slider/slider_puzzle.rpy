@@ -1,19 +1,19 @@
 default slp_fim = False
-default slp_tam_peca = 200
+default slp_tam_peca = 100
 default slp_x = 0.0
 default slp_y = 0.0
 
-default slp_img_pecas = ["images/teste/puzzle/9.png", "images/teste/puzzle/8.png", "images/teste/puzzle/7.png",
-                         "images/teste/puzzle/6.png", "images/teste/puzzle/5.png", "images/teste/puzzle/4.png",
-                         "images/teste/puzzle/3.png", "images/teste/puzzle/2.png", "images/teste/puzzle/1.png"]
+default slp_img_pecas = ["images/prototipo/tranca/row-1-col-1.png", "images/prototipo/tranca/row-1-col-2.png", "images/prototipo/tranca/row-1-col-3.png",
+                         "images/prototipo/tranca/row-2-col-1.png", "images/prototipo/tranca/row-2-col-2.png", "images/prototipo/tranca/row-2-col-3.png",
+                         "images/prototipo/tranca/row-3-col-1.png", "images/prototipo/tranca/row-3-col-2.png", "images/prototipo/tranca/row-3-col-3.png"]
 
 # falta a ultima
 # determina as coordenadas de cada peça
 # slp_pecas[id] = [x, y]
 default slp_pecas = [
-[1, 2], [0, 2], [2, 0],
-[0, 1], [1, 1], [2, 1],
-[1, 0], [0, 0]
+[0, 0], [1, 0], [2, 0],
+[0, 1], [1, 2], [1, 1],
+[0, 2], [2, 1]
 ]
 
 default slp_peca_faltante = [2, 2]
@@ -60,7 +60,7 @@ screen slider_puzzle(dim, img_bg = "#fff"):
 
     if slp_fim:
         #chamar a screen de mostrar a resposta final pra ter um tempinho antes
-        add "images/teste/puzzle/cc.png" maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
+        add "images/prototipo/tranca/tranca.png" maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
         timer 3.0 action Return()
 
 
@@ -105,11 +105,12 @@ style slp_tela_cheia:
 
 style slp_margem:
     #padding (10, 10)
-    background Solid("#ff9900")
+    #background Solid("#ff9900")
+    background "#000"
     xsize 600
     ysize 600
 
 style slp_botao_fundo:
-    background Solid("#fff")
+    background Solid("#000")
     xsize 200
     ysize 200

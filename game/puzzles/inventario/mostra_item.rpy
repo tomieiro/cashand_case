@@ -2,13 +2,13 @@ screen mostra_item(img="#000"):
     modal True
 
     frame:
-        background "#000"
+        background "#b9503c"
         xsize 450
         ysize 450
         xalign 0.5
         yalign 0.2
         frame:
-            background "#fff"
+            background "#d6b377"
             xsize 440
             ysize 440
             at truecenter
