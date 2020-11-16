@@ -6,7 +6,7 @@ label LIGHTS_OUT_TEST:
         lop_x = 0
         lop_y = 0
     stop music
-    play music "audio/musicas/Puzzles.ogg" fadeout 1
+    play music "audio/musicas/Descobrimento.mp3" fadeout 1
     show screen previa_puzzle() with dissolve
     "Hmmm, que interessante..."
     "Parece que temos que resolver um puzzle..."
@@ -15,4 +15,4 @@ label LIGHTS_OUT_TEST:
     #Chama a tela
     call screen lights_out_puzzle(3) with dissolve
     hide screen point_and_click_test with dissolve
-    
+    jump PROTOTIPO
