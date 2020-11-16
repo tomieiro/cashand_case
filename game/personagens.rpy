@@ -14,16 +14,20 @@ init python:
 #EXEMPLO: define shp = Character("Sheppard", who_color="#c8ffc8", callback=character_beeps)
 
 #Definindo personagens fixos
-define drc = Character("Rightclue", callback=character_beeps)
-define shp = Character("Sheppard", callback=character_beeps)
+define drc = Character("Rightclue", who_color="#c8c8ff", callback=character_beeps)
+define shp = Character("Sheppard", who_color="#c8ffc8", callback=character_beeps)
 define hgin = Character("Hougin Cashand", callback=character_beeps)
 define mrth = Character("Martha", callback=character_beeps)
 define vnc = Character("Carlo Venchinni", callback=character_beeps)
 define hugo = Character("Hugo T. Cashand", callback=character_beeps)
-define kmr = Character("Kamira Cashand", callback=character_beeps)
+define kmr = Character("Kamira Cashand", who_color="#ffc8c8", callback=character_beeps)
 define cth = Character("Catherine V. Cashand", callback=character_beeps)
 define joe = Character("Joe Cashand", callback=character_beeps)
 define desconhecido = Character("???", callback=character_beeps)
+
+#Imagem Side do Sheppard
+define shp_side = Character("Sheppard", image="shepp", who_color="#c8ffc8", callback=character_beeps)
+image side shepp = "images/engler/personagens/sheppard/side sheppard neutro 1.png"
 
 #Definindo Informações dos personagens aleatórios
 define joe_info =  ["Joe Cashand","Joe","pai","irmão"]
