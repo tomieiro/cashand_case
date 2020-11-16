@@ -10,6 +10,8 @@ label start:
     #call CENA25
     #Vai para a primeira cena do dia 1
 
-    jump CENA11
+    #jump CENA11
+
+    jump PROTOTIPO
 
     return
