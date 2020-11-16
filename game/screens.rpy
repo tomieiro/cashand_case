@@ -6,6 +6,9 @@ init offset = -1
 
 define habilitar_voltar = False
 
+#PARA DESATIVAR, COMPLETAMENTE, O ROLLBACK, BASTA SETAR ESTA VARIAVEL PARA FALSE
+define config.rollback_enabled = True
+
 ################################################################################
 ## Styles
 ################################################################################
@@ -483,11 +486,9 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    if habilitar_voltar:
-        textbutton _("Voltar"):
-            style "return_button"
-
-            action Return()
+    textbutton _("Voltar"):
+        style "return_button"
+        action Return()
 
     label title
 

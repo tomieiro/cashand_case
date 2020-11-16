@@ -6,8 +6,8 @@ label start:
 
     #Vai para a área de testagem de telas
     #jump INVENTARIO_DE_ESCOLHA_DIA01
-    jump LIGHTS_OUT_PUZZLE_3X3
-    jump CONCLUINDO_DIA1
+    #jump LIGHTS_OUT_PUZZLE_3X3
+    #jump CONCLUINDO_DIA1
     #call TESTES_TELAS
 
     #call CENA25

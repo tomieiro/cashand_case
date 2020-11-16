@@ -11,7 +11,7 @@ label CONCLUINDO_DIA1:
     "Mas as evidências levam a crer que o grupo no qual o envolvido no crime faz parte é:"
 
     call APP_DIA1
-    $renpy.block_rollback()
+    #$renpy.block_rollback()
 
     "É isso. O assassino está entre os herdeiros..."
     "..."
