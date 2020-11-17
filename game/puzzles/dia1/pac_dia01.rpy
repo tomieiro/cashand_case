@@ -1,13 +1,17 @@
 #aqui usa %s
 define pac1_img_saida = "images/inventario/finalizar_%s.png"
 define pac1_img_estante = "#f80"
-define pac1_img_relogio = "#000"
+
+image pac1_img_relogio:
+    "images/engler/itens/relogio.png"
+    zoom 0.5
+
 define pac1_img_inv_but = "images/inventario/bg_seta.png"
 
 #ATENÇÃO: GARANTIR QUE OS ITENS POSSUEM ID'S DIFERENTES
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
-default pac1_item_relogio = ["#000", "Um belo relógio. Parece funcional, apesar de estar 8 minutos atrasado.", False, 10, False, "IDE_01_ESCOLHEU_RELOGIO"]
+default pac1_item_relogio = ["images/engler/itens/relogio.png", "Um belo relógio. Parece funcional, apesar de estar 8 minutos atrasado.", False, 10, False, "IDE_01_ESCOLHEU_RELOGIO"]
 default pac1_item_sangue = ["#f00", "Uma inscrição escrita em sangue, já seco. Me parece ser uma pista valiosa.", False, 11, False, "IDE_01_ESCOLHEU_SANGUE"]
 #... outros itens "inuteis"
 
@@ -77,9 +81,9 @@ screen point_and_click_dia1():
             imagebutton:
                 action Jump("PAC1_SELECIONA_RELOGIO")
                 #auto pac1_img_relogio
-                idle pac1_img_relogio
+                idle "pac1_img_relogio"
                 focus_mask True
-                xalign 0.60
+                xalign 0.85
                 yalign 0.65
                 xsize 100
                 ysize 100

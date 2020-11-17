@@ -135,7 +135,7 @@ label CENA23:
             "..."
             drc "Senhorita. Com licença"
 
-            show kamira lagrimas with dissolve at center
+            show kamira lagrimas at center with dissolve
 
             kmr "O que deseja, detetive?"
             "Com calma e astúcia..."
@@ -157,7 +157,7 @@ label CENA23:
             "Tenho o controle da situação. Estou te jogando contra a parede. O que me diz?"
             kmr "..."
 
-            show kamira chorando with dissolve at center:
+            show kamira chorando at center with dissolve:
                 xzoom 0.99 yzoom 0.99
 
             kmr "Eu não pude me desculpar. Não pude."
