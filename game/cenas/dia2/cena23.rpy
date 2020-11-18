@@ -24,7 +24,7 @@ label CENA23:
             "Talvez eu descubra algo..."
             #scene cozinha
             #with Fade(3, 2, 0.5)
-            call CONV_HUGO_D2C3(ind_a)
+            call DIALOGO_ROLES_D2C3(ind_a)
             drc "Confie em mim, [ind_a_info[1]], acharei o culpado. Mas preciso de sua cooperação."
             drc "Me conte o que viu na noite em que seu [ind_a_info[2]] foi assassinado. Quem subiu ao quarto?"
             ind_a "..."
@@ -55,7 +55,7 @@ label CENA23:
         "Conversar com [ind_b_info[0]]" if not visHall:
             $visHall = True
             "Tentarei com [ind_b_info[1]], no Hall. Talvez eu consiga ligar as coisas obtendo detalhes de cada um."
-            call CONV_HUGO_D2C3(ind_b)
+            call DIALOGO_ROLES_D2C3(ind_b)
             drc "Estou ciente, [ind_b_info[1]]. Mas peço colaboração."
             drc "Me diga o que você sabe, o que você viu na noite em que seu [ind_b_info[2]] foi assassinado."
             drc "Quem subiu ao quarto?"
@@ -112,6 +112,8 @@ label CENA23:
             "Devo agir com sabedoria."
             "..."
             drc "Senhorita. Com licença"
+            show kamira neutra:
+                xalign 0.2 yalign 0.99999
             kmr "O que deseja, detetive?"
             "Com calma e astúcia..."
             drc "Meus pêsames por outra perda. Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
@@ -120,7 +122,8 @@ label CENA23:
             "Muito supeito... Bom, serei franco."
             drc "Fui inspirado por um certo homem, que permaneceu leal a sua palavra, mesmo depois de quem a exigiu, partir."
             drc "Encontrarei o culpado, pode ter certeza. Mas preciso da sua colaboração."
-            "*Kamira enxuga uma lágrima*"
+            #show kamira neutra:
+            #    xalign 0.2 yalign 0.99999
             kmr "E o que o senhor precisa de mim?"
             "Ela derruba lágrimas. Serão verdadeiras?"
             "Acho difícil. Dado ao que todos disseram. Mas devo ter calma..."
@@ -141,7 +144,7 @@ label CENA23:
             drc "..."
             kmr "Com licença."
             drc "Senhorita?"
-            #hide kamira neutra
+            hide kamira neutra
             "Ela se foi..."
             "Chorando."
             "Não posso errar. Minha decisão é crucial."
@@ -160,27 +163,26 @@ label CENA23:
             jump CENA24
 
 
-
-label CONV_HUGO_D2C3(whoIs):
+label DIALOGO_ROLES_D2C3(whoIs):
 
     if whoIs == ind_a:
         drc "[ind_a_info[1]], com licença, podemos conversar um instante?"
-        if ind_a_info[1] == "Catherine":
-            show catherine neutra:
-                xalign 0.7 yalign 0.99
     else:
         drc "[ind_b_info[1]], com licença, podemos conversar um instante?"
-        if ind_b_info[1] == "Catherine":
-            show catherine neutra:
-                xalign 0.7 yalign 0.99
 
+    #Se for o Hugo...
     if whoIs == hugo:
+        show hugo neutro:
+            xalign 0.2 yalign 0.99999
         hugo "Senhor Rightclue..."
         hugo "Claro."
         drc "Meus pêsames pelo Sheppard."
         hugo "Fico realmente muito triste, senhor Rightclue."
 
+    #Se for a Catherine...
     else:
+        show catherine neutra:
+            xalign 0.2 yalign 0.99999
         whoIs "O que deseja, detetive?"
         drc "Meus pêsames por outra perda. Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
         whoIs "O senhor permaneceu. Parece disposto a realmente resolver o caso."
