@@ -6,16 +6,14 @@ label DIALOGO_IND_C_CENA12:
     shp "Algum problema?"
     ind_c "Me parece ser alguém envolvido com as autoridades..."
 
-    if ind_c_info[1] == "Hugo":
-        call DIALOGO_HUGO12_C
-    else:
-        shp "Este é o nosso detetive contratado. Se apresente..."
-        drc "Boa tarde, me..."
-        ind_c "Perdão, senhor detetive, mas creio não ter assuntos a tratar por aqui."
-        ind_c "O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
-        shp "Sinto muito [ind_c_info[1]], mas o detetive já está ciente de toda a situação."
-        shp "Tenho ordens retroativas de seu [ind_c_info[2]] para cuidar desta família, e assim farei!"
-        ind_c "Não concordo Sheppard, acho que você está atraindo uma atenção desnecessária. Mas faça como quiser."
+    if ind_a_info[1] == "Hugo":
+        call DIALOGO_HUGO_12_C
+    else if ind_a_info[1] == "Joe":
+        call DIALOGO_JOE_12_C
+    else if ind_a_info[1] == "Kamira":
+        call DIALOGO_KAMIRA_12_C
+    else if ind_a_info[1] == "Catherine":
+        call DIALOGO_CATHERINE_12_C
 
     ind_c "Com licença, Sheppard."
     ind_c "Detetive..."
@@ -48,6 +46,10 @@ label DIALOGO_HUGO12_C:
     return
 
 label DIALOGO_JOE_12_C:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show joe neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
     joe "Me diga, Sheppard..."
     shp "...?"
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
@@ -59,4 +61,32 @@ label DIALOGO_JOE_12_C:
     joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
     joe "Péssima tarde..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    return
+
+label DIALOGO_KAMIRA_12_C:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show kamira neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    shp "Este é o nosso detetive contratado. Se apresente..."
+    drc "Boa tarde, me..."
+    ind_c "Perdão, senhor detetive, mas creio não ter assuntos a tratar por aqui."
+    ind_c "O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
+    shp "Sinto muito [ind_c_info[1]], mas o detetive já está ciente de toda a situação."
+    shp "Tenho ordens retroativas de seu [ind_c_info[2]] para cuidar desta família, e assim farei!"
+    ind_c "Não concordo Sheppard, acho que você está atraindo uma atenção desnecessária. Mas faça como quiser."
+    return
+
+label DIALOGO_CATHERINE_12_C:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show catherine neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    cth "Quem seria o lindo rapaz?"
+    shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
+    drc "Muito prazer."
+    cth "Pois bem, meu anjo. Serei direta com você. Acho que você não tenha assuntos a tratar aqui."
+    cth "Sheppard, já havia dito a você. Sem pessoas externas."
+    shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
+    cth "Você nunca me escuta..."
     return
