@@ -6,18 +6,17 @@ label DIALOGO_IND_D_CENA12():
     shp "Olá, [ind_d_info[1]]."
     shp "Está tudo bem?"
     ind_d "Tudo bem. Só estava aqui me recordando dos velhos tempos..."
-    ind_d "Tenho algumas lembranças boas daqui..."
-    shp "Sei..."
+    ind_d "Tenho excelentes lembranças daqueles tempos..."
+    shp "Entendo..."
 
-    if ind_d_info[1] == "Hugo":
+    if ind_a_info[1] == "Hugo":
         call DIALOGO_HUGO_12_D
-    else:
-        ind_d "Quem é este senhor ao seu lado?"
-        drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
-        ind_d "imagino que o isso seja coisa sua, senhor Sheppard."
-        shp "Estou apenas fazendo o meu trabalho, [ind_d_info[1]]"
-        shp "O senhor Rightclue já está a par de toda a nossa situação."
-        ind_d "Certo. Não concordo com a sua presença aqui, mas espero que consigo nos ajudar com o nosso problema."
+    else if ind_a_info[1] == "Joe":
+        call DIALOGO_JOE_12_D
+    else if ind_a_info[1] == "Kamira":
+        call DIALOGO_KAMIRA_12_D
+    else if ind_a_info[1] == "Catherine":
+        call DIALOGO_CATHERINE_12_D
 
     ind_d "Bom, se me dão licença, eu tenho que ir..."
     "*[ind_d_info[0]] sai*"
@@ -61,6 +60,10 @@ label DIALOGO_HUGO12_D:
     return
 
 label DIALOGO_JOE_12_D:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show joe neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
     joe "Me diga, Sheppard..."
     shp "...?"
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
@@ -75,7 +78,29 @@ label DIALOGO_JOE_12_D:
     return
 
 label DIALOGO_KAMIRA_12_D:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show kamira neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    kmr "Quem seria o senhor?"
+    drc "Prazer. Rightclue. Sou o detetive contratado."
+    kmr "Espere um pouco Sheppard, o que significa isso?"
+    shp "Está tudo certo Kamira, o detetive prometeu sigilo e nós ajudará."
+    kmr "Não concordo com isso. De nenhuma forma, Sheppard. Isso só diz respeito a nós mesmos."
+    shp "Confie em mim Kamira. Prometi ao seu tio que cuidaria de vocês. E assim cumprirei."
+    kmr "..."
     return
 
 label DIALOGO_CATHERINE_12_D:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show kamira neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    cth "Quem seria o lindo rapaz?"
+    shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
+    drc "Muito prazer."
+    cth "Pois bem, meu anjo. Serei direta com você. Acho que você não tenha assuntos a tratar aqui."
+    cth "Sheppard, já havia dito a você. Sem pessoas externas."
+    shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
+    cth "Você nunca me escuta..."
     return

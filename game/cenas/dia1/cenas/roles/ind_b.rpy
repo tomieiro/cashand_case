@@ -10,15 +10,14 @@ label DIALOGO_IND_B_CENA12:
     ind_b "Estamos tentando assimilar tudo ainda..."
     shp "Imagino..."
 
-    if ind_b_info[1] == "Hugo":
+    if ind_a_info[1] == "Hugo":
         call DIALOGO_HUGO_12_B
-    else:
-        ind_b "Quem é o cavalheiro?"
-        drc "Boa tarde, sou o detetive Rightclue, estou aqui a pedido sigiloso do senhor Sheppard para resolver a situação."
-        ind_b "..."
-        shp "Algo a dizer, [ind_b_info[1]]?"
-        ind_b "Espero que ele traga novos dias a essa casa, senhor Sheppard."
-
+    else if ind_a_info[1] == "Joe":
+        call DIALOGO_JOE_12_B
+    else if ind_a_info[1] == "Kamira":
+        call DIALOGO_KAMIRA_12_B
+    else if ind_a_info[1] == "Catherine":
+        call DIALOGO_CATHERINE_12_B
 
     ind_b "Até mais."
     ind_b "Você vem, [ind_c_info[1]]?"
@@ -51,6 +50,10 @@ label DIALOGO_HUGO12_B:
     return
 
 label DIALOGO_JOE_12_B:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show joe neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
     joe "Me diga, Sheppard..."
     shp "...?"
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
@@ -64,8 +67,30 @@ label DIALOGO_JOE_12_B:
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
     return
 
-label DIALOGO_KAMIRA_12_D:
+label DIALOGO_KAMIRA_12_B:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show kamira neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    kmr "Quem seria o senhor?"
+    drc "Prazer. Rightclue. Sou o detetive contratado."
+    kmr "Espere um pouco Sheppard, o que significa isso?"
+    shp "Está tudo certo Kamira, o detetive prometeu sigilo e nós ajudará."
+    kmr "Não concordo com isso. De nenhuma forma, Sheppard. Isso só diz respeito a nós mesmos."
+    shp "Confie em mim Kamira. Prometi ao seu tio que cuidaria de vocês. E assim cumprirei."
+    kmr "..."
     return
 
-label DIALOGO_CATHERINE_12_D:
+label DIALOGO_CATHERINE_12_B:
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
+    show catherine neutro:
+        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    cth "Quem seria o lindo rapaz?"
+    shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
+    drc "Muito prazer."
+    cth "Pois bem, meu anjo. Serei direta com você. Acho que você não tenha assuntos a tratar aqui."
+    cth "Sheppard, já havia dito a você. Sem pessoas externas."
+    shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
+    cth "Você nunca me escuta..."
     return
