@@ -14,6 +14,9 @@ label CENA22:
     drc "Olá [ind_a_info[1]]. Meus pêsames pela perda. O senhor Sheppard realmente se importava com vocês."
     ind_a "Sim, senhor Rightclue. Apesar de tudo, Sheppard era como um membro da família. Vou sentir sua falta."
     "*[ind_a_info[0]] enxuga uma lágrima*"
+
+    call DIALOGO_PERSONAGENS_D2C2
+
     drc "Dou minha palavra a você [ind_a_info[1]]. Prometo achar o culpado por tudo isso."
     ind_a "Deixo em suas mãos, detetive."
     "*[ind_a_info[0]] se afasta*"
@@ -33,7 +36,7 @@ label CENA22:
     desconhecido "Senhor Rightclue, eu suponho?"
     "..."
     "*Rightclue se vira*"
-    #show vnc aqui
+    show carlo neutro
     drc "Sim, exato. E qual seria sua graça, senhor?"
     desconhecido "O Senhor me conhece, Senhor Rightclue. E sugiro que se lembre rapidamente. E falemos baixo, sim?"
     drc "Suponho, pela voz, que o senhor seja Carlo Venchinni."
@@ -60,3 +63,16 @@ label CENA22:
     "Hugo se foi."
     "O tempo está correndo. Preciso me apressar. Hoje e amanhã serão cruciais."
     jump CENA23
+
+
+label DIALOGO_PERSONAGENS_D2C2:
+    if ind_a_info[1] == "Hugo":
+        hugo "É complicado senhor detetive. Fiquei um bom tempo fora de casa por causa de meu pai."
+        hugo "Mas o senhor Sheppard sempre bom com todos nós."
+        drc "Tenho certeza disso, Hugo."
+        return
+    else:
+        cth "É uma situação muito triste. Sheppard era como um irmão para mim e para o Gin."
+        cth "Não consigo acreditar que ele foi envolvido nisso injustamente."
+        drc "Tenho ciência."
+        return
