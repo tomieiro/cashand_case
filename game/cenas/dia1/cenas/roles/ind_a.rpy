@@ -85,6 +85,7 @@ label DIALOGO_JOE_12_A:
 
 
 label DIALOGO_KAMIRA_12_D:
+    kmr "Me diga, por favor."
     return
 
 label DIALOGO_CATHERINE_12_D:
