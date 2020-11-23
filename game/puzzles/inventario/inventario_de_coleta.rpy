@@ -14,6 +14,12 @@ transform idc_botao_abrir:
     xalign -0.005
     yalign 0.1
 
+transform idc_botao_sair:
+    size (50, 250)
+    xalign 1.108
+    rotate 180.0
+    yalign 0.1
+
 transform idc_botao_fechar:
     idc_botao_abrir
     #xzoom -1.0
