@@ -8,11 +8,11 @@ label DIALOGO_IND_C_CENA12:
 
     if ind_a_info[1] == "Hugo":
         call DIALOGO_HUGO_12_C
-    else if ind_a_info[1] == "Joe":
+    elif ind_a_info[1] == "Joe":
         call DIALOGO_JOE_12_C
-    else if ind_a_info[1] == "Kamira":
+    elif ind_a_info[1] == "Kamira":
         call DIALOGO_KAMIRA_12_C
-    else if ind_a_info[1] == "Catherine":
+    elif ind_a_info[1] == "Catherine":
         call DIALOGO_CATHERINE_12_C
 
     ind_c "Com licença, Sheppard."
