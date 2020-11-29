@@ -1,9 +1,19 @@
 label COZINHA:
     shp "Ok. Favor me seguir, detetive."
     drc "Certo."
-    "*Chegam a cozinha*"
+
+    scene cozinha
+    with Fade(2, 1, 0.5)
+
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.8 yalign 0.99999
+
     shp "Esta é a cozinha. Aquela que o senhor vê ali, é Martha, a empregada da família."
     shp "Como vai, Martha?"
+
+    show martha neutra:
+        xzoom 0.85 yzoom 0.85 xalign 0.3 yalign 0.99999
+
     mrth "Senhor Sheppard, boa tarde para o senhor."
     drc "Prazer, senhora, detetive Rightclue."
     mrth "Encantada, detetive."

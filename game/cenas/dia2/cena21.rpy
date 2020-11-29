@@ -1,19 +1,39 @@
 label CENA21:
+
     "*Batidas apressadas à porta*"
     mrth "Senhor Rightclue!"
+
+    call RANDOMIZE(ind_a_info,["Kamira","Joe"],True)
+    call RANDOMIZE(ind_b_info,["Kamira","Joe"],False)
+    $ind_a = Character(ind_a_info[0], callback=character_beeps)
+    $ind_b = Character(ind_b_info[0], callback=character_beeps)
+
     mrth "Senhor Rightclue!"
-    scene cidade
-    "*Rightclue se levanta*"
+    scene quarto
     drc "Sim Martha? São apenas três da manhã."
-    mrth "É o Sheppard, senhor! Foi encontrado morto no banheiro de seu quarto!"
-    "*Rightclue se levanta as pressas*"
+    mrth "É o Sheppard, senhor! Foi encontrado morto no chão de seu quarto!"
+    drc "Não..."
     drc "Não. Não. Não"
-    "*Abre a porta e vai pro corredor com Martha*"
+
+    scene corredor
+    with Fade(1, 1, 0.5)
+
     drc "Não. Não. Não. Não. Não"
     drc "Não..."
-    "*Rightclue entra no quarto de Sheppard, ao lado*"
+
+    play music "audio/musicas/Fim.mp3" fadeout 3.0 fadein 5.0
+
+    scene sheppard morte
+    with Fade(2, 2, 0.5)
+
+    pause(3)
+
     drc "Não... Não..."
-    # show sheppard morto
+
+    window hide
+
+    pause (3)
+
     drc "Sheppard.... Por que? Por que?"
     drc "*Por que?"
     drc "Por que eu tomei aquela decisão em relação a contá-lo. Me desculpe Sheppard. Me desculpe..."
@@ -26,4 +46,9 @@ label CENA21:
     "Eu não cheguei a tempo."
     "Não cheguei..."
     "..."
+
+    window hide
+
+    pause(3)
+
     jump CENA22

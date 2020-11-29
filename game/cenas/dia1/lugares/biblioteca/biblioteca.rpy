@@ -1,6 +1,11 @@
 label BIBLIOTECA:
 
-    "*Sheppard e Rightclue entram na biblioteca*"
+    scene biblioteca
+    with Fade(2, 1, 0.5)
+
+    show sheppard neutro:
+        xalign 0.5 yalign 0.99999
+
     shp "O que exatamente deveríamos procurar por aqui, detetive?"
     drc "Pistas, senhor Sheppard. Pequenos traços que mostram algo sobre a pessoa que procuramos."
     drc "O que você pode me dizer sobre este lugar?"

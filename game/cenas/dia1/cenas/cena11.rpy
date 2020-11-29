@@ -1,4 +1,13 @@
 label CENA11:
+    call RANDOMIZE(ind_a_info,["none"], True)
+    call RANDOMIZE(ind_b_info,["none"], False)
+    call RANDOMIZE(ind_c_info,["none"], False)
+    call RANDOMIZE(ind_d_info,["none"], False)
+    $ind_a = Character(ind_a_info[0], callback=character_beeps)
+    $ind_b = Character(ind_b_info[0], callback=character_beeps)
+    $ind_c = Character(ind_c_info[0], callback=character_beeps)
+    $ind_d = Character(ind_d_info[0], callback=character_beeps)
+
     "Ahhh..."
     "*Suspiro*"
     "Virar a noite atrás de pistas não é trabalho para qualquer pessoa…"
@@ -7,13 +16,14 @@ label CENA11:
     "Pegar casos seguidos é realmente um péssimo hábito…"
     #Tamanho ideal: 1280px x 720px
     scene cidade
+    with Fade(1, 1, 0.5)
     play music "audio/musicas/Ambiente.mp3" fadeout 1.0 fadein 1.0
     "*Chega na cidade*"
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
     "*Ouve alguém chamado*"
     #Tamanho ideal : 650px x 460px
-    show sheppard neutro at center
+    show sheppard neutro at center with dissolve
     shp "Detetive Rightclue!"
     drc "Ora ... Senhor Sheppard?"
     shp "Sim, exatamente."
@@ -57,6 +67,4 @@ label CENA11:
     with Fade(1, 1, 0.5)
     shp "Vamo para a mansão. Siga-me."
     drc "Certo."
-    scene jardim
-    with Fade(2, 2, 0.5)
 jump CENA12

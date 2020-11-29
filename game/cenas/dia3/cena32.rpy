@@ -8,6 +8,8 @@ label CENA32:
     "Certo. Preciso abrir isso. A chave tem uma fechadura para encaixar. O problema é essa senha mecânica."
     "Esse pessoal realmente gosta de manter seus segredos guardados, e com ajuda de muita grana, por que essas coisas não são nada baratas."
     "Vamos lá."
+    "Me parece que são números. E com vários tipos de representação diferentes."
+    "Preciso posicionar isso na ordem correta, aparentemente."
 
     #puzzle slider para abrir o cofre
 

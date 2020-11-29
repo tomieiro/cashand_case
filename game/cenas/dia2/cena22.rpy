@@ -1,17 +1,27 @@
 label CENA22:
-    scene velorio
+
+    stop music fadeout 4
+    scene cemiterio
     with Fade(3, 2, 0.5)
-    "*Funeral ao fundo é mostrado*"
     "Como fomos parar nisso..."
     "Senhor Sheppard está morto."
     "Foi morto dentro de minha investigação."
     "É tudo minha culpa... Se eu tivesse sido mais cauteloso..."
     "Por segurança, pediram que Martha e outros funcionários se retirassem do serviço por algum tempo."
     "Preciso ser rápido e descobrir quem está por trás de tudo isso."
+
+    play music "audio/musicas/Onde.mp3" fadeout 3.0 fadein 5.0
+
     "*[ind_a_info[0]] se aproxima do senhor Rightclue*"
     ind_a "Senhor Rightclue."
     "É [ind_a_info[0]], preciso me recompor."
     drc "Olá [ind_a_info[1]]. Meus pêsames pela perda. O senhor Sheppard realmente se importava com vocês."
+
+    if ind_a_info[1] == "Hugo":
+        show hugo neutro
+    else:
+        show catherine neutra
+
     ind_a "Sim, senhor Rightclue. Apesar de tudo, Sheppard era como um membro da família. Vou sentir sua falta."
     "*[ind_a_info[0]] enxuga uma lágrima*"
 
@@ -19,7 +29,10 @@ label CENA22:
 
     drc "Dou minha palavra a você [ind_a_info[1]]. Prometo achar o culpado por tudo isso."
     ind_a "Deixo em suas mãos, detetive."
-    "*[ind_a_info[0]] se afasta*"
+
+    hide hugo
+    hide catherine
+
     "Se o responsável por isso pensa que sairá impune, juro por minha honra que não irá!"
     "Farei justiça pelo senhor Sheppard. O culpado será preso. Ajudarei os herdeiros a se livrarem desse traidor!"
     "..."
@@ -29,7 +42,7 @@ label CENA22:
     "..."
     "Algo me chama atenção..."
     "Preciso investigar mais sobre as relações dos herdeiros com cada membro da família."
-    "Hugo está vindo com Catherine..."
+    "[ind_b_info[1]] se juntou a [ind_a_info[1]]."
     "..."
     "Pararam. Irei até eles."
     "Não tenho necessariamen..."
