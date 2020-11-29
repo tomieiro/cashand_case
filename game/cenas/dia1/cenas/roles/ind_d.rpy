@@ -64,17 +64,17 @@ label DIALOGO_JOE_12_D:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show joe neutro:
         xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
-    joe "Me diga, Sheppard..."
-    shp "...?"
-    joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
-    shp "Perdão Joe, este é o detetive Rightclue."
+    joe "E quem seria esse novo rosto?"
+    shp "Este é o detetive Rightclue."
     shp "Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
     joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
     shp "Mil perdões Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
     shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-    joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
-    joe "Péssima tarde..."
-    joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    joe "...Bom você sabe oque esta fazendo e sabe as consequencias que a presença desse sugeito pode trazer."
+    shp "..."
+    joe "Mas espero que esse homem mude a minha opnião e seja util para a nossa situação."
+    drc "Acredite eu vou..."
+    joe "Enfim, faça o que bem entender."
     return
 
 label DIALOGO_KAMIRA_12_D:
@@ -83,11 +83,18 @@ label DIALOGO_KAMIRA_12_D:
     show kamira neutro:
         xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
     kmr "Quem seria o senhor?"
+    kmr "Não tenho nenhuma lembrança dele."
+    drc "Na verdade ainda não nos conhecemos."
     drc "Prazer. Rightclue. Sou o detetive contratado."
-    kmr "Espere um pouco Sheppard, o que significa isso?"
+    kmr "Errado! Você é problema."
+    kmr "Sheppard, o que significa isso?"
     shp "Está tudo certo Kamira, o detetive prometeu sigilo e nós ajudará."
-    kmr "Não concordo com isso. De nenhuma forma, Sheppard. Isso só diz respeito a nós mesmos."
+    kmr "De nenhuma forma, Sheppard. Isso só diz respeito a nós mesmos."
     shp "Confie em mim Kamira. Prometi ao seu tio que cuidaria de vocês. E assim cumprirei."
+    kmr "Você ja prometeu muitas coisas a ele..."
+    shp "..."
+    kmr "Duvido que seja a unica que pense assim mas você deveria sair daqui senhor detetive."
+    drc "... E vou, mas apenas quando o caso estiver resolvido."
     kmr "..."
     return
 
@@ -96,11 +103,17 @@ label DIALOGO_CATHERINE_12_D:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show kamira neutro:
         xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
-    cth "Quem seria o lindo rapaz?"
-    shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
-    drc "Muito prazer."
-    cth "Pois bem, meu anjo. Serei direta com você. Acho que você não tenha assuntos a tratar aqui."
-    cth "Sheppard, já havia dito a você. Sem pessoas externas."
+    cth "Mas com o passar do tempo vemos novas pessoas. Não é senhor ..."
+    drc "Rightclue, sou um detetive. Muito prazer."
+    cth "..."
+    "*Catherine encara Sheppard*"
+    shp "O senhor Rightclue está aqui para ajudar no caso. Ele me foi muito bem recomendado"
+    cth "Serei direta com você. A ultima coisa que precisamos é de mais problemas."
+    cth "Já havia dito ao Sheppard. Sem pessoas externas. Mas parece que ele se recusa a me escutar"
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
-    cth "Você nunca me escuta..."
+    cth "Você esta apenas fazendo oque bem entende."
+    cth "Que seja... Espero que consiga nos dizer algo senhor detetive."
+    drc "Acretite eu vou surpriender você e sua família."
+    drc "Vocês não vão se arepender."
+    cth "... Veremos."
     return
