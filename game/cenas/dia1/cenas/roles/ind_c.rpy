@@ -22,7 +22,7 @@ label DIALOGO_IND_C_CENA12:
     return
 
 
-label DIALOGO_HUGO12_C:
+label DIALOGO_HUGO_12_C:
     show sheppard neutro:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show hugo neutro:
@@ -50,17 +50,18 @@ label DIALOGO_JOE_12_C:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show joe neutro:
         xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
-    joe "Me diga, Sheppard..."
-    shp "...?"
-    joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
-    shp "Perdão Joe, este é o detetive Rightclue."
-    shp "Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
+    drc "Sou o detetive Rightclue, foi contratado pelo senhor Sheppard para investigar o caso."
+    joe "..."
     joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
     shp "Mil perdões Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
     shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-    joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
-    joe "Péssima tarde..."
+    joe "Entedo o seu ponto de vista, mas lembre-se meu pai nem sempre estava certo, e não era digno de confiança."
+    shp "..."
+    joe "... Mas quem somos nos para falarmos dos mortos."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+    drc "Eu farei e provarei que Sheppard não esta errado em me chamar."
+    joe "..."
+    "*Joe encara Rightclue*"
     return
 
 label DIALOGO_KAMIRA_12_C:
@@ -70,11 +71,12 @@ label DIALOGO_KAMIRA_12_C:
         xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
     shp "Este é o nosso detetive contratado. Se apresente..."
     drc "Boa tarde, me..."
-    ind_c "Perdão, senhor detetive, mas creio não ter assuntos a tratar por aqui."
-    ind_c "O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
-    shp "Sinto muito [ind_c_info[1]], mas o detetive já está ciente de toda a situação."
-    shp "Tenho ordens retroativas de seu [ind_c_info[2]] para cuidar desta família, e assim farei!"
-    ind_c "Não concordo Sheppard, acho que você está atraindo uma atenção desnecessária. Mas faça como quiser."
+    kmr "Perdão, senhor detetive, mas creio não ter assuntos a tratar por aqui."
+    kmr "O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
+    kmr "Então pode voltar para o lugar de onde veio."
+    shp "Sinto muito Kamira, mas o detetive já está ciente de toda a situação."
+    shp "Tenho ordens retroativas de seu Kamira para cuidar desta família, e assim farei!"
+    kmr "Não concordo Sheppard, acho que você está atraindo uma atenção desnecessária. Mas faça como quiser."
     return
 
 label DIALOGO_CATHERINE_12_C:

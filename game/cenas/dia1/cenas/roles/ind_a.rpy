@@ -1,5 +1,5 @@
 label DIALOGO_IND_A_CENA12():
-    "*Encontram [ind_a_info[0]] em roupas fúnebres, junto à entrada, sobre o jardim*"
+    "*Encontram [ind_a_info[0]], junto à entrada, sobre o jardim*"
 
     shp "Boa tarde [ind_a_info[1]], como está?"
     ind_a "Boa tarde, Sheppard."
@@ -25,7 +25,7 @@ label DIALOGO_IND_A_CENA12():
     return
 
 
-label DIALOGO_HUGO12_A:
+label DIALOGO_HUGO_12_A:
     show sheppard neutro:
         xalign 0.2 yalign 0.99999
     show hugo neutro:
@@ -38,10 +38,12 @@ label DIALOGO_HUGO12_A:
     shp "Por favor, detetive, se apresente."
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"
-    drc "Sim. Sheppard me instruiu. Tem minha palavra de sigilo."
-    hugo "Certo. Não acho que sua presença seja bem vinda, principalmente por parte de minha tia, minha prima e meu irmão."
-    hugo "Mas, contanto que nos ajude a desvendar o que está acontecendo, estamos de acordo."
+    drc "Sim. Sheppard me instruiu bem. Tem minha palavra de sigilo."
+    hugo "Certo. Não acho que sua presença seja bem vinda, principalmente por parte de minha tia ...  minha prima ... e meu irmão..."
+    hugo "Mas... contanto que nos ajude a desvendar o que está acontecendo, estamos de acordo."
     drc "Entendo..."
+    "Ele não parece muito bem."
+    "Talvez eu deva me preparar para mais pessoas como ele."
     drc "Esse aqui se chama Thorn?"
     hugo "Isso mesmo, tenho criado ele desde filhote."
     drc "Olá, amigo."
@@ -54,7 +56,7 @@ label DIALOGO_HUGO12_A:
     "*Hugo é arrastado pelo Thorn até a saída*"
     "Parecem muito próximos... e o cachorro é muito inteligente."
     shp "Tenha cuidado, Hugo!"
-    drc "Esse está bem animado."
+    drc "Esse está bem animado, dada a situação."
     shp "Ele sempre foi assim."
     return
 
@@ -64,16 +66,25 @@ label DIALOGO_JOE_12_A:
         xalign 0.2 yalign 0.99999
     show joe neutro:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
+    joe "Bom dia senhores..."
     joe "Me diga, Sheppard..."
     shp "...?"
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
     shp "Perdão Joe, este é o detetive Rightclue."
     shp "Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
     joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
+    joe "Incluir pessoas de fora só vai piorar a situação"
     shp "Mil perdões Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
     shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
     joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
-    joe "Péssima tarde..."
+    joe "É um péssimo dia..."
+    joe "Sinceramente espero que não tenhamos mais problemas por conta disso."
+    joe "Ei você!"
+    drc "..."
+    joe "Tente não destruir a reputação do senhor Sheppard com a nossa família."
+    drc "Não vou..."
+    drc "Tenho confiança em minha habilidades."
+    joe "..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
     return
 
@@ -88,8 +99,12 @@ label DIALOGO_KAMIRA_12_A:
     kmr "Espere um pouco Sheppard, o que significa isso?"
     shp "Está tudo certo Kamira, o detetive prometeu sigilo e nós ajudará."
     kmr "Não concordo com isso. De nenhuma forma, Sheppard. Isso só diz respeito a nós mesmos."
+    kmr "Você não tem o direito de trazer mais problemas para a nossa casa."
     shp "Confie em mim Kamira. Prometi ao seu tio que cuidaria de vocês. E assim cumprirei."
-    kmr "..."
+    drc "Acredite nas palavras do senhor Sheppard senhorita."
+    drc "Nos vamos resolver o seu problema."
+    kmr "Isso nós vamos descobrir..."
+    kmr "Só tente não estragar tudo ..."
     return
 
 label DIALOGO_CATHERINE_12_A:
@@ -104,4 +119,7 @@ label DIALOGO_CATHERINE_12_A:
     cth "Sheppard, já havia dito a você. Sem pessoas externas."
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
     cth "Você nunca me escuta..."
+    cth "Bom se esse rapaz se mostrar capaz de fazer algo vamos sair no lucro."
+    drc "Acredite vou surpreender você e sua família"
+    cth "Isso nós vamos ver..."
     return

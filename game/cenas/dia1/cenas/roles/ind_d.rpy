@@ -24,7 +24,7 @@ label DIALOGO_IND_D_CENA12():
     return
 
 
-label DIALOGO_HUGO12_D:
+label DIALOGO_HUGO_12_D:
     show sheppard neutro:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show hugo neutro:
