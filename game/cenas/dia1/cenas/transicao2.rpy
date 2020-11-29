@@ -1,9 +1,22 @@
 label TRANSICAO2:
-    "*Os dois voltam à sala*"
+
+    scene hall
+    with Fade(2, 1, 0.5)
+
+    show sheppard neutro with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
+
     shp "Bom, peço que aguarde um momento detetive."
     drc "Tudo bem, senhor Sheppard."
-    "*Sheppard sai (pensei em mencionar algo entre 20 minutos)*"
-    "*Sheppard volta*"
+
+    hide sheppard neutro
+
+    "..."
+    pause(2)
+
+    show sheppard neutro with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
+
     shp "Detetive, estou garantindo que o senhor possa passar a noite por aqui, e evitar despesas extras. Já conversei com os Cashand e te dou essa oportunidade."
     drc "Agradeço senhor Sheppard, mas acho que minha presença não é bem vinda."
     shp "Eu insisto detetive. Passarei esta noite aqui também, no quarto ao lado do seu."
@@ -15,7 +28,10 @@ label TRANSICAO2:
     shp "Certo. Seu quarto é o segundo quarto desse primeiro andar. Logo ali."
     shp "Nos encontramos mais tarde então, senhor Rightclue."
     drc "Tudo bem, até mais, senhor Sheppard."
-    "*Esvai a tela preta. Mostra quarto do detetive*"
+
+    scene quarto
+    with Fade(3,2,0.5)
+
     "Foi um excelente banho. Também já estou satisfeito com o jantar."
 
     if cluepoints >= 2:

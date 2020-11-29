@@ -3,8 +3,8 @@ label CENA23:
     $flag_kamira = 0
     $visCoz = False
 
-    #scene jardim
-    #with Fade(3, 2, 0.5)
+    scene jardim
+    with Fade(3, 2, 0.5)
 
     "Certo..."
     "Preciso agir rapido e começar a investigar quem já chegou do enterro."

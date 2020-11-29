@@ -18,16 +18,16 @@ label CENA25:
 
     #call inventario escolher bilhete
 
-    #call puzzle slider com fundo do bilhete
+    #call puzzle slider com fundo do bilhete 3x3
 
     "Gravador comoda senha culpado"
     "Espere um pouco... É isso..."
     "..."
 
-    ##scene corredores
-    #with Fade(1, 1, 0.5)
-    #scene quarto
-    #with Fade(1, 1, 0.5)
+    scene corredores
+    with Fade(1, 1, 0.5)
+    scene quarto
+    with Fade(1, 1, 0.5)
 
     "Se eu não estiver enganado..."
 
@@ -37,7 +37,7 @@ label CENA25:
     "E uma enorme bateria..."
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
-    #call slider gravador peças
+    #call slider gravador peças -> 4x4
 
     "Excelente. A tampa se abriu."
     "Basta setar o modo de reprodução e..."
@@ -56,7 +56,7 @@ label CENA25:
     "Isso é tecnologia de ponta. Realmente fascinante."
     "Bom, vamos à tentativa..."
 
-    #call puzzle light out
+    #call puzzle light out 4x4
 
     "Excelente!"
     "Agora.... Escutemos..."
@@ -65,6 +65,24 @@ label CENA25:
     kamira "hzGora.... zhsh.... im.... Está po...shz... cionado."
     kamira "Pronto. Tio, isto monitorará o senhor mais esta noite."
     hgin "Não preciso destas tranqueiras."
+    kamira "hzGora.... zhsh.... im.... Está po...shz... cionado."
+    kamira "Pronto. Tio, isto monitorará o senhor mais esta noite."
+    hgin "Não preciso destas tranqueiras."
+    kamira "Será benéfico ao senhor. Podemos mostrar suas tosses faltas de ar ao médico."
+    kamira "Tenho certeza que no futuro, isso será muito usado."
+    hgin "Ora, vamos. Como se eu fosse um velho prestes a morrer..."
+    kamira "..."
+    kamira "Me sinto na obrigação de repetir..."
+    kamira "O senhor deveria parar, Tio."
+    kamira "O senhor está doente. Estas bebidas, cigarros, noites de farra..."
+    kamira "Estas coisas não se encaixam mais à sua saúde."
+    hgin "Ha ha ha. De fato."
+    hgin "Mas sabe, minha querida, não sentarei esperando a morte."
+    hgin "Se tiver que morrer, morrerei em pé."
+    kamira "..."
+    kamira "Por que? Por que o senhor não entende?"
+    kamira "Já te pedi muitas e muitas vezes. Mas o senhor não me ouve."
+    kamira "O senhor vai morrer! Sua saúde já não suporta mais isso."
     kamira "Será benéfico ao senhor. Podemos mostrar suas tosses faltas de ar ao médico."
     kamira "Tenho certeza que no futuro, isso será muito usado."
     hgin "Ora, vamos. Como se eu fosse um velho prestes a morrer..."

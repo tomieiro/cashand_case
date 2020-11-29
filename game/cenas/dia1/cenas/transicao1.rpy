@@ -1,6 +1,13 @@
 #Desbloquear conquista -> "Bom detetive!"
 #DAORA DEMAIS
 label TRANSICAO1:
+
+    scene hall
+    with Fade(2, 1, 0.5)
+
+    show sheppard neutro:
+        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
+
     if cluepoints < 1:
         shp "O senhor acha que conseguimos algo, senhor Rightclue?"
         drc "Precisamente. Consegui pensar em várias situações se encaixando, várias pistas que podem levar à uma ideia inicial."

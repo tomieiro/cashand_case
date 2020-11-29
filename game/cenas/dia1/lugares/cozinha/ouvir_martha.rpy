@@ -22,7 +22,7 @@ label OUVIR_MARTHA:
     drc "Interessante. E onde ele está agora?"
     mrth "Voltou à sua cidade, depois do funeral do senhor Lostie, hoje de manhã."
     drc "Certo. Acho que já ouvi o suficiente."
-    "*Martha acena com a cabeça*"
+    mrth "Perfeito."
     drc "Vamos voltar senhor Sheppard."
     shp "Certo, detetive."
 

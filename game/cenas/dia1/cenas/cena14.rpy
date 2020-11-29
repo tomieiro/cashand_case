@@ -1,8 +1,12 @@
 label CENA14:
     "*Sheppard bate na porta*"
+
     shp "Detetive?"
     drc "Senhor Sheppard, estou indo."
-    "*Abre a porta*"
+
+    show sheppard neutro with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
+
     shp "Como foi o banho e o jantar, senhor Rightclue."
     drc "Excelente, senhor Sheppard. Fico realmente agradecido por me prover essa estadia."
     shp "Perfeito, fico feliz, detetive."

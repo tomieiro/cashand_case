@@ -25,7 +25,7 @@ label CENA24:
     drc "Senhorita!"
     drc "Não."
     drc "Não pode ser..."
-    "*Kamira está enforcada, junto à porta do banheiro.*"
+    "*Kamira está enforcada em seu quarto.*"
     "Seria ela a culpada? Suicídio por sentir-se encurralada?"
     "Eu não sei."
     "Eu não entendo."
