@@ -114,7 +114,8 @@ label PAC1_SELECIONA_ESTANTE:
         if(pac1_item_relogio[2]):
             "Acho que já coletei todas as pistas que eu precisava..."
             drc "Acho que isto é suficiente, Sheppard!"
-            show sheppard neutro onlayer screens at center with dissolve
+            show sheppard neutro onlayer screens at center with dissolve:
+                xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
             shp "Já acabou, detetive?"
             drc "Espera, acho que vou dar uma última olhada."
             hide sheppard onlayer screens with dissolve
@@ -143,7 +144,8 @@ label PAC1_SELECIONA_RELOGIO:
     if(pac1_item_sangue[2]):
         "Acho que já coletei todas as pistas que eu precisava..."
         drc "Acho que isto é suficiente, Sheppard!"
-        show sheppard neutro onlayer screens at center with dissolve
+        show sheppard neutro onlayer screens at center with dissolve:
+            xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
         shp "Já acabou, detetive?"
         drc "Espera, acho que vou dar uma última olhada."
         hide sheppard onlayer screens with dissolve
