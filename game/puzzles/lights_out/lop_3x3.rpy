@@ -14,12 +14,19 @@ label LIGHTS_OUT_PUZZLE_3X3:
                          "images/teste/puzzle/6.png", "images/teste/puzzle/5.png", "images/teste/puzzle/4.png",
                          "images/teste/puzzle/3.png", "images/teste/puzzle/2.png", "images/teste/puzzle/1.png"]
         lop_configuracoes = [
-        [False, False, False, False, False, False, False, False, False],
-        [False, True,  False, False, True,  False, False, False, True]
+        [False, False, False, False, False, False, False, False, False]
+        #,[False, True,  False, False, True,  False, False, False, True]
         ]
 
         lop_pecas = renpy.random.choice(lop_configuracoes)
+        lop_game_over_label = "FIM_LOP_3x3"
+
+    play music "audio/musicas/Descobrimento.mp3"
 
     #Chama a tela
     call screen lights_out_puzzle(3) with dissolve
     return
+
+label FIM_LOP_3x3:
+    "Droga, vamos tentar novamente"
+    jump LIGHTS_OUT_PUZZLE_3X3

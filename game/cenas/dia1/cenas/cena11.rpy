@@ -49,7 +49,7 @@ label CENA11:
     shp "Não há motivo para alarde detetive. O homem qual sustava esse reino está, nesse exato momento, há um metro e oitenta sob a terra qual reinou."
     shp "Mas alguém há de tomar seu lugar, herdar sua fortuna"
     shp "Pois bem. Haviam cinco pessoas que estão na lista para reivindicar o tesouro do senhor Hougin Cashand."
-    shp "Logo, você irá conhecê-los..."
+    shp "Logo, você irá conhecê-los... os herdeiros..."
     drc "Entendo. Estou desde o início de nossa conversa pensando, por que se envolveu senhor Sheppard?"
     shp "O fato é que como advogado e amigo do senhor Hougin, digo que essa situação não pode continuar."
     shp "Pouco antes de morrer ele me pagou uma excelente quantia extra por todos meus anos de serviço, e me pediu para que cuidasse de sua família caso ele viesse a falecer devido a sua doença."

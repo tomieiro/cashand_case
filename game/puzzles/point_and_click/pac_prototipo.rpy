@@ -9,7 +9,12 @@ define pacp_img_inv_but = "images/inventario/bg_seta.png"
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
 default pacp_item_vela = ["images/prototipo/vela_idle.png", "Uma simples vela.", False, 0, False, "IDE_ESCOLHEU_VELA"]
+default pacp_item_vela2 = ["images/prototipo/vela_idle.png", "Uma simples vela.", False, 0, False, "IDE_ESCOLHEU_VELA2"]
+default pacp_item_vela3 = ["images/prototipo/vela_idle.png", "Uma simples vela.", False, 0, False, "IDE_ESCOLHEU_VELA3"]
+default pacp_item_vela4 = ["images/prototipo/vela_idle.png", "Uma simples vela.", False, 0, False, "IDE_ESCOLHEU_VELA4"]
+default pacp_item_vela5 = ["images/prototipo/vela_idle.png", "Uma simples vela.", False, 0, False, "IDE_ESCOLHEU_VELA5"]
 default pacp_item_cookie = ["images/prototipo/cookie.png", "Um cookie aparentemente delicioso!", False, 1, False, "IDE_ESCOLHEU_COOKIE"]
+
 
 default pacp_itens_no_inventario = []
 
@@ -27,7 +32,11 @@ label CHAMA_TELA_PAC_PROTOTIPO:
 screen point_and_click_prototipo():
 
     #Sensível a cliques apenas quando não há diálogo acontecendo
-    sensitive(not renpy.get_screen("say"))
+    sensitive(  not renpy.get_screen("say") and
+                not renpy.get_screen("inventario_de_coleta") and
+                not renpy.get_screen("mostra_item") and
+                not renpy.get_screen("mostra_item2")
+                )
 
     frame:
         background "images/cenarios/escritorio.png"
@@ -59,10 +68,43 @@ screen point_and_click_prototipo():
                 xalign 0.4064
                 yalign 0.835
 
+        if(not pacp_item_vela2[2]):
+            imagebutton:
+                action Jump("PACP_SELECIONA_VELA2")
+                auto pacp_img_vela
+                focus_mask True
+                xalign 0.752
+                yalign 0.210
+
+        if(not pacp_item_vela3[2]):
+            imagebutton:
+                action Jump("PACP_SELECIONA_VELA3")
+                auto pacp_img_vela
+                focus_mask True
+                xalign 0.632
+                yalign 0.112
+
+        if(not pacp_item_vela4[2]):
+            imagebutton:
+                action Jump("PACP_SELECIONA_VELA4")
+                auto pacp_img_vela
+                focus_mask True
+                xalign 0.932
+                yalign 0.120
+
+        if(not pacp_item_vela5[2]):
+            imagebutton:
+                action Jump("PACP_SELECIONA_VELA5")
+                auto pacp_img_vela
+                focus_mask True
+                xalign 0.522
+                yalign 0.365
+
         #Exemplo de botão para abrir inventário de coleta
         imagebutton:
             action Show("inventario_de_coleta", itens_no_inventario=pacp_itens_no_inventario)
-            idle pacp_img_inv_but
+            auto "images/inventario/bg_seta_%s.png"
+            #idle pacp_img_inv_but
             at idc_botao_abrir
 
 
@@ -99,5 +141,50 @@ label PACP_SELECIONA_VELA:
     python:
         pacp_item_vela[2] = True
         pacp_itens_no_inventario.append(pacp_item_vela)
+    hide screen mostra_item with dissolve
+    jump POINT_AND_CLICK
+
+
+label PACP_SELECIONA_VELA2:
+    $renpy.notify("Coletou uma pista - Vela!")
+    show screen mostra_item(pacp_item_vela2[0]) with dissolve
+    pause 0.3
+    "É apenas uma vela comum, mas vou me lembrar dela!"
+    python:
+        pacp_item_vela2[2] = True
+        pacp_itens_no_inventario.append(pacp_item_vela2)
+    hide screen mostra_item with dissolve
+    jump POINT_AND_CLICK
+
+label PACP_SELECIONA_VELA3:
+    $renpy.notify("Coletou uma pista - Vela!")
+    show screen mostra_item(pacp_item_vela3[0]) with dissolve
+    pause 0.3
+    "É apenas uma vela comum, mas vou me lembrar dela!"
+    python:
+        pacp_item_vela3[2] = True
+        pacp_itens_no_inventario.append(pacp_item_vela3)
+    hide screen mostra_item with dissolve
+    jump POINT_AND_CLICK
+
+label PACP_SELECIONA_VELA4:
+    $renpy.notify("Coletou uma pista - Vela!")
+    show screen mostra_item(pacp_item_vela4[0]) with dissolve
+    pause 0.3
+    "É apenas uma vela comum, mas vou me lembrar dela!"
+    python:
+        pacp_item_vela4[2] = True
+        pacp_itens_no_inventario.append(pacp_item_vela4)
+    hide screen mostra_item with dissolve
+    jump POINT_AND_CLICK
+
+label PACP_SELECIONA_VELA5:
+    $renpy.notify("Coletou uma pista - Vela!")
+    show screen mostra_item(pacp_item_vela5[0]) with dissolve
+    pause 0.3
+    "É apenas uma vela comum, mas vou me lembrar dela!"
+    python:
+        pacp_item_vela5[2] = True
+        pacp_itens_no_inventario.append(pacp_item_vela5)
     hide screen mostra_item with dissolve
     jump POINT_AND_CLICK

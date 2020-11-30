@@ -1,4 +1,4 @@
-screen mostra_item(img="#000"):
+screen mostra_item2(img="#000"):
     #modal True
 
     sensitive(not renpy.get_screen("say"))
@@ -7,7 +7,7 @@ screen mostra_item(img="#000"):
         background "#b9503c"
         xsize 450
         ysize 450
-        xalign 0.5
+        xalign 0.75
         yalign 0.2
         frame:
             background "#d6b377"
