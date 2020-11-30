@@ -27,6 +27,8 @@ label TRANSICAO2:
     scene corredor quartos
     with Fade(2,1,0.5)
 
+    show sheppard neutro at center with dissolve
+
     shp "Este é seu quarto. Fique à vontade."
     drc "Fico muito agradecido, senhor Sheppard."
     shp "Gostaria de conversar com o senhor tem a dizer após o jantar, que claro, providenciarei para que Martha leve ao seu quarto."

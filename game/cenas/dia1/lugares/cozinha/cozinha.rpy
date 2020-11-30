@@ -6,10 +6,13 @@ label COZINHA:
     with Fade(2, 1, 0.5)
 
     show sheppard neutro:
-        xzoom 0.9 yzoom 0.9 xalign 0.8 yalign 0.99999
+        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
     shp "Esta é a cozinha. Aquela que o senhor vê ali, é Martha, a empregada da família."
     shp "Como vai, Martha?"
+
+    show sheppard neutro with moveinright:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
 
     show martha neutra:
         xzoom 0.85 yzoom 0.85 xalign 0.3 yalign 0.99999

@@ -10,6 +10,7 @@ label CENA23:
     "Preciso agir rapido e começar a investigar quem já chegou do enterro."
     "Kamira T. Cashand está ali no jardim, [ind_a_info[0]] deu a volta pelos fundos e entrou na cozinha"
     "[ind_b_info[0]] veio junto com [ind_a_info[0]] e foi para o hall. Só Joe Cashand que ainda não chegou."
+    "Uma rápida olhada em volta"
 
     label ESCOLHA_CONV_DIA2C3:
     menu:
@@ -55,6 +56,10 @@ label CENA23:
 
             "..."
             "Certo, já tenho um destino."
+
+            scene jardim
+            with Fade(3, 2, 0.5)
+
             jump ESCOLHA_CONV_DIA2C3
 
         "Conversar com [ind_b_info[0]]" if not visHall:
@@ -202,15 +207,12 @@ label DIALOGO_ROLES_D2C3(whoIs):
 
     #Se for o Hugo...
 
-    $print(whoIs)
-
     if str(whoIs) == "Hugo T. Cashand":
 
         show hugo neutro at center
 
         hugo "Senhor Rightclue..."
         hugo "Claro."
-        drc "Meus pêsames pelo Sheppard."
         hugo "Fico realmente muito triste, senhor Rightclue."
 
     #Se for a Catherine...
@@ -219,14 +221,17 @@ label DIALOGO_ROLES_D2C3(whoIs):
         show catherine neutra at center
 
         whoIs "O que deseja, detetive?"
-        drc "Meus pêsames por outra perda. Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
+        drc "Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
         whoIs "O senhor permaneceu. Parece disposto a realmente resolver o caso."
+        whoIs "O senhor é realmente uma boa pessoa, detetive."
         whoIs "O senhor parece determinado. Estamos sem tempo detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
 
     if flag_kamira <= 1:
         $flag_kamira = 2
+        return
 
     if flag_kamira == 2:
         $flag_kamira = 3
+        return
 
     return

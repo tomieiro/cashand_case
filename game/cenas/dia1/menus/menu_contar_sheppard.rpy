@@ -43,8 +43,6 @@ label MENU_CONTAR_SHEPPARD:
             drc "Certamente."
             shp "Agradeço por tudo, senhor Rightclue."
 
+    hide sheppard with dissolve
     stop music fadeout(5)
-    scene quarto with dissolve
-    with Fade(4, 4, 1)
-
     jump CENA21

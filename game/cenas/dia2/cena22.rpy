@@ -1,9 +1,9 @@
 label CENA22:
 
-    stop music fadeout 4
+    stop music fadeout 3
 
     scene cemiterio
-    with Fade(6, 3, 0.5)
+    with Fade(2, 4, 0.5)
 
     "Como fomos parar nisso..."
     "Senhor Sheppard está morto."

@@ -4,6 +4,7 @@
 
 init offset = -1
 
+define habilitar_voltar = False
 
 ################################################################################
 ## Styles
@@ -261,7 +262,8 @@ screen quick_menu():
                 xalign 0.5
                 yalign 1.0
 
-                textbutton _("Voltar") action Rollback()
+                if habilitar_voltar:
+                    textbutton _("Voltar") action Rollback()
                 textbutton _("História") action ShowMenu('history')
                 textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
                 textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -481,10 +483,11 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Voltar"):
-        style "return_button"
+    if habilitar_voltar:
+        textbutton _("Voltar"):
+            style "return_button"
 
-        action Return()
+            action Return()
 
     label title
 
@@ -1436,7 +1439,9 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Voltar") action Rollback()
+            if habilitar_voltar:
+                textbutton _("Voltar") action Rollback()
+
             textbutton _("Pular") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()

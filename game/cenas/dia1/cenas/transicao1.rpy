@@ -5,7 +5,7 @@ label TRANSICAO1:
     scene hall
     with Fade(2, 1, 0.5)
 
-    show sheppard neutro:
+    show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
     if cluepoints < 1:
@@ -21,7 +21,8 @@ label TRANSICAO1:
         "*Sheppard suspira*"
         shp "Correto. Esta família me acolheu, quando eu já não tinha mais nada. O senhor Hougin era como um irmão pra mim. Seus filhos, são como meus filhos. Esta casa, é minha casa."
         drc "O senhor não teve filhos senhor Sheppard?"
-        "*Os dois param, Sheppard encara um relógio do corredor*"
+        shp "..."
+        pause(2)
         shp "Eu já tive família senhor detetive. Esposa, um filho e uma filha."
         drc "E o que aconteceu."
         shp "Antes de conhecer o senhor Hougin, eu era maquinista."

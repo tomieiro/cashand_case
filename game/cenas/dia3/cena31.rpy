@@ -14,9 +14,12 @@ label CENA31:
     with Fade(3, 1, 0.5)
 
     "Todos os três devem estar próximos. Ficarei atento a cada reação, cada detalhe..."
-    "*Porta se abre. Entra Catherine*"
+    "Catherine está entrando..."
     drc "Meus pêsames Catherine. Sinto-me impotente diante desses acontecimentos."
     "Preciso ter calma. Observamos as reações pelas palavras. Pelas frases."
+
+    show catherine neutra with dissolve
+
     cth "É horrível, senhor. Minha sobrinha sempre foi sensível para mortes."
     cth "Tirar sua própria vida desse jeito..."
     cth "É algo horrivél."
@@ -35,6 +38,9 @@ label CENA31:
     cth "Por favor, apresse-se detetive. Talvez não tenhamos todo esse tempo."
     "Sim. Não temos. E que observação suspeita."
     drc "Sim, senhorita."
+
+    hide catherine with dissolve
+
     "Joe permanece conversando com Hugo ali fora."
     "Aguardarei."
     "Mas investigarei o quarto de Joe antes. Ele estará ocupado com a conversa. Da janela de seu quarto posso ver aqui embaixo. Será seguro."

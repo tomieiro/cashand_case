@@ -16,7 +16,6 @@ label CENA12:
     shp "Precisamente. O senhor verá quando lhe digo que nada é por acaso. A genialidade deste homem para era fascinante."
     drc "Se possível, não o exalte tanto em minha presença senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
     shp "De fato. Tentarei me segurar ao máximo."
-    "*Entram pelo portão da mansão*"
 
     call DIALOGO_IND_A_CENA12
     call INTRODUCAO_PERSONAGEM_CENA12(ind_a_info)

@@ -5,8 +5,11 @@ label CENA24:
     "O curioso é o senhor Lostie foi assassinado no jardim da mansão, pelo que entendi, na madrugada."
     "Realmente é algo intrigante..."
     "Está escurendo, preciso falar com Joe."
+
+    stop music fadeout(4)
+
     scene hall
-    with Fade(2, 1, 0.5)
+    with Fade(4, 1, 0.5)
 
     scene corredor quartos
     with Fade(2, 1, 0.5)
@@ -23,6 +26,8 @@ label CENA24:
     "Ouço sons de corda..."
     "Será que..."
     drc "Senhorita!"
+
+    play music "audio/musicas/Fim.mp3" fadein 5.0
 
     scene kamira morte
     with Fade(0.1, 0.1, 0.5)
@@ -54,5 +59,7 @@ label CENA24:
     # ->Mostra mensagem escrita a mao
     "Preciso avisar os outros."
     "Essa será uma longa noite..."
+
+    stop music fadeout(5)
 
     jump CENA25

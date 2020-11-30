@@ -1,4 +1,8 @@
 label CENA11:
+
+    scene cidade
+    with Fade(2, 3, 0.5)
+
     "Ahhh..."
     "*Suspiro*"
     "Virar a noite atrás de pistas não é trabalho para qualquer pessoa…"
@@ -6,12 +10,9 @@ label CENA11:
     "E já tardam duas e quarenta …"
     "Pegar casos seguidos é realmente um péssimo hábito…"
     #Tamanho ideal: 1280px x 720px
-    scene cidade
-    with Fade(1, 1, 0.5)
 
     play music "audio/musicas/Ambiente.mp3" fadeout 2.0 fadein 2.0
 
-    "*Chega na cidade*"
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
     "*Ouve alguém chamado*"
