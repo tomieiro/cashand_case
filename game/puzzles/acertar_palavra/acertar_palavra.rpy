@@ -10,7 +10,7 @@ default app_aux = ""
 
 default app_pre_resposta = "Angra gosta muito de..."
 
-default app_resposta = ["_", "_", "_", "_", "_", "_", "_", "_"]
+default app_resposta = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
 
 default app_rod = 0
 
@@ -35,6 +35,8 @@ default app_erros = 0
 
 default app_vidas_restantes = 3
 
+default app_label_game_over = "APP_TESTE_GAME_OVER"
+
 transform rotation:
     rotate 11
 
@@ -45,7 +47,7 @@ screen acertar_palavra_puzzle():
     sensitive (not app_fim)
 
     if(app_vidas <= app_erros):
-        timer 0.1 action Jump("APP_TESTE_GAME_OVER")
+        timer 0.1 action Jump(app_label_game_over)
 
     if(app_fim):
         timer 3.0 action Return()
@@ -195,7 +197,7 @@ style app_tela_cheia:
 style app_tela_resposta:
     xanchor 0.0
     yanchor 0.0
-    xpos 0.509375
+    xpos 0.529375
     xsize 360
     ypos 0.17921875
     ysize 464
