@@ -5,7 +5,10 @@ label start:
     stop music
 
     #Vai para a área de testagem de telas
-    call TESTES_TELAS
+    #jump INVENTARIO_DE_ESCOLHA_DIA01
+    jump LIGHTS_OUT_PUZZLE_3X3
+    jump CONCLUINDO_DIA1
+    #call TESTES_TELAS
 
     #call CENA25
     #Vai para a primeira cena do dia 1

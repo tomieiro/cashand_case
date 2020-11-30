@@ -7,4 +7,14 @@ label POINT_AND_CLICK:
     #PRECISA SER REPENSADO ISSO AQUI
     #$quick_menu = False #SÓ ESCONDE A DROGA DO MENU KKKK, O ROLLBACK AINDA PODE SER FEITO COM O MOUSE :(
 
+    $ui.interact() # Esse é melhor?
+
+
+label POINT_AND_CLICK_2:
+    #Esconde caixa de diálogo por enquanto
+    window hide
+    #Desativa o menu rápido durante toda a parte do point and click(evita algumas inconsistências??? não sei)
+    #PRECISA SER REPENSADO ISSO AQUI
+    #$quick_menu = False #SÓ ESCONDE A DROGA DO MENU KKKK, O ROLLBACK AINDA PODE SER FEITO COM O MOUSE :(
+
     $renpy.pause(hard=True) #Garante que o jogo fique parado esperando a tela de point and click

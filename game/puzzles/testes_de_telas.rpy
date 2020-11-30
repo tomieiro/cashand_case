@@ -1,7 +1,6 @@
 label TESTES_TELAS:
     jump QUARTO_HOUGIN
 
-
 label FIM_PAC_TESTE:
     "Prontooo, agora vamos escolhê-los"
     hide screen point_and_click_teste with dissolve

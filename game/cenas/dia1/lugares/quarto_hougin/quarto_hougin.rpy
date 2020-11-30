@@ -6,6 +6,7 @@ label QUARTO_HOUGIN:
     shp "De fato..."
 
     call CHAMA_TELA_PAC_DIA1
+    $cluepoints = cluepoints + 1
 
     drc "Parece que já vimos o bastante por aqui, senhor Sheppard. Vamos voltar."
     shp "Como quiser, detetive."
