@@ -2,7 +2,7 @@
 label start:
 
     #Para de tocar música do menu inicial:
-    stop music
+    stop music fadeout(4)
 
     #Vai para a área de testagem de telas
     #call TESTES_TELAS

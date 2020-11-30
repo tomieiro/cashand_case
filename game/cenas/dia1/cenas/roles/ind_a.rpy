@@ -18,7 +18,21 @@ label DIALOGO_IND_A_CENA12():
         call DIALOGO_CATHERINE_12_A
 
     ind_a "Até depois, Sheppard"
-    "*[ind_a_info[0]] se afasta dos dois*"
+
+    hide joe with dissolve
+    hide hugo with dissolve
+    hide kamira with dissolve
+    hide catherine with dissolve
+
+    if ind_a_info[1] == "Catherine":
+        shp "Parece que gostou de você."
+        drc "Eu não teria essa opinião."
+        shp "Acredite. Ela seria mais áspera."
+        drc "..."
+
+    show sheppard neutro with moveinright:
+        xalign 0.5 yalign 0.99999
+
     drc "Creio que serei considerado intruso em meio a esse imbróglio, senhor Sheppard."
     shp "Não se acanhe detetive, ainda há muitas outras saudações calorosas pela frente."
 
@@ -26,9 +40,9 @@ label DIALOGO_IND_A_CENA12():
 
 
 label DIALOGO_HUGO_12_A:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xalign 0.2 yalign 0.99999
-    show hugo neutro:
+    show hugo neutro with dissolve:
         xalign 0.7 yalign 0.99999
     hugo "Estava aqui pensando em levar o Thorn pra passear um pouco também."
     shp "Olha lá, por falar nele..."
@@ -62,11 +76,10 @@ label DIALOGO_HUGO_12_A:
 
 
 label DIALOGO_JOE_12_A:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xalign 0.2 yalign 0.99999
-    show joe neutro:
+    show joe neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
-    joe "Bom dia senhores..."
     joe "Me diga, Sheppard..."
     shp "...?"
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
@@ -86,14 +99,15 @@ label DIALOGO_JOE_12_A:
     drc "Tenho confiança em minha habilidades."
     joe "..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
+
     return
 
 
 label DIALOGO_KAMIRA_12_A:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show kamira neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show kamira neutra with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     kmr "Quem seria o senhor?"
     drc "Prazer. Rightclue. Sou o detetive contratado."
     kmr "Espere um pouco Sheppard, o que significa isso?"
@@ -108,10 +122,10 @@ label DIALOGO_KAMIRA_12_A:
     return
 
 label DIALOGO_CATHERINE_12_A:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show catherine neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show catherine neutra with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     cth "Quem seria o lindo rapaz?"
     shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
     drc "Muito prazer."

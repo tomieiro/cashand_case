@@ -1,8 +1,7 @@
 label DIALOGO_IND_B_CENA12:
-    "*Os dois seguem até a entrada*"
-    "*Encontram [ind_b_info[0]] e [ind_c_info[0]], ao lado da porta*"
 
-    "*[ind_b_info[1]] se aproxima*"
+    pause(1)
+
     shp "Boa tarde, [ind_b_info[1]]."
     ind_b "Olá Sheppard."
     shp "Está bem? precisa de algo?"
@@ -10,27 +9,43 @@ label DIALOGO_IND_B_CENA12:
     ind_b "Estamos tentando assimilar tudo ainda..."
     shp "Imagino..."
 
-    if ind_a_info[1] == "Hugo":
+    if ind_b_info[1] == "Hugo":
         call DIALOGO_HUGO_12_B
-    elif ind_a_info[1] == "Joe":
+    elif ind_b_info[1] == "Joe":
         call DIALOGO_JOE_12_B
-    elif ind_a_info[1] == "Kamira":
+    elif ind_b_info[1] == "Kamira":
         call DIALOGO_KAMIRA_12_B
-    elif ind_a_info[1] == "Catherine":
+    elif ind_b_info[1] == "Catherine":
         call DIALOGO_CATHERINE_12_B
 
     ind_b "Até mais."
     ind_b "Você vem, [ind_c_info[1]]?"
     ind_c "Pode ir que já te alcanço..."
-    "*[ind_b_info[0]] se retira*"
+
+    hide joe with dissolve
+    hide hugo with dissolve
+    hide kamira with dissolve
+    hide catherine with dissolve
+
+    if ind_b_info[1] == "Catherine":
+        shp "Parece que gostou de você."
+        drc "Eu não teria essa opinião."
+        shp "Acredite. Ela seria mais áspera."
+        drc "..."
+
+    show sheppard neutro with moveinright:
+        xalign 0.5 yalign 0.99999
+
     return
 
 
 label DIALOGO_HUGO_12_B:
-    show sheppard neutro:
-        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show hugo neutro:
-        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
+    show sheppard neutro with moveinleft:
+        xalign 0.2 yalign 0.99999
+
+    show hugo neutro with dissolve:
+        xalign 0.7 yalign 0.99999
+
     hugo "Quem é esse senhor?"
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Acredito que você ja tenha sido instruido pelo senhor Sheppard, estou certo?"
@@ -42,18 +57,25 @@ label DIALOGO_HUGO_12_B:
     drc "Olá amigo."
     shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
     hugo "É um bom rapaz."
+
+    hide hugo with dissolve
     "*Hugo se agacha e faz carinho no Thorn*"
+
     hugo "Não é, Thorn?"
     "*Thorn lambe o rosto de Hugo em resposta*"
     "Parecem muito próximos... que cena bonita."
+
+    show hugo neutro with dissolve:
+        xalign 0.7 yalign 0.99999
+
     hugo "Bom, se me dão licença..."
     return
 
 label DIALOGO_JOE_12_B:
-    show sheppard neutro:
-        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show joe neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show sheppard neutro with moveinleft:
+        xalign 0.2 yalign 0.99999
+    show joe neutro with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     joe "..."
     "*Joe encara Rightclue*"
     drc "..."
@@ -76,10 +98,10 @@ label DIALOGO_JOE_12_B:
     return
 
 label DIALOGO_KAMIRA_12_B:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show kamira neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show kamira neutra with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     kmr "Quem seria o senhor?"
     drc "Prazer. Rightclue. Sou o detetive contratado."
     kmr "Espere um pouco Sheppard, o que significa isso?"
@@ -97,14 +119,14 @@ label DIALOGO_KAMIRA_12_B:
     return
 
 label DIALOGO_CATHERINE_12_B:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show catherine neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show catherine neutra with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     cth "Quem seria esse rapaz Sheppard?"
     shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
     drc "Muito prazer."
-    cth "Pois bem, meu anjo. Vou te uma pista."
+    cth "Pois bem, meu anjo. Vou te dar uma pista."
     cth "Este caso não é para você. Não queremos mais pessoas aqui para piorar a situação"
     drc "..."
     cth "Sheppard, já havia dito a você. Sem pessoas externas."

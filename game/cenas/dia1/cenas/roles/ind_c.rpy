@@ -1,32 +1,45 @@
 label DIALOGO_IND_C_CENA12:
-    "*[ind_c_info[0]] se aproxima*"
     shp "Olá [ind_c_info[1]]."
     shp "Precisa de algo?"
     ind_c "Estava pensando sobre esse senhor..."
     shp "Algum problema?"
     ind_c "Me parece ser alguém envolvido com as autoridades..."
 
-    if ind_a_info[1] == "Hugo":
+    if ind_c_info[1] == "Hugo":
         call DIALOGO_HUGO_12_C
-    elif ind_a_info[1] == "Joe":
+    elif ind_c_info[1] == "Joe":
         call DIALOGO_JOE_12_C
-    elif ind_a_info[1] == "Kamira":
+    elif ind_c_info[1] == "Kamira":
         call DIALOGO_KAMIRA_12_C
-    elif ind_a_info[1] == "Catherine":
+    elif ind_c_info[1] == "Catherine":
         call DIALOGO_CATHERINE_12_C
 
     ind_c "Com licença, Sheppard."
     ind_c "Detetive..."
     ind_c "Espera, [ind_b_info[1]]. Vou com você..."
-    "*[ind_b_info[0]] e [ind_c_info[0]] vão em direção ao portão*"
+
+    if ind_c_info[1] == "Catherine":
+        shp "Parece que gostou de você."
+        drc "Eu não teria essa opinião."
+        shp "Acredite. Ela seria mais áspera."
+        drc "..."
+
+    hide joe with dissolve
+    hide hugo with dissolve
+    hide kamira with dissolve
+    hide catherine with dissolve
+
+    show sheppard neutro with moveinright:
+        xalign 0.5 yalign 0.99999
+
     return
 
 
 label DIALOGO_HUGO_12_C:
-    show sheppard neutro:
-        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show hugo neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show sheppard neutro with moveinleft:
+        xalign 0.2 yalign 0.99999
+    show hugo neutro with dissolve:
+        xalign 0.7 yalign 0.99999
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"
     drc "Sim. Sheppard me instruiu. Tem minha palavra de sigilo."
@@ -46,10 +59,10 @@ label DIALOGO_HUGO_12_C:
     return
 
 label DIALOGO_JOE_12_C:
-    show sheppard neutro:
-        xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show joe neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show sheppard neutro with moveinleft:
+        xalign 0.2 yalign 0.99999
+    show joe neutro with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     drc "Sou o detetive Rightclue, foi contratado pelo senhor Sheppard para investigar o caso."
     joe "..."
     joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
@@ -65,10 +78,10 @@ label DIALOGO_JOE_12_C:
     return
 
 label DIALOGO_KAMIRA_12_C:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show kamira neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show kamira neutra with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     shp "Este é o nosso detetive contratado. Se apresente..."
     drc "Boa tarde, me..."
     kmr "Perdão, senhor detetive, mas creio não ter assuntos a tratar por aqui."
@@ -86,10 +99,10 @@ label DIALOGO_KAMIRA_12_C:
     return
 
 label DIALOGO_CATHERINE_12_C:
-    show sheppard neutro:
+    show sheppard neutro with moveinleft:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
-    show catherine neutro:
-        xzoom 1.2 yzoom 1.2 xalign 0.7 yalign 0.99999
+    show catherine neutra with dissolve:
+        xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
     drc "Muito prazer."
     cth "..."

@@ -1,7 +1,7 @@
 label QUARTO_HOUGIN:
-    scene quarto with dissolve
-    with Fade(1,1,0.5)
-    "*Entram pela porta*"
+    scene quarto
+    with Fade(2,1,0.5)
+
     shp "Bem, detetive, aqui estamos. Peço perdão pela comoção. Mas foi aqui, nesta mesma cama, que o senhor Hougin encontrou seu fim."
     drc "Entendo. Mas peço que aguente, senhor Sheppard. Toda pista é importante aqui."
     drc "De fato..."
