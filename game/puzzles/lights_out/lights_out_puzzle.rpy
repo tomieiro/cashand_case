@@ -1,3 +1,39 @@
+init python:
+
+    def timer_puzzle(st, at,
+                        tempo_total = 10.0,
+                        label_fim_tempo = 'FIM_LOP_3x3',
+                        screen = 'lights_out_puzzle',
+                        style_ok = 'lop_text_timer_ok',
+                        style_acabando = 'lop_text_timer_acabando',
+                        tempo_troca = 5.0,
+                        formato_texto = "{minutes:02d}:{seconds:02d}" ,
+                        fim = False):
+
+        global lop_proximo_do_fim
+
+        restante = tempo_total - st
+
+        print(restante)
+
+        parts_dict = {
+            'minutes' : int( restante // 60 ),
+            'seconds' : int( restante % 60 ),
+            'micro_seconds' : str(int( (restante % 1) * 10000 )), # we use str() so we can define precision
+        }
+
+        if restante <= tempo_troca and not lop_proximo_do_fim:
+            lop_proximo_do_fim = True
+            renpy.music.play(filenames="audio/musicas/Dilema.mp3", channel="music", loop=True)
+
+        if restante <= 0.0 and not fim:
+            renpy.hide_screen(screen)
+            renpy.jump(label_fim_tempo)
+
+        return Text( formato_texto.format(**parts_dict),
+                     style = style_ok if restante > tempo_troca else style_acabando), .1
+
+
 default lop_fim = False
 default lop_pecas = [False] * 9
 default lop_x = 0
@@ -10,11 +46,15 @@ default lop_img_pecas = ["images/teste/puzzle/9.png", "images/teste/puzzle/8.png
 
 default lop_configuracoes = [[]]
 
+default lop_game_over_label = "FIM_LOP_3x3"
+
+default lop_proximo_do_fim = False
 
 transform lop_img_tr(tam=200):
     size (tam, tam)
     xalign 0.5
     yalign 0.5
+
 
 screen lights_out_puzzle(dim, img_bg = "#fff"):
 
@@ -26,6 +66,17 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
     frame:
         style "lop_tela_cheia"
         background img_bg
+        if(not lop_fim):
+            add DynamicDisplayable( timer_puzzle,
+                                    tempo_total=65.0,
+                                    tempo_troca=60.0,
+                                    label_fim_tempo = lop_game_over_label,
+                                    screen = 'lights_out_puzzle',
+                                    style_ok = 'lop_text_timer_ok',
+                                    style_acabando = 'lop_text_timer_acabando',
+                                    fim = lop_fim
+                                    ) at topright
+
         vbox:
             at truecenter
             frame:
@@ -46,6 +97,7 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
                                 at lop_img_tr(lop_tam_peca)
 
     if lop_fim:
+
         add "images/teste/puzzle/cc.png" maxsize (630, 630) at truecenter
         timer 3.0 action Return()
 
@@ -103,3 +155,19 @@ style lop_fundo_branco:
 transform surge_botao_final:
     xalign 0.5
     yalign 0.5
+
+
+style lop_text_timer_ok:
+    size 60
+    color "#FFF"
+    outlines [(2, "#000", 0, 0)]
+
+style lop_text_timer_acabando:
+    size 60
+    color "#F22"
+    outlines [(2, "#000", 0, 0)]
+
+style lop_text_timer_fim:
+    size 60
+    color "#2F2"
+    outlines [(2, "#000", 0, 0)]
