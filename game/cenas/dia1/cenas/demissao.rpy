@@ -8,6 +8,9 @@ label DEMISSAO:
     drc "Senhor Sheppard, mas eu..."
     shp "Espero que tenha sido claro, senhor detetive. Tenho um compromisso com essa família e não posso me descuidar."
     drc "Bom, aproveite a noite e se retire pela manhã. Agradeço desde já. E uma boa noite."
+
+    hide sheppard neutro with dissolve
+
     "*Sheppard fecha a porta*"
     drc "..."
     drc "Eu deveria ter pensado melhor sobre minhas escolhas..."

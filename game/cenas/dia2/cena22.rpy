@@ -1,8 +1,10 @@
 label CENA22:
 
     stop music fadeout 4
+
     scene cemiterio
-    with Fade(3, 2, 0.5)
+    with Fade(6, 3, 0.5)
+
     "Como fomos parar nisso..."
     "Senhor Sheppard está morto."
     "Foi morto dentro de minha investigação."
@@ -49,7 +51,9 @@ label CENA22:
     desconhecido "Senhor Rightclue, eu suponho?"
     "..."
     "*Rightclue se vira*"
+
     show carlo neutro
+
     drc "Sim, exato. E qual seria sua graça, senhor?"
     desconhecido "O Senhor me conhece, Senhor Rightclue. E sugiro que se lembre rapidamente. E falemos baixo, sim?"
     drc "Suponho, pela voz, que o senhor seja Carlo Venchinni."
@@ -70,6 +74,9 @@ label CENA22:
     vnc "Perfeito. Você tem um trabalho a cumprir. Cumpra-o. Eu terei o meu. O destino desses desgraçados está em suas mãos."
     drc "Estou de acordo, Senhor Venchinni."
     vnc "Ótimo. Que assim seja."
+
+    hide carlo neutro with dissolve
+
     #hide vnc com um dissolve talvez
     "Meu deus. Tenho um fardo grande para carregar."
     "..."

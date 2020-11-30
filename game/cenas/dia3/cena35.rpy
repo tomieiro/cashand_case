@@ -1,6 +1,7 @@
 label CENA35:
     scene cidade
-    with Fade(7, 4, 0.5)
+    with Fade(5, 2, 0.5)
+    #Fazer continuacao aqui
     drc "Ahhh..."
     "Cheguei ao fim de mais um caso."
     "Deveras triste, confesso."

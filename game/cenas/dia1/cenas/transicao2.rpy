@@ -22,15 +22,23 @@ label TRANSICAO2:
     shp "Eu insisto detetive. Passarei esta noite aqui também, no quarto ao lado do seu."
     drc "Bom, se o senhor insiste, creio que seja prudente já que posso começar meu trabalho logo pela manhã."
     shp "De fato. Fico feliz em ouvir isso."
-    shp "Então vamos. Um bom banho e um descanso serão benéficos antes de continuarmos."
+    shp "Então venha. Vou te mostrar seu quarto. Um bom banho e um descanso serão benéficos antes de continuarmos."
+
+    scene corredor quartos
+    with Fade(2,1,0.5)
+
+    shp "Este é seu quarto. Fique à vontade."
+    drc "Fico muito agradecido, senhor Sheppard."
     shp "Gostaria de conversar com o senhor tem a dizer após o jantar, que claro, providenciarei para que Martha leve ao seu quarto."
     drc "Agradeço senhor Sheppard, e claro, terei algo a dizer sobre toda essa situação."
     shp "Certo. Seu quarto é o segundo quarto desse primeiro andar. Logo ali."
     shp "Nos encontramos mais tarde então, senhor Rightclue."
     drc "Tudo bem, até mais, senhor Sheppard."
 
+    hide sheppard with dissolve
+
     scene quarto
-    with Fade(3,2,0.5)
+    with Fade(5,2,0.5)
 
     "Foi um excelente banho. Também já estou satisfeito com o jantar."
 

@@ -5,7 +5,7 @@ label CENA14:
     drc "Senhor Sheppard, estou indo."
 
     show sheppard neutro with dissolve:
-        xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
+        xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
 
     shp "Como foi o banho e o jantar, senhor Rightclue."
     drc "Excelente, senhor Sheppard. Fico realmente agradecido por me prover essa estadia."
@@ -28,10 +28,12 @@ label CENA14:
     shp "Quem tratará desse maldito assassino, será Carlo Venchinni, também mafioso e parceiro de negócios do senhor Hougin."
     shp "Na verdade, o senhor Venchinni não tem nenhum interesse nessa família, mas tem grande estima por mim."
     shp "Há alguns anos ajudei a família dele, por conta própria, e desde então, ele me considera como um amigo."
-    "*Sheppard se dirige à comoda do quarto, onde está um dos telefones da casa*"
+
+    hide sheppard neutro with dissolve
+
     "Consigo perceber a riqueza dessa família, pela quantidade de telefones nessa casa..."
     shp "Boa noite telefonista, gostaria de uma tranferência para Carlo Venchinni, Cidade de Cothertown, Estado de Thundereyes."
-    "*Sheppard aguarda alguns minutos*"
+    "..."
     shp "Senhor Venchinni. Boa noite. Aqui é Sheppard."
     vnc "Ora, Sheppard, meu amigo! Já faz algum tempo."
     shp "É verdade senhor. Peço desculpas pelo contato escasso."
@@ -56,7 +58,10 @@ label CENA14:
     vnc "Igualmente Sheppard. Marcaremos de tomar um cerveja depois que tudo isso passar."
     shp "Certamente, senhor Venchinni."
     shp "Até mais..."
-    "*Sheppard desliga o telefone*"
+
+    show sheppard neutro with dissolve:
+        xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
+
     drc "Temos tudo preparado, senhor Sheppard."
     shp "Certamente. Ao entregarmos o assassino, o senhor Venchinni cuidará de tudo."
     drc "Realmente é uma forma que não gosto para lidar com culpados. Mas estou aqui para investigar e não discutir seus métodos."
@@ -66,10 +71,20 @@ label CENA14:
     drc "Senhor Sheppard, tenho uma conclusão a respeito de quem são os suspeitos que poderiam estar por trás desses assassinatos."
     shp "Por favor, então me conte!"
     "*Ouve leve barulho no corredor*"
-    "*Rightclue se levanta e abre a porta subitamente*"
-    "*Não há mais ninguém*"
+
+    scene quarto with dissolve
+    with Fade(0.2, 0.2, 0.5)
+
     drc "Alguém estava aqui, senhor Sheppard."
-    shp "Quem quer que seja, já se foi. Por garantia, venha para o lado da janela. E falemos baixo. Rápido detetive, me diga."
+
+    scene quarto with dissolve
+    with Fade(0.2, 0.2, 0.5)
+
+    show sheppard neutro with dissolve:
+        xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
+    
+    shp "Quem quer que seja, já se foi. Por garantia, venha para o lado da janela."
+    "Falemos baixo. Rápido detetive, me diga."
     drc "Poderia estar te submetendo à certo perigo, senhor Sheppard."
     shp "Como assim?"
 

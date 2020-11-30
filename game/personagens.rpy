@@ -47,9 +47,9 @@ define ind_d_info = []
 #Culpado...
 define assassino_info = []
 
-label RANDOMIZE(role, excecoes, clean):
-    init offset = 1
-    python:
+init offset = 1
+init python:
+    def randomize(role, excecoes, clean):
         if(clean):
             inocentes_gen.clear()
             for i in possiveis_inocentes:
@@ -60,7 +60,6 @@ label RANDOMIZE(role, excecoes, clean):
         #Sorteia as roles dos inocentes
         role.extend(renpy.random.choice(inocentes_gen))
         inocentes_gen.remove(role)
-    return
 
 #Sorteamento das roles
 init offset = 2
@@ -73,10 +72,10 @@ init python:
     global assassino_info
     global possiveis_inocentes
     global inocentes_gen
-    ind_a_info = renpy.random.choice(possiveis_inocentes)
-    ind_b_info = renpy.random.choice(possiveis_inocentes)
-    ind_c_info = renpy.random.choice(possiveis_inocentes)
-    ind_d_info = renpy.random.choice(possiveis_inocentes)
+    randomize(ind_a_info,["none"], True)
+    randomize(ind_b_info,["none"], False)
+    randomize(ind_c_info,["none"], False)
+    randomize(ind_d_info,["none"], False)
     assassino_info = renpy.random.choice(possiveis_culpados)
 
 init offset = 3

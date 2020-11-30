@@ -1,10 +1,18 @@
 label CENA31:
-    ##scene velorio
-    #with Fade(5, 3, 0.5)
+    scene cemiterio
+    with Fade(6, 3, 0.5)
     "Mais um enterro foi feito. Tenho certeza que o último. Não deixarei o culpado sair impune."
     "Voltarei antes para a mansão e aguardarei todos lá."
-    ##scene hall
-    #with Fade(5, 3, 0.5)
+
+    scene cidade
+    with Fade(3,1,0.5)
+
+    scene jardim
+    with Fade(2,1,0.5)
+
+    scene hall
+    with Fade(3, 1, 0.5)
+
     "Todos os três devem estar próximos. Ficarei atento a cada reação, cada detalhe..."
     "*Porta se abre. Entra Catherine*"
     drc "Meus pêsames Catherine. Sinto-me impotente diante desses acontecimentos."
@@ -30,6 +38,8 @@ label CENA31:
     "Joe permanece conversando com Hugo ali fora."
     "Aguardarei."
     "Mas investigarei o quarto de Joe antes. Ele estará ocupado com a conversa. Da janela de seu quarto posso ver aqui embaixo. Será seguro."
-    ##scene corredor
-    #with Fade(5, 3, 0.5)
+
+    scene corredor quartos
+    with Fade(1, 1, 0.5)
+
     jump CENA32
