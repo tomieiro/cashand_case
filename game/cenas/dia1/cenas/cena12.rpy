@@ -34,7 +34,7 @@ label CENA12:
     call INTRODUCAO_PERSONAGEM_CENA12(ind_d_info)
 
     shp "Bom, acho que você já viu todos os herdeiros..."
-    drc "Espera um segundo, Sheppard. Não eram cinco? Onde está o último?"
+    drc "Espere um segundo, Sheppard. Não eram cinco? Onde está o último?"
     shp "O último herdeiro era Lostie Annou Cashand, segundo irmão mais novo do senhor Hougin Cashand, que fora assassinado esta noite."
     drc "Intrigante... Podemos afirmar que os assassinatos ocorreram pelo interesse nos bens do senhor Hougin, creio eu. Talvez alguém interessado em lesar a família e ficar com o dinheiro?"
     shp "De fato. Acredito ser totalmente coerente com a situação, visto que o senhor Hougin andava ruim de saúde."
