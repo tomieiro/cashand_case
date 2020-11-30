@@ -16,3 +16,7 @@ label LIGHTS_OUT_TEST:
     call screen lights_out_puzzle(3) with dissolve
     hide screen point_and_click_test with dissolve
     jump PROTOTIPO
+
+label FIM_LOP_TESTE:
+    "Droga, vamos tentar novamente"
+    jump LIGHTS_OUT_TEST
