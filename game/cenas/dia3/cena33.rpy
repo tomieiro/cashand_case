@@ -10,15 +10,23 @@ label CENA33:
     "..."
     "Verei Hugo primeiro."
     "Ele deve estar lá embaixo."
-    ##scene corredor
-    #with Fade(5, 3, 0.5)
+
+    scene corredor hall
+    with Fade(2, 1, 0.5)
+
     "Claro..."
     "Deixe me retirar isso..." #-> Coletou um item ???
-    ##scene hall
-    #with Fade(5, 3, 0.5)
+    "Pronto."
+    "Vamos lá."
+
+    scene hall
+    with Fade(3, 1, 0.5)
+
     "Ali está ele."
     drc "Senhor Hugo."
-    #show hugo neutro at center
+
+    show hugo neutro at center with dissolve
+
     hugo "Senhor Rightclue. Estamos destruidos. Não conseguimos mais aguentar ver pessoas queridas morrerem."
     drc "Eu entendo."
     "Vou tomar o mesmo caminho que com Catherine."
@@ -27,9 +35,21 @@ label CENA33:
     hugo "Fico grato em ouvir isso. Só temo pela nossa segurança essa noite."
     "Agora é decisivo"
     drc "Fique tranquilo. Pois já tenho quase certeza de quem se trata."
+
+    show hugo neutro reflexo at center
+
     hugo "Já sabe? Mas o que o senhor está esperando."
+
+    show hugo neutro at center
+
     drc "Preciso ter certeza, senhor Hugo."
+
+    show hugo neutro reflexo at center
+
     hugo "Certeza, senhor Rightclue? Estamos morrendo, um a um, e o senhor me diz calma?"
+
+    show hugo neutro at center
+
     "Ele está agitado. O que normalmente não acontece."
     drc "Dou minha palavra. O culpado não agirá hoje. Não há o que temer."
     hugo "Senhor Rightclue, não gostaria de dizer isso levianamente. Mas creio que a morte de Kamira não foi suicídio."
@@ -39,8 +59,6 @@ label CENA33:
     drc "Mas ela estava enforcada. O senhor insinua que foi uma cena armada?"
     hugo "Exato. Tenho suspeita de uma pessoa, quem conversei algum tempo há pouco."
     "Ele está incriminando Catherine."
-    "O assassino não arriscaria dizer toda essa informação sobre Kamira, eu acho."
-    "Ou arriscaria. No desespero para ..."
     drc "Obrigado pela informação Hugo. Peço que, se possivel, vá para seu quarto."
     hugo "Detetive, e qual seria a finalidade?"
     drc "Eu tenho um assunto a resolver."
@@ -50,10 +68,20 @@ label CENA33:
     hugo "Está bem. Assim farei."
     drc "Conto com você."
     "..."
-    #hide hugo
+    hide hugo with dissolve
+
+    play music "audio/musicas/Descobrimento.mp3" fadein 5.0
+
     "..."
+    "É agora."
+    "Catherine está vindo."
+    "Preciso agir."
+    "E terei que ser rápido para a captura."
     "..."
-    #toca musica de mais suspense...
+    pause(2)
+
+    show catherine neutra at center with dissolve
+
     cth "Senhor Rightclue."
     "..."
     drc "Olá Catherine."
@@ -63,9 +91,12 @@ label CENA33:
     drc "Catherine, deixe-me pedir uma coisa a você."
     cth "E o que seria senhor?"
     drc "..."
-    #dar um wait de uns 3 segundos
+
+    pause(2)
+
     drc "Você poderia me acompanhar?"
     cth "E por que desse pedido?"
+
     # show item lenço do sheppard com fio de cabelo no meio
 
     #call inventario_de_escolha -> a chave e lenço(eoq sai)
@@ -86,13 +117,29 @@ label CENA33:
     "Um dia se passou. O suficiente para o cheiro do animal se sobressair..."
     "... por um único pelo."
     "Maldito. Você é meu."
-    ##scene corredor
-    #with Fade(5, 3, 0.5)
+
+    hide catherine neutra with dissolve
+
+    scene corredor quartos
+    with Fade(3, 1, 0.5)
+
+    pause(1)
+
+    scene corredor hall
+    with Fade(0.5, 0.5, 0.5)
+
+    show catherine neutra at center with dissolve
+
+    cth "Algum problema com o quarto do Hugo, senhor?."
 
     #play barulho de traca
 
-    cth "Algum problema com o quarto do Hugo, senhor?."
-    hugo "O que é isso? Quem está ai?"
+    hide catherine with dissolve
+
+    scene corredor quartos
+    with Fade(0.5, 0.5, 0.5)
+
+    hugo "O que é isso? Quem está ai? Quem trancou a porta?"
     "..."
     drc "Seu maldito..."
     drc "Como pode. Fazer isso com seu próprio pai."
@@ -104,20 +151,62 @@ label CENA33:
     hugo "Por favor, eu não fiz nada."
     drc "Cale a boca."
     drc "Mentira"
+
+    scene corredor hall
+    with Fade(0.5, 0.5, 0.5)
+
+    show catherine neutra at center with dissolve
+
     cth "Senhor Rightclue..."
+
+    hide catherine with dissolve
+
+    scene corredor quartos
+    with Fade(0.5, 0.5, 0.5)
+
     drc "Esse maldito tentou te acusar. Há menos de dez minutos atrás."
     drc "É um canalha. Sem coração. Podre até o espírito."
     hugo "Não. Não fui eu."
+
+    scene corredor hall
+    with Fade(0.5, 0.5, 0.5)
+
+    show catherine neutra at center with dissolve
+
     cth "Senhor Rightclue. Eu não acredito. Não pode ser."
     cth "Hugo não faria isso. Por favor deixe ele ir."
+
+    hide catherine with dissolve
+
+    scene corredor quartos
+    with Fade(0.5, 0.5, 0.5)
+
     drc "Você é a pior escória."
     drc "Um lixo. Uma praga."
+
+    scene corredor hall
+    with Fade(0.5, 0.5, 0.5)
+
+    show catherine neutra with dissolve:
+        xalign 0.7 yalign 0.9999999
+
     cth "Por favor Senhor Rightclue, não foi ele."
+
+    show joe neutro with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "O que está acontecendo aqui."
     drc "Boa noite Joe."
     drc "Acabo de prender o maldito traidor."
     joe "Isso é um absurdo. Hugo jamais faria isso."
     drc "Todos achavam. Eu achava. Mas não passou de uma armação."
+
+    hide joe with dissolve
+    hide catherine with dissolve
+
+    scene corredor quartos
+    with Fade(0.5, 0.5, 0.5)
+
     drc "Sentiu-se bem ao matar o homem que foi leal a sua família?"
     drc "E o que sentiu quando viu sua prima morrer enforcada diante de seus olhos, seu canalha."
     drc "Você deveria ser estirpado da face da terra."
@@ -141,9 +230,27 @@ label CENA33:
     drc "Temos um faltando, não é?"
     drc "Joe. E quanto ao Joe?"
     drc "Ele não mataria o senhor Sheppard. Jamais. Sheppard cuidou dele. Ele o amava como pai. Estou errado Joe?"
+
+    scene corredor hall
+    with Fade(0.5, 0.5, 0.5)
+
+    show joe neutro with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "..."
     joe "Não posso acreditar..."
+
+    show catherine neutra with dissolve:
+        xalign 0.7 yalign 0.9999999
+
     cth "O que está acontecendo... Meu deus..."
+
+    hide joe
+    hide catherine
+
+    scene corredor quartos
+    with Fade(0.5, 0.5, 0.5)
+
     drc "Você vai apodrecer sem nem um tostão, seu maldito."
     hugo "..."
     hugo "Ha...Ha ha..."
@@ -153,24 +260,41 @@ label CENA33:
     hugo "Me enfrente cara a cara."
     drc "Cale a boca, seu verme."
     drc "Seu destino já está traçado."
+
+    scene corredor hall
+    with Fade(0.5, 0.5, 0.5)
+
+    show joe neutro with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "Detetive..."
     joe "Detetive, abra essa porta. Eu vou matar esse desgraçado!"
     joe "Abra essa maldita porta!"
+
     drc "Joe. Não. Carlo Venchinni virá buscá-lo. Se não entregarmos esse maldito, ele matará vocês dois também."
+
     joe "Mas que merda!"
     joe "Hugo, eu vou te matar!"
     hugo "Pois tente, querido irmão!"
     joe "Aaaaaaaaaaaaaaaaahhhhhhhhhhh"
+
     #play murro na porta
-    #tacar o cachorro aqui
+
     drc "Vou ligar para o senhor Venchinni."
     drc "Joe. Não abra. Me prometa. Não abra."
     drc "Eu vou salvar vocês. Eu jurei para o senhor Sheppard, e para mim mesmo, depois da morte dele."
-    drc "Joe, é uma ordem!"
+    drc "Joe! Pense na Catherine. Venchinni irá matá-la também."
     joe "..."
     hugo "Abra esse porta, seus malditos. Vou matar todos vocês."
     joe "..."
-    joe "Dou minha palavra, senhor."
-    drc "..."
-    drc "Excelente."
+    drc "Certo."
+
+    hide joe
+
+    scene corredor quartos
+    with Fade(0.5, 0.5, 0.5)
+
+    scene quarto
+    with Fade(2, 1, 0.5)
+
     jump CENA34

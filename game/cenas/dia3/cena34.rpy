@@ -1,19 +1,41 @@
 label CENA34:
-    ##scene hall
-    #with Fade(7, 4, 0.5)
+    scene hall
+    with Fade(7, 2, 0.5)
 
-    #show hugo maniaco
+    show hugo sadico
+    show carlo neutro behind hugo:
+        xalign 0.36 yalign 0.999999 xzoom 0.9 yzoom 0.9
     hugo "Meus parabéns seu maldito. Salvou o dia. Seu desgraçado."
+
+    show hugo neutro
+
+    hugo "Quem iria desconfiar do pobre Hugo?"
+
+    show hugo neutro reflexo
+
+    hugo "Não é mesmo, detetive?"
+
+    show hugo assassino:
+        xzoom 1.005 yzoom 1.005
+
     hugo "Era melhor que nunca tivesse aparecido, sua peste."
+
     hugo "O senhor pensa que acabou?"
     hugo "O senhor acha que está resolvido?"
     hugo "Ahahahahaha"
     hugo "Engano o seu. Eu irei buscá-lo detetive..."
     hugo "Irei sim."
-    #show carlo neutro
-    carlo "Cale a boca."
-    carlo "Teremos muito o que conversar ainda hoje."
+    #show vnc neutro
+    vnc "Cale a boca."
+    vnc "Teremos muito o que conversar ainda hoje."
+
+    show hugo sadico with hpunch
+
     hugo "Aaaaaaaaahhhhhhhh"
+
+    show hugo assassino with hpunch:
+        xzoom 1.005 yzoom 1.005
+
     hugo "Me larguem seus porcos."
     hugo "Vou acabar com vocês."
     hugo "Acham que conseguem me matar?"
@@ -21,28 +43,52 @@ label CENA34:
     hugo "Veremos"
     hugo "Ahahahahahahaha..."
     "*Ouve latido. Thorn aparece.*"
+
+    show hugo neutro reflexo
+
     hugo "Thorn, não!"
     "*Thorn tenta atacar Carlo Venchinni.*"
-    carlo "Vira-lata imundo. Matem ele."
+    vnc "Vira-lata imundo. Matem ele."
     hugo "Thorn! Fuja! Agora!"
-    hugo "Gunis atendum kfvok."
+    hugo "GUNIS ATENDUM KFVOK."
     "*Som de tiro*"
     "*Thorn foge*"
-    carlo "Maldito cão. Fugiu."
-    carlo "Mas não importa."
-    carlo "Levem ele."
+    vnc "Maldito cão. Fugiu."
+    "Mas o que foi isso? Parece um código."
+    "Bom, mas já não importa mais."
+
+    show hugo assassino:
+        xzoom 1.005 yzoom 1.005
+
+    vnc "Levem ele."
     hugo "Ahahahaha."
+
+    show hugo assassino with  hpunch:
+        xzoom 1.005 yzoom 1.005
+
     hugo "Isso. Me levem. Me levem."
-    "..."
-    carlo "Assim, me despeço do senhor, Detetive Rightclue."
+
+    hide hugo with dissolve
+
+    show carlo neutro at center with moveinright
+
+    vnc "Assim, me despeço do senhor, Detetive Rightclue."
     drc "Fico grato, senhor Venchinni."
     drc "Garantirei sigilo de tudo que ocorreu aqui. Tem minha palavra."
-    carlo "Excelente."
-    carlo "Sheppard confiou em você. Fiz certo ao confiar também."
+    vnc "Excelente."
+    vnc "Sheppard confiou em você. Fiz certo ao confiar também."
     drc "Até mais, senhor Venchinni"
-    #hide venchinni
-    #hide hugo maniaco
+
+    hide carlo with dissolve
+
+    show joe neutro with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "..."
+
+    show catherine neutra with dissolve:
+        xalign 0.7 yalign 0.9999999
+
     cth "..."
     drc "Bom, meu trabalho termina aqui."
     joe "Senhor Rightclue. Eu nem sei o que dizer. Sinto que recebemos o senhor de forma tão áspera."
@@ -64,6 +110,8 @@ label CENA34:
     drc "Até mais a vocês."
     joe "Até mais, senhor Rightclue."
     cth "Até mais detetive, e obrigada."
-    #hide Joe
-    #hide Catherine
+
+    hide Joe with dissolve
+    hide Catherine with dissolve
+
     jump CENA35

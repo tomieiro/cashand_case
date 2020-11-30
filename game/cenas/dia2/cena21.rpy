@@ -3,19 +3,22 @@ label CENA21:
     "*Batidas apressadas à porta*"
     mrth "Senhor Rightclue!"
 
-    call RANDOMIZE(ind_a_info,["Kamira","Joe"],True)
-    call RANDOMIZE(ind_b_info,["Kamira","Joe"],False)
+    $randomize(ind_a_info,["Kamira","Joe"],True)
+    $randomize(ind_b_info,["Kamira","Joe"],False)
     $ind_a = Character(ind_a_info[0], callback=character_beeps)
     $ind_b = Character(ind_b_info[0], callback=character_beeps)
 
     mrth "Senhor Rightclue!"
-    scene quarto
+
+    scene quarto with dissolve
+    with Fade(1, 1, 0.5)
+
     drc "Sim Martha? São apenas três da manhã."
     mrth "É o Sheppard, senhor! Foi encontrado morto no chão de seu quarto!"
     drc "Não..."
     drc "Não. Não. Não"
 
-    scene corredor
+    scene corredor hall
     with Fade(1, 1, 0.5)
 
     drc "Não. Não. Não. Não. Não"
@@ -24,7 +27,7 @@ label CENA21:
     play music "audio/musicas/Fim.mp3" fadeout 3.0 fadein 5.0
 
     scene sheppard morte
-    with Fade(2, 2, 0.5)
+    with Fade(0.2, 0.2, 0.5)
 
     pause(3)
 

@@ -1,6 +1,6 @@
 label CENA32:
-    ##scene quarto
-    #with Fade(5, 3, 0.5)
+    scene quarto
+    with Fade(1, 1, 0.5)
     "Aqui estou. Preciso encontrar algo. Algo que seja decisivo."
 
     #puzzle point and click para achar cofre dentro da comoda e chave dentro do lustre.
@@ -33,16 +33,21 @@ label CENA32:
     drc "Ora ora..."
     "..."
     "Joe irá regressar... Preciso colocar essas coisas no lugar"
-    ##scene quarto
-    #with Fade(5, 3, 0.5)
+
+    scene quarto
+    with Fade(2, 3, 0.5)
+
     "Pronto. Agora, para meu quarto"
-    ##scene corredor
-    #with Fade(5, 3, 0.5)
-    ##scene quarto
-    #with Fade(5, 3, 0.5)
+
+    scene corredor hall
+    with Fade(1, 1, 0.5)
+
+    scene quarto
+    with Fade(1, 1, 0.5)
+
     "Certo. Tenho que ter cautela em minhas conclusões. Mas tenho uma forte pista para inocentar Joe."
     drc "Catherine... Será você?"
-    "Preciso manter o olho em Kamira. E falar com Hugo. Mas tenho maior suspeita em Kamira."
+    "Preciso manter o olho nela. E falar com Hugo. Mas tenho maior suspeita em Catherine, de fato."
     "Hugo não mostrou nenhuma atitude suspeita, desde o início. Porém..."
     "Mas não posso me descuidar. Isso pode ser uma tentativa de ocultar sua presença na situação."
     "Isso é realmente muito estranho. Vou provocá-lo assim como fiz com Catherine."
@@ -57,6 +62,6 @@ label CENA32:
     "Preciso ser paciente."
     "Cada ato será fundamental. Irreversível. Calma. Preciso de calma."
     "..."
-    ##scene quarto
-    #with Fade(5, 3, 0.5)
+    scene quarto
+    with Fade(3, 3, 0.5)
     jump CENA33
