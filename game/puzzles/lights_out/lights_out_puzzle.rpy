@@ -68,8 +68,8 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
         background img_bg
         if(not lop_fim):
             add DynamicDisplayable( timer_puzzle,
-                                    tempo_total=65.0,
-                                    tempo_troca=60.0,
+                                    tempo_total=120.0,
+                                    tempo_troca=30.0,
                                     label_fim_tempo = lop_game_over_label,
                                     screen = 'lights_out_puzzle',
                                     style_ok = 'lop_text_timer_ok',
