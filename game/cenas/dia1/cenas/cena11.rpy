@@ -30,6 +30,34 @@ label CENA11:
     with Fade(1, 2, 0.5)
     shp_side "Sente-se detetive."
     drc "Agradeço."
+    shp_side "Antes de começarmos, aceita um chá?"
+    drc "Oh, claro."
+    shp_side "Um instante..."
+    "..."
+    #play relogio
+    shp_side "Ora. Esse maldito relogio."
+    drc "Relógio?"
+    shp_side "Sim. Olhe logo abaixo da mesa."
+    drc "Oh, sim."
+    shp_side "Me foi vendido por um comerciante estrangeiro."
+    shp_side "Disse que era de última geração."
+    shp_side "Mas realmente não passa de uma porcaria."
+    shp_side "Tem alguns botões esquisitos no verso."
+    shp_side "Além da necessidade de ficar ligado na tomada o dia todo, ainda soa fora de hora."
+    drc "Talvez eu possa dar um jeito."
+
+    #puzzle lights out no fundo do relogio
+
+    drc "Prontinho."
+    shp_side "Ora essa. Além de detetive, também conserta essas coisas elétricas..."
+    drc "Era apenas uma configuração específica dos botões, agora parece estar correto."
+    drc "Tive contato com um desses algum tempo atrás..."
+    shp_side "Senhor Rightclue, me sinto cada vez mais orgulhoso de ter te escolhido."
+    shp_side "O senhor é tão perspicaz quanto dizem."
+    drc "Ora senhor Sheppard. Fico grato pela consideração."
+    shp_side "Aqui seu chá."
+    drc "Muito agradecido."
+    shp_side "Bom, vamos lá..."
     shp_side "Senhor Rightclue, o que aconteceu aqui é um caso sério. Uma pessoa importante foi assassinada."
     drc "Pelo que consta no relatório, Senhor Cashand, correto?"
     shp_side "Exato! Os Cashand são famosos em Anothertown por serem ricos há certas décadas."
@@ -57,6 +85,11 @@ label CENA11:
     shp_side "De fato. Mas ainda sim, meu orgulho fala mais alto senhor Rightclue, meu dever terá de ser cumprido."
     drc "Hum Hum. O senhor tem meu respeito senhor Sheppard. Pode contar comigo nesse caso."
     shp_side "Estava certo que poderia contar com o senhor, detetive."
+    shp_side "Então vamos lá. Para a casa dos Cashand."
+    drc "Certo. Posso deixar a xícara por aqui?"
+    shp_side "Deixe em qualquer canto. Quando eu voltar eu dou um jeito nisso."
+    drc "Certo."
+    shp_side "Venha."
     scene cidade
     with Fade(1, 1, 0.5)
     shp "Vamo para a mansão. Siga-me."
