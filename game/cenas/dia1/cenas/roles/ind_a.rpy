@@ -67,7 +67,6 @@ label DIALOGO_HUGO_12_A:
     hugo "Muito bom, garoto. Vamos lá, vou colocar sua coleira."
     hugo "Pronto."
     hugo "Calma, calma, já vamos..."
-    "*Hugo é arrastado pelo Thorn até a saída*"
     "Parecem muito próximos... e o cachorro é muito inteligente."
     shp "Tenha cuidado, Hugo!"
     drc "Esse está bem animado, dada a situação."

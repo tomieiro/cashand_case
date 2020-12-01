@@ -46,8 +46,15 @@ label CENA21:
     "Meu deus. Meu deus."
     "Por que?"
     "Ele segurava um lenço."
-    #Coleta lenço e coloca "..." quando ele clicar.
-    "*Rightclue guarda o lenço*"
+
+    #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
+    #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
+    default pac3_item_lenco = ["images/engler/itens/pano.png", "Lenço do senhor Sheppard. Sinto falta dele...", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
+    show screen mostra_item(pac3_item_lenco[0]) with dissolve
+    pause 0.3
+    "..."
+    hide screen mostra_item with dissolve
+    $renpy.notify("Coletou Pista - Lenço do Sheppard!")
     "Me desculpe senhor Sheppard.."
     "Eu não cheguei a tempo."
     "Não cheguei..."

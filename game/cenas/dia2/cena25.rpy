@@ -11,16 +11,12 @@ label CENA25:
     "Estão preparando o velório de Kamira."
     "Como Sheppard, será enterrada amanhã de manhã."
     "Preciso pensar..."
-    "Onde coloquei aquele bilhete?"
-    "..."
-    "..."
-    "Aqui está."
-    "Está todo rasgado."
+
+    call INVENTARIO_DE_ESCOLHA_DIA02
+
     "Talvez se eu..."
 
-    #call inventario escolher bilhete
-
-    #call puzzle slider com fundo do bilhete 3x3
+    call SLIDER_PUZZLE_3X3_DIA02
 
     "Gravador comoda senha culpado"
     "Espere um pouco... É isso..."

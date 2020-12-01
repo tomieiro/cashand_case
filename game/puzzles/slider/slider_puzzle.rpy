@@ -13,7 +13,7 @@ default slp_img_pecas = ["images/prototipo/tranca/row-1-col-1.png", "images/prot
 default slp_pecas = [
 [0, 0], [1, 0], [2, 0],
 [0, 1], [1, 2], [1, 1],
-[0, 2], [2, 1]
+[0, 2], [2, 1], [2, 2]
 ]
 
 default slp_peca_faltante = [2, 2]
@@ -43,10 +43,22 @@ screen slider_puzzle(dim, img_bg = "#fff"):
     frame:
         style "slp_tela_cheia"
         background img_bg
+        if(not slp_fim):
+            add DynamicDisplayable( timer_puzzle,
+                                    tempo_total=120.0,
+                                    tempo_troca=30.0,
+                                    label_fim_tempo = lop_game_over_label,
+                                    screen = 'slider_puzzle',
+                                    style_ok = 'lop_text_timer_ok',
+                                    style_acabando = 'lop_text_timer_acabando',
+                                    fim = lop_fim
+                                    ) at topright
+
         frame:
             at truecenter
             style "slp_margem"
             for i in range((dim*dim)-1):
+                #if slp_pecas[i][0] != slp_peca_faltante[0] or slp_pecas[i][1] != slp_peca_faltante[1]:
                 frame:
                     style "slp_botao_fundo"
                     at posicao_peca(slp_pecas[i][0], slp_pecas[i][1])
