@@ -1,9 +1,9 @@
 label QUARTO_HOUGIN:
-    scene quarto
-    with Fade(2,1,0.5)
+    scene corredor quartos
+    with Fade(1,1,0.5)
 
     shp "Bem, detetive, aqui estamos."
-    shp "Peço perdão pela comoção, mas foi aqui, nesta mesma cama, que o senhor Hougin encontrou seu fim."
+    shp "Peço perdão pela comoção, mas foi aqui, neste mesmo quarto, que o senhor Hougin encontrou seu fim."
     drc "Entendo. Mas peço que aguente, senhor Sheppard. Toda pista é importante aqui."
     shp "De fato..."
 
