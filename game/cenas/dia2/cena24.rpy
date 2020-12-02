@@ -80,13 +80,13 @@ label CENA24:
     "Tem algo em sua boca..."
     #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
     #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
-    default pac2_item_papel = ["#fff", "Papel rasgado. Foi retirado da... boca de Kamira...", False, 20, False, "IDE_02_ESCOLHEU_PAPEL"]
+    default pac2_item_papel = ["images/engler/itens/bilhete picado.png", "Papel rasgado. Foi retirado da... boca de Kamira...", False, 20, False, "IDE_02_ESCOLHEU_PAPEL"]
     show screen mostra_item(pac2_item_papel[0]) with dissolve
     pause 0.3
     "Pode ser uma pista muito importante, vou levar."
     hide screen mostra_item with dissolve
     $renpy.notify("Coletou Pista - Papel Rasgado!")
-    
+
     "Preciso avisar os outros."
     "Essa será uma longa noite..."
 

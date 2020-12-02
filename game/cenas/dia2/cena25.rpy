@@ -50,7 +50,7 @@ label CENA25:
     "O ligo na tomada, e então ...."
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
-    #call slider gravador peças -> 4x4
+    #call slider gravador peças -> 3x3
 
     play sound "audio/sonoplastia/Destravando.mp3"
     $renpy.pause(2, hard=hardPause)
