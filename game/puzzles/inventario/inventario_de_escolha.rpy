@@ -23,16 +23,13 @@ default ide_descricao = ""
 
 default ide_label_repetir = "IDE_01_ESCOLHE_FRASE"
 
-transform ide_bot_tr:
-    maxsize (150, 150)
-    xalign 0.5
-    yalign 0.5
-
 image ide_img_inventario:
     "images/inventario/inventario4.png"
 
+default ide_label_fim = "IDE_01_FIM"
+
 transform ide_bot_tr:
-    maxsize (120, 120)
+    maxsize (140, 140)
     xalign 0.5
     yalign 0.5
 
@@ -45,9 +42,11 @@ transform ide_botao_abrir:
 
 transform ide_botao_sair:
     size (50, 250)
-    xalign 1.108
+    xanchor 0.0
+    xpos 1128
     rotate 180.0
-    yalign 0.1
+    yanchor 0.0
+    ypos 60
 
 transform ide_botao_fechar:
     xanchor 0.0
@@ -74,7 +73,7 @@ screen inventario_de_escolha():
     #modal True
 
     if(ide_fim):
-        timer ide_tempo action Return()
+        timer ide_tempo action Jump(ide_label_fim)
         #key "mousedown_1" action Jump("FIM_IDE_TESTE")
 
     frame:
@@ -107,7 +106,7 @@ screen inventario_de_escolha():
             transpose True
             for item in ide_itens_no_inventario:
                 frame:
-                    background "#b33a2e"
+                    background "#d7b883"
                     xsize 155
                     ysize 155
                     imagebutton:

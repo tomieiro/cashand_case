@@ -20,6 +20,8 @@ default slp_peca_faltante = [2, 2]
 
 default slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02"
 
+default slp_sucesso_label = "SUCESSO_SLP_3X3_DIA02"
+
 default slp_imagem_final = "images/prototipo/tranca/tranca.png"
 
 default slp_timer_total = 180.0
@@ -81,7 +83,7 @@ screen slider_puzzle(dim, img_bg = "#fff"):
     if slp_fim:
         #chamar a screen de mostrar a resposta final pra ter um tempinho antes
         add slp_imagem_final maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
-        timer 3.0 action Return()
+        timer 3.0 action Jump(slp_sucesso_label)
 
 
 init python:

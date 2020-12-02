@@ -18,11 +18,19 @@ label INVENTARIO_DE_ESCOLHA_DIA02:
         ide_aux_item = []
         ide_sensivel = False
         ide_label_repetir = "IDE_02_ESCOLHE_FRASE"
+        ide_label_fim = "IDE_02_FIM"
+
+    play music "audio/musicas/Dilema.mp3" fadein 5.0
 
     #Chama a tela
     show screen inventario_de_escolha() with puzzle_transition8
 
     jump IDE_02_ESCOLHE_FRASE
+
+label IDE_02_FIM:
+    stop music fadeout 5.0
+    hide screen inventario_de_escolha with puzzle_transition8
+    return
 
 
 label IDE_02_ESCOLHE_FRASE:
@@ -31,7 +39,7 @@ label IDE_02_ESCOLHE_FRASE:
         "Onde coloquei aquele bilhete?"
         "..."
         $ide_sensivel = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
     elif(ide_aux_count == 1):
         #Última frase do puzzle...
         #Recomenda-se não ter muito texto aqui

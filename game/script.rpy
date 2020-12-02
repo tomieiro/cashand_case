@@ -5,8 +5,7 @@ label start:
     stop music fadeout(4)
 
     #Vai para a área de testagem de telas
-    #jump INVENTARIO_DE_ESCOLHA_DIA01
-    #jump LIGHTS_OUT_PUZZLE_3X3
+    #jump QUARTO_HOUGIN
     #jump CONCLUINDO_DIA1
     #call TESTES_TELAS
 

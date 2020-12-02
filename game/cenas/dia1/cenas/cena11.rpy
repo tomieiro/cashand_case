@@ -38,15 +38,9 @@ label CENA11:
     shp_side "Ora. Esse maldito relogio."
     drc "Relógio?"
     shp_side "Sim. Olhe logo abaixo da mesa."
-    drc "Oh, sim."
-    shp_side "Me foi vendido por um comerciante estrangeiro."
-    shp_side "Disse que era de última geração."
-    shp_side "Mas realmente não passa de uma porcaria."
-    shp_side "Tem alguns botões esquisitos no verso."
-    shp_side "Além da necessidade de ficar ligado na tomada o dia todo, ainda soa fora de hora."
-    drc "Talvez eu possa dar um jeito."
 
     #puzzle lights out no fundo do relogio
+    call LIGHTS_OUT_PUZZLE_3X3_DIA01
 
     drc "Prontinho."
     shp_side "Ora essa. Além de detetive, também conserta essas coisas elétricas..."
