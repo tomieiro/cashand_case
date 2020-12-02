@@ -13,10 +13,18 @@ default slp_img_pecas = ["images/prototipo/tranca/row-1-col-1.png", "images/prot
 default slp_pecas = [
 [0, 0], [1, 0], [2, 0],
 [0, 1], [1, 2], [1, 1],
-[0, 2], [2, 1], [2, 2]
+[0, 2], [2, 1], [2, 2], [2, 2]
 ]
 
 default slp_peca_faltante = [2, 2]
+
+default slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02"
+
+default slp_imagem_final = "images/prototipo/tranca/tranca.png"
+
+default slp_timer_total = 180.0
+
+default slp_timer_quase = 30.0
 
 # no gabarito de um 3x3:
 #   slp_pecas[0] = [0, 0],
@@ -45,13 +53,13 @@ screen slider_puzzle(dim, img_bg = "#fff"):
         background img_bg
         if(not slp_fim):
             add DynamicDisplayable( timer_puzzle,
-                                    tempo_total=120.0,
-                                    tempo_troca=30.0,
-                                    label_fim_tempo = lop_game_over_label,
+                                    tempo_total=slp_timer_total,
+                                    tempo_troca=slp_timer_quase,
+                                    label_fim_tempo = slp_game_over_label,
                                     screen = 'slider_puzzle',
                                     style_ok = 'lop_text_timer_ok',
                                     style_acabando = 'lop_text_timer_acabando',
-                                    fim = lop_fim
+                                    fim = slp_fim
                                     ) at topright
 
         frame:
@@ -72,7 +80,7 @@ screen slider_puzzle(dim, img_bg = "#fff"):
 
     if slp_fim:
         #chamar a screen de mostrar a resposta final pra ter um tempinho antes
-        add "images/prototipo/tranca/tranca.png" maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
+        add slp_imagem_final maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
         timer 3.0 action Return()
 
 

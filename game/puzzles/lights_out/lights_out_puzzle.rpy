@@ -14,7 +14,7 @@ init python:
 
         restante = tempo_total - st
 
-        print(restante)
+        #print(restante)
 
         parts_dict = {
             'minutes' : int( restante // 60 ),
@@ -24,7 +24,8 @@ init python:
 
         if restante <= tempo_troca and not lop_proximo_do_fim:
             lop_proximo_do_fim = True
-            renpy.music.play(filenames="audio/musicas/Dilema.mp3", channel="music", loop=True)
+            renpy.music.stop(channel='music', fadeout=1.0)
+            renpy.music.play(filenames="audio/musicas/Dilema.mp3", channel="music", loop=True, fadein=1.0)
 
         if restante <= 0.0 and not fim:
             renpy.hide_screen(screen)
@@ -50,6 +51,10 @@ default lop_game_over_label = "FIM_LOP_3x3"
 
 default lop_proximo_do_fim = False
 
+default lop_timer_total = 180.0
+
+default lop_timer_quase = 30.0
+
 transform lop_img_tr(tam=200):
     size (tam, tam)
     xalign 0.5
@@ -68,8 +73,8 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
         background img_bg
         if(not lop_fim):
             add DynamicDisplayable( timer_puzzle,
-                                    tempo_total=120.0,
-                                    tempo_troca=30.0,
+                                    tempo_total=lop_timer_total,
+                                    tempo_troca=lop_timer_quase,
                                     label_fim_tempo = lop_game_over_label,
                                     screen = 'lights_out_puzzle',
                                     style_ok = 'lop_text_timer_ok',
