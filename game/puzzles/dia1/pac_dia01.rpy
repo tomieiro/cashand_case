@@ -52,7 +52,7 @@ screen point_and_click_dia1():
                 )
 
     frame:
-        background "images/cenarios/quarto.png"
+        background "images/engler/cenarios/quarto hougin.png"
         xsize 1280
         ysize 720
 

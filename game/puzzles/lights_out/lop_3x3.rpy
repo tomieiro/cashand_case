@@ -20,6 +20,8 @@ label LIGHTS_OUT_PUZZLE_3X3:
 
         lop_pecas = renpy.random.choice(lop_configuracoes)
         lop_game_over_label = "FIM_LOP_3x3"
+        lop_timer_total = 180.0
+        lop_timer_quase = 30.0
 
     play music "audio/musicas/Descobrimento.mp3"
 
@@ -28,5 +30,5 @@ label LIGHTS_OUT_PUZZLE_3X3:
     return
 
 label FIM_LOP_3x3:
-    "Droga, vamos tentar novamente"
+    "Droga, vou tentar novamente..."
     jump LIGHTS_OUT_PUZZLE_3X3

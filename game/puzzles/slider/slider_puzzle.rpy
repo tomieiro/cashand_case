@@ -13,10 +13,18 @@ default slp_img_pecas = ["images/prototipo/tranca/row-1-col-1.png", "images/prot
 default slp_pecas = [
 [0, 0], [1, 0], [2, 0],
 [0, 1], [1, 2], [1, 1],
-[0, 2], [2, 1]
+[0, 2], [2, 1], [2, 2], [2, 2]
 ]
 
 default slp_peca_faltante = [2, 2]
+
+default slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02"
+
+default slp_imagem_final = "images/prototipo/tranca/tranca.png"
+
+default slp_timer_total = 180.0
+
+default slp_timer_quase = 30.0
 
 # no gabarito de um 3x3:
 #   slp_pecas[0] = [0, 0],
@@ -43,10 +51,22 @@ screen slider_puzzle(dim, img_bg = "#fff"):
     frame:
         style "slp_tela_cheia"
         background img_bg
+        if(not slp_fim):
+            add DynamicDisplayable( timer_puzzle,
+                                    tempo_total=slp_timer_total,
+                                    tempo_troca=slp_timer_quase,
+                                    label_fim_tempo = slp_game_over_label,
+                                    screen = 'slider_puzzle',
+                                    style_ok = 'lop_text_timer_ok',
+                                    style_acabando = 'lop_text_timer_acabando',
+                                    fim = slp_fim
+                                    ) at topright
+
         frame:
             at truecenter
             style "slp_margem"
             for i in range((dim*dim)-1):
+                #if slp_pecas[i][0] != slp_peca_faltante[0] or slp_pecas[i][1] != slp_peca_faltante[1]:
                 frame:
                     style "slp_botao_fundo"
                     at posicao_peca(slp_pecas[i][0], slp_pecas[i][1])
@@ -60,7 +80,7 @@ screen slider_puzzle(dim, img_bg = "#fff"):
 
     if slp_fim:
         #chamar a screen de mostrar a resposta final pra ter um tempinho antes
-        add "images/prototipo/tranca/tranca.png" maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
+        add slp_imagem_final maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
         timer 3.0 action Return()
 
 

@@ -6,8 +6,9 @@ label INVENTARIO_DE_ESCOLHA_DIA01:
     #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
     python:
         ide_seq_gabarito = [11, 10]
-        pac1_itens_no_inventario = [pac1_item_sangue, pac1_item_relogio]
+        #pac1_itens_no_inventario = [pac1_item_sangue, pac1_item_relogio]
         #Adiciona todos os itens que foram coletados anteriormente
+        ide_itens_no_inventario = []
         for item in pac1_itens_no_inventario:
             #if(item[2]):
             ide_itens_no_inventario.append(item)
