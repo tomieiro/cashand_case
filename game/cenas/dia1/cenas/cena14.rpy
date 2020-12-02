@@ -1,11 +1,25 @@
 label CENA14:
-    "*Sheppard bate na porta*"
+
+    play sound "audio/sonoplastia/BatidaPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
 
     shp "Detetive?"
     drc "Senhor Sheppard, estou indo."
 
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
+
+    play sound "audio/sonoplastia/Passos.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     show sheppard neutro with dissolve:
         xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
+
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
+
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
 
     shp "Como foi o banho e o jantar, senhor Rightclue."
     drc "Excelente, senhor Sheppard. Fico realmente agradecido por me prover essa estadia."
@@ -32,32 +46,32 @@ label CENA14:
     hide sheppard neutro with dissolve
 
     "Consigo perceber a riqueza dessa família, pela quantidade de telefones nessa casa..."
-    shp "Boa noite telefonista, gostaria de uma tranferência para Carlo Venchinni, Cidade de Cothertown, Estado de Thundereyes."
+    shp_side "Boa noite telefonista, gostaria de uma tranferência para Carlo Venchinni, Cidade de Cothertown, Estado de Thundereyes."
     "..."
-    shp "Senhor Venchinni. Boa noite. Aqui é Sheppard."
+    shp_side "Senhor Venchinni. Boa noite. Aqui é Sheppard."
     vnc "Ora, Sheppard, meu amigo! Já faz algum tempo."
-    shp "É verdade senhor. Peço desculpas pelo contato escasso."
+    shp_side "É verdade senhor. Peço desculpas pelo contato escasso."
     vnc "Sheppard, em sua posição, entrar em contato com outro negociante, seria traição."
     vnc "Mas agora, sem aquele velho rabugento, está tudo de acordo."
-    shp "Senhor, por favor, eu o considerava muito."
+    shp_side "Senhor, por favor, eu o considerava muito."
     vnc "Devo muito ao senhor, não quero parecer desrespeitoso. Já basta ser frio todos os dias, agora também o faço com um amigo..."
     vnc "Sinto muito pela perda, Sheppard."
-    shp "Obrigado, meu amigo."
+    shp_side "Obrigado, meu amigo."
     vnc "Mas em que posso ajudar, Sheppard?"
-    shp "Venho pedir um favor ao senhor."
+    shp_side "Venho pedir um favor ao senhor."
     vnc "Pois peça. Não tenho como negar nada ao senhor."
-    shp "Gostaria que o senhor desse um jeito no maldito que matou o senhor Hougin. Estou pedindo por mim mesmo, e não em nome de ninguém."
+    shp_side "Gostaria que o senhor desse um jeito no maldito que matou o senhor Hougin. Estou pedindo por mim mesmo, e não em nome de ninguém."
     vnc "Não tenho afinidade nenhuma com essa família, senhor Sheppard, mas devo muito ao senhor. Então, farei o que me pedir."
-    shp "Agradeço muito meu amigo."
-    shp "Contratei um detetive, muito experiente e astuto, por sinal. É o senhor Rightclue."
-    shp "Ele me garantiu sigilo e coopera comigo na investigação do traidor. É realmente uma pessoa de confiança."
+    shp_side "Agradeço muito meu amigo."
+    shp_side "Contratei um detetive, muito experiente e astuto, por sinal. É o senhor Rightclue."
+    shp_side "Ele me garantiu sigilo e coopera comigo na investigação do traidor. É realmente uma pessoa de confiança."
     vnc "Pois bem. Aquele que vocês me indicarem, será executado pelo nosso grupo."
-    shp "Agradeço por tudo, senhor Venchinni."
+    shp_side "Agradeço por tudo, senhor Venchinni."
     vnc "Apenas estou devolvendo favores, Sheppard. Conte comigo."
-    shp "Agradeço desde já, senhor. Tenha uma ótima noite."
+    shp_side "Agradeço desde já, senhor. Tenha uma ótima noite."
     vnc "Igualmente Sheppard. Marcaremos de tomar um cerveja depois que tudo isso passar."
-    shp "Certamente, senhor Venchinni."
-    shp "Até mais..."
+    shp_side "Certamente, senhor Venchinni."
+    shp_side "Até mais..."
 
     show sheppard neutro with dissolve:
         xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
@@ -70,21 +84,35 @@ label CENA14:
     shp "E então? O que o senhor acha? O senhor tem ideia de quem está por trás disso?"
     drc "Senhor Sheppard, tenho uma conclusão a respeito de quem são os suspeitos que poderiam estar por trás desses assassinatos."
     shp "Por favor, então me conte!"
-    "*Ouve leve barulho no corredor*"
 
-    scene quarto with dissolve
-    with Fade(0.2, 0.2, 0.5)
+    play sound "audio/sonoplastia/Barulho.mp3"
+    $renpy.pause(3, hard=hardPause)
+
+    scene fundo preto
+    with Fade(0.3, 0.3, 0.5)
+
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(0.5, hard=hardPause)
+
+    scene corredor hall
+    with Fade(0.3, 0.7, 0.5)
+
+    scene corredor quartos
+    with Fade(0.7, 0.7, 0.5)
+
+    scene quarto
+    with Fade(0.2, 0.5, 0.5)
+
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
 
     drc "Alguém estava aqui, senhor Sheppard."
 
-    scene quarto with dissolve
-    with Fade(0.2, 0.2, 0.5)
-
     show sheppard neutro with dissolve:
         xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
-    
+
     shp "Quem quer que seja, já se foi. Por garantia, venha para o lado da janela."
-    "Falemos baixo. Rápido detetive, me diga."
+    shp "Falemos baixo. Rápido detetive, me diga."
     drc "Poderia estar te submetendo à certo perigo, senhor Sheppard."
     shp "Como assim?"
 
