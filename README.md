@@ -38,4 +38,4 @@ Os transições personalizadas dos puzzles foram disponibilizadas abertamente po
 <br><br>
 A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy<br>
 
-As musicas foram produzidas em sua maioria, pelos próprios integrantes do grupo, utilizando instrumentos particulares para conceituação e utilizando ferramentas como o TuxGuitar (http://www.tuxguitar.com.ar/) e o BoscaCeoil (https://boscaceoil.net/) e alguns efeitos sonoras na ferramenta PixiTracker(https://warmplace.ru/soft/pixitracker/).
+As musicas foram produzidas pelos próprios integrantes do grupo, utilizando instrumentos particulares e utilizando ferramentas como o TuxGuitar (http://www.tuxguitar.com.ar/) e o BoscaCeoil (https://boscaceoil.net/) e alguns efeitos sonoras na ferramenta PixiTracker(https://warmplace.ru/soft/pixitracker/). A sonoplastia foi toda gravada utilizando microfones com redução de ruído pelos próprios membros.
