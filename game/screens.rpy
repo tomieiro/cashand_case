@@ -747,12 +747,13 @@ screen preferences():
                         textbutton _("Janela") action Preference("display", "window")
                         textbutton _("Tela Cheia") action Preference("display", "fullscreen")
 
-                vbox:
-                    style_prefix "radio"
-                    label _("Lado para Voltar Diálogos")
-                    textbutton _("Desabilitado") action Preference("rollback side", "disable")
-                    textbutton _("Esquerda") action Preference("rollback side", "left")
-                    textbutton _("Direita") action Preference("rollback side", "right")
+                if(habilitar_voltar):
+                    vbox:
+                        style_prefix "radio"
+                        label _("Lado para Voltar Diálogos")
+                        textbutton _("Desabilitado") action Preference("rollback side", "disable")
+                        textbutton _("Esquerda") action Preference("rollback side", "left")
+                        textbutton _("Direita") action Preference("rollback side", "right")
 
                 vbox:
                     style_prefix "check"
@@ -1072,9 +1073,10 @@ screen mouse_help():
         label _("Botão Direito")
         text _("Acessa o menu do jogo.")
 
-    hbox:
-        label _("Rolar para Cima\nClicar no lado do Rollback")
-        text _("Volta para um diálogo anterior.")
+    if(habilitar_voltar):
+        hbox:
+            label _("Rolar para Cima\nClicar no lado do Rollback")
+            text _("Volta para um diálogo anterior.")
 
     hbox:
         label _("Rolar para Baixo")
