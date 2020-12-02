@@ -4,17 +4,36 @@ label CENA31:
     "Mais um enterro foi feito. Tenho certeza que o último. Não deixarei o culpado sair impune."
     "Voltarei antes para a mansão e aguardarei todos lá."
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene cidade
-    with Fade(3,1,0.5)
+    with Fade(2,1,0.5)
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene jardim
     with Fade(2,1,0.5)
 
+    play sound "audio/sonoplastia/Passos.mp3"
+    scene fundo preto
+    with Fade(2,1,0.5)
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
+    play sound "audio/sonoplastia/Passos.mp3"
     scene hall
-    with Fade(3, 1, 0.5)
+    with Fade(2, 1, 0.5)
+
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     "Todos os três devem estar próximos. Ficarei atento a cada reação, cada detalhe..."
     "Catherine está entrando..."
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     drc "Meus pêsames Catherine. Sinto-me impotente diante desses acontecimentos."
     "Preciso ter calma. Observamos as reações pelas palavras. Pelas frases."
 
@@ -45,7 +64,8 @@ label CENA31:
     "Aguardarei."
     "Mas investigarei o quarto de Joe antes. Ele estará ocupado com a conversa. Da janela de seu quarto posso ver aqui embaixo. Será seguro."
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene corredor quartos
-    with Fade(1, 1, 0.5)
+    with Fade(1, 2, 0.5)
 
     jump CENA32

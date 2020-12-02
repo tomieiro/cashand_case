@@ -12,7 +12,7 @@ label CENA22:
     "Por segurança, pediram que Martha e outros funcionários se retirassem do serviço por algum tempo."
     "Preciso ser rápido e descobrir quem está por trás de tudo isso."
 
-    play music "audio/musicas/Onde.mp3" fadeout 3.0 fadein 5.0
+    play music "audio/musicas/Onde.mp3" fadein 5.0
 
     "*[ind_a_info[0]] se aproxima do senhor Rightclue*"
     ind_a "Senhor Rightclue."
@@ -20,9 +20,9 @@ label CENA22:
     drc "Olá [ind_a_info[1]]. Meus pêsames pela perda. O senhor Sheppard realmente se importava com vocês."
 
     if ind_a_info[1] == "Hugo":
-        show hugo neutro
+        show hugo neutro with dissolve
     else:
-        show catherine neutra
+        show catherine neutra with dissolve
 
     ind_a "Sim, senhor Rightclue. Apesar de tudo, Sheppard era como um membro da família. Vou sentir sua falta."
     "*[ind_a_info[0]] enxuga uma lágrima*"
@@ -32,8 +32,11 @@ label CENA22:
     drc "Dou minha palavra a você [ind_a_info[1]]. Prometo achar o culpado por tudo isso."
     ind_a "Deixo em suas mãos, detetive."
 
-    hide hugo
-    hide catherine
+    hide hugo with dissolve
+    hide catherine with dissolve
+
+    play sound "audio/sonoplastia/Passos.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     "Se o responsável por isso pensa que sairá impune, juro por minha honra que não irá!"
     "Farei justiça pelo senhor Sheppard. O culpado será preso. Ajudarei os herdeiros a se livrarem desse traidor!"
@@ -48,11 +51,11 @@ label CENA22:
     "..."
     "Pararam. Irei até eles."
     "Não tenho necessariamen..."
+    scene cemiterio with vpunch
     desconhecido "Senhor Rightclue, eu suponho?"
     "..."
-    "*Rightclue se vira*"
 
-    show carlo neutro
+    show carlo neutro with dissolve
 
     drc "Sim, exato. E qual seria sua graça, senhor?"
     desconhecido "O Senhor me conhece, Senhor Rightclue. E sugiro que se lembre rapidamente. E falemos baixo, sim?"
@@ -76,6 +79,8 @@ label CENA22:
     vnc "Ótimo. Que assim seja."
 
     hide carlo neutro with dissolve
+    play sound "audio/sonoplastia/Passos.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     #hide vnc com um dissolve talvez
     "Meu deus. Tenho um fardo grande para carregar."

@@ -41,8 +41,19 @@ label MENU_CONTAR_SHEPPARD:
             drc "Não acho que o assassino arriscaria me matar. O chefe envolveria toda a polícia no caso. E o assassino tem consciência disso."
             shp "O senhor está certo. Mas mesmo assim, tenha cuidado."
             drc "Certamente."
-            shp "Agradeço por tudo, senhor Rightclue."
 
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+    shp "Agradeço por tudo, senhor Rightclue."
     hide sheppard with dissolve
     stop music fadeout(5)
+    play sound "audio/sonoplastia/Passos.mp3"
+    $renpy.pause(3, hard=hardPause)
+
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
+
     jump CENA21

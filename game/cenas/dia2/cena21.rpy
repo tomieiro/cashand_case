@@ -3,8 +3,9 @@ label CENA21:
     scene quarto
     with Fade(4,2,0.5)
 
-    "*Batidas apressadas à porta*"
     scene quarto with hpunch
+    play sound "audio/sonoplastia/BatidaRapidaPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
     mrth "Senhor Rightclue!"
 
     $randomize(ind_a_info,["Kamira","Joe"],True)
@@ -13,13 +14,25 @@ label CENA21:
     $ind_b = Character(ind_b_info[0], callback=character_beeps)
 
     scene quarto with hpunch
+    play sound "audio/sonoplastia/BatidaRapidaPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
     mrth "Senhor Rightclue!"
 
     drc "Sim Martha? São apenas três da manhã."
     mrth "É o Sheppard, senhor! Está morto no chão de seu quarto!"
     mrth "Céus, venha de pressa."
     drc "Não..."
+
+    play sound "audio/sonoplastia/LevantandoDaCama.mp3"
+    $renpy.pause(1, hard=hardPause)
+
     drc "Não. Não. Não"
+
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
 
     scene corredor hall
     with Fade(1, 1, 0.5)

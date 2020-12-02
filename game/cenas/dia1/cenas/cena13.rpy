@@ -1,11 +1,14 @@
 label CENA13:
+    play sound "audio/sonoplastia/Passos.mp3"
+    stop music fadeout(3)
     scene hall
     with Fade(2, 1, 0.5)
 
     show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
-    play music "audio/musicas/Descobrimento.mp3" fadeout 1.0 fadein 1.0
+    $renpy.music.set_volume(0.5, delay=0, channel='music')
+    play music "audio/musicas/Pistas.mp3" fadein 3.0
 
     shp "Aqui estamos. Senhor Rightclue, este é um ponto decisivo. É aqui que tudo começa pra você. As decisões que tomar a partir daqui, definirão se o senhor trará dias melhores para esta família."
     drc "Estou ciente, senhor Sheppard. Assumo esta responsabilidade."
