@@ -25,6 +25,7 @@ label APP_DIA1:
         app_qtd_letras = 5
         app_label_game_over = "APP_DIA1_GAME_OVER"
     #Chama a tela
+    play sound "audio/musicas/Descobrimento.mp3"
     call screen acertar_palavra_puzzle() with puzzle_transition8
     return
 

@@ -11,14 +11,38 @@ label CENA33:
     "Verei Hugo primeiro."
     "Ele deve estar lá embaixo."
 
+
+
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
+    play sound "audio/sonoplastia/Passos.mp3"
+    scene fundo preto
+    with Fade(1, 2, 0.5)
+
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
     scene corredor hall
     with Fade(2, 1, 0.5)
 
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
+    play sound "audio/sonoplastia/Passos.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     "Claro..."
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
     "Deixe me retirar isso..." #-> Coletou um item ???
     "Pronto."
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
     "Vamos lá."
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene hall
     with Fade(3, 1, 0.5)
 
@@ -29,36 +53,32 @@ label CENA33:
 
     hugo "Senhor Rightclue. Estamos destruidos. Não conseguimos mais aguentar ver pessoas queridas morrerem."
     drc "Eu entendo."
-    "Vou tomar o mesmo caminho que com Catherine."
     drc "Prometo resolver esse caso no mais tarde, amanhã de manhã."
-    "Não temos esse tempo."
     hugo "Fico grato em ouvir isso. Só temo pela nossa segurança essa noite."
-    "Agora é decisivo"
     drc "Fique tranquilo. Pois já tenho quase certeza de quem se trata."
 
-    show hugo neutro reflexo at center
+    show hugo neutro reflexo at center with dissolve
 
     hugo "Já sabe? Mas o que o senhor está esperando."
 
-    show hugo neutro at center
+    show hugo neutro at center with dissolve
 
     drc "Preciso ter certeza, senhor Hugo."
 
-    show hugo neutro reflexo at center
+    show hugo neutro reflexo at center with dissolve
 
     hugo "Certeza, senhor Rightclue? Estamos morrendo, um a um, e o senhor me diz calma?"
 
-    show hugo neutro at center
+    show hugo neutro at center with dissolve
 
     "Ele está agitado. O que normalmente não acontece."
     drc "Dou minha palavra. O culpado não agirá hoje. Não há o que temer."
     hugo "Senhor Rightclue, não gostaria de dizer isso levianamente. Mas creio que a morte de Kamira não foi suicídio."
-    "Ele sabe de algo..."
     drc "Como assim, senhor Hugo. Me conte."
     hugo "Creio que ela foi assassinada, detetive."
     drc "Mas ela estava enforcada. O senhor insinua que foi uma cena armada?"
     hugo "Exato. Tenho suspeita de uma pessoa, quem conversei algum tempo há pouco."
-    "Ele está incriminando Catherine."
+    "Catherine, não é?"
     drc "Obrigado pela informação Hugo. Peço que, se possivel, vá para seu quarto."
     hugo "Detetive, e qual seria a finalidade?"
     drc "Eu tenho um assunto a resolver."
@@ -70,7 +90,7 @@ label CENA33:
     "..."
     hide hugo with dissolve
 
-    play music "audio/musicas/Descobrimento.mp3" fadein 5.0
+    play music "audio/musicas/Revelacao.mp3" fadein 5
 
     "..."
     "É agora."
@@ -108,7 +128,7 @@ label CENA33:
 
     drc "Pelo de cachorro."
     drc "Venha. E rápido."
-    cth "Sim... Sim senhor."
+    cth "Sim senhor."
     "Um simples fio de cabelo. Porém, mais grosso."
     "Um detalhe. Desprezei. Não há por que se atentar a isso."
     "Ao menos se..."
@@ -120,8 +140,11 @@ label CENA33:
 
     hide catherine neutra with dissolve
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene corredor quartos
     with Fade(3, 1, 0.5)
+
+    stop music fadeout(5)
 
     pause(1)
 
@@ -132,15 +155,19 @@ label CENA33:
 
     cth "Algum problema com o quarto do Hugo, senhor?."
 
-    #play barulho de traca
-
     hide catherine with dissolve
+
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     scene corredor quartos
     with Fade(0.5, 0.5, 0.5)
 
     hugo "O que é isso? Quem está ai? Quem trancou a porta?"
     "..."
+
+    play music "audio/musicas/Decisao.mp3" fadein(4)
+
     drc "Seu maldito..."
     drc "Como pode. Fazer isso com seu próprio pai."
     drc "Com seu próprio irmão."
@@ -254,6 +281,11 @@ label CENA33:
     drc "Você vai apodrecer sem nem um tostão, seu maldito."
     hugo "..."
     hugo "Ha...Ha ha..."
+
+    play sound "audio/sonoplastia/BatidaPorta.mp3"
+    scene corredor quartos with hpunch
+    $renpy.pause(0.2, hard=hardPause)
+
     hugo "HAHAHAHAHAHAHAHAHAHA"
     hugo "Genial. Genial detetive. Você é mesmo surpreendente. Hahahahaha."
     hugo "Abra essa porta, seu covarde."
@@ -278,11 +310,15 @@ label CENA33:
     hugo "Pois tente, querido irmão!"
     joe "Aaaaaaaaaaaaaaaaahhhhhhhhhhh"
 
-    #play murro na porta
+    scene corredor hall with hpunch
+    play sound "audio/sonoplastia/SocoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
 
+    drc "Joe! Não estoure a porta."
     drc "Vou ligar para o senhor Venchinni."
     drc "Joe. Não abra. Me prometa. Não abra."
     drc "Eu vou salvar vocês. Eu jurei para o senhor Sheppard, e para mim mesmo, depois da morte dele."
+    joe "Eu vou matá-lo."
     drc "Joe! Pense na Catherine. Venchinni irá matá-la também."
     joe "..."
     hugo "Abra esse porta, seus malditos. Vou matar todos vocês."
@@ -291,10 +327,18 @@ label CENA33:
 
     hide joe
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene corredor quartos
     with Fade(0.5, 0.5, 0.5)
 
+    play sound "audio/sonoplastia/TrancandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
     scene quarto
     with Fade(2, 1, 0.5)
+
+    stop music fadeout(4)
 
     jump CENA34

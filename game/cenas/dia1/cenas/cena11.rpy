@@ -11,7 +11,7 @@ label CENA11:
     "Pegar casos seguidos é realmente um péssimo hábito…"
     #Tamanho ideal: 1280px x 720px
 
-    play music "audio/musicas/Ambiente.mp3" fadeout 2.0 fadein 2.0
+    play music "audio/musicas/Ambiente.mp3" fadein 2.0
 
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem a noite."
     "Agora ... Pra que lado será a edificação que marcamos o encontro?"
@@ -26,15 +26,25 @@ label CENA11:
     shp "Fico grato que tenha vindo detetive. Estamos com sérios problemas por aqui!"
     drc "Não sei dos detalhes, mas de fato ouvi do chefe ser um caso complexo e perigoso."
     shp "Sim, exato. Vamos até o escritório, é a edificação logo a frente."
+
+    play sound "audio/sonoplastia/Passos.mp3"
+
     scene escritorio
     with Fade(1, 2, 0.5)
     shp_side "Sente-se detetive."
     drc "Agradeço."
+
+    play sound "audio/sonoplastia/PuxandoCadeira.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     shp_side "Antes de começarmos, aceita um chá?"
     drc "Oh, claro."
     shp_side "Um instante..."
     "..."
-    #play relogio
+
+    play sound "audio/sonoplastia/RelogioTocando.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     shp_side "Ora. Esse maldito relogio."
     drc "Relógio?"
     shp_side "Sim. Olhe logo abaixo da mesa."
@@ -54,6 +64,10 @@ label CENA11:
     drc "Tive contato com um desses algum tempo atrás..."
     shp_side "Senhor Rightclue, me sinto cada vez mais orgulhoso de ter te escolhido."
     shp_side "O senhor é tão perspicaz quanto dizem."
+
+    play sound "audio/sonoplastia/Cha.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     drc "Ora senhor Sheppard. Fico grato pela consideração."
     shp_side "Aqui seu chá."
     drc "Muito agradecido."
@@ -62,11 +76,17 @@ label CENA11:
     drc "Pelo que consta no relatório, Senhor Cashand, correto?"
     shp_side "Exato! Os Cashand são famosos em Anothertown por serem ricos há certas décadas."
     shp_side "Todavia senhor Rightclue, para lhe dar melhores informações, necessito que o senhor se comprometa conosco."
-    "*Sheppard saca um contrato de uma gaveta*"
+
+    play sound "audio/sonoplastia/AbrindoGaveta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     shp_side "O que o senhor ouvirá à partir de agora, Senhor Rightclue, terá de ser confidencial, compreende?"
     drc "Estou de acordo. Fui orientado a somente resolver o caso, e nada mais."
     shp_side "O senhor foi indicado como sendo de confiança, todavia, peço para que assine estes termos."
-    "Termos são mostrados Fala sobre manter absoluto sigilo e que concorda com o perigo envolvido no caso podia ser uma arte de um contrato na tela mesmo."
+
+    play sound "audio/sonoplastia/Escrevendo.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     drc "Aí está senhor Sheppard."
     shp_side "Ótimo. Pois bem, vamos aos fatos…"
     shp_side "Tudo começou há 38 anos atrás, quando Hougin Cashand inicia com os negócios."
@@ -90,8 +110,12 @@ label CENA11:
     shp_side "Deixe em qualquer canto. Quando eu voltar eu dou um jeito nisso."
     drc "Certo."
     shp_side "Venha."
+
+    play sound "audio/sonoplastia/Passos.mp3"
+    stop music fadeout(4)
     scene cidade
     with Fade(1, 1, 0.5)
-    shp "Vamo para a mansão. Siga-me."
+
+    shp "Vamos para a mansão. Siga-me."
     drc "Certo."
 jump CENA12

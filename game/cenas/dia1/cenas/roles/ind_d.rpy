@@ -43,7 +43,10 @@ label DIALOGO_HUGO_12_D:
     hugo "Mesmo ficando mais tempo na minha Kombi..."
     shp "Não se sente solitário quando fica por lá tanto tempo?"
     hugo "Claro que não. Tenho meu amigão, Thorn."
-    "*Cão vem correndo e cheira a perna do detetive*"
+
+    play sound "audio/sonoplastia/Thorn.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     hugo "Quem é esse senhor?"
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
     hugo "Está a par de tudo, senhor Rightclue?"
