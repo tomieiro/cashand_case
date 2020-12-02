@@ -4,14 +4,12 @@ label CONCLUINDO_DIA1:
     "O senhor Sheppard conta comigo."
 
     call INVENTARIO_DE_ESCOLHA_DIA01
-    $renpy.block_rollback()
     hide screen inventario_de_escolha with dissolve
 
     "Não queria acreditar nessa possibilidade..."
     "Mas as evidências levam a crer que o grupo no qual o envolvido no crime faz parte é:"
 
     call APP_DIA1
-    $renpy.block_rollback()
 
     "É isso. O assassino está entre os herdeiros..."
     "..."

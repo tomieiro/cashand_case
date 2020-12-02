@@ -4,6 +4,13 @@ screen mostra_item(img="#000"):
     sensitive(not renpy.get_screen("say"))
 
     frame:
+        background "#b3b3b380"
+        xalign 0.0
+        yalign 0.0
+        xsize 1280
+        ysize 720
+
+    frame:
         background "#b9503c"
         xsize 450
         ysize 450

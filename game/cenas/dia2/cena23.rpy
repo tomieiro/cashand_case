@@ -135,7 +135,7 @@ label CENA23:
             "..."
             drc "Senhorita. Com licença"
 
-            show kamira lagrimas at center
+            show kamira lagrimas at center with dissolve
 
             kmr "O que deseja, detetive?"
             "Com calma e astúcia..."
@@ -157,7 +157,7 @@ label CENA23:
             "Tenho o controle da situação. Estou te jogando contra a parede. O que me diz?"
             kmr "..."
 
-            show kamira chorando at center:
+            show kamira chorando at center with dissolve:
                 xzoom 0.99 yzoom 0.99
 
             kmr "Eu não pude me desculpar. Não pude."
@@ -209,7 +209,7 @@ label DIALOGO_ROLES_D2C3(whoIs):
 
     if str(whoIs) == "Hugo T. Cashand":
 
-        show hugo neutro at center
+        show hugo neutro at center with dissolve
 
         hugo "Senhor Rightclue..."
         hugo "Claro."
@@ -218,7 +218,7 @@ label DIALOGO_ROLES_D2C3(whoIs):
     #Se for a Catherine...
     else:
 
-        show catherine neutra at center
+        show catherine neutra at center with dissolve
 
         whoIs "O que deseja, detetive?"
         drc "Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
