@@ -58,3 +58,4 @@ label CENA21:
     pause(3)
 
     jump CENA22
+    
