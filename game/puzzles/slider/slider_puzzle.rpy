@@ -101,6 +101,7 @@ init python:
             )
         ):
             #Desliza
+            renpy.play("audio/sonoplastia/Slider.mp3")
             aux = [0, 0]
             aux[0] = coord_ant[0]
             aux[1] = coord_ant[1]

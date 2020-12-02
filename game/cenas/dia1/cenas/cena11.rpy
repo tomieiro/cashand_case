@@ -56,7 +56,7 @@ label CENA11:
     shp_side "Além da necessidade de ficar ligado na tomada o dia todo, ainda soa fora de hora."
     drc "Talvez eu possa dar um jeito."
 
-    #puzzle lights out no fundo do relogio
+    jump SLIDER_PUZZLE_3X3_DIA01
 
     drc "Prontinho."
     shp_side "Ora essa. Além de detetive, também conserta essas coisas elétricas..."
