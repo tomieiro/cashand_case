@@ -20,15 +20,23 @@ label LIGHTS_OUT_PUZZLE_3X3:
 
         lop_pecas = renpy.random.choice(lop_configuracoes)
         lop_game_over_label = "FIM_LOP_3x3"
+        lop_sucesso_label = "SUCESSO_LOP_3X3"
         lop_timer_total = 180.0
         lop_timer_quase = 30.0
 
-    play music "audio/musicas/Descobrimento.mp3"
+    play music "audio/musicas/Descobrimento.mp3" fadein 5.0
 
     #Chama a tela
-    call screen lights_out_puzzle(3) with dissolve
+    call screen lights_out_puzzle(3) with puzzle_transition8
     return
 
 label FIM_LOP_3x3:
+    #stop music fadeout 5.0
+    hide screen lights_out_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
     jump LIGHTS_OUT_PUZZLE_3X3
+
+label SUCESSO_LOP_3X3:
+    stop music fadeout 5.0
+    hide screen lights_out_puzzle with puzzle_transition8
+    return

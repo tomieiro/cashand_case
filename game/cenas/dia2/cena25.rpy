@@ -35,7 +35,7 @@ label CENA25:
     "E uma enorme bateria..."
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
-    #call slider gravador peças -> 4x4
+    #call slider gravador peças -> 3x3
 
     "Excelente. A tampa se abriu."
     "Basta setar o modo de reprodução e..."

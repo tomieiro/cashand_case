@@ -10,12 +10,14 @@ label SLIDER_PUZZLE_3X3_DIA02:
         slp_fim = False
         #Define o tamanho das peças
         slp_tam_peca = 200
+        lop_proximo_do_fim = False
+        lop_proximo_do_fim2 = False
         #Define as imagens das peças
-        slp_img_pecas = ["images/teste/puzzle/9.png", "images/teste/puzzle/8.png", "images/teste/puzzle/7.png",
-                         "images/teste/puzzle/6.png", "images/teste/puzzle/5.png", "images/teste/puzzle/4.png",
-                         "images/teste/puzzle/3.png", "images/teste/puzzle/2.png", "images/teste/puzzle/1.png"]
+        slp_img_pecas = ["images/engler/itens/bilhete_slider/9.png", "images/engler/itens/bilhete_slider/8.png", "images/engler/itens/bilhete_slider/7.png",
+                         "images/engler/itens/bilhete_slider/6.png", "images/engler/itens/bilhete_slider/5.png", "images/engler/itens/bilhete_slider/4.png",
+                         "images/engler/itens/bilhete_slider/3.png", "images/engler/itens/bilhete_slider/2.png", "images/engler/itens/bilhete_slider/1.png"]
 
-        slp_imagem_final = "images/teste/puzzle/cc.png"
+        slp_imagem_final = "images/engler/itens/bilhete.png"
 
         configuracoes_aux = [
             [5, 6, 8, 2, 4, 3, 9, 7, 1],
@@ -42,7 +44,7 @@ label SLIDER_PUZZLE_3X3_DIA02:
                     slp_configuracoes[i][9][0] = j%3
                     slp_configuracoes[i][9][1] = int(j/3)
 
-        slp_timer_total = 180.0
+        slp_timer_total = 5 * 60.0
         slp_timer_quase = 30.0
 
         #[0, 0], [1, 0], [2, 0], [0, 1], s[1, 1], [2, 1], [0, 2], [1, 2], [2, 2]
@@ -52,10 +54,20 @@ label SLIDER_PUZZLE_3X3_DIA02:
         slp_pecas = renpy.random.choice(slp_configuracoes)
         slp_peca_faltante = slp_pecas[9]
 
+        slp_sucesso_label = "SUCESSO_SLP_3X3_DIA02"
+        slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02"
+
     play music "audio/musicas/Descobrimento.mp3"
     call screen slider_puzzle(dim=3) with dissolve
     return
 
 label SLP_GAME_OVER_3X3_DIA02:
+    stop music fadeout 5.0
+    hide screen slider_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
     jump SLIDER_PUZZLE_3X3_DIA02
+
+label SUCESSO_SLP_3X3_DIA02:
+    stop music fadeout 5.0
+    hide screen slider_puzzle with puzzle_transition8
+    return

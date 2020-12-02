@@ -20,12 +20,19 @@ label INVENTARIO_DE_ESCOLHA_DIA01:
         ide_aux_item = []
         ide_sensivel = False
         ide_label_repetir = "IDE_01_ESCOLHE_FRASE"
+        ide_label_fim = "IDE_01_FIM"
+
+    play music "audio/musicas/Dilema.mp3" fadein 5.0
 
     #Chama a tela
     show screen inventario_de_escolha() with puzzle_transition8
-
     jump IDE_01_ESCOLHE_FRASE
 
+
+label IDE_01_FIM:
+    stop music fadeout 5.0
+    hide screen inventario_de_escolha with puzzle_transition8
+    return
 
 label IDE_01_ESCOLHE_FRASE:
     if(ide_aux_count == 0):
@@ -33,14 +40,14 @@ label IDE_01_ESCOLHE_FRASE:
         "Analisando os fatos:"
         "O senhor Hougin tentou dizer algo..."
         $ide_sensivel = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
     elif(ide_aux_count == 1):
         #Segundo pedido de escolha...
         "..."
         "Espere um pouco."
         "Há um problema com isso..."
         $ide_sensivel = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
     elif(ide_aux_count == 2):
         #Última frase do puzzle...
         #Recomenda-se não ter muito texto aqui
@@ -49,7 +56,6 @@ label IDE_01_ESCOLHE_FRASE:
         $ide_fim = True
         $ide_sensivel = True
         jump POINT_AND_CLICK_2
-
 
 label IDE_01_ESCOLHEU_SANGUE:
     #Define quem é o item
