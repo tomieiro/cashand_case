@@ -46,7 +46,10 @@ label DIALOGO_HUGO_12_A:
         xalign 0.7 yalign 0.99999
     hugo "Estava aqui pensando em levar o Thorn pra passear um pouco também."
     shp "Olha lá, por falar nele..."
-    "*Cão vem correndo e cheira a perna do detetive*"
+
+    play sound "audio/sonoplastia/Thorn.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     hugo "Verdade Thorn, nem tinha percebido esse senhor."
     hugo "Quem é ele, Sheppard?"
     shp "Por favor, detetive, se apresente."
@@ -63,14 +66,15 @@ label DIALOGO_HUGO_12_A:
     drc "Olá, amigo."
     hugo "É um bom garoto"
     hugo "Ei thorn, quer passear?"
-    "*Thorn começa a balançar o rabo alegremente*"
+    "..."
     hugo "Muito bom, garoto. Vamos lá, vou colocar sua coleira."
     hugo "Pronto."
     hugo "Calma, calma, já vamos..."
     "Parecem muito próximos... e o cachorro é muito inteligente."
     shp "Tenha cuidado, Hugo!"
-    drc "Esse está bem animado, dada a situação."
+    drc "Este rapaz me parece bem, dada a situação."
     shp "Ele sempre foi assim."
+    shp "Guarda tudo para si."
     return
 
 

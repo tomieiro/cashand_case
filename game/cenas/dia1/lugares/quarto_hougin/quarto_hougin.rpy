@@ -7,11 +7,16 @@ label QUARTO_HOUGIN:
     drc "Entendo. Mas peço que aguente, senhor Sheppard. Toda pista é importante aqui."
     shp "De fato..."
 
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     call CHAMA_TELA_PAC_DIA1
     $cluepoints = cluepoints + 1
 
     drc "Parece que já vimos o bastante por aqui, senhor Sheppard. Vamos voltar."
     shp "Como quiser, detetive."
+
+    play sound "audio/sonoplastia/Passos.mp3"
 
     if primeira_visita:
         $primeira_visita = False

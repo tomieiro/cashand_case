@@ -2,6 +2,7 @@ label COZINHA:
     shp "Ok. Favor me seguir, detetive."
     drc "Certo."
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene cozinha
     with Fade(2, 1, 0.5)
 
@@ -9,6 +10,10 @@ label COZINHA:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
     shp "Esta é a cozinha. Aquela que o senhor vê ali, é Martha, a empregada da família."
+
+    play sound "audio/sonoplastia/Pratos.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     shp "Como vai, Martha?"
 
     show sheppard neutro with moveinright:

@@ -1,10 +1,9 @@
 #Ver de trocar a apresentacao pra hora que eles se encontrarem
 
 label CENA12:
-    play music "audio/musicas/Onde.mp3"
-
     scene jardim
     with Fade(2, 2, 0.5)
+    play music "audio/musicas/Onde.mp3"
 
     drc "É uma bela mansão."
 
@@ -20,15 +19,23 @@ label CENA12:
     call DIALOGO_IND_A_CENA12
     call INTRODUCAO_PERSONAGEM_CENA12(ind_a_info)
 
+    $renpy.pause(2, hard=hardPause)
+
     call DIALOGO_IND_B_CENA12
     call INTRODUCAO_PERSONAGEM_CENA12(ind_b_info)
+
+    $renpy.pause(2, hard=hardPause)
 
     call DIALOGO_IND_C_CENA12
     call INTRODUCAO_PERSONAGEM_CENA12(ind_c_info)
 
+    $renpy.pause(1, hard=hardPause)
+
     drc "Estão, realmente, muito incomodados com minha presença senhor Sheppard, e parecem também desfazer um pouco do senhor."
     shp "Creio ser somente o momento. Acabam de perder dois familiares. As coisas se acalmarão, eu creio."
     drc "Tomara que sim."
+
+    $renpy.pause(2, hard=hardPause)
 
     call DIALOGO_IND_D_CENA12
     call INTRODUCAO_PERSONAGEM_CENA12(ind_d_info)
@@ -45,4 +52,6 @@ label CENA12:
     drc "..."
     shp "Vamos conhecer o restante da casa, senhor Rightclue?"
     drc "Precisamente."
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
     jump CENA13
