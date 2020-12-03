@@ -28,14 +28,14 @@ label ESCOLHA1:
             "(Diálogos com roles)"
             $per_role1 = shp
             $per_role2 = kmr
-            call DIALOGO_ROLE
+            call DIALOGO_ROLE from _call_DIALOGO_ROLE
             jump FIM_ESCOLHA1
 
         "Diálogo B":
             "(Diálogos com roles)"
             $per_role1 = kmr
             $per_role2 = shp
-            call DIALOGO_ROLE
+            call DIALOGO_ROLE from _call_DIALOGO_ROLE_1
             jump FIM_ESCOLHA1
 
         "Investigar a sala":
