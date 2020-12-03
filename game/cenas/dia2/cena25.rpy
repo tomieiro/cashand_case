@@ -4,12 +4,14 @@ label CENA25:
     with Fade(6, 3, 0.5)
 
     "..."
+    "..."
+    "..."
     "O que foi tudo isso?"
     "Qual o sentido desses eventos?"
     "Quem é o culpado?"
     "..."
     "Estão preparando o velório de Kamira."
-    "Como Sheppard, será enterrada amanhã de manhã."
+    "Assim como Sheppard, ela será enterrada amanhã de manhã."
     "Preciso pensar..."
     "Onde coloquei aquele bilhete?"
     "..."
@@ -37,6 +39,7 @@ label CENA25:
 
     "Está aqui... Um gravador."
     "E uma enorme bateria..."
+    "Parece equipamento de ponta."
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
     #call slider gravador peças -> 4x4
