@@ -241,7 +241,7 @@ label DIALOGO_ROLES_D2C3(whoIs):
 
         hugo "Senhor Rightclue..."
         hugo "Claro."
-        hugo "Ainda estou um pouco shocado com tudo, mas acho que uma companhia viria bem, senhor Rightclue."
+        hugo "Ainda estou um pouco chocado com tudo, mas acho que uma companhia viria bem, senhor Rightclue."
         hugo "Tanto para mim quanto para o Thorn."
         drc "Entendo, você e sua familia estão passando por um momento dificil."
         hugo "Esta sendo dificil para todos... e tenho medo do que pode acontecer nos proximos dias com o resto de nos."
