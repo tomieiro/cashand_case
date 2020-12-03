@@ -30,21 +30,22 @@ label LIGHTS_OUT_PUZZLE_3X3_DIA01:
         lop_timer_total = 4 * 60.0
         lop_timer_quase = 30.0
 
-    show screen previa_puzzle(img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio frente.png") with dissolve
+    show screen previa_puzzle(y=1.0, img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio frente.png") with dissolve
     drc "Oh, sim."
     shp_side "Me foi vendido por um comerciante estrangeiro."
     shp_side "Disse que era de última geração."
     shp_side "Mas realmente não passa de uma porcaria."
 
-    show screen previa_puzzle(img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio costas.png") with dissolve
+    show screen previa_puzzle(y=1.0,img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio costas.png") with dissolve
     shp_side "Tem alguns botões esquisitos no verso."
     shp_side "Além da necessidade de ficar ligado na tomada o dia todo, ainda soa fora de hora."
     drc "Talvez eu possa dar um jeito."
 
     play music "audio/musicas/Descobrimento.mp3" fadein 5.0
     #Chama a tela
-    call screen lights_out_puzzle(3, img_bg="#8f8d8c") with puzzle_transition8
-    return
+    show screen lights_out_puzzle(3, img_bg="#8f8d8c") with puzzle_transition8
+    jump POINT_AND_CLICK
+    #return
 
 label FIM_LOP_3x3_DIA01:
     stop music fadeout 5.0
@@ -54,6 +55,8 @@ label FIM_LOP_3x3_DIA01:
 
 label SUCESSO_LOP_3X3_DIA01:
     stop music fadeout 5.0
-    hide screen previa_puzzle with dissolve
     hide screen lights_out_puzzle with puzzle_transition8
+    play sound "audio/sonoplastia/Relogio.mp3"
+    $renpy.pause(2, hard=hardPause)
+    hide screen previa_puzzle with dissolve
     return

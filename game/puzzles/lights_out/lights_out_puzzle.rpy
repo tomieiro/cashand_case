@@ -113,6 +113,7 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
                                 idle lop_img_peca_desligada
                                 selected_idle lop_img_peca_ligada
                                 selected_hover lop_img_peca_ligada
+                                activate_sound "audio/sonoplastia/BotaoLightsOut.mp3"
                                 at lop_img_tr(lop_tam_peca)
 
     if lop_fim:
@@ -125,6 +126,7 @@ init python:
 
     def seleciona_e_propaga(dim, x, y):
         global lop_pecas
+        #renpy.play("audio/sonoplastia/BotaoLightsOut.mp3")
         if seleciona_sem_propagar(dim, x, y):
             adjacentes = [[x-1, y], [x+1, y], [x, y-1], [x, y+1]]
             for adj in adjacentes:

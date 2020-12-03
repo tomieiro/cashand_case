@@ -12,20 +12,20 @@ label APP_DIA1:
         app_rodadas = 9
         app_gabarito = ["H", "E", "R", "D", "E", "I", "R", "O", "S"]
         app_letras = [
-                        ["H", "O", "E", "A", "M"],
-                        ["A", "S", "M", "C", "E"],
-                        ["P", "A", "H", "R", "F"],
-                        ["O", "I", "E", "D", "R"],
-                        ["E", "A", "H", "P", "O"],
-                        ["P", "O", "G", "I", "S"],
-                        ["N", "R", "E", "O", "A"],
-                        ["S", "R", "D", "T", "O"],
-                        ["A", "D", "O", "S", "I"],
+                        ["H", "S", "E", "F", "V"],
+                        ["A", "O", "I", "U", "E"],
+                        ["P", "A", "S", "R", "T"],
+                        ["O", "I", "E", "D", "P"],
+                        ["E", "A", "U", "I", "O"],
+                        ["P", "A", "G", "I", "S"],
+                        ["N", "R", "M", "T", "V"],
+                        ["E", "R", "N", "T", "O"],
+                        ["M", "R", "U", "S", "Z"],
                     ]
         app_qtd_letras = 5
         app_label_game_over = "APP_DIA1_GAME_OVER"
     #Chama a tela
-    play sound "audio/musicas/Descobrimento.mp3"
+    play music "audio/musicas/Descobrimento.mp3"
     call screen acertar_palavra_puzzle() with puzzle_transition8
     return
 
