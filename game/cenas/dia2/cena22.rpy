@@ -88,7 +88,7 @@ label CENA22:
 label DIALOGO_PERSONAGENS_D2C2:
     if ind_a_info[1] == "Hugo":
         hugo "É complicado senhor detetive. Fiquei um bom tempo fora de casa por causa de meu pai."
-        hugo "Mas o senhor Sheppard sempre bom com todos nós."
+        hugo "Mas o senhor Sheppard sempre foi bom com todos nós."
         drc "Tenho certeza disso, Hugo."
         return
     else:
