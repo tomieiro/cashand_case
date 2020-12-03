@@ -24,14 +24,21 @@ label APP_DIA1:
                     ]
         app_qtd_letras = 5
         app_label_game_over = "APP_DIA1_GAME_OVER"
-    #Chama a tela
-    play music "audio/musicas/Palavras.mp3"
-    call screen acertar_palavra_puzzle() with puzzle_transition8
-    return
+        app_label_sucesso= "APP_DIA1_SUCESSO"
 
+    #Chama a tela
+    play music "audio/musicas/Palavras.mp3" fadein 5.0
+    show screen acertar_palavra_puzzle() with puzzle_transition8
+    jump POINT_AND_CLICK
 
 label APP_DIA1_GAME_OVER:
-    hide screen acertar_palavra_puzzle with dissolve
+    stop music fadeout 5.0
+    hide screen acertar_palavra_puzzle with puzzle_transition8
     "Não era isso..."
     "Vou tentar novamente!"
-    jump APP_TESTE
+    jump APP_DIA1
+
+label APP_DIA1_SUCESSO:
+    stop music fadeout 5.0
+    hide screen acertar_palavra_puzzle with puzzle_transition8
+    return

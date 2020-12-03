@@ -27,6 +27,7 @@ label INVENTARIO_DE_ESCOLHA_DIA02:
 
     jump IDE_02_ESCOLHE_FRASE
 
+
 label IDE_02_FIM:
     stop music fadeout 5.0
     hide screen inventario_de_escolha with puzzle_transition8

@@ -37,6 +37,8 @@ default app_vidas_restantes = 3
 
 default app_label_game_over = "APP_TESTE_GAME_OVER"
 
+default app_label_sucesso= "APP_TESTE_SUCESSO"
+
 transform rotation:
     rotate 11
 
@@ -50,7 +52,7 @@ screen acertar_palavra_puzzle():
         timer 0.1 action Jump(app_label_game_over)
 
     if(app_fim):
-        timer 3.0 action Return()
+        timer 3.0 action Jump(app_label_sucesso)
 
     frame:
         style "app_tela_cheia"
