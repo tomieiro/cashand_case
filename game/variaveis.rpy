@@ -6,3 +6,4 @@ default visQuartoHougin = False
 default visHall = False
 default whoIs = 0
 default flag_kamira = 0
+default hardPause= True

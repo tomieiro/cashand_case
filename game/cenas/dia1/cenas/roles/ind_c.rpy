@@ -46,7 +46,10 @@ label DIALOGO_HUGO_12_C:
     hugo "Certo. Não acho que sua presença seja bem vinda, principalmente por parte de minha prima, meu irmão e minha tia."
     hugo "Mas, contanto que nos ajude a desvendar o que está acontecendo, estamos de acordo."
     drc "Entendo..."
-    "*Cão vem correndo e cheira a perna do detetive*"
+
+    play sound "audio/sonoplastia/Thorn.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     drc "Olá amigo."
     shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
     hugo "É um bom rapaz."

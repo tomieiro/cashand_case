@@ -1,7 +1,10 @@
 label BIBLIOTECA:
 
+    play sound "audio/sonoplastia/Passos.mp3"
     scene biblioteca
     with Fade(2, 1, 0.5)
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     show sheppard neutro:
         xalign 0.5 yalign 0.99999

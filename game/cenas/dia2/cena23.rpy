@@ -24,8 +24,11 @@ label CENA23:
             "Vou tentar me aproximar na cozinha."
             "Talvez eu descubra algo..."
 
+            play sound "audio/sonoplastia/AbrindoPorta.mp3"
             scene cozinha
             with Fade(2, 1, 0.5)
+            play sound "audio/sonoplastia/FechandoPorta.mp3"
+            $renpy.pause(2, hard=hardPause)
 
             call DIALOGO_ROLES_D2C3(ind_a)
 
@@ -57,8 +60,17 @@ label CENA23:
             "..."
             "Certo, já tenho um destino."
 
+            play sound "audio/sonoplastia/AbrindoPorta.mp3"
+
+            scene fundo preto
+            with Fade(0.4, 0.4, 0.5)
+
+            play sound "audio/sonoplastia/FechandoPorta.mp3"
+            $renpy.pause(2, hard=hardPause)
+
+            play sound "audio/sonoplastia/Passos.mp3"
             scene jardim
-            with Fade(3, 2, 0.5)
+            with Fade(1, 4, 0.5)
 
             jump ESCOLHA_CONV_DIA2C3
 
@@ -66,8 +78,14 @@ label CENA23:
             $visHall = True
             "Tentarei com [ind_b_info[1]], no Hall. Talvez eu consiga ligar as coisas obtendo detalhes de cada um."
 
+            play sound "audio/sonoplastia/AbrindoPorta.mp3"
+            $renpy.pause(2, hard=hardPause)
+
             scene hall
             with Fade(2, 1, 0.5)
+
+            play sound "audio/sonoplastia/FechandoPorta.mp3"
+            $renpy.pause(2, hard=hardPause)
 
             call DIALOGO_ROLES_D2C3(ind_b)
 
@@ -101,6 +119,16 @@ label CENA23:
 
             hide hugo with dissolve
 
+            play sound "audio/sonoplastia/AbrindoPorta.mp3"
+            $renpy.pause(2, hard=hardPause)
+
+            scene fundo preto
+            with Fade(0.4, 0.4, 0.5)
+
+            play sound "audio/sonoplastia/FechandoPorta.mp3"
+            $renpy.pause(1, hard=hardPause)
+
+            play sound "audio/sonoplastia/Passos.mp3"
             scene jardim
             with Fade(2, 1, 0.5)
 
@@ -169,7 +197,7 @@ label CENA23:
             "Do que ela está falando?"
             drc "Calma senhorita."
 
-            show kamira lagrimas at center
+            show kamira lagrimas at center with dissolve
 
             kmr "Com licença."
             drc "Senhorita?"

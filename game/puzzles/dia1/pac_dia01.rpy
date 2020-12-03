@@ -3,8 +3,7 @@ define pac1_img_saida = "images/inventario/finalizar_%s.png"
 define pac1_img_estante = "#f80"
 
 image pac1_img_relogio:
-    "images/engler/itens/relogio.png"
-    zoom 0.5
+    "images/engler/itens_no_cenario/relogio_parede2.png"
 
 define pac1_img_inv_but = "images/inventario/bg_seta.png"
 
@@ -34,11 +33,12 @@ label CHAMA_TELA_PAC_DIA1:
 
     #Chama a tela de point and click
     #$Show("point_and_click_dia1", transition="puzzle_transition1")()
+    play music "audio/musicas/Pistas.mp3" fadein 5.0
     show screen point_and_click_dia1() with puzzle_transition8
-
     jump POINT_AND_CLICK
 
 label FIM_TELA_PAC_DIA1:
+    stop music fadeout 5.0
     hide screen point_and_click_dia1 with puzzle_transition8
     return
 
@@ -52,7 +52,7 @@ screen point_and_click_dia1():
                 )
 
     frame:
-        background "images/cenarios/quarto.png"
+        background "images/engler/cenarios/quarto hougin.png"
         xsize 1280
         ysize 720
 
@@ -77,16 +77,14 @@ screen point_and_click_dia1():
             ysize 100
 
         #Botão de coleta para o item relógio
-        if(not pac1_item_relogio[2]):
-            imagebutton:
-                action Jump("PAC1_SELECIONA_RELOGIO")
-                #auto pac1_img_relogio
-                idle "pac1_img_relogio"
-                focus_mask True
-                xalign 0.85
-                yalign 0.65
-                xsize 100
-                ysize 100
+        imagebutton:
+            action Jump("PAC1_SELECIONA_RELOGIO")
+            #auto pac1_img_relogio
+            idle "pac1_img_relogio"
+            focus_mask True
+            xalign 0.025
+            yalign -0.008
+
 
         #Botão para abrir inventário de coleta
         imagebutton:
@@ -125,33 +123,36 @@ label PAC1_SELECIONA_ESTANTE:
             hide sheppard onlayer screens with dissolve
             $pac1_fim = True
     else:
-        "Acho que não há mais nada para ver aqui..."
+        "Não preciso mais ver a mancha. Já guardei a imagem em minha mente."
     jump POINT_AND_CLICK
 
 label PAC1_SELECIONA_RELOGIO:
-    show screen mostra_item(pac1_item_relogio[0]) with dissolve
-    pause 0.3
-    "Um relógio..."
-    drc "É, certamente, um belo relógio."
-    #show sheppard neutro onlayer screens at center with dissolve
-    shp_side "Parece estar funcional, senhor Rightclue."
-    drc "Correto. Todavia, encontra-se 8 minutos atrasado."
-    shp_side "Talvez esteja com as engrenagens ruins."
-    drc "Certamente."
-    hide screen mostra_item with dissolve
-    #hide sheppard onlayer screens with dissolve
-    $renpy.notify("Coletou Pista - Relógio!")
-    python:
-        pac1_item_relogio[2] = True
-        pac1_itens_no_inventario.append(pac1_item_relogio)
-    #Se selecionar a outra pista essencial também, pode sair
-    if(pac1_item_sangue[2]):
-        "Acho que já coletei todas as pistas que eu precisava..."
-        drc "Acho que isto é suficiente, Sheppard!"
-        show sheppard neutro onlayer screens at center with dissolve:
-            xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
-        shp "Já acabou, detetive?"
-        drc "Espera, acho que vou dar uma última olhada."
-        hide sheppard onlayer screens with dissolve
-        $pac1_fim = True
+    if(not pac1_item_relogio[2]):
+        show screen mostra_item(pac1_item_relogio[0]) with dissolve
+        pause 0.3
+        "Um relógio..."
+        drc "É, certamente, um belo relógio."
+        #show sheppard neutro onlayer screens at center with dissolve
+        shp_side "Parece estar funcional, senhor Rightclue."
+        drc "Correto. Todavia, encontra-se 8 minutos atrasado."
+        shp_side "Talvez esteja com as engrenagens ruins."
+        drc "Certamente."
+        hide screen mostra_item with dissolve
+        #hide sheppard onlayer screens with dissolve
+        $renpy.notify("Coletou Pista - Relógio!")
+        python:
+            pac1_item_relogio[2] = True
+            pac1_itens_no_inventario.append(pac1_item_relogio)
+        #Se selecionar a outra pista essencial também, pode sair
+        if(pac1_item_sangue[2]):
+            "Acho que já coletei todas as pistas que eu precisava..."
+            drc "Acho que isto é suficiente, Sheppard!"
+            show sheppard neutro onlayer screens at center with dissolve:
+                xzoom 1.1 yzoom 1.1  xalign 0.5 yalign 0.99999
+            shp "Já acabou, detetive?"
+            drc "Espera, acho que vou dar uma última olhada."
+            hide sheppard onlayer screens with dissolve
+            $pac1_fim = True
+    else:
+        "Não há mais nada para se ver no relógio..."
     jump POINT_AND_CLICK

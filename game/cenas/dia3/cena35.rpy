@@ -1,4 +1,6 @@
 label CENA35:
+
+    play sound "audio/sonoplastia/Passos.mp3"
     scene cidade
     with Fade(5, 2, 0.5)
     #Fazer continuacao aqui
@@ -8,7 +10,5 @@ label CENA35:
     "Mas acho que ficará na história."
     "Pelo menos na minha história..."
     "..."
-    #play fim
-    #scene fim
-    #with Fade(4, 4, 0.5)
-    #puxa creditos. E arma na boca do cachorro.
+    stop music fadeout(6)
+    $renpy.pause(6, hard=hardPause)

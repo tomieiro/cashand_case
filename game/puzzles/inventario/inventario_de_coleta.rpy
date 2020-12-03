@@ -9,7 +9,7 @@ image idc_img_inventario:
     #xzoom 2.0
 
 transform idc_bot_tr:
-    maxsize (120, 120)
+    maxsize (140, 140)
     xalign 0.5
     yalign 0.5
 
@@ -22,9 +22,11 @@ transform idc_botao_abrir:
 
 transform idc_botao_sair:
     size (50, 250)
-    xalign 1.108
+    xanchor 0.0
+    xpos 1125
     rotate 180.0
-    yalign 0.1
+    yanchor 0.0
+    ypos 60
 
 transform idc_botao_fechar:
     xanchor 0.0
@@ -78,7 +80,7 @@ screen inventario_de_coleta(itens_no_inventario=[]):
                 frame:
                     #background "#4d260050"
                     #background "#ffffff50"
-                    background "#b33a2e"
+                    background "#d7b883"
                     xsize 155
                     ysize 155
                     imagebutton:
