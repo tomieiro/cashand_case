@@ -1,6 +1,9 @@
 #aqui usa %s
 define pac1_img_saida = "images/inventario/finalizar_%s.png"
-define pac1_img_estante = "#f80"
+
+image pac1_img_estante:
+    "images/engler/itens_no_cenario/sangue comoda.png"
+    rotate 10.0
 
 image pac1_img_relogio:
     "images/engler/itens_no_cenario/relogio_parede2.png"
@@ -11,7 +14,7 @@ define pac1_img_inv_but = "images/inventario/bg_seta.png"
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
 default pac1_item_relogio = ["images/engler/itens/relogio.png", "Um belo relógio. Parece funcional, apesar de estar 8 minutos atrasado.", False, 10, False, "IDE_01_ESCOLHEU_RELOGIO"]
-default pac1_item_sangue = ["#f00", "Uma inscrição escrita em sangue, já seco. Me parece ser uma pista valiosa.", False, 11, False, "IDE_01_ESCOLHEU_SANGUE"]
+default pac1_item_sangue = ["images/engler/itens/sangue.png", "Uma inscrição escrita em sangue, já seco. Me parece ser uma pista valiosa.", False, 11, False, "IDE_01_ESCOLHEU_SANGUE"]
 #... outros itens "inuteis"
 
 default pac1_itens_no_inventario = []
@@ -69,10 +72,10 @@ screen point_and_click_dia1():
         imagebutton:
             action Jump("PAC1_SELECIONA_ESTANTE")
             #auto pac1_img_estante
-            idle pac1_img_estante
+            idle "pac1_img_estante"
             focus_mask True
-            xalign 0.25
-            yalign 0.63
+            xalign 0.645
+            yalign 0.712
             xsize 100
             ysize 100
 
