@@ -9,10 +9,11 @@ label TRANSICAO2:
     shp "Bom, peço que aguarde um momento detetive."
     drc "Tudo bem, senhor Sheppard."
 
+    play sound "audio/sonoplastia/Passos.mp3"
     hide sheppard neutro
 
     "..."
-    pause(2)
+    $renpy.pause(3, hard=hardPause)
 
     show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
@@ -24,10 +25,15 @@ label TRANSICAO2:
     shp "De fato. Fico feliz em ouvir isso."
     shp "Então venha. Vou te mostrar seu quarto. Um bom banho e um descanso serão benéficos antes de continuarmos."
 
+    play sound "audio/sonoplastia/Passos.mp3"
+    stop music fadeout(4)
     scene corredor quartos
     with Fade(2,1,0.5)
 
     show sheppard neutro at center with dissolve
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(3, hard=hardPause)
 
     shp "Este é seu quarto. Fique à vontade."
     drc "Fico muito agradecido, senhor Sheppard."
@@ -41,6 +47,9 @@ label TRANSICAO2:
 
     scene quarto
     with Fade(5,2,0.5)
+
+    play sound "audio/sonoplastia/SentandoNaCama.mp3"
+    $renpy.pause(3, hard=hardPause)
 
     "Foi um excelente banho. Também já estou satisfeito com o jantar."
 

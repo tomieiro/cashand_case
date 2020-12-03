@@ -1,7 +1,9 @@
 label CENA25:
 
     scene quarto
-    with Fade(6, 3, 0.5)
+    with Fade(3, 5, 0.5)
+    play sound "audio/sonoplastia/SentandoNaCama.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     "..."
     "..."
@@ -11,38 +13,55 @@ label CENA25:
     "Quem é o culpado?"
     "..."
     "Estão preparando o velório de Kamira."
+
     "Assim como Sheppard, ela será enterrada amanhã de manhã."
     "Preciso pensar..."
-    "Onde coloquei aquele bilhete?"
-    "..."
-    "..."
-    "Aqui está."
-    "Está todo rasgado."
+
+    call INVENTARIO_DE_ESCOLHA_DIA02
+
     "Talvez se eu..."
 
-    #call inventario escolher bilhete
-
-    #call puzzle slider com fundo do bilhete 3x3
+    call SLIDER_PUZZLE_3X3_DIA02
 
     "Gravador comoda senha culpado"
     "Espere um pouco... É isso..."
     "..."
 
+    play sound "audio/sonoplastia/Passos.mp3"
+    scene fundo preto
+    with Fade(1,2,0.5)
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
     scene corredor hall
+    with Fade(2,1,0.5)
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+    play sound "audio/sonoplastia/Passos.mp3"
+    $renpy.pause(3, hard=hardPause)
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+    scene quarto hougin
     with Fade(1, 1, 0.5)
-    scene quarto
-    with Fade(1, 1, 0.5)
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     "Se eu não estiver enganado..."
 
     #call puzzle quarto point and click
 
     "Está aqui... Um gravador."
+<<<<<<< HEAD
     "E uma enorme bateria..."
     "Parece equipamento de ponta."
+=======
+    "O ligo na tomada, e então ...."
+>>>>>>> master
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
-    #call slider gravador peças -> 4x4
+    #call slider gravador peças -> 3x3
+
+    play sound "audio/sonoplastia/Destravando.mp3"
+    $renpy.pause(2, hard=hardPause)
 
     "Excelente. A tampa se abriu."
     "Basta setar o modo de reprodução e..."
@@ -97,23 +116,42 @@ label CENA25:
     "*Kamira começa a chorar*"
     kmr "..."
     kmr "Bom, se o senhor quer assim. Então que assim seja!"
-    "*Som da porta bate*"
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(1, hard=hardPause)
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     "..."
     "..z....sh.....zh.....sh.....z..."
     drc "Então era isso..."
     drc "..."
-    drc "Não acr..."
+    drc "Não acredito."
+    drc "Ela estava preocupada com ele."
+    drc "Com sua saúde inclusive."
+    drc "Acho qu..."
+
     "..z....sh.....zh.....sh.....z..."
+
+    play sound "audio/sonoplastia/AbrindoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     hgin "Então você voltou."
     hgin "..."
-    hgin "Todos vieram. Achei muito estranho. Você nunca foi sequer dócil comigo."
+    hgin "Escondeu-se de Kamira? Pois bem... Achei muito estranho. Você nunca foi sequer dócil comigo."
     hgin "Acha que va..."
-    #Som de batida forte
+
+    play sound "audio/sonoplastia/Esfaqueando.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     hgin "Argh.... Aaah.....A...... Arhc...."
     hgin "Cloh....... argh...... clogh..."
     hgin "..."
     hgin "..."
-    "*Som de porta batendo*"
+
+    play sound "audio/sonoplastia/FechandoPorta.mp3"
+    $renpy.pause(2, hard=hardPause)
+
     "..."
     drc "..."
     drc "Meu deus..."
