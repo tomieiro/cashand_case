@@ -10,7 +10,7 @@ label QUARTO_HOUGIN:
     play sound "audio/sonoplastia/AbrindoPorta.mp3"
     $renpy.pause(3, hard=hardPause)
 
-    call CHAMA_TELA_PAC_DIA1
+    call CHAMA_TELA_PAC_DIA1 from _call_CHAMA_TELA_PAC_DIA1
     $cluepoints = cluepoints + 1
 
     drc "Parece que já vimos o bastante por aqui, senhor Sheppard. Vamos voltar."

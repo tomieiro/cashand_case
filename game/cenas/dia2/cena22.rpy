@@ -27,7 +27,7 @@ label CENA22:
     ind_a "Sim, senhor Rightclue. Apesar de tudo, Sheppard era como um membro da família. Vou sentir sua falta."
     "*[ind_a_info[0]] enxuga uma lágrima*"
 
-    call DIALOGO_PERSONAGENS_D2C2
+    call DIALOGO_PERSONAGENS_D2C2 from _call_DIALOGO_PERSONAGENS_D2C2
 
     drc "Dou minha palavra a você [ind_a_info[1]]. Prometo achar o culpado por tudo isso."
     ind_a "Deixo em suas mãos, detetive."
