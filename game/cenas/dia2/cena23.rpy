@@ -213,18 +213,20 @@ label DIALOGO_ROLES_D2C3(whoIs):
 
         hugo "Senhor Rightclue..."
         hugo "Claro."
-        hugo "Fico realmente muito triste, senhor Rightclue."
+        hugo "Ainda estou um pouco shocado, com tudo mas acho que uma companhia viria bem, senhor Rightclue."
+        drc "Entendo, você e sua familia estão passando por um momento dificil."
+        hugo "Esta sendo dificil para todos... e tenho medo do que pode acontecer nos proximos dias com os que sobraram."
 
     #Se for a Catherine...
     else:
 
         show catherine neutra at center with dissolve
 
-        whoIs "O que deseja, detetive?"
+        cth "O que deseja, detetive?"
         drc "Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
-        whoIs "O senhor permaneceu. Parece disposto a realmente resolver o caso."
-        whoIs "O senhor é realmente uma boa pessoa, detetive."
-        whoIs "O senhor parece determinado. Estamos sem tempo detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
+        cth "O senhor permaneceu. Parece disposto a realmente resolver o caso."
+        cth "O senhor é realmente uma boa pessoa, detetive."
+        cth "O senhor parece determinado. Estamos sem tempo detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
 
     if flag_kamira <= 1:
         $flag_kamira = 2
