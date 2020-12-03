@@ -16,18 +16,18 @@ label CENA12:
     drc "Se possível, não o exalte tanto em minha presença senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
     shp "De fato. Tentarei me segurar ao máximo."
 
-    call DIALOGO_IND_A_CENA12
-    call INTRODUCAO_PERSONAGEM_CENA12(ind_a_info)
+    call DIALOGO_IND_A_CENA12 from _call_DIALOGO_IND_A_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_a_info) from _call_INTRODUCAO_PERSONAGEM_CENA12
 
     $renpy.pause(2, hard=hardPause)
 
-    call DIALOGO_IND_B_CENA12
-    call INTRODUCAO_PERSONAGEM_CENA12(ind_b_info)
+    call DIALOGO_IND_B_CENA12 from _call_DIALOGO_IND_B_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_b_info) from _call_INTRODUCAO_PERSONAGEM_CENA12_1
 
     $renpy.pause(2, hard=hardPause)
 
-    call DIALOGO_IND_C_CENA12
-    call INTRODUCAO_PERSONAGEM_CENA12(ind_c_info)
+    call DIALOGO_IND_C_CENA12 from _call_DIALOGO_IND_C_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_c_info) from _call_INTRODUCAO_PERSONAGEM_CENA12_2
 
     $renpy.pause(1, hard=hardPause)
 
@@ -37,8 +37,8 @@ label CENA12:
 
     $renpy.pause(2, hard=hardPause)
 
-    call DIALOGO_IND_D_CENA12
-    call INTRODUCAO_PERSONAGEM_CENA12(ind_d_info)
+    call DIALOGO_IND_D_CENA12 from _call_DIALOGO_IND_D_CENA12
+    call INTRODUCAO_PERSONAGEM_CENA12(ind_d_info) from _call_INTRODUCAO_PERSONAGEM_CENA12_3
 
     shp "Bom, acho que você já viu todos os herdeiros..."
     drc "Espere um segundo, Sheppard. Não eram cinco? Onde está o último?"

@@ -30,7 +30,7 @@ label CENA23:
             play sound "audio/sonoplastia/FechandoPorta.mp3"
             $renpy.pause(2, hard=hardPause)
 
-            call DIALOGO_ROLES_D2C3(ind_a)
+            call DIALOGO_ROLES_D2C3(ind_a) from _call_DIALOGO_ROLES_D2C3
 
             drc "Confie em mim, [ind_a_info[1]], acharei o culpado. Mas preciso de sua cooperação."
             drc "Me conte o que viu na noite em que seu [ind_a_info[2]] foi assassinado. Quem subiu ao quarto?"
@@ -87,7 +87,7 @@ label CENA23:
             play sound "audio/sonoplastia/FechandoPorta.mp3"
             $renpy.pause(2, hard=hardPause)
 
-            call DIALOGO_ROLES_D2C3(ind_b)
+            call DIALOGO_ROLES_D2C3(ind_b) from _call_DIALOGO_ROLES_D2C3_1
 
             drc "Estou ciente, [ind_b_info[1]]. Mas peço colaboração."
             drc "Me diga o que você sabe, o que você viu na noite em que seu [ind_b_info[2]] foi assassinado."

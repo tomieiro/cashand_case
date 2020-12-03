@@ -6,13 +6,13 @@ label DIALOGO_IND_C_CENA12:
     ind_c "Me parece ser alguém envolvido com as autoridades..."
 
     if ind_c_info[1] == "Hugo":
-        call DIALOGO_HUGO_12_C
+        call DIALOGO_HUGO_12_C from _call_DIALOGO_HUGO_12_C
     elif ind_c_info[1] == "Joe":
-        call DIALOGO_JOE_12_C
+        call DIALOGO_JOE_12_C from _call_DIALOGO_JOE_12_C
     elif ind_c_info[1] == "Kamira":
-        call DIALOGO_KAMIRA_12_C
+        call DIALOGO_KAMIRA_12_C from _call_DIALOGO_KAMIRA_12_C
     elif ind_c_info[1] == "Catherine":
-        call DIALOGO_CATHERINE_12_C
+        call DIALOGO_CATHERINE_12_C from _call_DIALOGO_CATHERINE_12_C
 
     ind_c "Com licença, Sheppard."
     ind_c "Detetive..."

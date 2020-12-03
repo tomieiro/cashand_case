@@ -17,11 +17,11 @@ label CENA25:
     "Assim como Sheppard, ela será enterrada amanhã de manhã."
     "Preciso pensar..."
 
-    call INVENTARIO_DE_ESCOLHA_DIA02
+    call INVENTARIO_DE_ESCOLHA_DIA02 from _call_INVENTARIO_DE_ESCOLHA_DIA02
 
     "Talvez se eu..."
 
-    call SLIDER_PUZZLE_3X3_DIA02
+    call SLIDER_PUZZLE_3X3_DIA02 from _call_SLIDER_PUZZLE_3X3_DIA02
 
     "Gravador comoda senha culpado"
     "Espere um pouco... É isso..."
@@ -50,12 +50,8 @@ label CENA25:
     #call puzzle quarto point and click
 
     "Está aqui... Um gravador."
-<<<<<<< HEAD
-    "E uma enorme bateria..."
     "Parece equipamento de ponta."
-=======
     "O ligo na tomada, e então ...."
->>>>>>> master
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
     #call slider gravador peças -> 3x3

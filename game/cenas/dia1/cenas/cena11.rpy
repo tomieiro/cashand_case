@@ -50,7 +50,7 @@ label CENA11:
     shp_side "Sim. Olhe logo abaixo da mesa."
 
     #puzzle lights out no fundo do relogio
-    call LIGHTS_OUT_PUZZLE_3X3_DIA01
+    call LIGHTS_OUT_PUZZLE_3X3_DIA01 from _call_LIGHTS_OUT_PUZZLE_3X3_DIA01
 
     drc "Prontinho."
     shp_side "Ora essa. Além de detetive, também conserta essas coisas elétricas..."
