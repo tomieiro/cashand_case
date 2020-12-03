@@ -24,14 +24,14 @@ label DIALOGO_IND_A_CENA12():
     hide kamira with dissolve
     hide catherine with dissolve
 
+    show sheppard neutro with moveinright:
+        xalign 0.5 yalign 0.99999
+
     if ind_a_info[1] == "Catherine":
         shp "Parece que gostou de você."
         drc "Eu não teria essa opinião."
         shp "Acredite. Ela seria mais áspera."
         drc "..."
-
-    show sheppard neutro with moveinright:
-        xalign 0.5 yalign 0.99999
 
     drc "Creio que serei considerado intruso em meio a esse imbróglio, senhor Sheppard."
     shp "Não se acanhe detetive, ainda há muitas outras saudações calorosas pela frente."

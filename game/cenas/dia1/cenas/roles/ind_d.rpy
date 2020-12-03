@@ -18,12 +18,6 @@ label DIALOGO_IND_D_CENA12():
 
     ind_d "Bom, se me dão licença, eu tenho que ir..."
 
-    if ind_d_info[1] == "Catherine":
-        shp "Parece que gostou de você."
-        drc "Eu não teria essa opinião."
-        shp "Acredite. Ela seria mais áspera."
-        drc "..."
-
     hide joe with dissolve
     hide hugo with dissolve
     hide kamira with dissolve
@@ -31,6 +25,12 @@ label DIALOGO_IND_D_CENA12():
 
     show sheppard neutro with moveinright:
         xalign 0.5 yalign 0.99999
+
+    if ind_d_info[1] == "Catherine":
+        shp "Parece que gostou de você."
+        drc "Eu não teria essa opinião."
+        shp "Acredite. Ela seria mais áspera."
+        drc "..."
 
     return
 
