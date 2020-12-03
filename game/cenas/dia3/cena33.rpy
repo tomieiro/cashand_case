@@ -266,10 +266,6 @@ label CENA33:
 
     joe "..."
     joe "Não posso acreditar..."
-
-    show catherine neutra with dissolve:
-        xalign 0.7 yalign 0.9999999
-
     cth "O que está acontecendo... Meu deus..."
 
     hide joe
@@ -300,6 +296,10 @@ label CENA33:
         xalign 0.3 yalign 0.9999999
 
     joe "Detetive..."
+
+    show joe bravo with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "Detetive, abra essa porta. Eu vou matar esse desgraçado!"
     joe "Abra essa maldita porta!"
 
@@ -318,8 +318,16 @@ label CENA33:
     drc "Vou ligar para o senhor Venchinni."
     drc "Joe. Não abra. Me prometa. Não abra."
     drc "Eu vou salvar vocês. Eu jurei para o senhor Sheppard, e para mim mesmo, depois da morte dele."
+
+    show joe bravo with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "Eu vou matá-lo."
     drc "Joe! Pense na Catherine. Venchinni irá matá-la também."
+
+    show joe neutro with dissolve:
+        xalign 0.3 yalign 0.9999999
+
     joe "..."
     hugo "Abra esse porta, seus malditos. Vou matar todos vocês."
     joe "..."
