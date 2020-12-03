@@ -10,8 +10,8 @@ label CENA21:
 
     $randomize(ind_a_info,["Kamira","Joe"],True)
     $randomize(ind_b_info,["Kamira","Joe"],False)
-    $ind_a = Character(ind_a_info[0], callback=character_beeps)
-    $ind_b = Character(ind_b_info[0], callback=character_beeps)
+    $ind_a = Character(ind_a_info[0], callback=apply_voices(ind_a_info))
+    $ind_b = Character(ind_b_info[0], callback=apply_voices(ind_b_info))
 
     scene quarto with hpunch
     play sound "audio/sonoplastia/BatidaRapidaPorta.mp3"
@@ -78,4 +78,3 @@ label CENA21:
     pause(3)
 
     jump CENA22
-    
