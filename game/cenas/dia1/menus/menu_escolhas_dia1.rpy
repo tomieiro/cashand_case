@@ -11,7 +11,7 @@ label MENU_ESCOLHAS_DIA1:
                     drc "Acredite em mim Sheppard, as pequenas pistas importam!"
                     $visBiblio = True
                     play sound "audio/sonoplastia/Passos.mp3"
-                    jump BIBLIOTECA
+                    #jump BIBLIOTECA
                 "Pensar melhor":
                     drc "Realmente, senhor Sheppard. Deixe-me pensar melhor..."
                     jump MENU_ESCOLHAS_DIA1
@@ -21,7 +21,7 @@ label MENU_ESCOLHAS_DIA1:
                 "Ir para a cozinha":
                     $visCoz = True
                     play sound "audio/sonoplastia/Passos.mp3"
-                    jump COZINHA
+                    #jump COZINHA
                 "Pensar melhor":
                     jump MENU_ESCOLHAS_DIA1
         "Quarto de Hougin" if not visQuartoHougin:
@@ -30,7 +30,7 @@ label MENU_ESCOLHAS_DIA1:
                 "Ir para o Quarto de Hougin":
                     $visQuartoHougin = True
                     play sound "audio/sonoplastia/Passos.mp3"
-                    jump QUARTO_HOUGIN
+                    #jump QUARTO_HOUGIN
                 "Pensar melhor":
                     jump MENU_ESCOLHAS_DIA1
         "O senhor poderia repetir?":

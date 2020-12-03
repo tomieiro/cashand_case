@@ -8,13 +8,13 @@ label DIALOGO_IND_D_CENA12():
     shp "Entendo..."
 
     if ind_d_info[1] == "Hugo":
-        call DIALOGO_HUGO_12_D
+        call DIALOGO_HUGO_12_D from _call_DIALOGO_HUGO_12_D
     elif ind_d_info[1] == "Joe":
-        call DIALOGO_JOE_12_D
+        call DIALOGO_JOE_12_D from _call_DIALOGO_JOE_12_D
     elif ind_d_info[1] == "Kamira":
-        call DIALOGO_KAMIRA_12_D
+        call DIALOGO_KAMIRA_12_D from _call_DIALOGO_KAMIRA_12_D
     elif ind_d_info[1] == "Catherine":
-        call DIALOGO_CATHERINE_12_D
+        call DIALOGO_CATHERINE_12_D from _call_DIALOGO_CATHERINE_12_D
 
     ind_d "Bom, se me dão licença, eu tenho que ir..."
 

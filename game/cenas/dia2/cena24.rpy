@@ -40,8 +40,8 @@ label CENA24:
 
     play sound "audio/sonoplastia/Corda.mp3"
     $renpy.pause(3, hard=hardPause)
-
-    "Ouço sons de corda..."
+    
+    "Mas que som é esse..."
     "Será que..."
     drc "Senhorita!"
 

@@ -30,7 +30,7 @@ label CENA23:
             play sound "audio/sonoplastia/FechandoPorta.mp3"
             $renpy.pause(2, hard=hardPause)
 
-            call DIALOGO_ROLES_D2C3(ind_a)
+            call DIALOGO_ROLES_D2C3(ind_a) from _call_DIALOGO_ROLES_D2C3
 
             drc "Confie em mim, [ind_a_info[1]], acharei o culpado. Mas preciso de sua cooperação."
             drc "Me conte o que viu na noite em que seu [ind_a_info[2]] foi assassinado. Quem subiu ao quarto?"
@@ -87,7 +87,7 @@ label CENA23:
             play sound "audio/sonoplastia/FechandoPorta.mp3"
             $renpy.pause(2, hard=hardPause)
 
-            call DIALOGO_ROLES_D2C3(ind_b)
+            call DIALOGO_ROLES_D2C3(ind_b) from _call_DIALOGO_ROLES_D2C3_1
 
             drc "Estou ciente, [ind_b_info[1]]. Mas peço colaboração."
             drc "Me diga o que você sabe, o que você viu na noite em que seu [ind_b_info[2]] foi assassinado."
@@ -241,18 +241,21 @@ label DIALOGO_ROLES_D2C3(whoIs):
 
         hugo "Senhor Rightclue..."
         hugo "Claro."
-        hugo "Fico realmente muito triste, senhor Rightclue."
+        hugo "Ainda estou um pouco chocado com tudo, mas acho que uma companhia viria bem, senhor Rightclue."
+        hugo "Tanto para mim quanto para o Thorn."
+        drc "Entendo, você e sua familia estão passando por um momento dificil."
+        hugo "Esta sendo dificil para todos... e tenho medo do que pode acontecer nos proximos dias com o resto de nos."
 
     #Se for a Catherine...
     else:
 
         show catherine neutra at center with dissolve
 
-        whoIs "O que deseja, detetive?"
+        cth "O que deseja, detetive?"
         drc "Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
-        whoIs "O senhor permaneceu. Parece disposto a realmente resolver o caso."
-        whoIs "O senhor é realmente uma boa pessoa, detetive."
-        whoIs "O senhor parece determinado. Estamos sem tempo detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
+        cth "O senhor permaneceu. Parece disposto a realmente resolver o caso."
+        cth "O senhor é realmente uma boa pessoa, detetive."
+        cth "O senhor parece determinado. Estamos sem tempo detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
 
     if flag_kamira <= 1:
         $flag_kamira = 2

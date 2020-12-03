@@ -9,13 +9,13 @@ label DIALOGO_IND_A_CENA12():
     shp "Entendo..."
 
     if ind_a_info[1] == "Hugo":
-        call DIALOGO_HUGO_12_A
+        call DIALOGO_HUGO_12_A from _call_DIALOGO_HUGO_12_A
     elif ind_a_info[1] == "Joe":
-        call DIALOGO_JOE_12_A
+        call DIALOGO_JOE_12_A from _call_DIALOGO_JOE_12_A
     elif ind_a_info[1] == "Kamira":
-        call DIALOGO_KAMIRA_12_A
+        call DIALOGO_KAMIRA_12_A from _call_DIALOGO_KAMIRA_12_A
     elif ind_a_info[1] == "Catherine":
-        call DIALOGO_CATHERINE_12_A
+        call DIALOGO_CATHERINE_12_A from _call_DIALOGO_CATHERINE_12_A
 
     ind_a "Até depois, Sheppard"
 

@@ -6,19 +6,22 @@ label CENA25:
     $renpy.pause(2, hard=hardPause)
 
     "..."
+    "..."
+    "..."
     "O que foi tudo isso?"
     "Qual o sentido desses eventos?"
     "Quem é o culpado?"
     "..."
     "Estão preparando o velório de Kamira."
-    "Como Sheppard, será enterrada pela manhã."
+
+    "Assim como Sheppard, ela será enterrada amanhã de manhã."
     "Preciso pensar..."
 
-    call INVENTARIO_DE_ESCOLHA_DIA02
+    call INVENTARIO_DE_ESCOLHA_DIA02 from _call_INVENTARIO_DE_ESCOLHA_DIA02
 
     "Talvez se eu..."
 
-    call SLIDER_PUZZLE_3X3_DIA02
+    call SLIDER_PUZZLE_3X3_DIA02 from _call_SLIDER_PUZZLE_3X3_DIA02
 
     "Gravador comoda senha culpado"
     "Espere um pouco... É isso..."
@@ -47,6 +50,7 @@ label CENA25:
     #call puzzle quarto point and click
 
     "Está aqui... Um gravador."
+    "Parece equipamento de ponta."
     "O ligo na tomada, e então ...."
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
 
