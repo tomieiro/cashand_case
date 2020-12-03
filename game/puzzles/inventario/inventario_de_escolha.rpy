@@ -85,7 +85,7 @@ screen inventario_de_escolha():
 
     imagebutton:
         action Jump(ide_label_repetir)
-        idle "images/inventario/bg_seta_idle.png"
+        auto "images/inventario/refletir_%s.png"
         #idle pac1_img_saida
         at ide_botao_sair
         focus_mask True
