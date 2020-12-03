@@ -29,7 +29,7 @@ init python:
 
         if restante <= tempo_troca and not lop_proximo_do_fim:
             lop_proximo_do_fim = True
-            renpy.music.play(filenames="audio/musicas/Dilema.mp3", channel="music", loop=True, fadein=5.0)
+            renpy.music.play(filenames="audio/musicas/Rapidez.mp3", channel="music", loop=True, fadein=5.0)
 
         if restante <= 0.0 and not fim:
             renpy.hide_screen(screen)
