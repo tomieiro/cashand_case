@@ -23,7 +23,7 @@ label CENA24:
     "Está aberta."
     drc "Senhorita? Posso entrar?"
     "..."
-    "Ouço sons de corda..."
+    "Mas que som é esse..."
     "Será que..."
     drc "Senhorita!"
 
