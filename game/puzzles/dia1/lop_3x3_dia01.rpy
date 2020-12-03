@@ -55,8 +55,10 @@ label FIM_LOP_3x3_DIA01:
 
 label SUCESSO_LOP_3X3_DIA01:
     stop music fadeout 5.0
+    hide scree previa_puzzle
     hide screen lights_out_puzzle with puzzle_transition8
+    show screen previa_puzzle(y=1.0,img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio costas finalizado.png") with dissolve
     play sound "audio/sonoplastia/Relogio.mp3"
-    $renpy.pause(2, hard=hardPause)
+    $renpy.pause(3, hard=hardPause)
     hide screen previa_puzzle with dissolve
     return
