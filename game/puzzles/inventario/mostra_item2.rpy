@@ -1,6 +1,10 @@
 screen mostra_item2(img="#000"):
     #modal True
 
+    key "h" action NullAction()
+    key 'mouseup_2' action NullAction()
+    key 'noshift_K_h' action NullAction()
+
     sensitive(not renpy.get_screen("say"))
 
     frame:

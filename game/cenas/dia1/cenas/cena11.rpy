@@ -52,6 +52,8 @@ label CENA11:
     #puzzle lights out no fundo do relogio
     call LIGHTS_OUT_PUZZLE_3X3_DIA01 from _call_LIGHTS_OUT_PUZZLE_3X3_DIA01
 
+    play music "audio/musicas/Ambiente.mp3" fadein 2.0
+
     drc "Prontinho."
     shp_side "Ora essa. Além de detetive, também conserta essas coisas elétricas..."
     drc "Era apenas uma configuração específica dos botões, agora parece estar correto."

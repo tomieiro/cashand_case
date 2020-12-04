@@ -23,7 +23,11 @@ label CENA25:
 
     call SLIDER_PUZZLE_3X3_DIA02 from _call_SLIDER_PUZZLE_3X3_DIA02
 
-    "Gravador comoda senha culpado"
+    $pac1_itens_no_inventario.remove(pac2_item_papel)
+
+    show screen mostra_item("images/engler/itens/bilhete.png") with dissolve
+    "Gravador cômoda senha culpado"
+    hide screen mostra_item with dissolve
     "Espere um pouco... É isso..."
     "..."
 
@@ -47,12 +51,16 @@ label CENA25:
 
     "Se eu não estiver enganado..."
 
-    #call puzzle quarto point and click
+    call CHAMA_TELA_PAC_DIA2
 
-    "Está aqui... Um gravador."
-    "Parece equipamento de ponta."
-    "O ligo na tomada, e então ...."
+    "Analisando os fatos..."
+
+    call INVENTARIO_DE_ESCOLHA_DIA02_2
+
+    "Ligo o gravador na tomada e então..."
     "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
+
+    call SLIDER_PUZZLE_3X3_DIA02_2
 
     #call slider gravador peças -> 3x3
 

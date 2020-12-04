@@ -82,6 +82,10 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
     #Sensível apenas quando não há diálogo ocorrendo
     sensitive (not lop_fim)
 
+    key "h" action NullAction()
+    key 'mouseup_2' action NullAction()
+    key 'noshift_K_h' action NullAction()
+
     frame:
         style "lop_tela_cheia"
         background img_bg

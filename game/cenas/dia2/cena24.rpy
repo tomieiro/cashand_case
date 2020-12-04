@@ -40,7 +40,7 @@ label CENA24:
 
     play sound "audio/sonoplastia/Corda.mp3"
     $renpy.pause(3, hard=hardPause)
-    
+
     "Mas que som é esse..."
     "Será que..."
     drc "Senhorita!"
@@ -86,6 +86,7 @@ label CENA24:
     "Pode ser uma pista muito importante, vou levar."
     hide screen mostra_item with dissolve
     $renpy.notify("Coletou Pista - Papel Rasgado!")
+    $pac1_itens_no_inventario.append(pac2_item_papel)
 
     "Preciso avisar os outros."
     "Essa será uma longa noite..."

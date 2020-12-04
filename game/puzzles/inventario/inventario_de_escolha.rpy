@@ -65,6 +65,10 @@ screen inventario_de_escolha():
     #sensitive(not renpy.get_screen("say"))
     #sensitive(ide_sensivel)
 
+    key "h" action NullAction()
+    key 'mouseup_2' action NullAction()
+    key 'noshift_K_h' action NullAction()
+
     sensitive(  not renpy.get_screen("say") and
                 not renpy.get_screen("mostra_item") and
                 not renpy.get_screen("mostra_item2")
