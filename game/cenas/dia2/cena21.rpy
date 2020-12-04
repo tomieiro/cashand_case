@@ -68,6 +68,7 @@ label CENA21:
     "..."
     hide screen mostra_item with dissolve
     $renpy.notify("Coletou Pista - Lenço do Sheppard!")
+    $pac1_itens_no_inventario.append(pac3_item_lenco)
     "Me desculpe senhor Sheppard.."
     "Eu não cheguei a tempo."
     "Não cheguei..."
@@ -78,4 +79,3 @@ label CENA21:
     pause(3)
 
     jump CENA22
-    

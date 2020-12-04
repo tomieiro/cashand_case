@@ -13,6 +13,8 @@ label QUARTO_HOUGIN:
     call CHAMA_TELA_PAC_DIA1 from _call_CHAMA_TELA_PAC_DIA1
     $cluepoints = cluepoints + 1
 
+    play music "audio/musicas/Pistas.mp3" fadein 3.0
+
     drc "Parece que já vimos o bastante por aqui, senhor Sheppard. Vamos voltar."
     shp "Como quiser, detetive."
 

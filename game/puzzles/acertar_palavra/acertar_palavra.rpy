@@ -48,6 +48,10 @@ screen acertar_palavra_puzzle():
     #Sensível apenas quando o puzzle ainda não acabou
     sensitive (not app_fim)
 
+    key "h" action NullAction()
+    key 'mouseup_2' action NullAction()
+    key 'noshift_K_h' action NullAction()
+
     if(app_vidas <= app_erros):
         timer 0.1 action Jump(app_label_game_over)
 
