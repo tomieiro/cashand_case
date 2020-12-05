@@ -56,7 +56,7 @@ label SLIDER_PUZZLE_3X3_DIA02_2:
         slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02_2"
 
     play music "audio/musicas/Descobrimento.mp3"
-    show screen slider_puzzle(dim=3) with dissolve
+    show screen slider_puzzle(dim=3, img_bg="#787abf") with dissolve
     jump POINT_AND_CLICK
 
 label SLP_GAME_OVER_3X3_DIA02_2:
