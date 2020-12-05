@@ -57,8 +57,12 @@ label CENA25:
 
     call INVENTARIO_DE_ESCOLHA_DIA02_2
 
-    "Ligo o gravador na tomada e então..."
-    "Para escutá-lo há uma senha. Como descrito no bilhete. Preciso alinhar isso na ordem correta..."
+    "Ligo o gravador na tomada e ..."
+    "Huuum..."
+    "Esse dispositivo tem uma trava de segurança. O aparelho só reproduz com a tampa fechada."
+    "Há um pequeno pino na tampa. E uma peça oca com um mola ao fundo. Não consigo ver muito bem lá dentro."
+    "Para que essa trava encaixe, preciso deixar a peça oca alinhada em algum lugar da primeira linha."
+    "Para escutá-lo, Kamira escreveu que havia uma senha. Deve ser isso. Preciso alinhar isso na ordem correta..."
 
     call SLIDER_PUZZLE_3X3_DIA02_2
 
