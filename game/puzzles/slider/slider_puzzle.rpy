@@ -71,17 +71,17 @@ screen slider_puzzle(dim, img_bg = "#fff"):
         frame:
             at truecenter
             style "slp_margem"
-            for i in range((dim*dim)):
-                if slp_pecas[i][0] != slp_peca_faltante[0] or slp_pecas[i][1] != slp_peca_faltante[1]:
-                    frame:
-                        style "slp_botao_fundo"
-                        at posicao_peca(slp_pecas[i][0], slp_pecas[i][1])
-                        imagebutton:
-                            action [Function(seleciona_e_desliza, slp_pecas[i], slp_peca_faltante),
-                                    Function(confere_fim_slider_puzzle, slp_pecas, dim),
-                                    renpy.restart_interaction]
-                            idle slp_img_pecas[i]
-                            at slp_img_tr(slp_tam_peca)
+            for i in range((dim*dim)-1):
+                #if slp_pecas[i][0] != slp_peca_faltante[0] or slp_pecas[i][1] != slp_peca_faltante[1]:
+                frame:
+                    style "slp_botao_fundo"
+                    at posicao_peca(slp_pecas[i][0], slp_pecas[i][1])
+                    imagebutton:
+                        action [Function(seleciona_e_desliza, slp_pecas[i], slp_peca_faltante),
+                                Function(confere_fim_slider_puzzle, slp_pecas, dim),
+                                renpy.restart_interaction]
+                        idle slp_img_pecas[i]
+                        at slp_img_tr(slp_tam_peca)
 
 
     if slp_fim:

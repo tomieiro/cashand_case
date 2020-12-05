@@ -18,11 +18,11 @@ label SLIDER_PUZZLE_3X3_DIA02_2:
         slp_imagem_final = "images/engler/itens/trava gravador.png"
 
         configuracoes_aux = [
-            [5, 6, 8, 2, 4, 3, 9, 7, 1],
-            [9, 1, 4, 5, 8, 3, 6, 2, 7],
-            [5, 6, 8, 2, 4, 3, 9, 7, 1],
-            [6, 4, 7, 5, 3, 1, 8, 9, 2],
-            [9, 3, 6, 8, 1, 7, 2, 4, 5]
+            [7, 3, 5, 8, 4, 2, 9, 1, 6],
+            [6, 8, 5, 2, 4, 9, 1, 3, 7],
+            [6, 3, 7, 5, 9, 8, 4, 2, 1],
+            [3, 1, 9, 5, 4, 7, 8, 6, 2],
+            [5, 6, 9, 2, 7, 3, 8, 4, 1]
         ]
 
         # onde cada peça está no tabuleiro
@@ -38,11 +38,11 @@ label SLIDER_PUZZLE_3X3_DIA02_2:
             for j in range(len(configuracoes_aux[i])):
                 slp_configuracoes[i][(configuracoes_aux[i][j])-1][0] = j%3
                 slp_configuracoes[i][(configuracoes_aux[i][j])-1][1] = int(j/3)
-                if(configuracoes_aux[i][j] == 2):
+                if(configuracoes_aux[i][j] == 9):
                     slp_configuracoes[i][9][0] = j%3
                     slp_configuracoes[i][9][1] = int(j/3)
 
-        slp_timer_total = 3 * 60.0
+        slp_timer_total = 2 * 60.0
         slp_timer_quase = 30.0
 
         #[0, 0], [1, 0], [2, 0], [0, 1], s[1, 1], [2, 1], [0, 2], [1, 2], [2, 2]
