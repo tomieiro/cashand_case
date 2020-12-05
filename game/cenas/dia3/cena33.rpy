@@ -51,15 +51,15 @@ label CENA33:
 
     show hugo neutro at center with dissolve
 
-    hugo "Senhor Rightclue. Estamos destruidos. Não conseguimos mais aguentar ver pessoas queridas morrerem."
+    hugo "Senhor Rightclue! Estamos destruídos. Não conseguimos mais aguentar ver pessoas queridas morrerem."
     drc "Eu entendo."
-    drc "Prometo resolver esse caso no mais tarde, amanhã de manhã."
-    hugo "Fico grato em ouvir isso. Só temo pela nossa segurança essa noite."
-    drc "Fique tranquilo. Pois já tenho quase certeza de quem se trata."
+    drc "Prometo resolver esse caso até amanhã de manhã, no mais tardar."
+    hugo "Fico grato em ouvir isso. Só temo pela nossa segurança esta noite."
+    drc "Fique tranquilo, pois já tenho quase certeza de quem se trata."
 
     show hugo neutro reflexo at center with dissolve
 
-    hugo "Já sabe? Mas o que o senhor está esperando."
+    hugo "Já sabe? Mas o que o senhor está esperando?"
 
     show hugo neutro at center with dissolve
 
@@ -67,17 +67,17 @@ label CENA33:
 
     show hugo neutro reflexo at center with dissolve
 
-    hugo "Certeza, senhor Rightclue? Estamos morrendo, um a um, e o senhor me diz calma?"
+    hugo "Certeza, senhor Rightclue? Estamos morrendo, um a um, e o senhor me diz calma?!"
 
     show hugo neutro at center with dissolve
 
     "Ele está agitado. O que normalmente não acontece."
     drc "Dou minha palavra. O culpado não agirá hoje. Não há o que temer."
     hugo "Senhor Rightclue, não gostaria de dizer isso levianamente. Mas creio que a morte de Kamira não foi suicídio."
-    drc "Como assim, senhor Hugo. Me conte."
+    drc "Como assim, Hugo? Me conte."
     hugo "Creio que ela foi assassinada, detetive."
     drc "Mas ela estava enforcada. O senhor insinua que foi uma cena armada?"
-    hugo "Exato. Tenho suspeita de uma pessoa, quem conversei algum tempo há pouco."
+    hugo "Exato. Tenho suspeita de uma pessoa, com quem conversei agora há pouco."
     "Catherine, não é?"
     drc "Obrigado pela informação Hugo. Peço que, se possivel, vá para seu quarto."
     hugo "Detetive, e qual seria a finalidade?"
@@ -235,14 +235,14 @@ label CENA33:
     with Fade(0.5, 0.5, 0.5)
 
     drc "Sentiu-se bem ao matar o homem que foi leal a sua família?"
-    drc "E o que sentiu quando viu sua prima morrer enforcada diante de seus olhos, seu canalha."
+    drc "E o que sentiu quando viu sua prima morrer enforcada diante de seus olhos, seu canalha?"
     drc "Você deveria ser estirpado da face da terra."
     hugo "Por favor, eu não fiz nada."
     hugo "Tia, Joe, por favor, ele está louco."
     drc "Cale a boca!"
-    drc "E cale agora. Seu maldito. Se acha mais inteligente do que eu."
-    drc "A ponto de armar todo esse esquema."
-    drc "Catherine brada mais alto aqui para te libertar. Você também faria isso? Canalha. Sabe que Carlo virá buscá-lo."
+    drc "E cale agora! Seu maldito! Se acha mais inteligente do que eu?"
+    drc "A ponto de armar todo esse esquema?"
+    drc "Catherine brada mais alto aqui para te libertar. Você também faria isso? Canalha! Sabe que Carlo virá buscá-lo."
     drc "Acha que não percebi quando você se aproximou no velório do senhor Sheppard? Sorrateiramente, escutou toda a conversa."
     drc "Não me matou porque sabia que a polícia se envolveria."
     drc "Sabia que o senhor Sheppard conhecia a todos muito bem, ele notaria qualquer coisas diferente."
