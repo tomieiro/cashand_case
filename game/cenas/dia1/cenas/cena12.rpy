@@ -10,10 +10,10 @@ label CENA12:
     show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
-    shp "Certamente senhor Rightclue. Este foi o castelo que sustentou Hougin ao longo dos ultimos 30 anos."
-    drc "Pois então, oito anos foram necessários para elevar um humilde jovem à posição de senhor desse imperio."
-    shp "Precisamente. O senhor verá quando lhe digo que nada é por acaso. A genialidade deste homem para era fascinante."
-    drc "Se possível, não o exalte tanto em minha presença senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
+    shp "Certamente, senhor Rightclue. Este foi o castelo que sustentou Hougin ao longo dos últimos 30 anos."
+    drc "Pois então, oito anos foram necessários para elevar um humilde jovem à posição de senhor desse império."
+    shp "Precisamente. O senhor verá quando lhe digo que nada é por acaso. A genialidade deste homem era fascinante." #rigato: o que se pretende dizer aqui? "A genialidade deste homem para era fascinante."?
+    drc "Se possível, não o exalte tanto em minha presença, senhor Sheppard. Aceitei o caso por ordens superiores, mas não quero que o senhor pense que compactuo com a ideia do senhor Hougin."
     shp "De fato. Tentarei me segurar ao máximo."
 
     call DIALOGO_IND_A_CENA12 from _call_DIALOGO_IND_A_CENA12
