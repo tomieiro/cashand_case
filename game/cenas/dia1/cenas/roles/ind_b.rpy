@@ -3,8 +3,8 @@ label DIALOGO_IND_B_CENA12:
     pause(1)
 
     shp "Boa tarde, [ind_b_info[1]]."
-    ind_b "Olá Sheppard."
-    shp "Está bem? precisa de algo?"
+    ind_b "Olá, Sheppard."
+    shp "Está bem? Precisa de algo?"
     ind_b "Tudo bem. Estava aqui, conversando com [ind_c_info[1]]."
     ind_b "Estamos tentando assimilar tudo ainda..."
     shp "Imagino..."
@@ -57,8 +57,8 @@ label DIALOGO_HUGO_12_B:
     play sound "audio/sonoplastia/Thorn.mp3"
     $renpy.pause(3, hard=hardPause)
 
-    drc "Olá amigo."
-    shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
+    drc "Olá, amigo."
+    shp "É o Thorn, senhor detetive. Hugo o tem criado desde que este cão não era maior que dois palmos."
     hugo "É um bom rapaz."
 
     hide hugo with dissolve
@@ -83,20 +83,20 @@ label DIALOGO_JOE_12_B:
     "*Joe encara Rightclue*"
     drc "..."
     joe "Ah..."
-    joe "E quem seria esse Sheppard? Acredito que não seja apropriado trazer desconhecidos para um enterro."
-    shp "Perdão Joe, este é o detetive Rightclue."
-    shp "Ele Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
-    joe "Entendo um detetive ..."
-    joe "Sheppard ... Insisto que não precisamos de ajuda externa. Ainda mais numa hora tão complicada."
-    joe "Pense nos problemas que esse senhor pode trazer para a nossa família...  e para você mesmo..."
-    shp "Eu estou bem ciente disso Joe."
-    shp "Mas acredito que o senhor Rightclue vai por um fim nisso."
-    shp "E Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
+    joe "E quem seria esse, Sheppard? Acredito que não seja apropriado trazer desconhecidos para um enterro."
+    shp "Perdão, Joe, este é o detetive Rightclue."
+    shp "Ele está aqui para investigar o assassinato do senhor Hougin a meu pedido."
+    joe "Entendo, um detetive..."
+    joe "Sheppard... Insisto que não precisamos de ajuda externa. Ainda mais numa hora tão complicada."
+    joe "Pense nos problemas que esse senhor pode trazer para a nossa família... e para você mesmo..."
+    shp "Eu estou bem ciente disso, Joe."
+    shp "Mas acredito que o senhor Rightclue vai pôr um fim nisso."
+    shp "E claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
     joe "... Sinceramente não estou com cabeça para continuar essa discussão com você."
     joe "Faça o que bem entender, contanto que esses ataques cessem."
     drc "Farei o meu melhor."
     joe "..."
-    joe "Não me importo com o que você vai fazer, mas não piore as coisas ..."
+    joe "Não me importo com o que você vai fazer, mas não piore as coisas..."
     joe "Todos aqui tem uma reputação a zelar..."
     return
 
@@ -107,17 +107,17 @@ label DIALOGO_KAMIRA_12_B:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     kmr "Quem seria o senhor?"
     drc "Prazer. Rightclue. Sou o detetive contratado."
-    kmr "Espere um pouco Sheppard, o que significa isso?"
-    shp "Está tudo certo Kamira, o detetive prometeu sigilo e nós ajudará."
-    kmr "Não concordo com isso. De nenhuma forma, Sheppard. Isso só diz respeito a nós mesmos."
-    shp "Confie em mim Kamira. Prometi ao seu tio que cuidaria de vocês. E assim cumprirei."
-    kmr "Não use o nome dele pra fazer oque bem entende."
-    kmr "Não tenho por que confiar nesse homem."
-    kmr "Não me de motivos pra deixar de confiar em você tambem ..."
+    kmr "Espere um pouco, Sheppard. O que significa isso?"
+    shp "Está tudo certo, Kamira, o detetive prometeu sigilo e nós ajudará."
+    kmr "Não concordo com isso. De forma alguma, Sheppard. Isso só diz respeito a nós mesmos."
+    shp "Confie em mim, Kamira. Prometi ao seu tio que cuidaria de vocês. Honrarei seu pedido."
+    kmr "Não use o nome dele pra fazer o que bem entende."
+    kmr "Não tenho razão para confiar nesse homem."
+    kmr "Não me dê motivos para deixar de confiar em você também ..."
     shp "..."
-    drc "Sei que a senhora e sua família estam passando por momentos dificeis, mas acredite o senhor Sheppard esta apenas querendo ajudar"
+    drc "Sei que a senhora e sua família estão passando por momentos difíceis, mas acredite, o senhor Sheppard está apenas querendo ajudar"
     kmr "..."
-    drc "Eu darei o meu melhor para mostrar que a minha vindo não foi desnecessaria."
+    drc "Eu darei o meu melhor para mostrar que a minha vinda não foi desnecessária."
     kmr "..."
     return
 
@@ -126,7 +126,7 @@ label DIALOGO_CATHERINE_12_B:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show catherine neutra with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
-    cth "Quem seria esse rapaz Sheppard?"
+    cth "Quem seria esse rapaz, Sheppard?"
     shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
     drc "Muito prazer."
     cth "Pois bem, meu anjo. Vou te dar uma pista."
@@ -135,7 +135,7 @@ label DIALOGO_CATHERINE_12_B:
     cth "Sheppard, já havia dito a você. Sem pessoas externas."
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
     cth "Você nunca me escuta..."
-    cth "Oque a minha família mais precisa agora é se unir e não de um detetive."
+    cth "O que a minha família mais precisa agora é se unir, e não de um detetive."
     drc "Eu entendo que a senhora está de luto, e vou garantir que não tenha que lidar com mais problemas durante a minha estadia."
     cth "..."
     return

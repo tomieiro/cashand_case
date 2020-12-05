@@ -1,5 +1,5 @@
 label DIALOGO_IND_C_CENA12:
-    shp "Olá [ind_c_info[1]]."
+    shp "Olá, [ind_c_info[1]]."
     shp "Precisa de algo?"
     ind_c "Estava pensando sobre esse senhor..."
     shp "Algum problema?"
@@ -51,13 +51,13 @@ label DIALOGO_HUGO_12_C:
     $renpy.pause(3, hard=hardPause)
 
     drc "Olá amigo."
-    shp "É o Thorn, senhor detetive. Hugo tem o criado desde que este cão não era maior que dois palmos."
+    shp "É o Thorn, detetive. Hugo o tem criado desde que este cão não era maior que dois palmos."
     hugo "É um bom rapaz."
     "*Hugo se agacha e faz carinho no Thorn*"
     hugo "Não é, Thorn?"
     "*Thorn lambe o rosto de Hugo em resposta*"
     "Parecem muito próximos... que cena bonita."
-    ind_b "Hugo, você vai ficar brincando com o cachorro? não vai vir?"
+    ind_b "Hugo, você vai ficar brincando com o cachorro? Não vai vir?"
     hugo "Já vou, já vou."
     return
 
@@ -69,13 +69,13 @@ label DIALOGO_JOE_12_C:
     drc "Sou o detetive Rightclue, foi contratado pelo senhor Sheppard para investigar o caso."
     joe "..."
     joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
-    shp "Mil perdões Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
+    shp "Mil perdões, Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
     shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-    joe "Entedo o seu ponto de vista, mas lembre-se meu pai nem sempre estava certo, e não era digno de confiança."
+    joe "Entendo o seu ponto de vista. Mas lembre-se, meu pai nem sempre estava certo, e não era digno de confiança."
     shp "..."
-    joe "... Mas quem somos nos para falarmos dos mortos."
+    joe "... Mas quem somos nós para falarmos dos mortos?"
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
-    drc "Eu farei e provarei que Sheppard não esta errado em me chamar."
+    drc "Eu farei e provarei que Sheppard não está errado em me chamar."
     joe "..."
     "*Joe encara Rightclue*"
     return
@@ -87,16 +87,16 @@ label DIALOGO_KAMIRA_12_C:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     shp "Este é o nosso detetive contratado. Se apresente..."
     drc "Boa tarde, me..."
-    kmr "Perdão, senhor detetive, mas creio não ter assuntos a tratar por aqui."
+    kmr "Perdão, detetive, mas creio não ter assuntos a tratar por aqui."
     kmr "O que acontece aqui é sigiloso e não queremos pessoas externas envolvidas."
     kmr "Então pode voltar para o lugar de onde veio."
     drc "..."
-    shp "Sinto muito Kamira, mas o detetive já está ciente de toda a situação."
+    shp "Sinto muito, Kamira, mas o detetive já está ciente de toda a situação."
     shp "Tenho ordens retroativas de seu tio para cuidar desta família, e assim farei!"
     kmr "Você é muito atrevido de usar um homem morto como uma desculpa para fazer o que quer."
-    kmr "Mas faça como quiser, você vai ter as consequencias de seus atos cedo ou tarde."
+    kmr "Mas faça como quiser, você vai ter as consequências de seus atos cedo ou tarde."
     shp "..."
-    drc "Todos vamos não..."
+    drc "Todos vamos, não?"
     kmr "..."
     drc "Principalmente o responsavel por tudo isso quando for encontrado."
     return
@@ -113,8 +113,8 @@ label DIALOGO_CATHERINE_12_C:
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
     cth "Você nunca me escuta ..."
     shp "..."
-    cth "Eu poderia ficar aqui discutindo com você opções melhores mas minha familia precisa de mim."
+    cth "Eu poderia ficar aqui discutindo com você opções melhores mas minha família precisa de mim."
     cth "Espero que esse detetive seja util em nosso problema."
-    drc "Acredite eu serei."
+    drc "Acredite, eu serei."
     cth "Veremos..."
     return
