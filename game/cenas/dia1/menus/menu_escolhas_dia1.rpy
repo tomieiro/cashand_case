@@ -8,7 +8,7 @@ label MENU_ESCOLHAS_DIA1:
             menu:
                 shp "O senhor tem certeza?"
                 "Ir para a biblioteca":
-                    drc "Acredite em mim Sheppard, as pequenas pistas importam!"
+                    drc "Acredite em mim, Sheppard, as pequenas pistas importam!"
                     $visBiblio = True
                     play sound "audio/sonoplastia/Passos.mp3"
                     jump BIBLIOTECA
