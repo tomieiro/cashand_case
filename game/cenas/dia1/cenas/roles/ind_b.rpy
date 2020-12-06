@@ -48,7 +48,7 @@ label DIALOGO_HUGO_12_B:
 
     hugo "Quem é esse senhor?"
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
-    hugo "Acredito que você ja tenha sido instruido pelo senhor Sheppard, estou certo?"
+    hugo "Acredito que você ja tenha sido instruído pelo senhor Sheppard, estou certo?"
     drc "Sim. Sheppard me instruiu bem. Tem minha palavra de sigilo."
     hugo "Certo. Não acho que sua presença seja bem vinda, principalmente por parte de minha familia."
     hugo "Mas, contanto que nos ajude a desvendar o que está acontecendo, estamos de acordo."
