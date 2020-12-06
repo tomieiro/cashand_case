@@ -4,6 +4,16 @@ label CENA11:
     with Fade(2, 3, 0.5)
 
     "Ahhh..."
+
+    $randomize(ind_a_info,["none"], True)
+    $randomize(ind_b_info,["none"], False)
+    $randomize(ind_c_info,["none"], False)
+    $randomize(ind_d_info,["none"], False)
+    $ind_a = Character(ind_a_info[0], callback=character_beeps)
+    $ind_b = Character(ind_b_info[0], callback=character_beeps)
+    $ind_c = Character(ind_c_info[0], callback=character_beeps)
+    $ind_d = Character(ind_d_info[0], callback=character_beeps)
+
     "*Suspiro*"
     "Virar a noite atrás de pistas não é trabalho para qualquer pessoa..."
     "Preciso me apressar, marquei de me encontrar às três em ponto!"
