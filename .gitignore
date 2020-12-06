@@ -12,3 +12,5 @@ Desktop.ini
 .AppleDouble
 .LSOverride
 ._*
+
+*.rpymc
