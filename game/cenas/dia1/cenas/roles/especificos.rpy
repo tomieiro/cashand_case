@@ -10,6 +10,8 @@ label INTRODUCAO_PERSONAGEM_CENA12(role):
     elif(role[1] == "Kamira"):
         shp "Você acabou de conversar com Kamira Thereza Cashand, sobrinha do senhor Hougin."
         shp "Kamira é decidida e possui um forte senso de justiça."
+        drc "\"Senso de justiça\" vindo de mafiosos é algo novo para mim."
+        shp "Visões diferentes de justiça, detetive, mas ainda assim um forte senso desta."
     elif(role[1] == "Catherine"):
         shp "Esta era Catherine Vladita Cashand, irmã mais nova do senhor Hougin."
         shp "Apesar de possuir um tom sereno e maduro, Catherine é apenas 8 anos mais velha que seu sobrinho Hugo."
