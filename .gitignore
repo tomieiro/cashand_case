@@ -1,4 +1,5 @@
 *.rpy[bc]
+*.rpymc
 *.bak
 **/tmp/*
 **/log.txt
