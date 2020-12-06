@@ -123,7 +123,7 @@ label DIALOGO_CATHERINE_12_D:
     "*Catherine encara Sheppard*"
     shp "O senhor Rightclue está aqui para ajudar no caso. Ele me foi muito bem recomendado"
     cth "Serei direta com você. A última coisa que precisamos é de mais problemas."
-    cth "Já havia dito ao Sheppard. Sem pessoas externas. Mas parece que ele se recusa a me escutar"
+    cth "Já havia dito ao Sheppard. Sem pessoas externas. Mas parece que ele se recusa a me escutar."
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
     cth "Você está apenas fazendo o que bem entende."
     cth "Que seja... Espero que consiga nos dizer algo, detetive."
