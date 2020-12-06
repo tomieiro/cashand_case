@@ -138,7 +138,7 @@ label MOSTRA_ITEM_INVENTARIO_ESCOLHA:
     $ide_descricao = ide_item_mostrado[1]
     "[ide_descricao]"
     menu:
-        "Esta é a pista que eu preciso?"
+        "Esta é a pista de que eu preciso?"
         "Sim":
             python:
                 ide_sensivel = False

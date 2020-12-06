@@ -9,7 +9,7 @@ label COZINHA:
     show sheppard neutro:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
-    shp "Esta é a cozinha. Aquela que o senhor vê ali, é Martha, a empregada da família."
+    shp "Esta é a cozinha. Aquela que o senhor vê ali é Martha, a empregada da família."
 
     play sound "audio/sonoplastia/Pratos.mp3"
     $renpy.pause(3, hard=hardPause)
@@ -37,7 +37,7 @@ label COZINHA:
     mrth "Claro que sim. Havia uma grande festa de aniversário para o senhor Lostie."
     drc "Espere um pouco. Estão me dizendo que o senhor Hougin Cashand foi assassinado durante uma comemoração?"
     shp "Precisamente, senhor Rightclue. Não me achei na posição de contar algo desse tipo ao senhor, visto que o senhor descobriria por si mesmo, e talvez, eu o influenciasse de alguma forma inicial."
-    drc "Tudo bem Sheppard. Compreendo."
+    drc "Tudo bem, Sheppard. Compreendo."
 
     menu:
         "E só me contam agora... O que eu deveria fazer?"
