@@ -39,12 +39,12 @@ transform slp_img_tr(tam=200):
     xalign 0.5
     yalign 0.5
 
-transform posicao_peca(x, y):
+transform posicao_peca(x, y, dim=3):
     subpixel True
-    linear 0.5 xalign (x*0.5) yalign (y*0.5)
+    linear 0.5 xalign (x*(1.0/(dim-1))) yalign (y*(1.0/(dim-1)))
 
 
-screen slider_puzzle(dim, img_bg = "#fff"):
+screen slider_puzzle(dim, img_bg = "#fff", style_margem="slp_margem", style_fundo="slp_botao_fundo"):
     modal True
 
     #Sensível apenas quando o puzzle ainda não acabou
@@ -70,12 +70,12 @@ screen slider_puzzle(dim, img_bg = "#fff"):
 
         frame:
             at truecenter
-            style "slp_margem"
+            style style_margem
             for i in range((dim*dim)-1):
                 #if slp_pecas[i][0] != slp_peca_faltante[0] or slp_pecas[i][1] != slp_peca_faltante[1]:
                 frame:
-                    style "slp_botao_fundo"
-                    at posicao_peca(slp_pecas[i][0], slp_pecas[i][1])
+                    style style_fundo
+                    at posicao_peca(slp_pecas[i][0], slp_pecas[i][1], dim)
                     imagebutton:
                         action [Function(seleciona_e_desliza, slp_pecas[i], slp_peca_faltante),
                                 Function(confere_fim_slider_puzzle, slp_pecas, dim),
@@ -136,6 +136,8 @@ style slp_margem:
     background "#000"
     xsize 600
     ysize 600
+    #xalign 0.5
+    #yalign 0.5
 
 style slp_botao_fundo:
     background Solid("#000")

@@ -50,11 +50,27 @@ label CENA11:
     shp_side "Sim. Não é esse em sua frente."
     shp_side "Olhe logo abaixo da mesa."
 
+    show screen previa_puzzle(y=1.0, img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio frente.png") with dissolve
+    drc "Oh, sim."
+    shp_side "Me foi vendido por um comerciante estrangeiro."
+    shp_side "Disse que era de última geração."
+    shp_side "Mas realmente não passa de uma porcaria."
+
+    show screen previa_puzzle(y=1.0,img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio costas.png") with dissolve
+    shp_side "Tem alguns botões esquisitos no verso."
+    shp_side "Além da necessidade de ficar ligado na tomada o dia todo, ainda soa fora de hora."
+    drc "Talvez eu possa dar um jeito."
+
     #rigato: quando falha ele repete todo o dialogo do puzzle
     #puzzle lights out no fundo do relogio
     call LIGHTS_OUT_PUZZLE_3X3_DIA01 from _call_LIGHTS_OUT_PUZZLE_3X3_DIA01
 
     play music "audio/musicas/Ambiente.mp3" fadein 2.0
+
+    show screen previa_puzzle(y=1.0,img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio costas finalizado.png") with dissolve
+    play sound "audio/sonoplastia/Relogio.mp3"
+    $renpy.pause(3, hard=hardPause)
+    hide screen previa_puzzle with dissolve
 
     drc "Prontinho."
     shp_side "Ora essa. Além de detetive, também conserta essas coisas elétricas..."
