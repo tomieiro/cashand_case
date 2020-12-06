@@ -1,6 +1,5 @@
-#Ver de trocar a apresentacao pra hora que eles se encontrarem
-
 label CENA12:
+    play sound "audio/sonoplastia/Passos.mp3"
     scene jardim
     with Fade(2, 2, 0.5)
     play music "audio/musicas/Onde.mp3"

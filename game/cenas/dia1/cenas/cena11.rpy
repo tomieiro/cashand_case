@@ -47,7 +47,8 @@ label CENA11:
 
     shp_side "Ora. Esse maldito relógio."
     drc "Relógio?"
-    shp_side "Sim. Olhe logo abaixo da mesa."
+    shp_side "Sim. Não é esse em sua frente."
+    shp_side "Olhe logo abaixo da mesa."
 
     #rigato: quando falha ele repete todo o dialogo do puzzle
     #puzzle lights out no fundo do relogio
@@ -114,5 +115,4 @@ label CENA11:
     with Fade(1, 1, 0.5)
 
     shp "Vamos para a mansão. Siga-me."
-    #drc "Certo." #rigato: muitos certos seguidos, só removi esse mesmo
 jump CENA12
