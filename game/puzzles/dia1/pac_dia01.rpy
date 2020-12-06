@@ -247,7 +247,7 @@ label PAC1_SELECIONA_LAPIS:
         pac1_itens_no_inventario.append(pac1_item_lapis)
 
     #Se selecionar a outra pista essencial também, pode sair
-    if(pac2_item_gravador[2]):
+    if(pac2_item_gravador[2]): #rigato: isso não é so no dia 2?
         "Acho que já coletei todas as pistas que eu precisava..."
         drc "Acho que isto é suficiente, She..."
         "É verdade..."
@@ -264,10 +264,10 @@ label PAC1_SELECIONA_LIVROS:
         show screen mostra_item(pac1_item_livros[0]) with dissolve
         pause 0.3
         "Alguns livros..."
-        "O senhor Hougin estava os lendo, provavelmente."
+        "O senhor Hougin estava-os lendo, provavelmente."
         "O conteúdo deles parece interessante..."
         "..."
-        "Não! não posso me distrair!"
+        "Não! Não posso me distrair!"
         "Voltando à investigação..."
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Livros!")

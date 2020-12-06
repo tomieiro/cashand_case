@@ -6,7 +6,7 @@ label TRANSICAO2:
     show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
-    shp "Bom, peço que aguarde um momento detetive."
+    shp "Bom, peço que aguarde um momento, detetive."
     drc "Tudo bem, senhor Sheppard."
 
     play sound "audio/sonoplastia/Passos.mp3"
@@ -18,10 +18,10 @@ label TRANSICAO2:
     show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
-    shp "Detetive, estou garantindo que o senhor possa passar a noite por aqui, e evitar despesas extras. Já conversei com os Cashand e te dou essa oportunidade."
-    drc "Agradeço senhor Sheppard, mas acho que minha presença não é bem vinda."
-    shp "Eu insisto detetive. Passarei esta noite aqui também, no quarto ao lado do seu."
-    drc "Bom, se o senhor insiste, creio que seja prudente já que posso começar meu trabalho logo pela manhã."
+    shp "Detetive, estou garantindo que o senhor possa passar a noite por aqui e evitar despesas extras. Já conversei com os Cashand e te dou essa oportunidade."
+    drc "Agradeço, senhor Sheppard, mas acho que minha presença não é bem vinda."
+    shp "Eu insisto, detetive. Passarei esta noite aqui também, no quarto ao lado do seu."
+    drc "Bom, se o senhor insiste, creio que seja prudente, já que posso começar meu trabalho logo pela manhã."
     shp "De fato. Fico feliz em ouvir isso."
     shp "Então venha. Vou te mostrar seu quarto. Um bom banho e um descanso serão benéficos antes de continuarmos."
 
@@ -37,9 +37,9 @@ label TRANSICAO2:
 
     shp "Este é seu quarto. Fique à vontade."
     drc "Fico muito agradecido, senhor Sheppard."
-    shp "Gostaria de conversar com o senhor tem a dizer após o jantar, que claro, providenciarei para que Martha leve ao seu quarto."
-    drc "Agradeço senhor Sheppard, e claro, terei algo a dizer sobre toda essa situação."
-    shp "Certo. Seu quarto é o segundo quarto desse primeiro andar. Logo ali."
+    shp "Gostaria de conversar com o senhor após o jantar que, claro, providenciarei para que Martha leve ao seu quarto."
+    drc "Agradeço, senhor Sheppard, e claro, terei algo a dizer sobre toda essa situação."
+    shp "Certo. Seu quarto é o segundo desse primeiro andar. Logo ali."
     shp "Nos encontramos mais tarde então, senhor Rightclue."
     drc "Tudo bem, até mais, senhor Sheppard."
 
