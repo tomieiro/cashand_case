@@ -63,7 +63,7 @@ label CENA25:
     "Há um pequeno pino na tampa. E uma peça oca com um mola ao fundo. Não consigo ver muito bem lá dentro."
     "Para que essa trava encaixe, preciso deixar a peça oca alinhada em algum lugar da primeira linha."
     "Para escutá-lo, Kamira escreveu que havia uma senha. Deve ser isso. Preciso alinhar isso na ordem correta..."
-label TESTE:
+
     call SLIDER_PUZZLE_3X3_DIA02_2
 
     play sound "audio/sonoplastia/Destravando.mp3"
