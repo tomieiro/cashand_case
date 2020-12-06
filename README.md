@@ -30,7 +30,7 @@ Programadores
 
 <br><br>
 
-Todos as imagens contidas em game/images/engler/itens e game/images/engler/personagens são criados pelo artista. Por isso, possuem uma licença diferente do resto das imagens do game. O artista produziu toda a arte gratuitamente e concordou em deixá-la gratuita e aberta, apenas sendo necessário creditar a ele se utilizado em projetos e não utilizar para uso comercial.
+Todos as imagens contidas em game/images/engler/itens e game/images/engler/personagens são criadas pelo artista. Por isso, possuem uma licença diferente do resto das imagens do game. O artista produziu toda a arte gratuitamente e concordou em deixá-la gratuita e aberta, apenas sendo necessário creditar a ele se utilizado em projetos e não utilizar para uso comercial.
 
 Todos os cenários, alguns itens e patterns são fotos reais e foram adquiridos no Pixabay. Possuem licença citada acima (uso liberado comercialmente e sem necessidade de atribuição). Creditos dedicados aos autores das imagens.
 Foi utilizado também, o software FotoSketcher (https://fotosketcher.com/) para torná-los aquarelas.
