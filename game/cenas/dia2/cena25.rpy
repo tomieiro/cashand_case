@@ -63,15 +63,15 @@ label CENA25:
     "Há um pequeno pino na tampa. E uma peça oca com um mola ao fundo. Não consigo ver muito bem lá dentro."
     "Para que essa trava encaixe, preciso deixar a peça oca alinhada em algum lugar da primeira linha."
     "Para escutá-lo, Kamira escreveu que havia uma senha. Deve ser isso. Preciso alinhar isso na ordem correta..."
-
+label TESTE:
     call SLIDER_PUZZLE_3X3_DIA02_2
-
-    #call slider gravador peças -> 3x3
 
     play sound "audio/sonoplastia/Destravando.mp3"
     $renpy.pause(2, hard=hardPause)
 
-    "Excelente. A tampa se abriu."
+    "Excelente. Agora a tampa pode ser fechada."
+
+    show screen mostra_item("images/engler/itens/gravador desligado fechado.png") with dissolve
     "Basta setar o modo de reprodução e..."
     "..."
     "..."
@@ -86,10 +86,12 @@ label CENA25:
     drc "Quem diria possuir um artefato dessa complexidade."
     "Há um segundo sistema. Dessa vez parece algum tipo de ativação elétrica."
     "Isso é tecnologia de ponta. Realmente fascinante."
+    hide screen mostra_item with dissolve
     "Bom, vamos à tentativa..."
 
-    #call puzzle light out 4x4
+    call LIGHTS_OUT_PUZZLE_4X4_DIA02
 
+    show screen mostra_item("images/engler/itens/gravador ligado fechado.png") with dissolve
     "Excelente!"
     "Agora.... Escutemos..."
     "..."
@@ -161,16 +163,19 @@ label CENA25:
     $renpy.pause(2, hard=hardPause)
 
     "..."
+    hide screen mostra_item with dissolve
+
     drc "..."
     drc "Meu deus..."
     drc "Foi o momento exato."
     "Ele não conseguiu dizer quem era."
     "Era disso que Kamira dizia mais cedo."
+    "Então, com isso, posso afirmar que..."
 
-    #call puzzle palavras |kmr| inocente
+    call APP_DIA2
 
     "Meu Deus. Ela era inocente."
-    "Por mim falta de tato e incompetência ela se foi."
+    "Por minha incompetência e falta de tato, ela se foi."
     "..."
     "Não. Não é hora disso. Preciso salvar os demais. Pense. Pense."
     "Sobraram três indivíduos. Joe, Hugo e Catherine."
