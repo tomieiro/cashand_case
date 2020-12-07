@@ -68,8 +68,8 @@ label CENA25:
 
     show screen mostra_item("images/engler/itens/gravador desligado fechado.png") with dissolve
 
-    "Ligo o gravador na tomada e ..."
-    "Huuum..."
+    "Ligo o gravador na tomada e..."
+    "Hmmm..."
     "Basta setar o modo de reprodução e..."
     "..."
     "..."

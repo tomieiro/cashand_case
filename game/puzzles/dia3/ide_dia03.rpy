@@ -49,7 +49,7 @@ label IDE_03_ESCOLHE_FRASE:
         "..."
         "Mas tem um problema."
         "Aparentemente, o cofre tem uma fechadura."
-        "O que eu posso usar para abrí-lo?"
+        "O que eu posso usar para abri-lo?"
         $ide_sensivel = True
         jump POINT_AND_CLICK
     elif(ide_aux_count == 2):
