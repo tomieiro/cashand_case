@@ -28,10 +28,10 @@ define shp_side = Character("Sheppard", image="shepp", who_color="#c8ffc8", call
 image side shepp = "images/engler/personagens/sheppard/side sheppard neutro 1.png"
 
 #Definindo Informações dos personagens aleatórios
-define joe_info =  ["Joe Cashand","Joe","pai","irmão"]
-define catherine_info = ["Catherine V. Cashand","Catherine","irmão","sobrinho"]
-define kamira_info = ["Kamira T. Cashand","Kamira","tio","primo"]
-define hugo_info = ["Hugo T. Cashand","Hugo","pai","irmão"]
+define joe_info =  ["Joe Cashand","Joe","pai","tio"]
+define catherine_info = ["Catherine V. Cashand","Catherine","irmão","irmão"]
+define kamira_info = ["Kamira T. Cashand","Kamira","tio","tio"]
+define hugo_info = ["Hugo T. Cashand","Hugo","pai","tio"]
 
 #Definindo informações de personagens aleatórios que podem ser inocentes e/ou culpados
 define possiveis_inocentes = [joe_info, catherine_info, kamira_info, hugo_info]
