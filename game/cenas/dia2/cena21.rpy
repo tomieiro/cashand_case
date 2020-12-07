@@ -18,9 +18,9 @@ label CENA21:
     $renpy.pause(1, hard=hardPause)
     mrth "Senhor Rightclue!"
 
-    drc "Sim Martha? São apenas três da manhã."
+    drc "Sim, Martha? São apenas três da manhã."
     mrth "É o Sheppard, senhor! Está morto no chão de seu quarto!"
-    mrth "Céus, venha de pressa."
+    mrth "Céus, venha depressa!"
     drc "Não..."
 
     play sound "audio/sonoplastia/LevantandoDaCama.mp3"
@@ -37,7 +37,7 @@ label CENA21:
     scene corredor hall
     with Fade(1, 1, 0.5)
 
-    drc "Não. Não. Não. Não. Não"
+    drc "NÃO! NÃO! NÃO! NÃO! NÃO!"
     drc "Não..."
 
     play music "audio/musicas/Fim.mp3" fadein 5.0
@@ -53,11 +53,11 @@ label CENA21:
 
     pause (3)
 
-    drc "Sheppard.... Por que? Por que?"
-    drc "*Por que?"
-    drc "Por que eu tomei aquela decisão em relação a contá-lo. Me desculpe Sheppard. Me desculpe..."
-    "Meu deus. Meu deus."
-    "Por que?"
+    drc "Sheppard.... Por quê? Por quê?"
+    drc "Por quê?!"
+    drc "Por que eu tomei aquela decisão em relação a contá-lo. Me desculpe, Sheppard. Me desculpe..."
+    "Meu Deus. Meu Deus..."
+    "Por quê?"
     "Ele segurava um lenço."
 
     #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
@@ -67,9 +67,9 @@ label CENA21:
     pause 0.3
     "..."
     hide screen mostra_item with dissolve
-    $renpy.notify("Coletou Pista - Lenço do Sheppard!")
+    $renpy.notify("Coletou Pista - Lenço do Sheppard...")
     $pac1_itens_no_inventario.append(pac3_item_lenco)
-    "Me desculpe senhor Sheppard.."
+    "Me desculpe, Sheppard..."
     "Eu não cheguei a tempo."
     "Não cheguei..."
     "..."

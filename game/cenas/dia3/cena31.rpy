@@ -34,7 +34,7 @@ label CENA31:
     play sound "audio/sonoplastia/FechandoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
 
-    drc "Meus pêsames Catherine. Sinto-me impotente diante desses acontecimentos."
+    drc "Meus pêsames, Catherine. Sinto-me impotente diante desses acontecimentos."
     "Preciso ter calma. Observamos as reações pelas palavras. Pelas frases."
 
     show catherine neutra with dissolve
@@ -44,17 +44,17 @@ label CENA31:
     cth "É algo horrivél."
     cth "Também penso se poderia ter feito alguma coisa."
     "Não. Ela não tirou a própria vida..."
-    drc "Por que ela faria algo assim. Se soubessemos, poderia ser diferente."
-    "Não. Não ela não teve escolha..."
+    drc "Por que ela faria algo assim? Se soubéssemos, poderia ser diferente."
+    "Não. Não, ela não teve escolha..."
     cth "Eu entendo. Concordo. É algo horrível."
     cth "Por favor, senhor. Encontre o responsável pela morte de meu tio, sobrinho e pelo Sheppard."
     cth "Kamira estava desperada. Quase posso sentir o desespero dela."
     "Sinto muito, senhorita. Não posso confiar em ninguém. Suas palavras estão vazias nesse momento. Me desculpe."
     drc "Dou minha palavra."
     "Só tenho mais nove horas."
-    drc "Encontrarei o culpado entre hoje a noite e amanhã ao amanhecer."
+    drc "Encontrarei o culpado entre hoje à noite e amanhã ao amanhecer."
     "Não tenho esse tempo."
-    cth "Por favor, apresse-se detetive. Talvez não tenhamos todo esse tempo."
+    cth "Por favor, apresse-se, detetive. Talvez não tenhamos todo esse tempo."
     "Sim. Não temos. E que observação suspeita."
     drc "Sim, senhorita."
 

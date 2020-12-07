@@ -247,7 +247,7 @@ label PAC1_SELECIONA_LAPIS:
         pac1_itens_no_inventario.append(pac1_item_lapis)
 
     #Se selecionar a outra pista essencial também, pode sair
-    if(pac2_item_gravador[2]): #rigato: isso não é so no dia 2?
+    if(pac2_item_gravador[2]):
         "Acho que já coletei todas as pistas que eu precisava..."
         drc "Acho que isto é suficiente, She..."
         "É verdade..."
