@@ -85,7 +85,7 @@ label CENA22:
     #hide vnc com um dissolve talvez
     "Meu Deus... Tenho um fardo grande para carregar."
     "..."
-    "Hugo se foi." #rigato: Menciona só (e especificamente) o Hugo mesmo?
+    "Hugo se foi."
     "O tempo está correndo. Preciso me apressar. Hoje e amanhã serão cruciais."
     jump CENA23
 
