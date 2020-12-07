@@ -31,9 +31,9 @@ define config.version = "0.1"
 
 define gui.about = _p("""
 Equipe de desenvolvimento:
-Mateus Prado, Vinícius, Matheus Tomieiro, Matheus Rigato, Engler
+Mateus Prado Santos, Matheus Lopes Rigato, Matheus Tomieiro de Oliveira, Vinícius Ricardo Carvalho, Murilo Engler
 
-Jogo desenvolvido durante a disciplina de Desenvolvimento de Jogos Eletrônicos no segundo semestre de 2020, no Instituto de Ciências Matemáticas e de Computação.
+Jogo desenvolvido durante a disciplina de Desenvolvimento de Jogos Eletrônicos no segundo semestre de 2020, no Instituto de Ciências Matemáticas e de Computação da USP.
 """)
 
 
