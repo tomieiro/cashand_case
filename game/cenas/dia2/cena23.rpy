@@ -7,10 +7,10 @@ label CENA23:
     with Fade(3, 2, 0.5)
 
     "Certo..."
-    "Preciso agir rapido e começar a investigar quem já chegou do enterro."
+    "Preciso agir rápido e começar a investigar quem já chegou do enterro."
     "Kamira T. Cashand está ali no jardim, [ind_a_info[0]] deu a volta pelos fundos e entrou na cozinha"
     "[ind_b_info[0]] veio junto com [ind_a_info[0]] e foi para o hall. Só Joe Cashand que ainda não chegou."
-    "Uma rápida olhada em volta"
+    "Uma rápida olhada em volta..."
 
     label ESCOLHA_CONV_DIA2C3:
     menu:
@@ -36,8 +36,8 @@ label CENA23:
             drc "Me conte o que viu na noite em que seu [ind_a_info[2]] foi assassinado. Quem subiu ao quarto?"
             ind_a "..."
             ind_a "Pois bem. Naquela noite me encontrei com todos na sala. Sheppard estava lá também."
-            ind_a "Após várias garrafas de espumante, meu [ind_a_info[2]] subiu ao quarto, não passava bem por suas complicações de saúde e ainda sim, insistia em beber."
-            drc "Estamos indo bem. O que mais [ind_a_info[1]]?"
+            ind_a "Após várias garrafas de espumante, meu [ind_a_info[2]] subiu ao quarto. Não passava bem por suas complicações de saúde e ainda assim insistia em beber."
+            drc "Estamos indo bem. O que mais, [ind_a_info[1]]?"
             ind_a "Após beber mais algumas taças, senti que precisava checar se ele estava bem."
             ind_a "Foi então que subi ao quarto. Vi Kamira passando com lágrimas nos olhos. A segui de volta para baixo, e perguntei o que havia acontecido."
             drc "E o que ela disse?"
@@ -52,7 +52,7 @@ label CENA23:
             ind_a "Sheppard era da família. Sempre foi considerado assim por todos nós."
             ind_a "Sou nesse momento, uma pessoa horrorizada por tudo isso... Meu [ind_a_info[2]], meu [ind_a_info[3]] e agora Sheppard."
             drc "Compreendo."
-            drc "Certo... Acho que já é suficiente por agora. Até mais [ind_a_info[1]]."
+            drc "Certo... Acho que já é suficiente por agora. Até mais, [ind_a_info[1]]."
 
             hide hugo
             hide catherine
@@ -115,7 +115,7 @@ label CENA23:
             ind_b "Ainda não acredito que isso esteja acontecendo..."
             ind_b "É horrível, senhor"
             drc "Compreendo."
-            drc "Bom, era só isso que eu precisava escutar por agora. Descanse um pouco [ind_b_info[1]]."
+            drc "Bom, era só isso que eu precisava escutar por agora. Descanse um pouco, [ind_b_info[1]]."
 
             hide hugo with dissolve
 
@@ -132,7 +132,7 @@ label CENA23:
             scene jardim
             with Fade(2, 1, 0.5)
 
-            if ind_a_info[1] == "Catherine":
+            if ind_a_info[1] == "Catherine": #rigato: por que isso está longe do hide do hugo? Não é um bug?
                 hide catherine neutra
             "..."
             "Certo, já tenho um destino."
@@ -155,7 +155,7 @@ label CENA23:
 
             if flag_kamira == 2:
                 "Descobri uma evidência forte. Mas preciso de mais detalhes de terceiros antes de verificar a versão dela da história."
-                "Talvez eu devesse "
+                "Talvez eu devesse..."
                 jump ESCOLHA_CONV_DIA2C3
 
             "Tenho o controle da situação."
@@ -169,15 +169,15 @@ label CENA23:
             "Com calma e astúcia..."
             drc "Meus pêsames por outra perda. Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
             drc "Vocês têm a minha palavra."
-            kmr "Mesmo agora, o senhor permanece. Por que?"
+            kmr "Mesmo agora, o senhor permanece. Por quê?"
             "Muito supeito... Bom, serei franco."
-            drc "Fui inspirado por um certo homem, que permaneceu leal a sua palavra, mesmo depois de quem a exigiu, partir."
+            drc "Fui inspirado por um certo homem, que permaneceu leal a sua palavra, mesmo depois de quem a exigiu partir."
             drc "Encontrarei o culpado, pode ter certeza. Mas preciso da sua colaboração."
             kmr "E o que o senhor precisa de mim?"
             "Ela derruba lágrimas. Serão verdadeiras?"
-            "Acho difícil. Dado ao que todos disseram. Mas devo ter calma..."
+            "Acho difícil. Dado o que todos disseram. Mas devo ter calma..."
             drc "Preciso que me diga o que aconteceu na noite em que seu tio morreu."
-            drc "Viu algo estranho? Algo diferente? O que aconteceu naquela noite senhorita Kamira?"
+            drc "Viu algo estranho? Algo diferente? O que aconteceu naquela noite, senhorita Kamira?"
             kmr "..."
             "Ela acena em negação com a cabeça. A informação que ela guarda é decisiva."
             drc "Senhorita, por favor, ajude-me a resolver isso."
@@ -195,7 +195,7 @@ label CENA23:
             kmr "Dito o maldito nome..."
             kmr "..."
             "Do que ela está falando?"
-            drc "Calma senhorita."
+            drc "Calma, senhorita."
 
             show kamira lagrimas at center with dissolve
 
@@ -217,7 +217,7 @@ label CENA23:
             "Joe chegou."
             "Ele irá direto para dentro."
             "Bom, que seja, falarei com ele em breve."
-            "Bom... agora ao estudo da edificação."
+            "Agora, ao estudo da edificação."
 
             scene jardim noite
             with Fade(3, 2, 0.5)
@@ -244,7 +244,7 @@ label DIALOGO_ROLES_D2C3(whoIs):
         hugo "Ainda estou um pouco chocado com tudo, mas acho que uma companhia viria bem, senhor Rightclue."
         hugo "Tanto para mim quanto para o Thorn."
         drc "Entendo, você e sua familia estão passando por um momento dificil."
-        hugo "Esta sendo dificil para todos... e tenho medo do que pode acontecer nos proximos dias com o resto de nos."
+        hugo "Esta sendo difícil para todos... e tenho medo do que pode acontecer nos proximos dias com o resto de nós."
 
     #Se for a Catherine...
     else:
@@ -254,8 +254,8 @@ label DIALOGO_ROLES_D2C3(whoIs):
         cth "O que deseja, detetive?"
         drc "Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
         cth "O senhor permaneceu. Parece disposto a realmente resolver o caso."
-        cth "O senhor é realmente uma boa pessoa, detetive."
-        cth "O senhor parece determinado. Estamos sem tempo detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
+        cth "É realmente uma boa pessoa, detetive."
+        cth "O senhor parece determinado. Estamos sem tempo, detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
 
     if flag_kamira <= 1:
         $flag_kamira = 2

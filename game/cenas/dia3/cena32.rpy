@@ -1,7 +1,7 @@
 label CENA32:
 
     "Perfeito. Está aberta."
-    "Ele deve ter esquecido por toda a confusão."
+    "Ele deve ter esquecido com toda a confusão."
     play sound "audio/sonoplastia/AbrindoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
 
@@ -24,7 +24,7 @@ label CENA32:
     call INVENTARIO_DE_ESCOLHA_DIA03
 
     "Certo. Preciso abrir isso. A chave tem uma fechadura para encaixar. O problema é essa senha mecânica."
-    "Esse pessoal realmente gosta de manter seus segredos guardados, e com ajuda de muita grana, por que essas coisas não são nada baratas."
+    "Esse pessoal realmente gosta de manter seus segredos guardados, e com ajuda de muita grana, porque essas coisas não são nada baratas."
     "Me parece que são números. E com vários tipos de representação diferentes."
     "Preciso posicionar isso na ordem correta, aparentemente."
     "Vamos lá."
@@ -44,14 +44,14 @@ label CENA32:
     "São lágrimas."
     "..."
     # Desenho do sheppard e ele escrito segundo pai
-    "Ora. Quem diria."
+    "Ora. Quem diria..."
     "..."
     "Parece que..."
     "..."
     "Parece que..."
     "..."
     "Ele não saiu um minuto do lado do caixão..."
-    drc "Ora ora..."
+    drc "Ora, ora..."
     "..."
     "Joe irá regressar... Preciso colocar essas coisas no lugar"
 
@@ -99,11 +99,11 @@ label CENA32:
     play sound "audio/sonoplastia/Passos.mp3"
     $renpy.pause(3, hard=hardPause)
 
-    "Deve ser Joe. Voltando para o quarto."
+    "Deve ser Joe, voltando para o quarto."
     "Tenho pressa, mas preciso ser cuidadoso. Ficarei aqui por um tempo, para evitar suspeitas."
-    "Alguns de meus colegas de serviço poderiam pensar que está é uma decisão tola. Esperar em meio a uma corrida contra o tempo."
+    "Alguns de meus colegas de serviço poderiam pensar que esta é uma decisão tola. Esperar em meio a uma corrida contra o tempo."
     "..."
-    "Mas esses meus colegas não viram duas pessoas serem assassinadas em frente de seus narizes."
+    "Mas esses meus colegas não viram duas pessoas serem assassinadas em frente a seus narizes."
     "O assassino sabe o que faz. É inteligente. Excepcionalmente inteligente."
     "Tempo é crucial, quando a cautela não é necessária."
     "Preciso ser paciente."
