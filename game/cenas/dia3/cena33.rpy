@@ -171,7 +171,7 @@ label CENA33:
 
     drc "Seu maldito..."
     drc "Como pôde? Fazer isso com seu próprio pai?!"
-    drc "Com seu próprio irmão."
+    drc "Com seu próprio tio."
     drc "Com aquele que ajudou a te criar dentro dessa casa."
     drc "Com sua própria prima."
     drc "Você não tem alma."
