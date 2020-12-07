@@ -15,7 +15,7 @@ label CENA11:
 
     "É realmente uma bela cidade... Não tinha notado a sua existência até o telefonema do advogado de uma família envolvida, ontem à noite."
     "Agora... Pra que lado será a edificação onde marcamos o encontro?"
-    "*Ouve alguém chamado*" #rigato: trocar por um personagem ??? chamando o detetive
+    desconhecido "Detetive?"
     #Tamanho ideal : 650px x 460px
     show sheppard neutro at center with dissolve
     shp "Detetive Rightclue!"

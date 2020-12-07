@@ -1,8 +1,8 @@
 label CENA24:
     "Certo. Tenho noção de todos os acessos possíveis a janelas. Já tenho noção interna dos corredores e dos quartos."
     "Consigo concluir que o herdeiro assassino entra e sai pela porta do quarto, normalmente."
-    "Talvez chegue ao quarto com uma conversa comum, e logo após, ataca a vítima. Hougin, Sheppard."
-    "O curioso é o senhor Lostie foi assassinado no jardim da mansão, pelo que entendi, na madrugada."
+    "Talvez chegue ao quarto com uma conversa comum, e logo após, ataca a vítima. Hougin, Sheppard..."
+    "O curioso é o senhor Lostie, que foi assassinado no jardim da mansão, pelo que entendi, na madrugada."
     "Realmente é algo intrigante..."
     "Está escurendo, preciso falar com Joe."
 
@@ -41,8 +41,8 @@ label CENA24:
     play sound "audio/sonoplastia/Corda.mp3"
     $renpy.pause(3, hard=hardPause)
 
-    "Mas que som é esse..."
-    "Será que..."
+    "Mas que som é esse?"
+    "Será que...?"
     drc "Senhorita!"
 
     play sound "audio/sonoplastia/AbrindoPorta.mp3"
@@ -53,7 +53,7 @@ label CENA24:
     scene kamira morte
     with Fade(0.1, 0.1, 0.5)
 
-    drc "Não."
+    drc "Não..."
 
     window hide
     $renpy.pause(3, hard=hardPause)
@@ -85,7 +85,7 @@ label CENA24:
     pause 0.3
     "Pode ser uma pista muito importante, vou levar."
     hide screen mostra_item with dissolve
-    $renpy.notify("Coletou Pista - Papel Rasgado!")
+    $renpy.notify("Coletou Pista - Papel Rasgado")
     $pac1_itens_no_inventario.append(pac2_item_papel)
 
     "Preciso avisar os outros."
