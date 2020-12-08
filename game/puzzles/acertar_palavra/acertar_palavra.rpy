@@ -125,6 +125,8 @@ init python:
             #Escolheu corretamente
             app_resposta[app_rod] = letra
             app_rod = app_rod + 1
+            renpy.sound("audio/sonoplastia/Escrevendo.mp3")
+            renpy.pause(2, hard=hardPause)
             if(app_rod == app_rodadas):
                 #Acabou
                 app_fim = True
