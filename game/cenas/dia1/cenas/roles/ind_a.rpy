@@ -108,7 +108,7 @@ label DIALOGO_JOE_12_A:
     drc "..."
     joe "Tente não destruir a reputação do senhor Sheppard com a nossa família."
     drc "Não vou..."
-    drc "Tenho confiança em minha habilidades."
+    drc "Tenho confiança em minhas habilidades."
     joe "..."
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
 
