@@ -9,10 +9,10 @@ label CENA11:
     $randomize(ind_b_info,["none"], False)
     $randomize(ind_c_info,["none"], False)
     $randomize(ind_d_info,["none"], False)
-    $ind_a = Character(ind_a_info[0], callback=character_beeps)
-    $ind_b = Character(ind_b_info[0], callback=character_beeps)
-    $ind_c = Character(ind_c_info[0], callback=character_beeps)
-    $ind_d = Character(ind_d_info[0], callback=character_beeps)
+    $ind_a = Character(ind_a_info[0], callback=character_beeps, who_color=ind_a_info[4])
+    $ind_b = Character(ind_b_info[0], callback=character_beeps, who_color=ind_b_info[4])
+    $ind_c = Character(ind_c_info[0], callback=character_beeps, who_color=ind_c_info[4])
+    $ind_d = Character(ind_d_info[0], callback=character_beeps, who_color=ind_d_info[4])
 
     "*Suspiro*"
     "Virar a noite atrás de pistas não é trabalho para qualquer pessoa..."

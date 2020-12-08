@@ -14,13 +14,13 @@ init python:
 #Definindo personagens fixos
 define drc = Character("Rightclue", who_color="#c8c8ff", callback=character_beeps)
 define shp = Character("Sheppard", who_color="#c8ffc8", callback=character_beeps)
-define hgin = Character("Hougin Cashand", callback=character_beeps)
-define mrth = Character("Martha", callback=character_beeps)
-define vnc = Character("Carlo Venchinni", callback=character_beeps)
-define hugo = Character("Hugo T. Cashand", callback=character_beeps)
+define hgin = Character("Hougin Cashand", who_color="#15b105", callback=character_beeps)
+define mrth = Character("Martha", who_color="#c1a71a", callback=character_beeps)
+define vnc = Character("Carlo Venchinni", who_color="#554a0c", callback=character_beeps)
+define hugo = Character("Hugo T. Cashand", who_color="#3c72ec", callback=character_beeps)
 define kmr = Character("Kamira T. Cashand", who_color="#1cff91", callback=character_beeps)
-define cth = Character("Catherine V. Cashand", callback=character_beeps)
-define joe = Character("Joe Cashand", callback=character_beeps)
+define cth = Character("Catherine V. Cashand",  who_color="#e860e3", callback=character_beeps)
+define joe = Character("Joe Cashand", who_color="#e74343", callback=character_beeps)
 define desconhecido = Character("???", callback=character_beeps)
 
 #Imagem Side do Sheppard
@@ -28,10 +28,10 @@ define shp_side = Character("Sheppard", image="shepp", who_color="#c8ffc8", call
 image side shepp = "images/engler/personagens/sheppard/side sheppard neutro 1.png"
 
 #Definindo Informações dos personagens aleatórios
-define joe_info =  ["Joe Cashand","Joe","pai","tio"]
-define catherine_info = ["Catherine V. Cashand","Catherine","irmão","irmão"]
-define kamira_info = ["Kamira T. Cashand","Kamira","tio","tio"]
-define hugo_info = ["Hugo T. Cashand","Hugo","pai","tio"]
+define joe_info =  ["Joe Cashand","Joe","pai","tio", "#e74343"]
+define catherine_info = ["Catherine V. Cashand","Catherine","irmão","irmão", "#e860e3"]
+define kamira_info = ["Kamira T. Cashand","Kamira","tio","tio", "#1cff91"]
+define hugo_info = ["Hugo T. Cashand","Hugo","pai","tio", "#3c72ec"]
 
 #Definindo informações de personagens aleatórios que podem ser inocentes e/ou culpados
 define possiveis_inocentes = [joe_info, catherine_info, kamira_info, hugo_info]
