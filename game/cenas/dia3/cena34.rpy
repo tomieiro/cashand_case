@@ -1,6 +1,6 @@
 label CENA34:
     scene hall
-    with Fade(7, 2, 0.5)
+    with Fade(4, 2, 0.5)
 
     play music "audio/musicas/Onde.mp3"
 
@@ -140,6 +140,12 @@ label CENA34:
 
     play sound "audio/sonoplastia/AbrindoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
+
+    "..."
+    "Vejo fotos do senhor Sheppard e de Kamira na perede."
+    "Realmente, odeio despedidas."
+    "..."
+    "Mas a justiça foi feita. Espero que estejam vendo isso de algum lugar."
 
     play sound "audio/sonoplastia/Passos.mp3"
     scene jardim with Fade(1, 2, 0.5)

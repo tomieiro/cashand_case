@@ -51,15 +51,15 @@ label CENA25:
 
     "Se eu não estiver enganado..."
 
-    call CHAMA_TELA_PAC_DIA2
+    call CHAMA_TELA_PAC_DIA2 from _call_CHAMA_TELA_PAC_DIA2
 
     "Analisando os fatos..."
 
-    call INVENTARIO_DE_ESCOLHA_DIA02_2
+    call INVENTARIO_DE_ESCOLHA_DIA02_2 from _call_INVENTARIO_DE_ESCOLHA_DIA02_2
 
     "Bom, vamos tentar..."
 
-    call SLIDER_PUZZLE_3X3_DIA02_2
+    call SLIDER_PUZZLE_3X3_DIA02_2 from _call_SLIDER_PUZZLE_3X3_DIA02_2
 
     play sound "audio/sonoplastia/Destravando.mp3"
     $renpy.pause(2, hard=hardPause)
@@ -87,7 +87,9 @@ label CENA25:
     hide screen mostra_item with dissolve
     "Bom, vamos à tentativa..."
 
-    call LIGHTS_OUT_PUZZLE_4X4_DIA02
+    call LIGHTS_OUT_PUZZLE_4X4_DIA02 from _call_LIGHTS_OUT_PUZZLE_4X4_DIA02
+
+    play music "audio/musicas/Onde.mp3" fadein 4.0
 
     show screen mostra_item("images/engler/itens/gravador ligado fechado.png") with dissolve
     "Excelente!"
@@ -138,7 +140,6 @@ label CENA25:
     drc "Ela estava preocupada com ele."
     drc "Com sua saúde inclusive."
     drc "Acho que..."
-    #rigato: não deveria ter a visita de Suspin antes da próxima parte? Acho que uma menção seria boa.
 
     "..z....sh.....zh.....sh.....z..."
 
@@ -171,7 +172,7 @@ label CENA25:
     "Era disso que Kamira dizia mais cedo."
     "Então, com isso, posso afirmar que..."
 
-    call APP_DIA2
+    call APP_DIA2 from _call_APP_DIA2
 
     "Meu Deus. Ela era inocente."
     "Por minha incompetência e falta de tato, ela se foi."
@@ -181,8 +182,6 @@ label CENA25:
     "O culpado está aqui. Dentro dessa casa. Quem será a próxima vítima?"
     "..."
     "Não... não arriscaria... Só tem uma chance de se safar agora."
-    # "Que é incriminando outra pessoa."
-    # "Tentará incriminar um de seus parentes."
     "Assumo que conheça o trato com o senhor Venchinni. Aquele barulho, naquela noite, prova isso."
     "Todavia não sabe da fúria do senhor Venchinni, após a morte do senhor Sheppard, eu assumo."
     "Tenho o controle da situação."
@@ -190,5 +189,6 @@ label CENA25:
     "Pela manhã, após o velório, será minha cartada final."
     "É tudo ou nada."
     "É só uma questão de tempo..."
+    stop music fadeout(3)
     "..."
     jump CENA31

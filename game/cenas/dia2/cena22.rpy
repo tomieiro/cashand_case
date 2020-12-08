@@ -1,6 +1,6 @@
 label CENA22:
 
-    stop music fadeout 3
+    stop music fadeout(3)
 
     scene cemiterio
     with Fade(2, 4, 0.5)
@@ -82,7 +82,8 @@ label CENA22:
     play sound "audio/sonoplastia/Passos.mp3"
     $renpy.pause(2, hard=hardPause)
 
-    #hide vnc com um dissolve talvez
+    stop music fadeout(3)
+
     "Meu Deus... Tenho um fardo grande para carregar."
     "..."
     "Hugo se foi."

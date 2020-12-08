@@ -1,5 +1,7 @@
 label CENA23:
 
+    play music "audio/musicas/Pistas.mp3" fadein 2.0
+
     $flag_kamira = 0
     $visCoz = False
 
@@ -219,9 +221,12 @@ label CENA23:
             "Bom, que seja, falarei com ele em breve."
             "Agora, ao estudo da edificação."
 
+
+            stop music fadeout(5)
+
             scene jardim noite
             with Fade(3, 2, 0.5)
-
+            
             "..."
             jump CENA24
 
