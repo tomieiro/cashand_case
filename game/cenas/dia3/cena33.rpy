@@ -2,16 +2,25 @@
 #Ia ficar de fora da herança por ser rebelde, e nao seguir a linha da familia.
 
 label CENA33:
-    "Ainda restou-me o lenço do senhor Sheppard."
+
     "..."
-    "..."
-    "Entendo."
-    "..."
+    "Acho que me restou uma última pista útil..."
+    "Sinto um cheiro diferente dela."
+
+    call INVENTARIO_DE_ESCOLHA_DIA03_2
+
+    "Exatamente, o lenço do senhor Sheppard."
+    "O que é isso dentro dele?"
+
+    $renpy.pause(2.0, hard=True)
+
+    "Entendo..."
+    "Então era isso."
+    "Como não pude perceber."
+
     "..."
     "Verei Hugo primeiro."
     "Ele deve estar lá embaixo."
-
-
 
     play sound "audio/sonoplastia/TrancandoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
@@ -36,7 +45,9 @@ label CENA33:
     "Claro..."
     play sound "audio/sonoplastia/AbrindoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
-    "Deixe me retirar isso..." #-> Coletou um item ???
+    "Deixe me retirar isso..."
+    $renpy.notify("Coletou Pista - ???")
+
     "Pronto."
     play sound "audio/sonoplastia/FechandoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
@@ -120,14 +131,15 @@ label CENA33:
 
     # show item lenço do sheppard com fio de cabelo no meio
 
-    #call inventario_de_escolha -> a chave e lenço(eoq sai)
-
     cth "O que é isso, detetive?"
     drc "..."
 
-    #puzzle palavras |pelo de| cachorro
+    call APP_DIA3
 
     drc "Pelo de cachorro."
+
+    #hide item pelo
+
     drc "Venha. E rápido."
     cth "Sim, senhor."
     "Um simples fio de cabelo. Porém, mais grosso."

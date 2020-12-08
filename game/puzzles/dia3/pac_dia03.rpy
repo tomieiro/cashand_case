@@ -135,6 +135,7 @@ screen point_and_click_dia3():
         imagebutton:
             action Show("inventario_de_coleta", itens_no_inventario=pac1_itens_no_inventario)
             auto "images/inventario/bg_seta_%s.png"
+            activate_sound "audio/sonoplastia/AbrindoPasta.mp3"
             #idle pac1_img_inv_but
             at idc_botao_abrir
 
