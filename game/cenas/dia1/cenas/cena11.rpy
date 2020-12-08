@@ -122,7 +122,7 @@ label CENA11:
     shp_side "Não é por acaso que o senhor Cashand possui tantos bens. Um jogo obscuro foi jogado, detetive, por quatro longas décadas."
     drc "Pois então, devo considerar que estou entrando em terreno obscuro." #rigato: Considerar trocar esse "obscuro" ou o anterior por outra palavra
     shp_side "Não há motivo para alarde, detetive. O homem que ergueu esse reino está, neste exato momento, há um metro e oitenta sob a terra onde reinou." #rigato: reinou ou reinava?
-    shp_side "Mas alguém há de tomar seu lugar, herdar sua fortuna"
+    shp_side "Mas alguém há de tomar seu lugar, herdar sua fortuna."
     shp_side "Pois bem. Havia cinco pessoas na lista para reivindicar o tesouro do senhor Hougin Cashand."
     shp_side "Logo, você irá conhecê-los... os herdeiros."
     drc "Entendo. Estou desde o início de nossa conversa pensando... Por que se envolveu, senhor Sheppard?"

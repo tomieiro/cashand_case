@@ -7,7 +7,7 @@ label CENA33:
     "Acho que me restou uma última pista útil..."
     "Sinto um cheiro diferente dela."
 
-    call INVENTARIO_DE_ESCOLHA_DIA03_2
+    call INVENTARIO_DE_ESCOLHA_DIA03_2 from _call_INVENTARIO_DE_ESCOLHA_DIA03_2
 
     "Exatamente, o lenço do senhor Sheppard."
     "O que é isso dentro dele?"
@@ -134,7 +134,7 @@ label CENA33:
     cth "O que é isso, detetive?"
     drc "..."
 
-    call APP_DIA3
+    call APP_DIA3 from _call_APP_DIA3
 
     drc "Pelo de cachorro."
 

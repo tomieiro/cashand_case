@@ -106,7 +106,7 @@ label DIALOGO_KAMIRA_12_B:
     show kamira neutra with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     kmr "Quem seria o senhor?"
-    drc "Prazer. Rightclue. Sou o detetive contratado."
+    drc "Prazer, Rightclue. Sou o detetive contratado."
     kmr "Espere um pouco, Sheppard. O que significa isso?"
     shp "Está tudo certo, Kamira, o detetive prometeu sigilo e nós ajudará."
     kmr "Não concordo com isso. De forma alguma, Sheppard. Isso só diz respeito a nós mesmos."
@@ -115,7 +115,7 @@ label DIALOGO_KAMIRA_12_B:
     kmr "Não tenho razão para confiar nesse homem."
     kmr "Não me dê motivos para deixar de confiar em você também ..."
     shp "..."
-    drc "Sei que a senhora e sua família estão passando por momentos difíceis, mas acredite, o senhor Sheppard está apenas querendo ajudar"
+    drc "Sei que a senhora e sua família estão passando por momentos difíceis, mas acredite, o senhor Sheppard está apenas querendo ajudar."
     kmr "..."
     drc "Eu darei o meu melhor para mostrar que a minha vinda não foi desnecessária."
     kmr "..."
@@ -130,7 +130,7 @@ label DIALOGO_CATHERINE_12_B:
     shp "Este é detetive Rightclue. Está aqui para ajudar no caso."
     drc "Muito prazer."
     cth "Pois bem, meu anjo. Vou te dar uma pista."
-    cth "Este caso não é para você. Não queremos mais pessoas aqui para piorar a situação"
+    cth "Este caso não é para você. Não queremos mais pessoas aqui para piorar a situação."
     drc "..."
     cth "Sheppard, já havia dito a você. Sem pessoas externas."
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."

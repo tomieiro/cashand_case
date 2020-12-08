@@ -66,7 +66,7 @@ label DIALOGO_JOE_12_C:
         xalign 0.2 yalign 0.99999
     show joe neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
-    drc "Sou o detetive Rightclue, foi contratado pelo senhor Sheppard para investigar o caso."
+    drc "Sou o detetive Rightclue, fui contratado pelo senhor Sheppard para investigar o caso."
     joe "..."
     joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
     shp "Mil perdões, Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
