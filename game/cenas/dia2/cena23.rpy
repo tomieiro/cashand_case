@@ -10,8 +10,8 @@ label CENA23:
 
     "Certo..."
     "Preciso agir rápido e começar a investigar quem já chegou do enterro."
-    "Kamira T. Cashand está ali no jardim, [ind_a_info[0]] deu a volta pelos fundos e entrou na cozinha"
-    "[ind_b_info[0]] veio junto com [ind_a_info[0]] e foi para o hall. Só Joe Cashand que ainda não chegou."
+    "Kamira T. Cashand está ali no jardim, [ind_a_info[1]] deu a volta pelos fundos e entrou na cozinha"
+    "[ind_b_info[1]] veio junto com [ind_a_info[1]] e foi para o hall. Só Joe Cashand que ainda não chegou."
     "Uma rápida olhada em volta..."
 
     label ESCOLHA_CONV_DIA2C3:
@@ -37,7 +37,7 @@ label CENA23:
             drc "Confie em mim, [ind_a_info[1]], acharei o culpado. Mas preciso de sua cooperação."
             drc "Me conte o que viu na noite em que seu [ind_a_info[2]] foi assassinado. Quem subiu ao quarto?"
             ind_a "..."
-            ind_a "Pois bem. Naquela noite me encontrei com todos na sala. Sheppard estava lá também."
+            ind_a "Pois bem. Naquela noite, me encontrei com todos na sala. Sheppard estava lá também."
             ind_a "Após várias garrafas de espumante, meu [ind_a_info[2]] subiu ao quarto. Não passava bem por suas complicações de saúde e ainda assim insistia em beber."
             drc "Estamos indo bem. O que mais, [ind_a_info[1]]?"
             ind_a "Após beber mais algumas taças, senti que precisava checar se ele estava bem."
@@ -50,7 +50,7 @@ label CENA23:
             ind_a "O senhor tem minha palavra. Desta hora, até o momento da morte, não notei mais nada de suspeito."
             drc "Entendo."
             drc "Mais uma coisa..."
-            drc "Pode me contar como era o shenhor Sheppard? Digo, no dia a dia da família."
+            drc "Pode me contar como era o senhor Sheppard? Digo, no dia a dia da família."
             ind_a "Sheppard era da família. Sempre foi considerado assim por todos nós."
             ind_a "Sou nesse momento, uma pessoa horrorizada por tudo isso... Meu [ind_a_info[2]], meu [ind_a_info[3]] e agora Sheppard."
             drc "Compreendo."
@@ -111,7 +111,7 @@ label CENA23:
                 "Parece que [ind_a_info[1]] falava a verdade."
             drc "Entendo."
             drc "Mais uma coisa..."
-            drc "Pode me contar como era o shenhor Sheppard? Digo, no dia a dia da família."
+            drc "Pode me contar como era o senhor Sheppard? Digo, no dia a dia da família."
             ind_b "Sheppard era uma homem leal. Fazia parte da nossa família. Nos viu crescer, dentro desta casa."
             ind_b "..."
             ind_b "Ainda não acredito que isso esteja acontecendo..."
@@ -226,7 +226,7 @@ label CENA23:
 
             scene jardim noite
             with Fade(3, 2, 0.5)
-            
+
             "..."
             jump CENA24
 
@@ -247,9 +247,13 @@ label DIALOGO_ROLES_D2C3(whoIs):
         hugo "Senhor Rightclue..."
         hugo "Claro."
         hugo "Ainda estou um pouco chocado com tudo, mas acho que uma companhia viria bem, senhor Rightclue."
-        hugo "Tanto para mim quanto para o Thorn."
+        hugo "Tanto para mim, quanto para o Thorn."
+        hugo "Mas ele me consola bastante."
+        hugo "Não é, garotão?"
+        play sound "audio/sonoplastia/Thorn.mp3"
+        $renpy.pause(3, hard=hardPause)
         drc "Entendo, você e sua familia estão passando por um momento dificil."
-        hugo "Esta sendo difícil para todos... e tenho medo do que pode acontecer nos proximos dias com o resto de nós."
+        hugo "Está sendo difícil para todos... e tenho medo do que pode acontecer nos proximos dias com o resto de nós."
 
     #Se for a Catherine...
     else:
@@ -260,7 +264,10 @@ label DIALOGO_ROLES_D2C3(whoIs):
         drc "Eu gostaria que soubesse que gastarei todo meu esforço para descobrir quem está por trás disso."
         cth "O senhor permaneceu. Parece disposto a realmente resolver o caso."
         cth "É realmente uma boa pessoa, detetive."
-        cth "O senhor parece determinado. Estamos sem tempo, detetive. O culpado está nos eliminando. Um a um. Precisamos de respostas."
+        cth "O senhor parece determinado."
+        cth "Estamos sem tempo, detetive."
+        cth "O culpado está nos eliminando. Um a um."
+        cth "Precisamos de respostas."
 
     if flag_kamira <= 1:
         $flag_kamira = 2

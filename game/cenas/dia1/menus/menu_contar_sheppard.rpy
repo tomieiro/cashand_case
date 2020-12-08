@@ -6,6 +6,7 @@ label MENU_CONTAR_SHEPPARD:
         "O que fazer?"
 
         "Arriscar e contar":
+            $contou_ao_sheppard = True
             shp "Senhor Sheppard, está claro que foi um dos herdeiros!"
             shp "O quê? O senhor está certo disso, detetive?"
             drc "Com toda certeza. É óbvio que seria um dos herdeiros. O último herdeiro, que por algum motivo, se perdeu a informação de quem era, desceu do quarto do senhor Hougin às 2:29."
@@ -32,6 +33,7 @@ label MENU_CONTAR_SHEPPARD:
             shp "Com toda certeza."
 
         "Não contar ao Sheppard":
+            $contou_ao_sheppard = False
             drc "Senhor Sheppard. Não posso te contar exatamente quem seja. Me nego, por políticas pessoais, a envolver o senhor neste risco. Mas saiba que pode ser mais que uma pessoa apenas. E está dentro dessa casa."
             shp "Compreendo, detetive. Fico grato ao senhor, de toda a forma."
             shp "Qualquer coisa que precisar, estarei aqui para isso."

@@ -80,7 +80,7 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
     modal True
 
     #Sensível apenas quando não há diálogo ocorrendo
-    sensitive (not lop_fim)
+    sensitive (not lop_fim and not renpy.get_screen("say"))
 
     key "h" action NullAction()
     key 'mouseup_2' action NullAction()

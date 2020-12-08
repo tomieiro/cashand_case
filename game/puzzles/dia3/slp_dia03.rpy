@@ -66,6 +66,10 @@ label SLIDER_PUZZLE_4X4_DIA03:
         slp_sucesso_label = "SUCESSO_SLP_4X4_DIA03"
         slp_game_over_label = "SLP_GAME_OVER_4X4_DIA03"
 
+    "Ao clicar em uma peça, posso deslizá-la para um espaço vazio."
+    "Preciso descobrir o que cada símbolo significa."
+    "E posicionar as peças na ordem correta."
+
     play music "audio/musicas/Descobrimento.mp3"
     show screen slider_puzzle(dim=4, img_bg="#636363", style_margem="slp_margem2", style_fundo="slp_botao_fundo2") with puzzle_transition8
     jump POINT_AND_CLICK
@@ -74,6 +78,8 @@ label SLP_GAME_OVER_4X4_DIA03:
     stop music fadeout 5.0
     hide screen slider_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
+    "Acho que todas as peças representam números."
+    "Mas parecem estar em simbologias diferentes."
     jump SLIDER_PUZZLE_4X4_DIA03
 
 label SUCESSO_SLP_4X4_DIA03:

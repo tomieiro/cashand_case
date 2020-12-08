@@ -55,6 +55,11 @@ label SLIDER_PUZZLE_3X3_DIA02_2:
         slp_sucesso_label = "SUCESSO_SLP_3X3_DIA02_2"
         slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02_2"
 
+    "Posso usar o lápis para manipular as peças."
+    "Ao clicar numa peça, posso deslizá-la para o espaço vazio."
+    "Tenho que deixar a mola na posição correta."
+    "Deve ficar na primeira linha, mas em qual posição?"
+
     play music "audio/musicas/Descobrimento.mp3"
     show screen slider_puzzle(dim=3, img_bg="#787abf") with puzzle_transition8
     jump POINT_AND_CLICK

@@ -30,6 +30,11 @@ label LIGHTS_OUT_PUZZLE_4X4_DIA02:
         lop_timer_total = 4 * 60.0
         lop_timer_quase = 30.0
 
+    "Aparentemente, há 16 peças luminosas."
+    "Ao clicá-las, posso ativar ou desativar."
+    "E isso influencia nas peças em volta."
+    "Preciso deixar todas ligadas."
+
     play music "audio/musicas/Descobrimento.mp3" fadein 5.0
     #Chama a tela
     show screen lights_out_puzzle(4, img_bg="#787abf") with puzzle_transition8

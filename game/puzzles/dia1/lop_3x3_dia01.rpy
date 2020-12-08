@@ -30,6 +30,12 @@ label LIGHTS_OUT_PUZZLE_3X3_DIA01:
         lop_timer_total = 4 * 60.0
         lop_timer_quase = 30.0
 
+
+    "Aparentemente, há 9 botões que podem estar, ou não, pressionados."
+    "Eles ativam quando estão pressionados."
+    "Parece que, ao clicá-los, eles mudam de estado."
+    "E isso pode influenciar outros botões próximos..."
+    "Preciso deixar todos eles ativados."
     play music "audio/musicas/Descobrimento.mp3" fadein 5.0
     #Chama a tela
     show screen lights_out_puzzle(3, img_bg="#8f8d8c") with puzzle_transition8
