@@ -87,6 +87,31 @@ label IDE_03_ESCOLHEU_LENCO:
         hide screen mostra_item2 with dissolve
     jump IDE_03_ESCOLHE_FRASE
 
+label IDE_03_ESCOLHEU_LENCO_PELOS:
+    #Define quem é o item
+    $ide_aux_item = pac3_item_lenco
+
+    #Se o item ainda não foi escolhido
+    if(ide_nao_escolhido(ide_aux_item)):
+        #Se o item é próximo na ordem de escolha
+        if(ide_proximo_correto(ide_aux_item)):
+            #Escolheu corretamente!
+            #Inserir frases correspondentes:
+            "Lenço com pelos. Não são de um ser humano."
+            hide screen mostra_item2 with dissolve
+            $ide_escolheu_item(ide_aux_item)
+        else:
+            #Escolheu ERRADO!
+            #Inserir frases correspondentes:
+            "Não sei... acho que não é isso..."
+            hide screen mostra_item2 with dissolve
+    else:
+        #Já escolheu
+        #Inserir frases correspondentes:
+        "Já usei essa pista antes... não é isso..."
+        hide screen mostra_item2 with dissolve
+    jump IDE_03_ESCOLHE_FRASE
+
 label IDE_03_ESCOLHEU_CHAVE:
     #Define quem é o item
     $ide_aux_item = pac3_item_chave
