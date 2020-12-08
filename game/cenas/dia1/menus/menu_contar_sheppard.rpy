@@ -11,9 +11,10 @@ label MENU_CONTAR_SHEPPARD:
             drc "Com toda certeza. É óbvio que seria um dos herdeiros. O último herdeiro, que por algum motivo, se perdeu a informação de quem era, desceu do quarto do senhor Hougin às 2:29."
             drc "O senhor Hougin deixou uma marca. A inscrição ao lado da cômoda tinha por significado 231, duas e trinta e um, o horário em que foi apunhalado."
             drc "O assassino provavelmente apressou-se após o crime, e o senhor Hougin, em seu último suspiro, rabiscou traços para indicar o momento de sua morte. Realmente era um homem astuto e dotado de vontade e inteligência afiadíssimas."
-            shp "Às 2:31... Não foi quando o senhor Suspin visitou o quarto de Hougin? Mas ele não é um dos herdeiros." #rigato: coloquei Sheppard perguntando sobre Suspin e Rightclue respondendo
+            shp "Às 2:31... Não foi quando o senhor Suspin visitou o quarto de Hougin? Mas ele não é um dos herdeiros."
             drc "E é precisamente por isso que digo que foi um deles."
-            drc "O relógio do quarto estava oito minutos atrasado. Hougin pensou serem 2:31, mas na verdade eram 2:39. Creio que John Suspin Ector seja inocente."
+            drc "O relógio do quarto estava oito minutos adiantado. Hougin pensou serem 2:31, mas na verdade eram 2:23."
+            drc "Creio que John Suspin Ector seja inocente. Provavelmente não tenha nem entrado no quarto."
             drc "Senhor Sheppard, precisamos ter extrema cautela. O assassino está aqui, dentro desta casa."
             shp "Senhor detetive, estou chocado. Não consigo entender, o porquê. Por quê? Por quê?"
             drc "Dinheiro, senhor Sheppard. Estou quase certo que é disso que se trata."
