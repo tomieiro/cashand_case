@@ -34,6 +34,8 @@ label CENA31:
     play sound "audio/sonoplastia/FechandoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
 
+    play music "audio/musicas/Pistas.mp3" fadein 4.0
+
     drc "Meus pêsames, Catherine. Sinto-me impotente diante desses acontecimentos."
     "Preciso ter calma. Observamos as reações pelas palavras. Pelas frases."
 

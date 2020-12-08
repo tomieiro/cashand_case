@@ -6,8 +6,6 @@ label CENA24:
     "Realmente é algo intrigante..."
     "Está escurendo, preciso falar com Joe."
 
-    stop music fadeout(4)
-
     play sound "audio/sonoplastia/AbrindoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
 
