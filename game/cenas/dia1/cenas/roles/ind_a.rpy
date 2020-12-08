@@ -72,9 +72,10 @@ label DIALOGO_HUGO_12_A:
     hugo "Calma, calma, já vamos..."
     "Parecem muito próximos... e o cachorro é muito inteligente."
     shp "Tenha cuidado, Hugo!"
-    drc "Este rapaz me parece bem, dada a situação."
-    shp "Ele sempre foi assim."
-    shp "Guarda tudo para si."
+    "Este rapaz me parece bem, dada a situação."
+    shp "Você nunca muda, Hugo."
+    shp "Mas não guarde tudo para si."
+    hugo "Agradeço, Sheppard. Mas estou bem."
     return
 
 
