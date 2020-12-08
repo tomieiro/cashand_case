@@ -10,8 +10,8 @@ label CENA21:
 
     $randomize(ind_a_info,["Kamira","Joe"],True)
     $randomize(ind_b_info,["Kamira","Joe"],False)
-    $ind_a = Character(ind_a_info[0], callback=character_beeps)
-    $ind_b = Character(ind_b_info[0], callback=character_beeps)
+    $ind_a = Character(ind_a_info[0], callback=character_beeps, who_color=ind_a_info[4])
+    $ind_b = Character(ind_b_info[0], callback=character_beeps, who_color=ind_b_info[4])
 
     scene quarto with hpunch
     play sound "audio/sonoplastia/BatidaRapidaPorta.mp3"
