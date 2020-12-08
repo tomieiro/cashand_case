@@ -140,7 +140,7 @@ label CENA33:
 
     drc "Pelo de cachorro."
 
-    #hide item pelo
+    hide screen mostra_item with dissolve
 
     drc "Venha. E rápido."
     cth "Sim, senhor."
