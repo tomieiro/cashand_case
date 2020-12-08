@@ -187,8 +187,7 @@ label PAC1_SELECIONA_ESTANTE:
             renpy.pause(1, hard=hardPause)
             pac1_item_sangue[2] = True
             pac1_itens_no_inventario.append(pac1_item_sangue)
-            play sound "audio/sonoplastia/ColetandoPista.mp3"
-            $renpy.pause(1, hard=hardPause)
+            renpy.pause(1, hard=hardPause)
         #Se selecionar a outra pista essencial também, pode sair
         if(pac1_item_relogio[2]):
             "Acho que já coletei todas as pistas que eu precisava..."
