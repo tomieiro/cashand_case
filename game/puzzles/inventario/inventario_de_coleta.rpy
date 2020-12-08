@@ -101,6 +101,7 @@ screen inventario_de_coleta(itens_no_inventario=[]):
         imagebutton:
             auto "images/inventario/bg_seta_%s.png"
             #idle pacp_img_inv_but
+            activate_sound "audio/sonoplastia/FechandoPasta.mp3"
             at idc_botao_fechar
             action Jump("FECHAR_TELA_INVENTARIO")
 
