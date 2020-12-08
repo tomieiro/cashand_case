@@ -7,7 +7,7 @@ label CENA13:
     show sheppard neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.5 yalign 0.99999
 
-    $renpy.music.set_volume(0.5, delay=0, channel='music')
+    #$renpy.music.set_volume(0.5, delay=0, channel='music')
     play music "audio/musicas/Pistas.mp3" fadein 3.0
 
     shp "Aqui estamos. Senhor Rightclue, este é um ponto decisivo. É aqui que tudo começa para você. As decisões que tomar a partir daqui definirão se o senhor trará dias melhores para esta família."

@@ -44,17 +44,23 @@ label CENA32:
 
     play music "audio/musicas/Ambiente.mp3" fadein 3.0
 
+    show screen mostra_item("images/engler/itens_no_cenario/fotos.png")
     "Estão molhadas."
     "Todas elas."
     "São lágrimas."
     "..."
+    hide screen mostra_item
 
+    show screen mostra_item("images/engler/pistas/desenho_joe.png")
     "Ora. Quem diria..."
     "..."
     "Parece que..."
     "..."
     "Parece que..."
     "..."
+    hide screen mostra_item
+
+
     "Ele não saiu um minuto do lado do caixão..."
     drc "Ora, ora..."
     "..."

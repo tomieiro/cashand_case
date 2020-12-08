@@ -54,7 +54,7 @@ label CHAMA_TELA_PAC_DIA1:
 
     #Chama a tela de point and click
     #$Show("point_and_click_dia1", transition="puzzle_transition1")()
-    play music "audio/musicas/Pistas.mp3" fadein 5.0
+    play music "audio/musicas/Tensao.mp3" fadein 5.0
     show screen point_and_click_dia1() with puzzle_transition8
     #$renpy.show_screen("point_and_click_dia1", _layer="master")
     #$renpy.transition(puzzle_transition8)

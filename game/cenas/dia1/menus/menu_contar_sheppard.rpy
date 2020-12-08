@@ -1,6 +1,6 @@
 label MENU_CONTAR_SHEPPARD:
 
-    play music "audio/musicas/Tensao.mp3" fadein(3)
+    play music "audio/musicas/Onde.mp3" fadein(3)
 
     menu:
         "O que fazer?"
