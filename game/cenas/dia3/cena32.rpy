@@ -52,14 +52,14 @@ label CENA32:
     hide screen mostra_item
 
     show screen mostra_item("images/engler/pistas/desenho_joe.png")
+    "Um desenho antigo. Talvez da infância de Joe."
     "Ora. Quem diria..."
     "..."
     "Parece que..."
     "..."
-    "Parece que..."
     "..."
-    hide screen mostra_item
 
+    hide screen mostra_item
 
     "Ele não saiu um minuto do lado do caixão..."
     drc "Ora, ora..."
