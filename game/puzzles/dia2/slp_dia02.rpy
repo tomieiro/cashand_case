@@ -57,6 +57,10 @@ label SLIDER_PUZZLE_3X3_DIA02:
         slp_sucesso_label = "SUCESSO_SLP_3X3_DIA02"
         slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02"
 
+    "O bilhete está partido em pedaços."
+    "Ao clicar em uma peça, posso deslizá-la para um espaço vazio."
+    "Preciso deixar todos os pedaços na ordem correta."
+
     play music "audio/musicas/Descobrimento.mp3"
     show screen slider_puzzle(dim=3) with puzzle_transition8
     jump POINT_AND_CLICK
@@ -65,6 +69,9 @@ label SLP_GAME_OVER_3X3_DIA02:
     stop music fadeout 5.0
     hide screen slider_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
+    "Talvez seja melhor eu identificar, primeiro, as palavras."
+    "E, depois, tentar descobrir onde cada uma está posicionada no bilhete."
+    "Posso me atentar aos entornos de cada peça."
     jump SLIDER_PUZZLE_3X3_DIA02
 
 label SUCESSO_SLP_3X3_DIA02:

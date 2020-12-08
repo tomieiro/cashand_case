@@ -78,33 +78,31 @@ screen point_and_click_dia3():
             action Jump("PAC3_SELECIONA_ABAJUR")
             idle "pac3_img_abajur"
             focus_mask True
-            xalign 0.655
-            yalign 0.730
-            #xsize 100
-            #ysize 100
+            xalign 0.15
+            yalign -0.01
 
         #Botão de coleta para o item cofre
         imagebutton:
             action Jump("PAC3_SELECIONA_COFRE")
             idle "images/engler/itens_no_cenario/cofre_do_quarto2.png"
             focus_mask True
-            xalign 0.025
-            yalign -0.008
+            xalign 0.22
+            yalign 0.805
 
         #Botão de coleta para o item gaveta 1
         imagebutton:
             action Jump("PAC3_SELECIONA_GAVETA")
             idle "pac3_img_gaveta1"
             focus_mask True
-            xalign 0.725
-            yalign 0.905
+            xalign 0.272
+            yalign 0.910
 
         #Botão de coleta para o item gaveta 2
         imagebutton:
             action Jump("PAC3_SELECIONA_GAVETA")
             idle "pac3_img_gaveta2"
             focus_mask True
-            xalign 0.855
+            xalign 0.150
             yalign 0.915
 
         #Botão de coleta para o item telefone
@@ -112,24 +110,24 @@ screen point_and_click_dia3():
             action Jump("PAC3_SELECIONA_TELEFONE")
             idle "images/engler/itens_no_cenario/telefone_cen.png"
             focus_mask True
-            xalign 0.572
-            yalign 0.850
+            xalign -0.005
+            yalign 0.844
 
         #Botão de coleta para o item vitrola
         imagebutton:
             action Jump("PAC3_SELECIONA_VITROLA")
             idle "images/engler/itens_no_cenario/vitrola_cen.png"
             focus_mask True
-            xalign 0.572
-            yalign 0.850
+            xalign 0.1275
+            yalign 0.46
 
         #Botão de coleta para o item vela
         imagebutton:
             action Jump("PAC3_SELECIONA_VELA")
             idle "images/engler/itens_no_cenario/vela_cen.png"
             focus_mask True
-            xalign 0.572
-            yalign 0.850
+            xalign 0.963
+            yalign 0.115
 
         #Botão para abrir inventário de coleta
         imagebutton:

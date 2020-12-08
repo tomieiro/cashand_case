@@ -55,7 +55,23 @@ label CENA21:
 
     drc "Sheppard.... Por quê? Por quê?"
     drc "Por quê?!"
-    drc "Por que eu tomei aquela decisão em relação a contá-lo. Me desculpe, Sheppard. Me desculpe..."
+
+    if contou_ao_sheppard:
+        drc "Por que eu tomei aquela decisão de contá-lo?"
+        "Isso pode ter pressionado o assassino."
+        "O Sheppard seria um aliado muito importante para mim, afinal de contas."
+        "Conhecia muito bem todos os suspeitos..."
+        drc "Me desculpe, Sheppard. Me desculpe..."
+        drc "Não pude salvá-lo."
+    else:
+        drc "Por que eu tomei aquela decisão de não contá-lo?"
+        "Ele poderia ter ficado mais atento com os suspeitos."
+        "O assassino estava nesta casa, afinal."
+        "Ele deve ter pensado que eu contaria a qualquer momento..."
+        "O Sheppard seria um aliado muito importante..."
+        drc "Me desculpe, Sheppard. Me desculpe..."
+        drc "Não pude salvá-lo."
+
     "Meu Deus. Meu Deus..."
     "Por quê?"
     "Ele segurava um lenço."

@@ -117,7 +117,7 @@ label DIALOGO_CATHERINE_12_D:
         xzoom 0.9 yzoom 0.9 xalign 0.2 yalign 0.99999
     show catherine neutra with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
-    cth "Mas com o passar do tempo vemos novas pessoas. Não é, senhor ..."
+    cth "Mas, com o passar do tempo, vemos novas pessoas. Não é, senhor ..."
     drc "Rightclue, sou um detetive. Muito prazer."
     cth "..."
     "*Catherine encara Sheppard*"
@@ -128,6 +128,6 @@ label DIALOGO_CATHERINE_12_D:
     cth "Você está apenas fazendo o que bem entende."
     cth "Que seja... Espero que consiga nos dizer algo, detetive."
     drc "Acredite, eu vou surpreender você e sua família."
-    drc "Vocês não vão se arepender."
+    drc "Vocês não vão se arrepender."
     cth "... Veremos."
     return

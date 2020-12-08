@@ -71,7 +71,6 @@ label CENA11:
     shp_side "Além da necessidade de ficar ligado na tomada o dia todo, ainda soa fora de hora."
     drc "Talvez eu possa dar um jeito."
 
-    #rigato: quando falha ele repete todo o dialogo do puzzle
     #puzzle lights out no fundo do relogio
     call LIGHTS_OUT_PUZZLE_3X3_DIA01 from _call_LIGHTS_OUT_PUZZLE_3X3_DIA01
 

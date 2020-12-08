@@ -48,7 +48,7 @@ screen slider_puzzle(dim, img_bg = "#fff", style_margem="slp_margem", style_fund
     modal True
 
     #Sensível apenas quando o puzzle ainda não acabou
-    sensitive (not slp_fim)
+    sensitive (not slp_fim and not renpy.get_screen("say"))
 
     key "h" action NullAction()
     key 'mouseup_2' action NullAction()

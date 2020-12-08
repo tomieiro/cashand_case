@@ -66,9 +66,16 @@ label DIALOGO_HUGO_12_A:
     drc "Olá, amigo."
     hugo "É um bom garoto."
     hugo "Ei, Thorn, quer passear?"
-    "..."
+
+    play sound "audio/sonoplastia/Thorn.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     hugo "Muito bom, garoto. Vamos lá, vou colocar sua coleira."
     hugo "Pronto."
+
+    play sound "audio/sonoplastia/Thorn.mp3"
+    $renpy.pause(3, hard=hardPause)
+
     hugo "Calma, calma, já vamos..."
     "Parecem muito próximos... e o cachorro é muito inteligente."
     shp "Tenha cuidado, Hugo!"
@@ -89,13 +96,14 @@ label DIALOGO_JOE_12_A:
     joe "Quem ordenou para que trouxesse esse indivíduo para dentro de nossa casa?"
     shp "Perdão, Joe, este é o detetive Rightclue."
     shp "Está aqui para investigar o assassinato do senhor Hougin a meu pedido."
-    joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu. Ainda mais numa hora tão complicada."
+    joe "Sheppard, eu conversei com você. Insisto que não precisamos de ajuda externa, creio eu."
+    joe "Ainda mais numa hora tão complicada..."
     joe "Incluir pessoas de fora só vai piorar a situação"
     shp "Mil perdões Joe, mas, como fiel companheiro de seu tão estimado pai, insisto que o senhor Rightclue ajude a família neste momento."
     shp "Claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-    joe "Sinceramente não estou com cabeça para continuar essa discussão com você."
+    joe "Sinceramente, não estou com cabeça para continuar essa discussão com você."
     joe "É um péssimo dia..."
-    joe "Sinceramente espero que não tenhamos mais problemas por conta disso."
+    joe "Espero que não tenhamos mais problemas por conta disso."
     joe "Ei, você!"
     drc "..."
     joe "Tente não destruir a reputação do senhor Sheppard com a nossa família."

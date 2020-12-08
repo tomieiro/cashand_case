@@ -92,7 +92,7 @@ label DIALOGO_JOE_12_B:
     shp "Eu estou bem ciente disso, Joe."
     shp "Mas acredito que o senhor Rightclue vai pôr um fim nisso."
     shp "E claro, já garanti que ele se comprometesse e exigi total sigilo nessa investigação."
-    joe "... Sinceramente não estou com cabeça para continuar essa discussão com você."
+    joe "... Sinceramente, não estou com cabeça para continuar essa discussão com você."
     joe "Faça o que bem entender, contanto que esses ataques cessem."
     drc "Farei o meu melhor."
     joe "..."
