@@ -64,7 +64,7 @@ label DIALOGO_HUGO_12_A:
     drc "Esse aqui se chama Thorn?"
     hugo "Isso mesmo, tenho criado ele desde filhote."
     drc "Olá, amigo."
-    hugo "É um bom garoto"
+    hugo "É um bom garoto."
     hugo "Ei, Thorn, quer passear?"
     "..."
     hugo "Muito bom, garoto. Vamos lá, vou colocar sua coleira."
@@ -138,6 +138,6 @@ label DIALOGO_CATHERINE_12_A:
     shp "Com todo respeito, senhorita, prometi ao seu irmão cuidar de todos e assim farei."
     cth "Você nunca me escuta..."
     cth "Bom, se esse rapaz se mostrar capaz de fazer algo, vamos sair no lucro."
-    drc "Acredite, vou surpreender você e sua família"
+    drc "Acredite, vou surpreender você e sua família."
     cth "Veremos..."
     return
