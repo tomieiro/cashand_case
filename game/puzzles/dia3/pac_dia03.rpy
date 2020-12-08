@@ -151,7 +151,9 @@ label PAC3_SELECIONA_ABAJUR:
         "Mas por quê?"
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Chave!")
+        play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
+            renpy.pause(1, hard=hardPause)
             pac3_item_chave[2] = True
             pac1_itens_no_inventario.append(pac3_item_chave)
         #Se selecionar a outra pista essencial também, pode sair
@@ -172,7 +174,9 @@ label PAC3_SELECIONA_COFRE:
         "O que será que ele guarda nele?"
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Cofre!")
+        play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
+            renpy.pause(1, hard=hardPause)
             pac3_item_cofre[2] = True
             pac1_itens_no_inventario.append(pac3_item_cofre)
         #Se selecionar a outra pista essencial também, pode sair
@@ -193,7 +197,9 @@ label PAC3_SELECIONA_GAVETA:
         "Talvez não esteja mais funcionando..."
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Rádio!")
+        play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
+            renpy.pause(1, hard=hardPause)
             pac3_item_radio[2] = True
             pac1_itens_no_inventario.append(pac3_item_radio)
     else:
@@ -211,7 +217,9 @@ label PAC3_SELECIONA_TELEFONE:
         "Mas, enfim, de volta à investigação..."
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Telefone!")
+        play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
+            renpy.pause(1, hard=hardPause)
             pac3_item_telefone[2] = True
             pac1_itens_no_inventario.append(pac3_item_telefone)
     else:
@@ -226,7 +234,9 @@ label PAC3_SELECIONA_VITROLA:
         "Parece que o Joe gosta de escutar uma boa música na tranquilidade de seu quarto."
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Vitrola!")
+        play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
+            renpy.pause(1, hard=hardPause)
             pac3_item_vitrola[2] = True
             pac1_itens_no_inventario.append(pac3_item_vitrola)
     else:
@@ -244,7 +254,9 @@ label PAC3_SELECIONA_VELA:
         "Joe não leva jeito para essas coisas mesmo..."
         hide screen mostra_item with dissolve
         $renpy.notify("Coletou Pista - Vela!")
+        play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
+            renpy.pause(1, hard=hardPause)
             pac3_item_vela[2] = True
             pac1_itens_no_inventario.append(pac3_item_vela)
     else:
