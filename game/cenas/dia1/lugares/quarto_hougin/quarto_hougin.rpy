@@ -20,6 +20,8 @@ label QUARTO_HOUGIN:
 
     play sound "audio/sonoplastia/Passos.mp3"
 
+    play music "audio/musicas/Onde.mp3" fadein 3.0
+
     if primeira_visita:
         $primeira_visita = False
         jump TRANSICAO1

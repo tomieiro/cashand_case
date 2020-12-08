@@ -17,11 +17,11 @@ label CENA32:
 
     $pac1_itens_no_inventario = []
     $pac1_itens_no_inventario.append(pac3_item_lenco)
-    call CHAMA_TELA_PAC_DIA3
+    call CHAMA_TELA_PAC_DIA3 from _call_CHAMA_TELA_PAC_DIA3
 
     "Ok, o que conseguimos aqui..."
 
-    call INVENTARIO_DE_ESCOLHA_DIA03
+    call INVENTARIO_DE_ESCOLHA_DIA03 from _call_INVENTARIO_DE_ESCOLHA_DIA03
 
     "Certo. Preciso abrir isso. A chave tem uma fechadura para encaixar. O problema é essa senha mecânica."
     "Esse pessoal realmente gosta de manter seus segredos guardados, e com ajuda de muita grana, porque essas coisas não são nada baratas."
@@ -29,7 +29,7 @@ label CENA32:
     "Preciso posicionar isso na ordem correta, aparentemente."
     "Vamos lá."
 
-    call SLIDER_PUZZLE_4X4_DIA03
+    call SLIDER_PUZZLE_4X4_DIA03 from _call_SLIDER_PUZZLE_4X4_DIA03
 
     "Certo. Agora giramos a chave, e..."
 
@@ -38,12 +38,14 @@ label CENA32:
 
     "Perfeito."
     "Vamos ver o que temos aqui."
-    # Mostra itens que são fotos do Sheppard e dele (Joe(ainda pequeno) e crescendo)
+
+    play music "audio/musicas/Ambiente.mp3" fadein 3.0
+
     "Estão molhadas."
     "Todas elas."
     "São lágrimas."
     "..."
-    # Desenho do sheppard e ele escrito segundo pai
+
     "Ora. Quem diria..."
     "..."
     "Parece que..."
@@ -88,6 +90,8 @@ label CENA32:
 
     play sound "audio/sonoplastia/TrancandoPorta.mp3"
     $renpy.pause(2, hard=hardPause)
+
+    stop music fadeout(3)
 
     "Certo. Tenho que ter cautela em minhas conclusões. Mas tenho uma forte pista para inocentar Joe."
     drc "Catherine... Será você?"

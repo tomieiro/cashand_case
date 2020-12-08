@@ -95,6 +95,9 @@ label CENA11:
     drc "Ora, senhor Sheppard. Fico grato pela consideração."
     shp_side "Aqui seu chá."
     drc "Muito agradecido."
+
+    play music "audio/musicas/Ambiente.mp3" fadein 2.0
+
     shp_side "Bom, vamos lá..."
     shp_side "Senhor Rightclue, o que aconteceu aqui é um caso sério. Uma pessoa importante foi assassinada."
     drc "Pelo que consta no relatório, senhor Cashand, correto?"

@@ -1,4 +1,7 @@
 label MENU_CONTAR_SHEPPARD:
+
+    play music "audio/musicas/Tensao.mp3" fadein(3)
+
     menu:
         "O que fazer?"
 
@@ -57,5 +60,7 @@ label MENU_CONTAR_SHEPPARD:
 
     play sound "audio/sonoplastia/TrancandoPorta.mp3"
     $renpy.pause(1, hard=hardPause)
+
+    stop music fadeout(4)
 
     jump CENA21
