@@ -16,7 +16,7 @@ label CHAMA_TELA_PAC_DIA2:
         #pac1_itens_no_inventario = []
 
     #Chama a tela de point and click
-    play music "audio/musicas/Pistas.mp3" fadein 5.0
+    play music "audio/musicas/Tensao.mp3" fadein 5.0
     show screen point_and_click_dia2() with dissolve
     jump POINT_AND_CLICK
 
