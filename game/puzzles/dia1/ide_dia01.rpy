@@ -107,7 +107,7 @@ label IDE_01_ESCOLHEU_RELOGIO:
             #Escolheu corretamente!
             #Inserir frases correspondentes:
             "É isso!"
-            "O relógio estava atrasado 8 minutos..."
+            "O relógio estava adiantado 8 minutos..."
             $ide_escolheu_item(ide_aux_item)
         else:
             #Escolheu ERRADO!

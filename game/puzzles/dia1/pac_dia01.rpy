@@ -23,7 +23,7 @@ define pac1_img_camera = "images/engler/itens_no_cenario/camera_cen.png"
 #ATENÇÃO: GARANTIR QUE OS ITENS POSSUEM ID'S DIFERENTES
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
-default pac1_item_relogio = ["images/engler/itens/relogio.png", "Um belo relógio. Parece funcional, apesar de estar 8 minutos atrasado.", False, 10, False, "IDE_01_ESCOLHEU_RELOGIO"]
+default pac1_item_relogio = ["images/engler/itens/relogio.png", "Um belo relógio. Parece funcional, apesar de estar 8 minutos adiantado.", False, 10, False, "IDE_01_ESCOLHEU_RELOGIO"]
 default pac1_item_sangue = ["images/engler/itens/sangue.png", "Uma inscrição escrita em sangue, já seco. Me parece ser uma pista valiosa.", False, 11, False, "IDE_01_ESCOLHEU_SANGUE"]
 
 default pac1_item_lapis = ["images/engler/itens/lapis.png", "Um simples lápis. Provavelmente, pertencia ao senhor Hougin.", False, 12, False, "IDE_01_ESCOLHEU_LAPIS"]
@@ -210,7 +210,7 @@ label PAC1_SELECIONA_RELOGIO:
         drc "É, certamente, um belo relógio."
         #show sheppard neutro onlayer screens at center with dissolve
         shp_side "Parece estar funcional, senhor Rightclue."
-        drc "Correto. Todavia, encontra-se 8 minutos atrasado."
+        drc "Correto. Todavia, encontra-se 8 minutos adiantado."
         shp_side "Talvez esteja com as engrenagens ruins."
         drc "Certamente."
         hide screen mostra_item with dissolve
