@@ -23,6 +23,9 @@ label CENA32:
 
     call INVENTARIO_DE_ESCOLHA_DIA03
 
+    $pac1_itens_no_inventario.remove(pac3_item_chave)
+    $pac1_itens_no_inventario.remove(pac3_item_cofre)
+
     "Certo. Preciso abrir isso. A chave tem uma fechadura para encaixar. O problema é essa senha mecânica."
     "Esse pessoal realmente gosta de manter seus segredos guardados, e com ajuda de muita grana, porque essas coisas não são nada baratas."
     "Me parece que são números. E com vários tipos de representação diferentes."
