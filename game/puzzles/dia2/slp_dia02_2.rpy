@@ -68,6 +68,9 @@ label SLP_GAME_OVER_3X3_DIA02_2:
     stop music fadeout 5.0
     hide screen slider_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
+    "As setas parecem indicar onde cada peça deve ficar no fim..."
+    "Onde a peça com o círculo fica então...?"
+    "A mola, com certeza, deve ficar na primeira linha."
     jump SLIDER_PUZZLE_3X3_DIA02_2
 
 label SUCESSO_SLP_3X3_DIA02_2:

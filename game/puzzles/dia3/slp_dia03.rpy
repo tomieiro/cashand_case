@@ -80,6 +80,7 @@ label SLP_GAME_OVER_4X4_DIA03:
     "Droga, vou tentar novamente..."
     "Acho que todas as peças representam números."
     "Mas parecem estar em simbologias diferentes."
+    "Acho que cada peça fica na posição correspondente ao seu número..."
     jump SLIDER_PUZZLE_4X4_DIA03
 
 label SUCESSO_SLP_4X4_DIA03:
