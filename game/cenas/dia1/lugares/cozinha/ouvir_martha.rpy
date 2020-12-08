@@ -3,6 +3,7 @@ label OUVIR_MARTHA:
     mrth "Pois bem. No dia da festa, o senhor Hougin não se sentia bem novamente. Após uma determinada hora, ele se retirou para seus aposentos."
     drc "Sozinho?"
     mrth "Sim. Todavia, tenho conhecimento que todos os seus parentes mais próximos o visitaram, separadamente, naquela noite, tendo o último voltado às 2:21 da manhã. O que levaria a crer que o assassinato ocorreu depois que todos estiveram lá."
+    mrth "Claro, não sei quem entrou ou saiu do quarto. Apenas sei quem subiu."
     mrth "Não gosto de incriminar ninguém, senhor, mas tive conhecimento de que às 2:31 da manhã, uma pessoa externa subiu até o quarto do senhor Hougin."
     drc "Quem era?"
     mrth "John Suspin Ector. Amigo de longa data da família."
