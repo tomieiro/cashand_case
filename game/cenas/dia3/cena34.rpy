@@ -8,6 +8,7 @@ label CENA34:
     show carlo neutro behind hugo with dissolve:
         xalign 0.36 yalign 0.999999 xzoom 0.9 yzoom 0.9
     hugo "Meus parabéns, seu maldito! Salvou o dia. Desgraçado!"
+    hugo "Se não fosse você e Sheppard, eu teria toda a grana só pra mim."
 
     show hugo neutro with dissolve
 
