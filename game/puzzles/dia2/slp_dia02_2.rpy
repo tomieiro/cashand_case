@@ -71,7 +71,8 @@ label SLP_GAME_OVER_3X3_DIA02_2:
     stop music fadeout 5.0
     hide screen slider_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
-    "As setas parecem indicar onde cada peça deve ficar no fim..."
+    "As setas parecem indicar para onde, a peça em qual está desenhada, deve ficar..."
+    "Talvez apontar para as bordas?"
     "Onde a peça com o círculo fica então...?"
     jump SLIDER_PUZZLE_3X3_DIA02_2
 

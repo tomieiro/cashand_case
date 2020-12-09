@@ -218,7 +218,21 @@ label CENA23:
             "Talvez eu deva dar uma volta pela parte externa e ver se consigo notar algo na edificação, pode ser uma possibilidade para acesso e fuga."
             "Joe chegou."
             "Ele irá direto para dentro."
-            "Bom, que seja, falarei com ele em breve."
+            drc "Joe. Podemos conversar um instante?"
+
+            show joe neutro with dissolve:
+                xalign 0.3 yalign 0.9999999
+
+            joe "Por favor, senhor Rightclue. Me dê um tempo."
+            joe "Preciso assimilar tudo isso."
+            drc "Tudo bem. Entendo."
+            drc "Mas por favor, podemos conversar mais tarde?"
+            joe "..."
+            joe "Talvez mais tarde, detetive."
+
+            hide joe with dissolve
+
+            "Bom, que seja, tentarei falar com ele novamente em breve."
             "Agora, ao estudo da edificação."
 
 
