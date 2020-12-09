@@ -221,7 +221,7 @@ label CENA23:
             drc "Joe. Podemos conversar um instante?"
 
             show joe neutro with dissolve:
-                xalign 0.3 yalign 0.9999999
+                xalign 0.5 yalign 0.9999999
 
             joe "Por favor, senhor Rightclue. Me dê um tempo."
             joe "Preciso assimilar tudo isso."
