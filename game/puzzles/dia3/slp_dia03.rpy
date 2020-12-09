@@ -79,8 +79,10 @@ label SLP_GAME_OVER_4X4_DIA03:
     hide screen slider_puzzle with puzzle_transition8
     "Droga, vou tentar novamente..."
     "Acho que todas as peças representam números."
-    "Mas parecem estar em simbologias diferentes."
+    "Mas parecem estar em sistemas numéricos diferentes."
     "Acho que cada peça fica na posição correspondente ao seu número..."
+    "Talvez se eu alinhasse as peças corretas na primeira linha e depois a primeira coluna, e seguir assim, reduzindo em quadrados menores..."
+    "Tenho certeza que resolverei."
     jump SLIDER_PUZZLE_4X4_DIA03
 
 label SUCESSO_SLP_4X4_DIA03:
