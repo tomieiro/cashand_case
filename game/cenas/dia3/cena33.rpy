@@ -194,7 +194,7 @@ label CENA33:
     hugo "Do que o senhor está falando?"
     hugo "Por favor, eu não fiz nada."
     drc "Cale a boca!"
-    drc "Mentiras."
+    drc "Mentira."
 
     scene corredor hall
     with Fade(0.5, 0.5, 0.5)
@@ -341,16 +341,12 @@ label CENA33:
 
     joe "Eu vou matá-lo."
     drc "Joe! Pense na Catherine. Venchinni irá matá-la também."
-
-    show joe neutro with dissolve:
-        xalign 0.3 yalign 0.9999999
-
     joe "..."
     hugo "Abram esse porta, seus malditos. Vou matar todos vocês."
     joe "..."
     drc "Certo."
 
-    hide joe
+    hide joe with dissolve
 
     play sound "audio/sonoplastia/Passos.mp3"
     scene corredor quartos
