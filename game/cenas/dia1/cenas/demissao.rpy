@@ -16,5 +16,7 @@ label DEMISSAO:
     drc "Eu deveria ter pensado melhor sobre minhas escolhas..."
 
     window hide dissolve
-    show ending bad
-    with Dissolve(2, 4, 0.5)
+    $quick_menu = False
+    play music "audio/musicas/Fim.mp3"
+
+    call screen tela_demissao with Fade(2.0, 2.0, 0.5)

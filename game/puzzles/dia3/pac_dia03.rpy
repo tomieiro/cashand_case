@@ -60,7 +60,7 @@ screen point_and_click_dia3():
                 )
 
     frame:
-        background "images/engler/cenarios/quarto joe2.png"
+        background "images/engler/cenarios/quarto joe.png"
         xsize 1280
         ysize 720
 
