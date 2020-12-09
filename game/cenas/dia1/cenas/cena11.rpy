@@ -1,5 +1,7 @@
 label CENA11:
 
+    $quick_menu = True
+
     scene cidade
     with Fade(2, 3, 0.5)
 
@@ -74,7 +76,7 @@ label CENA11:
     #puzzle lights out no fundo do relogio
     call LIGHTS_OUT_PUZZLE_3X3_DIA01 from _call_LIGHTS_OUT_PUZZLE_3X3_DIA01
 
-    play music "audio/musicas/Ambiente.mp3" fadein 2.0
+    #play music "audio/musicas/Ambiente.mp3" fadein 2.0
 
     show screen previa_puzzle(y=1.0,img_bg = "#d4d3d0", img_puzzle="images/engler/lights_out_sheppard/relogio costas finalizado.png") with dissolve
     play sound "audio/sonoplastia/Relogio.mp3"
