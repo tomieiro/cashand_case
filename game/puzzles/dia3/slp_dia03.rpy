@@ -94,8 +94,8 @@ style slp_margem2:
     padding (0, 0)
     #background Solid("#ff9900")
     background "#000"
-    xsize 150 * 4
-    ysize 150 * 4
+    xsize 600
+    ysize 600
     #xalign 0.3
     #yalign 0.3
 
