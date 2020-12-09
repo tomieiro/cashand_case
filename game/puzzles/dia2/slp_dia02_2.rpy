@@ -55,6 +55,9 @@ label SLIDER_PUZZLE_3X3_DIA02_2:
         slp_sucesso_label = "SUCESSO_SLP_3X3_DIA02_2"
         slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02_2"
 
+        lop_rapido = True
+        slp_timer_rapido = 2 * 60.0
+
     "Posso usar o lápis para manipular as peças."
     "Ao clicar numa peça, posso deslizá-la para o espaço vazio."
     "Tenho que deixar a mola na posição correta."
@@ -74,5 +77,10 @@ label SLP_GAME_OVER_3X3_DIA02_2:
 
 label SUCESSO_SLP_3X3_DIA02_2:
     stop music fadeout 5.0
+    python:
+        if lop_rapido:
+            persistent.rapido3 = True
+            renpy.notify("Conquista - O Lápis e a Mola!")
+            conferir_todas_conquistas()
     hide screen slider_puzzle with puzzle_transition8
     return

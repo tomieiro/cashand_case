@@ -12,6 +12,10 @@ label DEMISSAO:
     hide sheppard neutro with dissolve
 
     "*Sheppard fecha a porta*"
+    $renpy.notify("Conquista - Caso da \"Mão Sem Grana\"!")
+    $persistent.conquista_demitido = True
+    $conferir_todas_conquistas()
+
     drc "..."
     drc "Eu deveria ter pensado melhor sobre minhas escolhas..."
 

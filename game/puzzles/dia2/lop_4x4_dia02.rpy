@@ -30,6 +30,9 @@ label LIGHTS_OUT_PUZZLE_4X4_DIA02:
         lop_timer_total = 3 * 60.0
         lop_timer_quase = 60.0
 
+        lop_rapido = True
+        lop_timer_rapido = 2 * 60.0
+
     "Aparentemente, há 16 peças luminosas."
     "Ao clicá-las, posso ativar ou desativar."
     "E isso influencia nas peças em volta."
@@ -49,5 +52,10 @@ label FIM_LOP_4X4_DIA02:
 
 label SUCESSO_LOP_4X4_DIA02:
     stop music fadeout 5.0
+    python:
+        if lop_rapido:
+            persistent.rapido4 = True
+            renpy.notify("Conquista - Senha Luminosa!")
+            conferir_todas_conquistas()
     hide screen lights_out_puzzle with puzzle_transition8
     return

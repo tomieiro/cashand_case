@@ -63,6 +63,7 @@ label CENA21:
         "Conhecia muito bem todos os suspeitos..."
         drc "Me desculpe, Sheppard. Me desculpe..."
         drc "Não pude salvá-lo."
+        $persistent.conquista_sheppard1 = True
     else:
         drc "Por que eu tomei aquela decisão de não contá-lo?"
         "Ele poderia ter ficado mais atento com os suspeitos."
@@ -71,6 +72,12 @@ label CENA21:
         "O Sheppard seria um aliado muito importante..."
         drc "Me desculpe, Sheppard. Me desculpe..."
         drc "Não pude salvá-lo."
+        $persistent.conquista_sheppard2 = True
+
+    python:
+        if(persistent.conquista_sheppard1 and persistent.conquista_sheppard2):
+            renpy.notify("Conquista - Destino...")
+            conferir_todas_conquistas()
 
     "Meu Deus. Meu Deus..."
     "Por quê?"

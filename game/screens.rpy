@@ -202,7 +202,7 @@ style input:
 
 ## Choice screen ###############################################################
 ##
-## This screen is used to display the in-game choices presented by the menu
+## This screen is used to display the in-game choices presented by the
 ## statement. The one parameter, items, is a list of objects, each with caption
 ## and action fields.
 ##
@@ -219,7 +219,6 @@ screen choice(items):
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
-
 
 style choice_vbox is vbox
 style choice_button is button
@@ -325,6 +324,12 @@ screen navigation():
         textbutton _("Carregar") action ShowMenu("load")
 
         textbutton _("Preferências") action ShowMenu("preferences")
+
+        textbutton _("Conquistas") action ShowMenu("achievements")
+
+        if (persistent.ganhou_tudo):
+        #if (True):
+            textbutton "Galeria" action ShowMenu("gallery")
 
         if _in_replay:
 
@@ -1529,3 +1534,339 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 600
+
+
+
+## Achievement screen ##############################################################
+
+screen achievements():
+
+    tag menu
+
+    use game_menu(_("Conquistas"), scroll=("viewport"), yinitial=0.0):
+
+        if not persistent.terminou_game:
+        #if False:
+            window:
+                xalign 0.5
+                yalign 0.5
+                background "#fff0"
+                text "É necessário terminar o jogo para desbloquear a tela de conquistas.":
+                    text_align 0.5
+                    color "#cccc00"
+                    size 30
+                    substitute False
+
+        else:
+
+            #style_prefix "history"
+
+            vbox:
+                spacing -60
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected persistent.ganhou_tudo
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Mestre dos Detetives":
+                            style "history_name"
+                            substitute False
+                        text "Realizou todas as outras conquistas. Desbloqueia a tela {b}Galeria{/b}.":
+                            substitute False
+
+                window:
+                    hbox:
+                        spacing 10
+                        imagebutton:
+                            selected persistent.conquista_demitido
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        label "Caso da \"Mão Sem Grana\"":
+                            style "history_name"
+                            substitute False
+                        text "Foi demitido pelo senhor Sheppard.":
+                            substitute False
+
+                window:
+                    hbox:
+                        spacing 10
+                        imagebutton:
+                            selected (persistent.conquista_sheppard1 and persistent.conquista_sheppard2)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        label "Destino":
+                            style "history_name"
+                            substitute False
+                        text "Escolheu tanto contar quanto não contar sobre o culpado para o senhor Sheppard e viu as consequências das duas escolhas.":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.conquista_biscoito)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Biscoitos Thorn":
+                            style "history_name"
+                            substitute False
+                        text "Presenciou uma cena um pouco... estranha... ao ser apresentado ao Hugo. (Dica: a cena é aleatória, talvez seja necessário iniciar um novo jogo para presenciá-la)":
+                            substitute False
+
+                window:
+                    hbox:
+                        spacing 10
+                        imagebutton:
+                            selected (persistent.rapido1)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        label "Relógio Falso":
+                            style "history_name"
+                            substitute False
+                        text "Resolveu o puzzle do relógio em 1 minuto.":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.rapido2)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Uma Última Nota":
+                            style "history_name"
+                            substitute False
+                        text "Resolveu o puzzle do bilhete em 1 minuto.":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.rapido3)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "O Lápis e a Mola":
+                            style "history_name"
+                            substitute False
+                        text "Resolveu o puzzle do gravador(trava) em 1 minuto.":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.rapido4)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Senha Luminosa":
+                            style "history_name"
+                            substitute False
+                        text "Resolveu o puzzle do gravador(senha) em 1 minuto.":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.rapido5)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Cofre Simbólico":
+                            style "history_name"
+                            substitute False
+                        text "Resolveu o puzzle do cofre em 1 minuto.":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.pac1)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Questão de Tempo":
+                            style "history_name"
+                            substitute False
+                        text "Coletou, no dia 1, apenas as pistas necessárias para o puzzle do \"Herdeiros\".":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.pac2)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Verdade Gravada":
+                            style "history_name"
+                            substitute False
+                        text "Coletou, no dia 2, apenas as pistas necessárias para o puzzle do \"Inocente\".":
+                            substitute False
+
+                window:
+                    hbox:
+                        imagebutton:
+                            selected (persistent.pac3)
+                            idle "gui/check_false.png"
+                            selected_idle "gui/check_true.png"
+                            selected_hover "gui/check_true.png"
+                            action NullAction()
+                        spacing 10
+                        label "Passado Guardado":
+                            style "history_name"
+                            substitute False
+                        text "Coletou, no dia 3, apenas as pistas necessárias para o puzzle do \"Cachorro\".":
+                            substitute False
+
+
+init python:
+
+    def conferir_todas_conquistas():
+        global persistent
+        persistent.ganhou_tudo = (
+            persistent.conquista_demitido and
+            persistent.conquista_sheppard1 and
+            persistent.conquista_sheppard2 and
+            persistent.conquista_biscoito and
+            persistent.rapido1 and
+            persistent.rapido2 and
+            persistent.rapido3 and
+            persistent.rapido4 and
+            persistent.rapido5 and
+            persistent.pac1 and
+            persistent.pac2 and
+            persistent.pac3
+        )
+
+init python:
+
+    # Step 1. Create the gallery object.
+    g = Gallery()
+
+    # Step 2. Add buttons and images to the gallery.
+
+    # A button with an image that is always unlocked.
+    g.button("hugo")
+    g.image("images/engler/personagens/hugo/hugo_galeria.png")
+
+    # A button with an image that is always unlocked.
+    g.button("sheppard")
+    g.image("images/engler/personagens/sheppard/sheppard_galeria.png")
+
+    # A button with an image that is always unlocked.
+    g.button("esquete_rightclue")
+    g.image("images/engler/personagens/esquetes/esquete rightclue.png")
+
+    # A button with an image that is always unlocked.
+    g.button("carlo")
+    g.image("images/engler/personagens/carlo/carlo_galeria.png")
+
+    # A button with an image that is always unlocked.
+    g.button("catherine")
+    g.image("images/engler/personagens/catherine/catherine_galeria.png")
+
+    # A button with an image that is always unlocked.
+    g.button("joe")
+    g.image("images/engler/personagens/joe/joe_galeria.png")
+
+    # A button with an image that is always unlocked.
+    g.button("kamira")
+    g.image("images/engler/personagens/kamira/kamira_galeria.png")
+
+    # A button with an image that is always unlocked.
+    g.button("martha")
+    g.image("images/engler/personagens/martha/martha_galeria.png")
+
+    # The transition used when switching images.
+    g.transition = dissolve
+
+# Step 3. The gallery screen we use.
+screen gallery:
+
+    # Ensure this replaces the main menu.
+    tag menu
+
+    # The background.
+    add "gui/City.png" maxsize(1280, 720)
+
+    # A grid of buttons.
+    grid 4 2:
+
+        xfill True
+        yfill True
+
+        # Call make_button to show a particular button.
+        add g.make_button("esquete_rightclue", "images/engler/personagens/esquetes/esquetes rightclue botao.png", xalign=0.5, yalign=0.5)
+
+        # Call make_button to show a particular button.
+        add g.make_button("sheppard", "images/engler/personagens/sheppard/sheppard_botao.png", xalign=0.5, yalign=0.5)
+
+        # Call make_button to show a particular button.
+        add g.make_button("carlo", "images/engler/personagens/carlo/carlo_botao.png", xalign=0.5, yalign=0.5)
+
+        # Call make_button to show a particular button.
+        add g.make_button("martha", "images/engler/personagens/martha/martha_botao.png", xalign=0.5, yalign=0.5)
+
+        # Call make_button to show a particular button.
+        add g.make_button("hugo", "images/engler/personagens/hugo/hugo_botao.png", xalign=0.5, yalign=0.5, background="#000")
+
+        # Call make_button to show a particular button.
+        add g.make_button("catherine", "images/engler/personagens/catherine/catherine_botao.png", xalign=0.5, yalign=0.5)
+
+        # Call make_button to show a particular button.
+        add g.make_button("joe", "images/engler/personagens/joe/joe_botao.png", xalign=0.5, yalign=0.5)
+
+        # Call make_button to show a particular button.
+        add g.make_button("kamira", "images/engler/personagens/kamira/kamira_botao.png", xalign=0.5, yalign=0.5)
+
+    # The screen is responsible for returning to the main menu. It could also
+    # navigate to other gallery screens.
+    text "Galeria":
+        xalign 0.00
+        yalign 0.0
+        color "#cccc00"
+        #text_bold True
+        underline True
+        outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+        hover_color "#fff"
+        size 50
+
+    # The screen is responsible for returning to the main menu. It could also
+    # navigate to other gallery screens.
+    textbutton "Voltar":
+        action Return()
+        xalign 0.00
+        yalign 1.0
+        text_color "#cccc00"
+        #background "#000"
+        #text_bold True
+        text_underline True
+        text_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+        text_hover_color "#fff"
+        text_size 50

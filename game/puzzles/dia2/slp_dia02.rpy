@@ -57,6 +57,9 @@ label SLIDER_PUZZLE_3X3_DIA02:
         slp_sucesso_label = "SUCESSO_SLP_3X3_DIA02"
         slp_game_over_label = "SLP_GAME_OVER_3X3_DIA02"
 
+        lop_rapido = True
+        slp_timer_rapido = 4 * 60.0
+
     "O bilhete está partido em pedaços."
     "Ao clicar em uma peça, posso deslizá-la para um espaço vazio."
     "Preciso deixar todos os pedaços na ordem correta."
@@ -76,5 +79,10 @@ label SLP_GAME_OVER_3X3_DIA02:
 
 label SUCESSO_SLP_3X3_DIA02:
     stop music fadeout 5.0
+    python:
+        if lop_rapido:
+            persistent.rapido2 = True
+            renpy.notify("Conquista - Uma Última Nota...")
+            conferir_todas_conquistas()
     hide screen slider_puzzle with puzzle_transition8
     return

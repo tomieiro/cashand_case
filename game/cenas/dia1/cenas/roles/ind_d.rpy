@@ -65,6 +65,9 @@ label DIALOGO_HUGO_12_D:
     shp "... caninos. Biscoitos caninos."
     hugo "Uma delícia."
     hugo "Toma Thorn, você merece."
+    $renpy.notify("Conquista - Biscoitos Thorn!")
+    $persistent.conquista_biscoito = True
+    $conferir_todas_conquistas()
     "Parecem muito próximos... e o cachorro parece ser bem inteligente..."
     shp "Você nunca muda, Hugo."
     hugo "Hmm?"
