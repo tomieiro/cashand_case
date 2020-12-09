@@ -1,7 +1,5 @@
 default app_fonte = "fonts/Xanh_Mono/XanhMono-Regular.ttf"
 
-default app_img_bot = "images/teste/app_botao.png"
-
 default app_fim = False
 
 default app_qtd_letras = 5
