@@ -256,7 +256,7 @@ screen quick_menu():
 
             style_prefix "quick"
             ysize 18
-            background "#000"
+            background Image("gui/quick_menu.png", xalign=0.5, yalign=0.5)
         #Termina aqui a mudança
             hbox:
 
