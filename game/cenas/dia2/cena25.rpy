@@ -105,7 +105,7 @@ label CENA25:
     kmr "..."
     kmr "Me sinto na obrigação de repetir..."
     kmr "O senhor deveria parar, tio."
-    kmr "O senhor está doente. Estas bebidas, cigarros, noites de boêmia..."
+    kmr "O senhor está doente. Estas bebidas, cigarros, noites boêmias..."
     kmr "Estas coisas não se encaixam mais à sua saúde."
     hgin "Ha ha ha. De fato."
     hgin "Mas sabe, minha querida, não sentarei esperando a morte."
