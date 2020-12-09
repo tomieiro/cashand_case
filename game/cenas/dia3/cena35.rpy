@@ -12,3 +12,6 @@ label CENA35:
     scene fim
     with Dissolve(5)
     $renpy.pause(6, hard=hardPause)
+
+label CREDITOS:
+    call screen tela_creditos() with dissolve

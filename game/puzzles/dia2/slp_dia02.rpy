@@ -45,7 +45,7 @@ label SLIDER_PUZZLE_3X3_DIA02:
                     slp_configuracoes[i][9][1] = int(j/3)
 
         slp_timer_total = 5 * 60.0
-        slp_timer_quase = 30.0
+        slp_timer_quase = 60.0
 
         #[0, 0], [1, 0], [2, 0], [0, 1], s[1, 1], [2, 1], [0, 2], [1, 2], [2, 2]
         #0       1       2       3       4       5       6       7       8

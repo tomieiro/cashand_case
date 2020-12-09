@@ -27,8 +27,8 @@ label LIGHTS_OUT_PUZZLE_4X4_DIA02:
         lop_pecas = renpy.random.choice(lop_configuracoes)
         lop_game_over_label = "FIM_LOP_4X4_DIA02"
         lop_sucesso_label = "SUCESSO_LOP_4X4_DIA02"
-        lop_timer_total = 4 * 60.0
-        lop_timer_quase = 30.0
+        lop_timer_total = 3 * 60.0
+        lop_timer_quase = 60.0
 
     "Aparentemente, há 16 peças luminosas."
     "Ao clicá-las, posso ativar ou desativar."

@@ -11,12 +11,12 @@ label SLIDER_PUZZLE_4X4_DIA03:
         lop_proximo_do_fim = False
         lop_proximo_do_fim2 = False
         #Define as imagens das peças
-        slp_img_pecas = ["images/engler/itens/cofre_slider/slice_0_0.png", "images/engler/itens/cofre_slider/slice_0_1.png", "images/engler/itens/cofre_slider/slice_0_2.png", "images/engler/itens/cofre_slider/slice_0_3.png",
-                         "images/engler/itens/cofre_slider/slice_1_0.png", "images/engler/itens/cofre_slider/slice_1_1.png", "images/engler/itens/cofre_slider/slice_1_2.png", "images/engler/itens/cofre_slider/slice_1_3.png",
-                         "images/engler/itens/cofre_slider/slice_2_0.png", "images/engler/itens/cofre_slider/slice_2_1.png", "images/engler/itens/cofre_slider/slice_2_2.png", "images/engler/itens/cofre_slider/slice_2_3.png",
-                         "images/engler/itens/cofre_slider/slice_3_0.png", "images/engler/itens/cofre_slider/slice_3_1.png", "images/engler/itens/cofre_slider/slice_3_2.png", "images/engler/itens/cofre_slider/slice_3_3.png"]
+        slp_img_pecas = ["images/engler/itens/cofre_slider/row-1-col-1.png", "images/engler/itens/cofre_slider/row-1-col-2.png", "images/engler/itens/cofre_slider/row-1-col-3.png", "images/engler/itens/cofre_slider/row-1-col-4.png",
+                         "images/engler/itens/cofre_slider/row-2-col-1.png", "images/engler/itens/cofre_slider/row-2-col-2.png", "images/engler/itens/cofre_slider/row-2-col-3.png", "images/engler/itens/cofre_slider/row-2-col-4.png",
+                         "images/engler/itens/cofre_slider/row-3-col-1.png", "images/engler/itens/cofre_slider/row-3-col-2.png", "images/engler/itens/cofre_slider/row-3-col-3.png", "images/engler/itens/cofre_slider/row-3-col-4.png",
+                         "images/engler/itens/cofre_slider/row-4-col-1.png", "images/engler/itens/cofre_slider/row-4-col-2.png", "images/engler/itens/cofre_slider/row-4-col-3.png", "images/engler/itens/cofre_slider/row-4-col-4.png"]
 
-        slp_imagem_final = "images/engler/itens/cofre_slider.png"
+        slp_imagem_final = "images/engler/itens/4x4 final.png"
 
         configuracoes_aux = [
             [16, 1, 9, 3, 13, 5, 4, 2, 12, 6, 8, 11, 10, 15, 7, 14],
@@ -53,8 +53,8 @@ label SLIDER_PUZZLE_4X4_DIA03:
                     slp_configuracoes[i][16][0] = j%4
                     slp_configuracoes[i][16][1] = int(j/4)
 
-        slp_timer_total = 5 * 60.0
-        slp_timer_quase = 30.0
+        slp_timer_total = 6 * 60.0
+        slp_timer_quase = 60.0
 
         #[0, 0], [1, 0], [2, 0], [0, 1], s[1, 1], [2, 1], [0, 2], [1, 2], [2, 2]
         #0       1       2       3       4       5       6       7       8

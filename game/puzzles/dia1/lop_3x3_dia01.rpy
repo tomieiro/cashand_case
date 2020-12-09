@@ -28,7 +28,7 @@ label LIGHTS_OUT_PUZZLE_3X3_DIA01:
         lop_game_over_label = "FIM_LOP_3x3_DIA01"
         lop_sucesso_label = "SUCESSO_LOP_3X3_DIA01"
         lop_timer_total = 4 * 60.0
-        lop_timer_quase = 30.0
+        lop_timer_quase = 60.0
 
 
     "Aparentemente, há 9 botões que podem estar, ou não, pressionados."
