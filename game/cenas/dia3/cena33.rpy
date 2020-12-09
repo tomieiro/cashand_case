@@ -128,30 +128,9 @@ label CENA33:
 
     drc "Você poderia me acompanhar?"
     cth "E por que desse pedido?"
-
-    default pac3_item_lenco_pelos = ["images/engler/itens/pano_com_pelo.png", "Pelos dentro do lenço. De algum animal, provavelmente.", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
-    show screen mostra_item(pac3_item_lenco_pelos[0]) with dissolve
-    pause 0.3
-
-    cth "O que é isso, detetive?"
-    drc "..."
-
-    call APP_DIA3 from _call_APP_DIA3
-
-    drc "Pelo de cachorro."
-
-    hide screen mostra_item with dissolve
-
-    drc "Venha. E rápido."
-    cth "Sim, senhor."
-    "Simples fios. Alguns cabelos. Porém, mais grossos."
-    "Um detalhe. Desprezei. Não há por que se atentar a isso." #rigato: não sei se esse "por que" está correto, tendo a achar que sim
-    "A menos que..."
-    "Que não fossem cabelos."
-    "Ninguém tem um cabelo tão grosso. Mas isso não é discriminante. Pelo menos não foi na hora."
-    "Um dia se passou. O suficiente para o cheiro do animal se sobressair..."
-    "... por alguns pelos."
-    "Maldito! Você é meu."
+    drc "Por favor, venha."
+    cth "..."
+    cth "Certo."
 
     hide catherine neutra with dissolve
 
@@ -169,6 +148,29 @@ label CENA33:
     show catherine neutra at center with dissolve
 
     cth "Algum problema com o quarto do Hugo, senhor?."
+    drc "Olhe."
+
+    default pac3_item_lenco_pelos = ["images/engler/itens/pano_com_pelo.png", "Pelos dentro do lenço. De algum animal, provavelmente.", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
+    show screen mostra_item(pac3_item_lenco_pelos[0]) with dissolve
+    pause 0.3
+
+    cth "O que é isso, detetive?"
+    drc "..."
+
+    call APP_DIA3 from _call_APP_DIA3
+
+    drc "Pelo de cachorro."
+
+    hide screen mostra_item with dissolve
+
+    "Simples fios. Alguns cabelos. Porém, mais grossos."
+    "Um detalhe. Desprezei. Não há por que se atentar a isso."
+    "A menos que..."
+    "Que não fossem cabelos."
+    "Ninguém tem um cabelo tão grosso. Mas isso não é discriminante. Pelo menos não foi na hora."
+    "Um dia se passou. O suficiente para o cheiro do animal se sobressair..."
+    "... por alguns pelos."
+    "Maldito! Você é meu."
 
     hide catherine with dissolve
 
