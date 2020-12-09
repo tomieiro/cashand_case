@@ -7,7 +7,7 @@ init offset = -1
 define habilitar_voltar = False
 
 #PARA DESATIVAR, COMPLETAMENTE, O ROLLBACK, BASTA SETAR ESTA VARIAVEL PARA FALSE
-define config.rollback_enabled = True
+define config.rollback_enabled = False
 
 ################################################################################
 ## Styles
