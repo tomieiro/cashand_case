@@ -71,8 +71,8 @@ screen inventario_de_escolha():
 
     sensitive(  not renpy.get_screen("say") and
                 not renpy.get_screen("mostra_item") and
-                not renpy.get_screen("mostra_item2")
-                )
+                not renpy.get_screen("mostra_item2") and
+                not ide_fim)
 
     #modal True
 

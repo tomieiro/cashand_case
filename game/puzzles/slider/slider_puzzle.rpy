@@ -86,7 +86,7 @@ screen slider_puzzle(dim, img_bg = "#fff", style_margem="slp_margem", style_fund
 
     if slp_fim:
         #chamar a screen de mostrar a resposta final pra ter um tempinho antes
-        add slp_imagem_final maxsize (((slp_tam_peca+10)*3), ((slp_tam_peca+10)*3)) at truecenter
+        add slp_imagem_final maxsize (((slp_tam_peca+10)*dim), ((slp_tam_peca+10)*dim)) at truecenter
         timer 3.0 action Jump(slp_sucesso_label)
 
 
