@@ -14,17 +14,14 @@
 
 define config.name = _("Cashand Case")
 
-
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
 define gui.show_name = False
 
-
 ## The version of the game.
 
 define config.version = "1.0"
-
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
@@ -41,7 +38,7 @@ Jogo desenvolvido durante a disciplina de Desenvolvimento de Jogos Eletrônicos 
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "CASHANDCASE"
+define build.name = "CASHAND_CASE"
 
 
 ## Sounds and music ############################################################
@@ -186,10 +183,27 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
 
-    ## To archive files, classify them as 'archive'.
+    # Declarando arquivos
+    build.archive("scripts", "all")
+    build.archive("images", "all")
+    build.archive("audios", "all")
+    build.archive("fonts", "all")
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    # Arquivando scripts
+    build.classify("game/**.rpy", "scripts")
+    build.classify("game/**.rpyc", "scripts")
+
+    # Arquivando imagens
+    build.classify("game/**.png", "images")
+    build.classify("game/**.jpg", "images")
+
+    # Arquivando audios
+    build.classify("game/**.mp3", "audios")
+    build.classify("game/**.wav", "audios")
+    build.classify("game/**.ogg", "audios")
+
+    # Arquivando fontes
+    build.classify("game/**.ttf", "fonts")
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
