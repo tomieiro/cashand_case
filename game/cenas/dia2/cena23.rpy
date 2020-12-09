@@ -10,7 +10,7 @@ label CENA23:
 
     "Certo..."
     "Preciso agir rápido e começar a investigar quem já chegou do enterro."
-    "Kamira T. Cashand está ali no jardim, [ind_a_info[1]] deu a volta pelos fundos e entrou na cozinha"
+    "Kamira T. Cashand está ali no jardim, [ind_a_info[1]] deu a volta pelos fundos e entrou na cozinha."
     "[ind_b_info[1]] veio junto com [ind_a_info[1]] e foi para o hall. Só Joe Cashand que ainda não chegou."
     "Uma rápida olhada em volta..."
 

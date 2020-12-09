@@ -4,7 +4,7 @@ label CENA11:
 
     scene cidade
     with Fade(2, 3, 0.5)
-
+    "Anothertown, Outubro de 1962" (what_color="#8c8")
     "Ahhh..."
 
     $randomize(ind_a_info,["none"], True)
@@ -122,7 +122,7 @@ label CENA11:
     shp_side "Negócios, senhor Rightclue. Hougin era, e creio que por muito tempo ainda será, o maior mafioso desse estado. O senhor compreende?"
     shp_side "Não é por acaso que o senhor Cashand possui tantos bens. Um jogo obscuro foi jogado, detetive, por quatro longas décadas."
     drc "Pois então, devo considerar que estou entrando em terreno obscuro." #rigato: Considerar trocar esse "obscuro" ou o anterior por outra palavra
-    shp_side "Não há motivo para alarde, detetive. O homem que ergueu esse reino está, neste exato momento, há um metro e oitenta sob a terra onde reinou." #rigato: reinou ou reinava?
+    shp_side "Não há motivo para alarde, detetive. O homem que ergueu esse reino está, neste exato momento, a um metro e oitenta sob a terra onde reinou." #rigato: reinou ou reinava?
     shp_side "Mas alguém há de tomar seu lugar, herdar sua fortuna."
     shp_side "Pois bem. Havia cinco pessoas na lista para reivindicar o tesouro do senhor Hougin Cashand."
     shp_side "Logo, você irá conhecê-los... os herdeiros."
