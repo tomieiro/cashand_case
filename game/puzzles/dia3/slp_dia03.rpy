@@ -66,6 +66,9 @@ label SLIDER_PUZZLE_4X4_DIA03:
         slp_sucesso_label = "SUCESSO_SLP_4X4_DIA03"
         slp_game_over_label = "SLP_GAME_OVER_4X4_DIA03"
 
+        lop_rapido = True
+        slp_timer_rapido = 5 * 60.0
+
     "Ao clicar em uma peça, posso deslizá-la para um espaço vazio."
     "Preciso descobrir o que cada símbolo significa."
     "E posicionar as peças na ordem correta."
@@ -87,6 +90,11 @@ label SLP_GAME_OVER_4X4_DIA03:
 
 label SUCESSO_SLP_4X4_DIA03:
     stop music fadeout 5.0
+    python:
+        if lop_rapido:
+            persistent.rapido5 = True
+            renpy.notify("Conquista - Cofre Simbólico!")
+            conferir_todas_conquistas()
     hide screen slider_puzzle with puzzle_transition8
     return
 

@@ -30,6 +30,9 @@ label LIGHTS_OUT_PUZZLE_3X3_DIA01:
         lop_timer_total = 4 * 60.0
         lop_timer_quase = 60.0
 
+        lop_rapido = True
+        lop_timer_rapido = 3 * 60.0
+
 
     "Aparentemente, há 9 botões que podem estar, ou não, pressionados."
     "Eles ativam quando estão pressionados."
@@ -51,5 +54,10 @@ label FIM_LOP_3x3_DIA01:
 label SUCESSO_LOP_3X3_DIA01:
     stop music fadeout 5.0
     #hide scree previa_puzzle
+    python:
+        if lop_rapido:
+            persistent.rapido1 = True
+            renpy.notify("Conquista - Relógio Falso!")
+            conferir_todas_conquistas()
     hide screen lights_out_puzzle with puzzle_transition8
     return

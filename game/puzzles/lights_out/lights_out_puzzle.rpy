@@ -7,11 +7,13 @@ init python:
                         style_ok = 'lop_text_timer_ok',
                         style_acabando = 'lop_text_timer_acabando',
                         tempo_troca = 5.0,
+                        tempo_rapido = 5.0,
                         formato_texto = "{minutes:02d}:{seconds:02d}" ,
                         fim = False):
 
         global lop_proximo_do_fim
         global lop_proximo_do_fim2
+        global lop_rapido
 
         restante = tempo_total - st
 
@@ -22,6 +24,9 @@ init python:
             'seconds' : int( restante % 60 ),
             'micro_seconds' : str(int( (restante % 1) * 10000 )), # we use str() so we can define precision
         }
+
+        if restante <= (tempo_rapido) and lop_rapido and not fim:
+            lop_rapido = False
 
         if restante <= (tempo_troca+5.0) and not lop_proximo_do_fim2:
             lop_proximo_do_fim2 = True
@@ -63,9 +68,13 @@ default lop_proximo_do_fim = False
 
 default lop_proximo_do_fim2 = False
 
+default lop_rapido = True
+
 default lop_timer_total = 180.0
 
 default lop_timer_quase = 30.0
+
+default lop_timer_rapido = 60.0
 
 default lop_sucesso_label = "SUCESSO_LOP_3X3"
 
@@ -93,6 +102,7 @@ screen lights_out_puzzle(dim, img_bg = "#fff"):
             add DynamicDisplayable( timer_puzzle,
                                     tempo_total=lop_timer_total,
                                     tempo_troca=lop_timer_quase,
+                                    tempo_rapido=lop_timer_rapido,
                                     label_fim_tempo = lop_game_over_label,
                                     screen = 'lights_out_puzzle',
                                     style_ok = 'lop_text_timer_ok',

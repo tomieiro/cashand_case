@@ -64,6 +64,12 @@ label FIM_TELA_PAC_DIA1:
     stop music fadeout 5.0
     #$renpy.transition(puzzle_transition8)
     #$renpy.hide_screen("point_and_click_dia1", layer="master")
+    python:
+        if(len(pac1_itens_no_inventario) == 2):
+            #pegou apenas o relogio e a mancha
+            persistent.pac1 = True
+            renpy.notify("Conquista - Questão de Tempo!")
+            conferir_todas_conquistas()
     hide screen point_and_click_dia1 with puzzle_transition8
     return
 
@@ -187,7 +193,6 @@ label PAC1_SELECIONA_ESTANTE:
             renpy.pause(1, hard=hardPause)
             pac1_item_sangue[2] = True
             pac1_itens_no_inventario.append(pac1_item_sangue)
-            renpy.pause(1, hard=hardPause)
         #Se selecionar a outra pista essencial também, pode sair
         if(pac1_item_relogio[2]):
             "Acho que já coletei todas as pistas que eu precisava..."

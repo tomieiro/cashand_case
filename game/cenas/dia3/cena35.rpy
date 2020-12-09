@@ -11,6 +11,9 @@ label CENA35:
     stop music fadeout(6)
     scene fim
     with Dissolve(5)
+    if(not persistent.terminou_game):
+        $renpy.notify("Desbloqueou tela de Conquistas!")
+    $persistent.terminou_game = True
     $renpy.pause(6, hard=hardPause)
 
     play music "audio/musicas/Menu.mp3" fadein 2.0

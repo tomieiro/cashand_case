@@ -28,6 +28,8 @@ default slp_timer_total = 180.0
 
 default slp_timer_quase = 30.0
 
+default slp_timer_rapido = 30.0
+
 # no gabarito de um 3x3:
 #   slp_pecas[0] = [0, 0],
 #   slp_pecas[1] = [1, 0],
@@ -61,6 +63,7 @@ screen slider_puzzle(dim, img_bg = "#fff", style_margem="slp_margem", style_fund
             add DynamicDisplayable( timer_puzzle,
                                     tempo_total=slp_timer_total,
                                     tempo_troca=slp_timer_quase,
+                                    tempo_rapido=slp_timer_rapido,
                                     label_fim_tempo = slp_game_over_label,
                                     screen = 'slider_puzzle',
                                     style_ok = 'lop_text_timer_ok',
