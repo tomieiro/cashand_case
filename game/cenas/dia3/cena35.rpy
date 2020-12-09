@@ -12,5 +12,10 @@ label CENA35:
     with Dissolve(6)
     stop music fadeout(6)
     $renpy.pause(6, hard=hardPause)
-label CREDITOS:
-    call screen tela_creditos() with dissolve
+
+    play music "audio/musicas/Menu.mp3" fadein 2.0
+    $credits_speed = 25
+    scene black
+    show credits_image at Move((0.5, 1.0), (0.5, -1.0), credits_speed,
+                  xanchor=0.5, yanchor=0)
+    with Pause(credits_speed+10)
