@@ -26,7 +26,7 @@ label CENA21:
     play sound "audio/sonoplastia/LevantandoDaCama.mp3"
     $renpy.pause(1, hard=hardPause)
 
-    drc "Não. Não. Não"
+    drc "Não. Não. Não."
 
     play sound "audio/sonoplastia/TrancandoPorta.mp3"
     $renpy.pause(1, hard=hardPause)
@@ -57,7 +57,7 @@ label CENA21:
     drc "Por quê?!"
 
     if contou_ao_sheppard:
-        drc "Por que eu tomei aquela decisão de contá-lo?"
+        drc "Por que eu tomei aquela decisão de lhe contar?"
         "Isso pode ter pressionado o assassino."
         "O Sheppard seria um aliado muito importante para mim, afinal de contas."
         "Conhecia muito bem todos os suspeitos..."
@@ -65,7 +65,7 @@ label CENA21:
         drc "Não pude salvá-lo."
         $persistent.conquista_sheppard1 = True
     else:
-        drc "Por que eu tomei aquela decisão de não contá-lo?"
+        drc "Por que eu tomei aquela decisão de não lhe contar?"
         "Ele poderia ter ficado mais atento com os suspeitos."
         "O assassino estava nesta casa, afinal."
         "Ele deve ter pensado que eu contaria a qualquer momento..."

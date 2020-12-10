@@ -169,7 +169,6 @@ label CENA33:
     "Ninguém tem um cabelo tão grosso. Mas isso não é discriminante. Pelo menos não foi na hora."
     "Um dia se passou. O suficiente para o cheiro do animal se sobressair..."
     "... por alguns pelos."
-    "Maldito! Você é meu."
 
     hide catherine with dissolve
 
