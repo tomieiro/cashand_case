@@ -54,7 +54,7 @@ label IDE_02_2_ESCOLHE_FRASE:
         "Esse dispositivo tem uma trava de segurança. O aparelho só reproduz com a tampa fechada."
         "Preciso arranjar uma forma de fechar a tampa do gravador."
         "Há um pequeno pino na tampa. E uma peça oca com um mola ao fundo no corpo do gravador. Não consigo ver muito bem lá dentro."
-        "Para que essa trava encaixe, preciso deixar a peça oca alinhada em algum lugar da primeira linha."        
+        "Para que essa trava encaixe, preciso deixar a peça oca alinhada em algum lugar da primeira linha."
         "Preciso de algo pontudo, mas pequeno o suficiente para conseguir manipulá-lo."
         $ide_sensivel = True
         jump POINT_AND_CLICK
@@ -66,7 +66,7 @@ label IDE_02_2_ESCOLHE_FRASE:
         "Com o lápis, eu vou conseguir."
         $ide_sensivel = True
         $ide_fim = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
 
 
 label IDE_02_2_ESCOLHEU_GRAVADOR:

@@ -22,9 +22,7 @@ label CENA25:
     "Talvez se eu..."
 
     call SLIDER_PUZZLE_3X3_DIA02 from _call_SLIDER_PUZZLE_3X3_DIA02
-
     $pac1_itens_no_inventario.remove(pac2_item_papel)
-    $renpy.pause(2, hard=hardPause)
     show screen mostra_item("images/engler/itens/bilhete.png") with dissolve
     "Gravador cômoda senha culpado"
     hide screen mostra_item with dissolve

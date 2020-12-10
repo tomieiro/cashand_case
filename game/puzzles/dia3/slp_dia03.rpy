@@ -67,7 +67,7 @@ label SLIDER_PUZZLE_4X4_DIA03:
         slp_game_over_label = "SLP_GAME_OVER_4X4_DIA03"
 
         lop_rapido = True
-        slp_timer_rapido = 4 * 60.0
+        slp_timer_rapido = (4 * 60.0) + 30.0
 
     "Ao clicar em uma peça, posso deslizá-la para um espaço vazio."
     "Preciso descobrir o que cada símbolo significa."

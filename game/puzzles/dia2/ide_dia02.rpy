@@ -55,7 +55,7 @@ label IDE_02_ESCOLHE_FRASE:
         "Está todo rasgado."
         $ide_sensivel = True
         $ide_fim = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
 
 
 label IDE_02_ESCOLHEU_PAPEL:
