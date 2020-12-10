@@ -78,6 +78,7 @@ label SLP_GAME_OVER_3X3_DIA02:
     jump SLIDER_PUZZLE_3X3_DIA02
 
 label SUCESSO_SLP_3X3_DIA02:
+    #$renpy.choice_for_skipping()
     stop music fadeout 5.0
     python:
         if lop_rapido:

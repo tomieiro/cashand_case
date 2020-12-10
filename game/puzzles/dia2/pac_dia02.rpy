@@ -145,7 +145,7 @@ label PAC2_SELECIONA_GAVETA:
         $renpy.notify("Coletou Pista - Gravador!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac2_item_gravador[2] = True
             pac1_itens_no_inventario.append(pac2_item_gravador)
 

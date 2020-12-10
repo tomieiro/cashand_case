@@ -59,7 +59,7 @@ label IDE_03_ESCOLHE_FRASE:
         #$ide_tempo = 3.0
         $ide_sensivel = True
         $ide_fim = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
 
 
 label IDE_03_ESCOLHEU_LENCO:

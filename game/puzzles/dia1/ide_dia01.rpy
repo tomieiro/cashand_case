@@ -61,7 +61,7 @@ label IDE_01_ESCOLHE_FRASE:
         #$ide_tempo = 3.0
         $ide_fim = True
         $ide_sensivel = True
-        jump POINT_AND_CLICK_2
+        jump POINT_AND_CLICK
 
 label IDE_01_ESCOLHEU_SANGUE:
     #Define quem é o item

@@ -200,7 +200,7 @@ label PAC1_SELECIONA_ESTANTE:
         $renpy.notify("Coletou Pista - Mancha de Sangue!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            ##renpy.pause(1, hard=hardPause)
             pac1_item_sangue[2] = True
             pac1_itens_no_inventario.append(pac1_item_sangue)
         #Se selecionar a outra pista essencial também, pode sair
@@ -233,7 +233,7 @@ label PAC1_SELECIONA_RELOGIO:
         $renpy.notify("Coletou Pista - Relógio!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            ##renpy.pause(1, hard=hardPause)
             pac1_item_relogio[2] = True
             pac1_itens_no_inventario.append(pac1_item_relogio)
         #Se selecionar a outra pista essencial também, pode sair
@@ -264,7 +264,7 @@ label PAC1_SELECIONA_LAPIS:
     $renpy.notify("Coletou Pista - Lápis!")
     play sound "audio/sonoplastia/ColetandoPista.mp3"
     python:
-        renpy.pause(1, hard=hardPause)
+        #renpy.pause(1, hard=hardPause)
         pac1_item_lapis[2] = True
         pac1_itens_no_inventario.append(pac1_item_lapis)
 
@@ -295,7 +295,7 @@ label PAC1_SELECIONA_LIVROS:
         $renpy.notify("Coletou Pista - Livros!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac1_item_livros[2] = True
             pac1_itens_no_inventario.append(pac1_item_livros)
     else:
@@ -317,7 +317,7 @@ label PAC1_SELECIONA_CAMERA:
         $renpy.notify("Coletou Pista - Câmera!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac1_item_camera[2] = True
             pac1_itens_no_inventario.append(pac1_item_camera)
     else:

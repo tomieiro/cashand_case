@@ -17,4 +17,5 @@ label POINT_AND_CLICK_2:
     #PRECISA SER REPENSADO ISSO AQUI
     #$quick_menu = False #SÓ ESCONDE A DROGA DO MENU KKKK, O ROLLBACK AINDA PODE SER FEITO COM O MOUSE :(
 
+    $renpy.choice_for_skipping() # PARA O SKIPPING PORRA
     $renpy.pause(hard=True) #Garante que o jogo fique parado esperando a tela de point and click

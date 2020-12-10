@@ -157,7 +157,7 @@ label PAC3_SELECIONA_ABAJUR:
         $renpy.notify("Coletou Pista - Chave!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac3_item_chave[2] = True
             pac1_itens_no_inventario.append(pac3_item_chave)
         #Se selecionar a outra pista essencial também, pode sair
@@ -180,7 +180,7 @@ label PAC3_SELECIONA_COFRE:
         $renpy.notify("Coletou Pista - Cofre!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac3_item_cofre[2] = True
             pac1_itens_no_inventario.append(pac3_item_cofre)
         #Se selecionar a outra pista essencial também, pode sair
@@ -203,7 +203,7 @@ label PAC3_SELECIONA_GAVETA:
         $renpy.notify("Coletou Pista - Rádio!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac3_item_radio[2] = True
             pac1_itens_no_inventario.append(pac3_item_radio)
     else:
@@ -223,7 +223,7 @@ label PAC3_SELECIONA_TELEFONE:
         $renpy.notify("Coletou Pista - Telefone!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac3_item_telefone[2] = True
             pac1_itens_no_inventario.append(pac3_item_telefone)
     else:
@@ -240,7 +240,7 @@ label PAC3_SELECIONA_VITROLA:
         $renpy.notify("Coletou Pista - Vitrola!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac3_item_vitrola[2] = True
             pac1_itens_no_inventario.append(pac3_item_vitrola)
     else:
@@ -260,7 +260,7 @@ label PAC3_SELECIONA_VELA:
         $renpy.notify("Coletou Pista - Vela!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
-            renpy.pause(1, hard=hardPause)
+            #renpy.pause(1, hard=hardPause)
             pac3_item_vela[2] = True
             pac1_itens_no_inventario.append(pac3_item_vela)
     else:

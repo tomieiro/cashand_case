@@ -6,8 +6,11 @@ init offset = -1
 
 define habilitar_voltar = False
 
-#PARA DESATIVAR, COMPLETAMENTE, O ROLLBACK, BASTA SETAR ESTA VARIAVEL PARA FALSE
-define config.rollback_enabled = False
+init python:
+    #PARA DESATIVAR, COMPLETAMENTE, O ROLLBACK, BASTA SETAR ESTA VARIAVEL PARA FALSE
+    config.rollback_enabled = False
+    config.default_music_volume = 0.6
+    config.default_sfx_volume = 0.8
 
 ################################################################################
 ## Styles
@@ -330,6 +333,10 @@ screen navigation():
         if (persistent.ganhou_tudo):
         #if (True):
             textbutton "Galeria" action ShowMenu("gallery")
+
+        if (persistent.ganhou_tudo):
+        #if (True):
+            textbutton "Músicas" action ShowMenu("music_room")
 
         if _in_replay:
 
@@ -1576,7 +1583,7 @@ screen achievements():
                         label "Mestre dos Detetives":
                             style "history_name"
                             substitute False
-                        text "Realizou todas as outras conquistas. Desbloqueia a tela {b}Galeria{/b}.":
+                        text "Realizou todas as outras conquistas. Desbloqueia as telas {b}Galeria{/b} e {b}Músicas{/b}.":
                             substitute False
 
                 window:
@@ -1636,7 +1643,7 @@ screen achievements():
                         label "Relógio Falso":
                             style "history_name"
                             substitute False
-                        text "Resolveu o puzzle do relógio em 1 minuto.":
+                        text "Resolveu o puzzle do relógio em 1:00 minuto.":
                             substitute False
 
                 window:
@@ -1651,7 +1658,7 @@ screen achievements():
                         label "Uma Última Nota":
                             style "history_name"
                             substitute False
-                        text "Resolveu o puzzle do bilhete em 1 minuto.":
+                        text "Resolveu o puzzle do bilhete em 1:00 minuto.":
                             substitute False
 
                 window:
@@ -1666,7 +1673,7 @@ screen achievements():
                         label "O Lápis e a Mola":
                             style "history_name"
                             substitute False
-                        text "Resolveu o puzzle do gravador(trava) em 1 minuto.":
+                        text "Resolveu o puzzle do gravador(trava) em 1:00 minuto.":
                             substitute False
 
                 window:
@@ -1681,7 +1688,7 @@ screen achievements():
                         label "Senha Luminosa":
                             style "history_name"
                             substitute False
-                        text "Resolveu o puzzle do gravador(senha) em 1 minuto.":
+                        text "Resolveu o puzzle do gravador(senha) em 1:00 minuto.":
                             substitute False
 
                 window:
@@ -1696,7 +1703,7 @@ screen achievements():
                         label "Cofre Simbólico":
                             style "history_name"
                             substitute False
-                        text "Resolveu o puzzle do cofre em 2:00 minutos.":
+                        text "Resolveu o puzzle do cofre em 1:30 minutos.":
                             substitute False
 
                 window:
@@ -1711,7 +1718,7 @@ screen achievements():
                         label "Questão de Tempo":
                             style "history_name"
                             substitute False
-                        text "Coletou, no dia 1, apenas as pistas necessárias para a investigação do primeiro dia.":
+                        text "Coletou, no dia 1, apenas as pistas necessárias para a investigação do mesmo dia.":
                             substitute False
 
                 window:
@@ -1726,7 +1733,7 @@ screen achievements():
                         label "Verdade Gravada":
                             style "history_name"
                             substitute False
-                        text "Coletou, no dia 2, apenas as pistas necessárias para a investigação do segundo dia.":
+                        text "Coletou, no dia 2, apenas as pistas necessárias para a investigação do mesmo dia.":
                             substitute False
 
                 window:
@@ -1741,7 +1748,7 @@ screen achievements():
                         label "Passado Guardado":
                             style "history_name"
                             substitute False
-                        text "Coletou, no dia 3, apenas as pistas necessárias para a investigação do terceiro dia.":
+                        text "Coletou, no dia 3, apenas as pistas necessárias para a investigação do mesmo dia.":
                             substitute False
 
 
@@ -1816,7 +1823,7 @@ screen gallery:
     tag menu
 
     # The background.
-    add "gui/City.png" maxsize(1280, 720)
+    add "#000" maxsize(1280, 720)
 
     # A grid of buttons.
     grid 4 2:
@@ -1873,3 +1880,105 @@ screen gallery:
         text_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
         text_hover_color "#fff"
         text_size 50
+
+
+
+init python:
+
+    # Step 1. Create a MusicRoom instance.
+    mr = MusicRoom(fadeout=1.0)
+
+    # Step 2. Add music files.
+    mr.add("audio/musicas/Ambiente.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Decisao.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Descobrimento.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Dilema.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Fim.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Menu.mp3", always_unlocked=True)
+    mr.add("audio/musicas/OFim.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Onde.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Palavras.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Pistas.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Rapidez.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Revelacao.mp3", always_unlocked=True)
+    mr.add("audio/musicas/Tensao.mp3", always_unlocked=True)
+
+# Step 3. Create the music room screen.
+screen music_room:
+
+    tag menu
+
+    add "gui/City.png" maxsize(1280, 720)
+
+    frame:
+        xsize 400
+        ysize 600
+        xalign 0.5
+        yalign 0.5
+        ypadding 10
+        background "#000a"
+
+        has vbox
+        spacing 3
+
+        window:
+            xpadding 60
+            ysize 50
+            background "#0000"
+            hbox:
+                spacing 10
+                # Buttons that let us advance tracks.
+                textbutton "Anterior" action mr.Previous() text_size 25 text_align 0.5  xalign 1.0
+                textbutton "Próxima" action mr.Next() text_size 25 text_align 0.5 xalign 1.0
+                #null height 20
+
+        # The buttons that play each track.
+        textbutton "Ambiente" action mr.Play("audio/musicas/Ambiente.mp3") text_size 26 xalign 0.5
+        textbutton "Decisao" action mr.Play("audio/musicas/Decisao.mp3") text_size 26 xalign 0.5
+        textbutton "Descobrimento" action mr.Play("audio/musicas/Descobrimento.mp3") text_size 26 xalign 0.5
+        textbutton "Dilema" action mr.Play("audio/musicas/Dilema.mp3") text_size 26 xalign 0.5
+        textbutton "Fim" action mr.Play("audio/musicas/Fim.mp3") text_size 26 xalign 0.5
+        textbutton "Menu" action mr.Play("audio/musicas/Menu.mp3") text_size 26 xalign 0.5
+        textbutton "OFim" action mr.Play("audio/musicas/OFim.mp3") text_size 26 xalign 0.5
+        textbutton "Onde" action mr.Play("audio/musicas/Onde.mp3") text_size 26 xalign 0.5
+        textbutton "Palavras" action mr.Play("audio/musicas/Palavras.mp3") text_size 26 xalign 0.5
+        textbutton "Pistas" action mr.Play("audio/musicas/Pistas.mp3") text_size 26 xalign 0.5
+        textbutton "Rapidez" action mr.Play("audio/musicas/Rapidez.mp3") text_size 26 xalign 0.5
+        textbutton "Revelacao" action mr.Play("audio/musicas/Revelacao.mp3") text_size 26 xalign 0.5
+        textbutton "Tensao" action mr.Play("audio/musicas/Tensao.mp3") text_size 26 xalign 0.5
+        #null height 20
+
+        # The button that lets the user exit the music room.
+        #textbutton "Voltar" action ShowMenu("main_menu") text_size 25 xalign 0.5 ymargin 10
+
+    # The screen is responsible for returning to the main menu. It could also
+    # navigate to other gallery screens.
+    text "Músicas":
+        xalign 0.00
+        yalign 0.0
+        color "#cccc00"
+        #text_bold True
+        underline True
+        outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+        hover_color "#fff"
+        size 50
+
+    # The screen is responsible for returning to the main menu. It could also
+    # navigate to other gallery screens.
+    textbutton "Voltar":
+        action ShowMenu("main_menu")
+        xalign 0.00
+        yalign 1.0
+        text_color "#cccc00"
+        #background "#000"
+        #text_bold True
+        text_underline True
+        text_outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
+        text_hover_color "#fff"
+        text_size 50
+
+    # Start the music playing on entry to the music room.
+    on "replace" action mr.Play()
+
+    # Restore the main menu music upon leaving.
+    on "replaced" action Play("music", "audio/musicas/Menu.mp3")
