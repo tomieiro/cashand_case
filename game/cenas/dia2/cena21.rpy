@@ -83,9 +83,6 @@ label CENA21:
     "Por quê?"
     "Ele segurava um lenço."
 
-    #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
-    #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
-    default pac3_item_lenco = ["images/engler/itens/pano.png", "Lenço do senhor Sheppard. Sinto falta dele...", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
     show screen mostra_item(pac3_item_lenco[0]) with dissolve
     pause 0.3
     "..."

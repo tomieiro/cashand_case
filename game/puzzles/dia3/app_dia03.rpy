@@ -35,7 +35,7 @@ label APP_DIA3_GAME_OVER:
     hide screen acertar_palavra_puzzle with puzzle_transition8
     "Não era isso..."
     "Vou tentar novamente!"
-    jump APP_DIA2
+    jump APP_DIA3
 
 label APP_DIA3_SUCESSO:
     stop music fadeout 5.0

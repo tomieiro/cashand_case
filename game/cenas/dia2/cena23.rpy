@@ -98,7 +98,7 @@ label CENA23:
             "Certo... Preciso ficar atento a cada detalhe."
             ind_b "Ele tossia muito. Dei-lhe água."
             ind_b "Após isso, voltei ao salão."
-            ind_b "Passado algum tempo vi descerem Kamira e [ind_a_info[1]]."
+            ind_b "Passado algum tempo, vi descerem Kamira e [ind_a_info[1]]."
             drc "O que faziam?"
             ind_b "Kamira estava chorando ao canto e [ind_a_info[1]] a consolava."
             if not visCoz:

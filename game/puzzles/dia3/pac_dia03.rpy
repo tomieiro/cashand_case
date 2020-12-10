@@ -253,7 +253,7 @@ label PAC3_SELECIONA_VELA:
         pause 0.3
         "Uma vela."
         "Está pendurada na parede do quarto."
-        "Mas o que me incomoda é que está muito perdo da cama..."
+        "Mas o que me incomoda é que está muito perto da cama..."
         "Pode causar um incêndio."
         "Joe não leva jeito para essas coisas mesmo..."
         hide screen mostra_item with dissolve

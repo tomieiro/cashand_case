@@ -150,7 +150,6 @@ label CENA33:
     cth "Algum problema com o quarto do Hugo, senhor?."
     drc "Olhe."
 
-    default pac3_item_lenco_pelos = ["images/engler/itens/pano_com_pelo.png", "Pelos dentro do lenço. De algum animal, provavelmente.", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
     show screen mostra_item(pac3_item_lenco_pelos[0]) with dissolve
     pause 0.3
 

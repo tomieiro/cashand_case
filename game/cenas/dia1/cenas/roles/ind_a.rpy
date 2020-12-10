@@ -17,7 +17,7 @@ label DIALOGO_IND_A_CENA12():
     elif ind_a_info[1] == "Catherine":
         call DIALOGO_CATHERINE_12_A from _call_DIALOGO_CATHERINE_12_A
 
-    ind_a "Até depois, Sheppard"
+    ind_a "Até depois, Sheppard."
 
     hide joe with dissolve
     hide hugo with dissolve
