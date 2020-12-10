@@ -20,6 +20,16 @@ define pac1_img_livros = "images/engler/itens_no_cenario/livros_cen.png"
 
 define pac1_img_camera = "images/engler/itens_no_cenario/camera_cen.png"
 
+#Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
+#                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
+default pac3_item_lenco = ["images/engler/itens/pano.png", "Lenço do senhor Sheppard. Sinto falta dele...", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
+default pac3_item_lenco_pelos = ["images/engler/itens/pano_com_pelo.png", "Pelos dentro do lenço. De algum animal, provavelmente.", False, 38, False, "IDE_03_ESCOLHEU_LENCO"]
+
+#Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
+#                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
+default pac2_item_papel = ["images/engler/itens/bilhete picado.png", "Papel rasgado. Foi retirado da... boca de Kamira...", False, 20, False, "IDE_02_ESCOLHEU_PAPEL"]
+
+
 #ATENÇÃO: GARANTIR QUE OS ITENS POSSUEM ID'S DIFERENTES
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
@@ -68,8 +78,8 @@ label FIM_TELA_PAC_DIA1:
         if(len(pac1_itens_no_inventario) == 2):
             #pegou apenas o relogio e a mancha
             persistent.pac1 = True
-            renpy.notify("Conquista - Questão de Tempo!")
             conferir_todas_conquistas()
+            renpy.notify("Conquista - Questão de Tempo!")
     hide screen point_and_click_dia1 with puzzle_transition8
     return
 

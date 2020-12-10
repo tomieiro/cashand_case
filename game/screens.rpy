@@ -1696,7 +1696,7 @@ screen achievements():
                         label "Cofre Simbólico":
                             style "history_name"
                             substitute False
-                        text "Resolveu o puzzle do cofre em 1 minuto.":
+                        text "Resolveu o puzzle do cofre em 2:00 minutos.":
                             substitute False
 
                 window:
@@ -1711,7 +1711,7 @@ screen achievements():
                         label "Questão de Tempo":
                             style "history_name"
                             substitute False
-                        text "Coletou, no dia 1, apenas as pistas necessárias para o puzzle do \"Herdeiros\".":
+                        text "Coletou, no dia 1, apenas as pistas necessárias para a investigação do primeiro dia.":
                             substitute False
 
                 window:
@@ -1726,7 +1726,7 @@ screen achievements():
                         label "Verdade Gravada":
                             style "history_name"
                             substitute False
-                        text "Coletou, no dia 2, apenas as pistas necessárias para o puzzle do \"Inocente\".":
+                        text "Coletou, no dia 2, apenas as pistas necessárias para a investigação do segundo dia.":
                             substitute False
 
                 window:
@@ -1741,7 +1741,7 @@ screen achievements():
                         label "Passado Guardado":
                             style "history_name"
                             substitute False
-                        text "Coletou, no dia 3, apenas as pistas necessárias para o puzzle do \"Cachorro\".":
+                        text "Coletou, no dia 3, apenas as pistas necessárias para a investigação do terceiro dia.":
                             substitute False
 
 
@@ -1749,7 +1749,7 @@ init python:
 
     def conferir_todas_conquistas():
         global persistent
-        persistent.ganhou_tudo = (
+        todas_conquistas = (
             persistent.conquista_demitido and
             persistent.conquista_sheppard1 and
             persistent.conquista_sheppard2 and
@@ -1763,6 +1763,9 @@ init python:
             persistent.pac2 and
             persistent.pac3
         )
+        if todas_conquistas and not persistent.ganhou_tudo:
+            renpy.notify("Conquista - Mestre dos Detetives!")
+            persistent.ganhou_tudo = True
 
 init python:
 

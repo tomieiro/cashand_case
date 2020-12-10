@@ -16,7 +16,7 @@ label BIBLIOTECA:
     drc "Era frequente?"
     shp "Bom, sim. Quando o senhor Hougin não tinha assuntos a tratar fora da cidade, ele vinha até aqui e passava algumas horas em leitura intensa."
     drc "Um homem culto, suponho?"
-    shp "Ah, sim. O senhor Hougin, além de um profundo conhecimento em histórias fantasiosas, bem como reais, e até de caráter acadêmico,"
+    shp "Ah, sim. O senhor Hougin, além de um profundo conhecimento em histórias fantasiosas, bem como reais, e até de caráter acadêmico."
     shp "claro, tinha também pleno conhecimento de todas as notícias da atualidade."
     drc "Isso impactava diretamente nos negócios, imagino."
     shp "De fato. Ser culto é uma habilidade essencial para alguém como o senhor Hougin e o meio que comandava."

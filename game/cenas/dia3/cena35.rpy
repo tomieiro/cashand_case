@@ -17,7 +17,7 @@ label CENA35:
     $renpy.pause(6, hard=hardPause)
 
     play music "audio/musicas/Menu.mp3" fadein 2.0
-    $credits_speed = 25
+    default credits_speed = 25
     scene black
     show credits_image at Move((0.5, 1.0), (0.5, -1.0), credits_speed,
                   xanchor=0.5, yanchor=0)

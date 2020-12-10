@@ -1,6 +1,6 @@
 label DIALOGO_IND_D_CENA12():
 
-    ind_d "Olá, senhor Sheppard."
+    ind_d "Olá, Sheppard."
     shp "Olá, [ind_d_info[1]]."
     shp "Está tudo bem?"
     ind_d "Tudo bem. Só estava aqui me recordando dos velhos tempos..."
