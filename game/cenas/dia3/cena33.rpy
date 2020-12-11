@@ -16,7 +16,7 @@ label CENA33:
 
     "Entendo..."
     "Então era isso."
-    "Como não pude perceber."
+    "Como pude não perceber?"
 
     "..."
     "Verei Hugo primeiro."
@@ -91,7 +91,7 @@ label CENA33:
     drc "Mas ela estava enforcada. O senhor insinua que foi uma cena armada?"
     hugo "Exato. Tenho suspeita de uma pessoa, com quem conversei agora há pouco."
     "Catherine, não é?"
-    drc "Obrigado pela informação, Hugo. Peço que, se possivel, vá para seu quarto."
+    drc "Obrigado pela informação, Hugo. Peço que, se possível, vá para seu quarto."
     hugo "Detetive, e qual seria a finalidade?"
     drc "Eu tenho um assunto a resolver."
     drc "Há algo grande envolvido. Por favor, confie em mim. É para sua segurança."
@@ -260,8 +260,8 @@ label CENA33:
     drc "Catherine brada o mais alto aqui para te libertar. Você também faria isso? Canalha! Sabe que Carlo virá buscá-lo."
     drc "Acha que não percebi quando você se aproximou no velório do senhor Sheppard? Sorrateiramente, escutou toda a conversa."
     drc "Não me matou porque sabia que a polícia se envolveria."
-    drc "Sabia que o senhor Sheppard conhecia a todos muito bem, ele notaria qualquer coisas diferente."
-    drc "Chegaríamos em você em um piscar de olhos."
+    drc "Sabia que o senhor Sheppard conhecia a todos muito bem, ele notaria quaisquer coisas diferente."
+    drc "Chegaríamos a você em um piscar de olhos."
     drc "Você não presta."
     drc "Precisava incriminar alguém, sabia disso. E estava desesperado."
     drc "Matou Kamira e fez parecer um suicídio, pois não queria chamar mais atenção. Ela sabia de algumas coisas e colaboraria comigo."
