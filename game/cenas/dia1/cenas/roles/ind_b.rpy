@@ -48,7 +48,7 @@ label DIALOGO_HUGO_12_B:
 
     hugo "Quem é esse senhor?"
     drc "Muito prazer, sou o detetive Rightclue. Estou aqui para ajudar no caso."
-    hugo "Acredito que você ja tenha sido instruído pelo senhor Sheppard, estou certo?"
+    hugo "Acredito que você ja tenha sido instruído pelo Sheppard, estou certo?"
     drc "Sim. Sheppard me instruiu bem. Tem minha palavra de sigilo."
     hugo "Certo. Não acho que sua presença seja bem vinda, principalmente por parte de minha familia."
     hugo "Mas, contanto que nos ajude a desvendar o que está acontecendo, estamos de acordo."
@@ -80,7 +80,6 @@ label DIALOGO_JOE_12_B:
     show joe neutro with dissolve:
         xzoom 0.9 yzoom 0.9 xalign 0.7 yalign 0.99999
     joe "..."
-    "*Joe encara Rightclue*"
     drc "..."
     joe "Ah..."
     joe "E quem seria esse, Sheppard? Acredito que não seja apropriado trazer desconhecidos para um enterro."

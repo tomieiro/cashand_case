@@ -77,7 +77,6 @@ label DIALOGO_JOE_12_C:
     joe "Enfim, faça o que bem entender, contanto que esses ataques cessem."
     drc "Eu farei e provarei que Sheppard não está errado em me chamar."
     joe "..."
-    "*Joe encara Rightclue*"
     return
 
 label DIALOGO_KAMIRA_12_C:
