@@ -106,7 +106,7 @@ label DIALOGO_JOE_12_A:
     joe "Espero que não tenhamos mais problemas por conta disso."
     joe "Ei, você!"
     drc "..."
-    joe "Tente não destruir a reputação do senhor Sheppard com a nossa família."
+    joe "Tente não destruir a reputação de Sheppard com a nossa família."
     drc "Não vou..."
     drc "Tenho confiança em minhas habilidades."
     joe "..."
