@@ -131,7 +131,7 @@ label CENA11:
     shp_side "Pouco antes de morrer, ele me pagou uma excelente quantia extra por todos meus anos de serviço, e me pediu para que cuidasse de sua família caso ele viesse a falecer devido à sua doença."
     drc "O senhor fala como se tivesse esse dever. Contudo, ele não está mais aqui para o senhor argumentar por seu envolvimento em um caso de assassinato."
     shp_side "De fato. Mas ainda sim, meu orgulho fala mais alto, senhor Rightclue. Meu dever terá de ser cumprido."
-    drc "Hum Hum. O senhor tem meu respeito, senhor Sheppard. Pode contar comigo nesse caso." #rigato: "Hum Hum" tte nandayo?! Acho que podia trocar por uma forma melhor de representar o som. Nem sei exatamente do que se trata
+    drc "Entendo... O senhor tem meu respeito, senhor Sheppard. Pode contar comigo nesse caso."
     shp_side "Estava certo que poderia contar com o senhor, detetive."
     shp_side "Então vamos lá! Para a casa dos Cashand."
     drc "Certo. Posso deixar a xícara por aqui?"
