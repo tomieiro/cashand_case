@@ -8,7 +8,7 @@ label CENA34:
     show carlo neutro behind hugo with dissolve:
         xalign 0.36 yalign 0.999999 xzoom 0.9 yzoom 0.9
     hugo "Meus parabéns, seu maldito! Salvou o dia. Desgraçado!"
-    hugo "Se não fosse você e Sheppard, eu teria toda a grana só pra mim."
+    hugo "Se não fosse por você e Sheppard, eu teria toda a grana só para mim."
 
     show hugo neutro with dissolve
 
@@ -38,7 +38,7 @@ label CENA34:
     show hugo assassino with hpunch:
         xzoom 1.005 yzoom 1.005
 
-    hugo "Me larguem, seus porcos."
+    hugo "Me larguem, seus porcos!"
     hugo "Vou acabar com vocês."
     hugo "Acham que conseguem me matar?"
     hugo "Pois veremos."
