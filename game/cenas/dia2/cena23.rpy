@@ -183,7 +183,7 @@ label CENA23:
             kmr "..."
             "Ela acena em negação com a cabeça. A informação que ela guarda é decisiva."
             drc "Senhorita, por favor, ajude-me a resolver isso."
-            drc "Preciso da sua palavra. Minha conclusões estão convergindo para uma pessoa."
+            drc "Preciso da sua palavra. Minhas conclusões estão convergindo para uma pessoa."
             "Tenho o controle da situação. Estou te jogando contra a parede. O que me diz?"
             kmr "..."
 
