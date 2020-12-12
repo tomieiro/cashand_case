@@ -1,6 +1,6 @@
 # Cashand Case
 
-Repositorio que abriga construcao de uma VN de desenvolvimento colaborativo.
+Jogo, no estilo Visual Novel, de Drama e Investigação.
 
 
 <ul>
