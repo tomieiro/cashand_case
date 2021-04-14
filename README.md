@@ -38,6 +38,6 @@ Foi utilizado também, o software FotoSketcher (https://fotosketcher.com/) para 
 Os transições personalizadas dos puzzles foram disponibilizadas abertamente por Kia Azad (https://github.com/Kiaazad) em seu Patreon: https://www.patreon.com/posts/27235205
 
 <br><br>
-A Visual Novel está sendo construída em RenPy: https://github.com/renpy/renpy<br>
+A Visual Novel foi construída em RenPy: https://github.com/renpy/renpy<br>
 
 As musicas foram produzidas pelos próprios integrantes do grupo, utilizando instrumentos particulares e utilizando ferramentas como o TuxGuitar (http://www.tuxguitar.com.ar/), o BoscaCeoil (https://boscaceoil.net/) e alguns efeitos sonoras na ferramenta PixiTracker(https://warmplace.ru/soft/pixitracker/). A sonoplastia foi toda gravada utilizando microfones pelos próprios membros.
