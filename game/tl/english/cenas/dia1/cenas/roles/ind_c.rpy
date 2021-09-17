@@ -4,7 +4,7 @@
 translate english DIALOGO_IND_C_CENA12_c7919c69:
 
     # shp "Olá, [ind_c_info[1]]."
-    shp ""
+    shp "Hello, [ind_c_info [1]]."
 
 # game/cenas/dia1/cenas/roles/ind_c.rpy:3
 translate english DIALOGO_IND_C_CENA12_f6448902:
@@ -377,4 +377,3 @@ translate english DIALOGO_CATHERINE_12_C_420558ab:
 
     # cth "Veremos..."
     cth ""
-

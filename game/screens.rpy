@@ -1558,7 +1558,7 @@ screen achievements():
                 xalign 0.5
                 yalign 0.5
                 background "#fff0"
-                text _("É necessário terminar o jogo para desbloquear a tela de conquistas."):
+                text _("É necessário terminar o jogo para desbloquear a tela de conquistas. / It is required to finish the game to unlock the achievements screen."):
                     text_align 0.5
                     color "#cccc00"
                     size 30
