@@ -166,7 +166,7 @@ translate english IDE_01_ESCOLHEU_LIVROS_3c90c5f3:
 translate english IDE_01_ESCOLHEU_LIVROS_29f37890:
 
     # "Já usei essa pista antes... não é isso..."
-    I've used this clue before... that's not it...""
+    I "'ve used this clue before... that's not it..."
 
 # game/puzzles/dia1/ide_dia01.rpy:217
 translate english IDE_01_ESCOLHEU_CAMERA_6f3e6eef:
