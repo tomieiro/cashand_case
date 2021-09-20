@@ -4,5 +4,4 @@
 translate english APP_TESTE_GAME_OVER_505a159c:
 
     # drc "Droga, vamos lá denovo!"
-    drc ""
-
+    drc "Damn, let's go again!"
