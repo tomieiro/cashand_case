@@ -4,5 +4,4 @@
 translate english FIM_LOP_3x3_61ea5bb9:
 
     # "Droga, vou tentar novamente..."
-    ""
-
+    "Damn, I'll try again..."

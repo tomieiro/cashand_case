@@ -226,7 +226,7 @@ translate english PAC1_SELECIONA_LIVROS_a20cefa7:
 translate english PAC1_SELECIONA_LIVROS_781cfbd3:
 
     # "Não! Não posso me distrair!"
-    "Not! I can't be distracted!"
+    "No! I can't be distracted!"
 
 # game/puzzles/dia1/pac_dia01.rpy:293
 translate english PAC1_SELECIONA_LIVROS_0443edd0:

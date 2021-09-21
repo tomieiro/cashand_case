@@ -93,7 +93,10 @@ label SUCESSO_SLP_4X4_DIA03:
     python:
         if lop_rapido:
             persistent.rapido5 = True
-            renpy.notify("Conquista - Cofre Simbólico!")
+            if config.language == "english":
+                renpy.notify("Achievement - Symbolic Safe!")
+            else:
+                renpy.notify("Conquista - Cofre Simbólico!")
             conferir_todas_conquistas()
     hide screen slider_puzzle with puzzle_transition8
     return

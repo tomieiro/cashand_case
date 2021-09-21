@@ -4,5 +4,4 @@
 translate english MOSTRA_ITEM_INVENTARIO_COLETA_6e73fc72:
 
     # "[idc_descricao]"
-    ""
-
+    "[idc_descricao]"

@@ -4,7 +4,7 @@
 translate english DIALOGO_IND_C_CENA12_c7919c69:
 
     # shp "Olá, [ind_c_info[1]]."
-    shp "Hello, [ind_c_info [1]]."
+    shp "Hello, [ind_c_info[1]]."
 
 # game/cenas/dia1/cenas/roles/ind_c.rpy:3
 translate english DIALOGO_IND_C_CENA12_f6448902:
@@ -311,7 +311,7 @@ translate english DIALOGO_KAMIRA_12_C_23eaa03b:
 translate english DIALOGO_KAMIRA_12_C_94b95fe9:
 
     # drc "Principalmente o responsavel por tudo isso quando for encontrado."
-    drc "Mainly responsible for all this when found."
+    drc "Mainly the responsible for all of this when found."
 
 # game/cenas/dia1/cenas/roles/ind_c.rpy:108
 translate english DIALOGO_CATHERINE_12_C_5e2a645a:

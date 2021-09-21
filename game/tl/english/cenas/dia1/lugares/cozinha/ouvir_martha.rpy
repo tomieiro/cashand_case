@@ -22,7 +22,7 @@ translate english OUVIR_MARTHA_f64ab489:
 translate english OUVIR_MARTHA_9a5441de:
 
     # mrth "Sim. Todavia, tenho conhecimento que todos os seus herdeiros o visitaram, separadamente, naquela noite, tendo o último voltado às 2:21 da manhã. O que levaria a crer que o assassinato ocorreu depois que todos estiveram lá."
-    mrth "Yes. However, I know that all his heirs visited him separately at that night. The last one coming back at 2:21 in the morning. Which would lead to believe that the murder took place after everyone was there."
+    mrth "Yes. However, I know that all his inheritors visited him separately at that night. The last one coming back at 2:21 in the morning. Which would lead to believe that the murder took place after everyone was there."
 
 # game/cenas/dia1/lugares/cozinha/ouvir_martha.rpy:6
 translate english OUVIR_MARTHA_5f95e206:

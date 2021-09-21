@@ -376,7 +376,7 @@ translate english CENA11_c23a6c33:
 translate english CENA11_1739417a:
 
     # shp_side "Logo, você irá conhecê-los... os herdeiros."
-    shp_side "Soon, you'll meet them... the heirs."
+    shp_side "Soon, you'll meet them... the inheritors."
 
 # game/cenas/dia1/cenas/cena11.rpy:129
 translate english CENA11_ddd5d0e8:
