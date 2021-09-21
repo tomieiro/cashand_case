@@ -26,7 +26,10 @@ label FIM_TELA_PAC_DIA2:
         if(len(pac1_itens_no_inventario) == 4):
             #pegou apenas o lenco, o lapis, o gravador e a tesoura
             persistent.pac2 = True
-            renpy.notify("Conquista - Verdade Gravada!")
+            if config.language == "english":
+                renpy.notify("Achievement - Recorded Truth!")
+            else:
+                renpy.notify("Conquista - Verdade Gravada!")
             conferir_todas_conquistas()
     hide screen point_and_click_dia2 with dissolve
     return

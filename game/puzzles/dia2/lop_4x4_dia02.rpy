@@ -55,7 +55,10 @@ label SUCESSO_LOP_4X4_DIA02:
     python:
         if lop_rapido:
             persistent.rapido4 = True
-            renpy.notify("Conquista - Senha Luminosa!")
+            if config.language == "english":
+                renpy.notify("Achievement - Luminous Password!")
+            else:
+                renpy.notify("Conquista - Senha Luminosa!")
             conferir_todas_conquistas()
     hide screen lights_out_puzzle with puzzle_transition8
     return

@@ -23,17 +23,18 @@ define pac1_img_camera = "images/engler/itens_no_cenario/camera_cen.png"
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
 default pac3_item_lenco = ["images/engler/itens/pano.png", "Lenço do senhor Sheppard. Sinto falta dele...", False, 30, False, "IDE_03_ESCOLHEU_LENCO"]
+
 default pac3_item_lenco_pelos = ["images/engler/itens/pano_com_pelo.png", "Pelos dentro do lenço. De algum animal, provavelmente.", False, 38, False, "IDE_03_ESCOLHEU_LENCO"]
 
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
 default pac2_item_papel = ["images/engler/itens/bilhete picado.png", "Papel rasgado. Foi retirado da... boca de Kamira...", False, 20, False, "IDE_02_ESCOLHEU_PAPEL"]
 
-
 #ATENÇÃO: GARANTIR QUE OS ITENS POSSUEM ID'S DIFERENTES
 #Estrutura do item: [string de imagem, string de descrição, boolean que indica se já foi coletado,
 #                    ID, boolean que indica se já foi escolhido, label chamada quando o item é escolhido]
 default pac1_item_relogio = ["images/engler/itens/relogio.png", "Um belo relógio. Parece funcional, apesar de estar 8 minutos adiantado.", False, 10, False, "IDE_01_ESCOLHEU_RELOGIO"]
+
 default pac1_item_sangue = ["images/engler/itens/sangue.png", "Uma inscrição escrita em sangue, já seco. Me parece ser uma pista valiosa.", False, 11, False, "IDE_01_ESCOLHEU_SANGUE"]
 
 default pac1_item_lapis = ["images/engler/itens/lapis.png", "Um simples lápis. Provavelmente, pertencia ao senhor Hougin.", False, 12, False, "IDE_01_ESCOLHEU_LAPIS"]
@@ -50,6 +51,17 @@ default pac1_fim = False
 label CHAMA_TELA_PAC_DIA1:
     #Inicializa as variáveis necessárias
     python:
+
+        if config.language == "english":
+            pac3_item_lenco[1] = "Mr. Sheppard's handkerchief. I miss him ..."
+            pac2_item_papel[1] = "Torn paper. It was taken from... Kamira's mouth..."
+            pac3_item_lenco_pelos[1] = "There is hair inside the handkerchief. Probably, it's from some animal..."
+            pac1_item_relogio[1] = "A nice watch. It looks functional despite being 8 minutes early."
+            pac1_item_sangue[1] = "An inscription written in dried blood. Seems like a valuable clue to me."
+            pac1_item_lapis[1] = "A simple pencil. It probably belonged to Mr Hougin."
+            pac1_item_livros[1] = "Some books. They look interesting, but I don't have time to read them. What a pity..."
+            pac1_item_camera[1] = "A camera. I would like to have one of these..."
+
         pac1_fim = False
         pac1_item_relogio[2] = False
         pac1_item_sangue[2] = False
@@ -78,8 +90,12 @@ label FIM_TELA_PAC_DIA1:
         if(len(pac1_itens_no_inventario) == 2):
             #pegou apenas o relogio e a mancha
             persistent.pac1 = True
+            if config.language == "english":
+                renpy.notify("Achievement - A Matter of Time!")
+            else:
+                renpy.notify("Conquista - Questão de Tempo!")
             conferir_todas_conquistas()
-            renpy.notify("Conquista - Questão de Tempo!")
+
     hide screen point_and_click_dia1 with puzzle_transition8
     return
 
@@ -197,7 +213,11 @@ label PAC1_SELECIONA_ESTANTE:
         drc "Realmente, é uma pequena inscrição, mas parece ser uma valiosa pista."
         hide screen mostra_item with dissolve
         #hide sheppard onlayer screens with dissolve
-        $renpy.notify("Coletou Pista - Mancha de Sangue!")
+        python:
+            if config.language == "english":
+                renpy.notify("Collected Clue - Bloodstain!")
+            else:
+                renpy.notify("Coletou Pista - Mancha de Sangue!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
             ##renpy.pause(1, hard=hardPause)
@@ -230,7 +250,11 @@ label PAC1_SELECIONA_RELOGIO:
         drc "Certamente."
         hide screen mostra_item with dissolve
         #hide sheppard onlayer screens with dissolve
-        $renpy.notify("Coletou Pista - Relógio!")
+        python:
+            if config.language == "english":
+                renpy.notify("Collected Clue - Watch!")
+            else:
+                renpy.notify("Coletou Pista - Relógio!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
             ##renpy.pause(1, hard=hardPause)
@@ -261,7 +285,11 @@ label PAC1_SELECIONA_LAPIS:
     "Estava caído no chão."
     "Vou levar, talvez me seja útil futuramente..."
     hide screen mostra_item with dissolve
-    $renpy.notify("Coletou Pista - Lápis!")
+    python:
+        if config.language == "english":
+            renpy.notify("Collected Clue - Pencil!")
+        else:
+            renpy.notify("Coletou Pista - Lápis!")
     play sound "audio/sonoplastia/ColetandoPista.mp3"
     python:
         #renpy.pause(1, hard=hardPause)
@@ -292,7 +320,11 @@ label PAC1_SELECIONA_LIVROS:
         "Não! Não posso me distrair!"
         "Voltando à investigação..."
         hide screen mostra_item with dissolve
-        $renpy.notify("Coletou Pista - Livros!")
+        python:
+            if config.language == "english":
+                renpy.notify("Collected Clue - Books!")
+            else:
+                renpy.notify("Coletou Pista - Livros!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
             #renpy.pause(1, hard=hardPause)
@@ -314,7 +346,11 @@ label PAC1_SELECIONA_CAMERA:
         "Para possuírem um aparelho assim..."
         "Devem ser bem ricos mesmo."
         hide screen mostra_item with dissolve
-        $renpy.notify("Coletou Pista - Câmera!")
+        python:
+            if config.language == "english":
+                renpy.notify("Collected Clue - Camera!")
+            else:
+                renpy.notify("Coletou Pista - Câmera!")
         play sound "audio/sonoplastia/ColetandoPista.mp3"
         python:
             #renpy.pause(1, hard=hardPause)
