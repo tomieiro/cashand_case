@@ -58,7 +58,7 @@ translate english CENA12_4b9d7e65:
 translate english CENA12_8465ad82:
 
     # shp "Bom, acho que você já viu todos os herdeiros..."
-    shp "Well, I think you've seen all the heirs..."
+    shp "Well, I think you've seen all the inheritors..."
 
 # game/cenas/dia1/cenas/cena12.rpy:43
 translate english CENA12_a35f4899:
@@ -70,7 +70,7 @@ translate english CENA12_a35f4899:
 translate english CENA12_eef1e14d:
 
     # shp "O último herdeiro era Lostie Annou Cashand, segundo irmão mais novo do senhor Hougin Cashand, que fora assassinado esta noite."
-    shp "The last heir was Lostie Annou Cashand, the second younger brother of Mr Hougin Cashand, who had been murdered last night."
+    shp "The last inheritor was Lostie Annou Cashand, the second younger brother of Mr Hougin Cashand, who had been murdered last night."
 
 # game/cenas/dia1/cenas/cena12.rpy:45
 translate english CENA12_711876d0:

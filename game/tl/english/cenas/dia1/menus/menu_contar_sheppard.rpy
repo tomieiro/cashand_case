@@ -4,7 +4,7 @@
 translate english MENU_CONTAR_SHEPPARD_9db9990f:
 
     # shp "Senhor Sheppard, está claro que foi um dos herdeiros!"
-    shp "Mr Sheppard, of course it was one of the heirs!"
+    shp "Mr Sheppard, of course it was one of the inheritors!"
 
 # game/cenas/dia1/menus/menu_contar_sheppard.rpy:11
 translate english MENU_CONTAR_SHEPPARD_734e758d:
@@ -16,7 +16,7 @@ translate english MENU_CONTAR_SHEPPARD_734e758d:
 translate english MENU_CONTAR_SHEPPARD_0d887f4e:
 
     # drc "Com toda certeza. É óbvio que seria um dos herdeiros. O último herdeiro, que por algum motivo, se perdeu a informação de quem era, desceu do quarto do senhor Hougin às 2:29."
-    drc "Absolutely. Obviously it would be one of the heirs. The last heir, who for some reason we had lost track of who he was, came down from Mr Hougin's room at 2:29."
+    drc "Absolutely. Obviously it would be one of the inheritors. The last inheritor, who for some reason we had lost track of who he was, came down from Mr Hougin's room at 2:29."
 
 # game/cenas/dia1/menus/menu_contar_sheppard.rpy:13
 translate english MENU_CONTAR_SHEPPARD_170bbdd3:
@@ -34,7 +34,7 @@ translate english MENU_CONTAR_SHEPPARD_6f7a60a2:
 translate english MENU_CONTAR_SHEPPARD_f5e55e29:
 
     # shp "Às 2:31... Não foi quando o senhor Suspin visitou o quarto de Hougin? Mas ele não é um dos herdeiros."
-    shp "At 2:31... Wasn't that when Mr Suspin visited Hougin's room? But he is not one of the heirs."
+    shp "At 2:31... Wasn't that when Mr Suspin visited Hougin's room? But he is not one of the inheritors."
 
 # game/cenas/dia1/menus/menu_contar_sheppard.rpy:16
 translate english MENU_CONTAR_SHEPPARD_9beb6441:
@@ -88,7 +88,7 @@ translate english MENU_CONTAR_SHEPPARD_f1eae001:
 translate english MENU_CONTAR_SHEPPARD_d46867dc:
 
     # shp "Agradeço pelo empenho, detetive. Vou me retirar por hoje. Tentar digerir tudo isso. Amanhã logo cedo investigaremos os herdeiros. Descobriremos quem é esse maldito traidor!"
-    shp "Thanks for your effort, detective. I'm leaving for today. Trying to digest it all. Tomorrow morning we will investigate the heirs. We'll find out who this damn traitor is!"
+    shp "Thanks for your effort, detective. I'm leaving for today. Trying to digest it all. Tomorrow morning we will investigate the inheritors. We'll find out who this damn traitor is!"
 
 # game/cenas/dia1/menus/menu_contar_sheppard.rpy:25
 translate english MENU_CONTAR_SHEPPARD_6d9a656d:

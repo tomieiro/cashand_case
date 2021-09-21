@@ -83,7 +83,10 @@ label SUCESSO_SLP_3X3_DIA02:
     python:
         if lop_rapido:
             persistent.rapido2 = True
-            renpy.notify("Conquista - Uma Última Nota...")
+            if config.language == "english":
+                renpy.notify("Achievement - One Last Note...")
+            else:
+                renpy.notify("Conquista - Uma Última Nota...")
             conferir_todas_conquistas()
     hide screen slider_puzzle with puzzle_transition8
     return

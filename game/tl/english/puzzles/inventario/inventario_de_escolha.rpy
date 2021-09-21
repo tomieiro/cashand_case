@@ -4,11 +4,10 @@
 translate english MOSTRA_ITEM_INVENTARIO_ESCOLHA_80602c28:
 
     # "[ide_descricao]"
-    ""
+    "[ide_descricao]"
 
 translate english strings:
 
     # game/puzzles/inventario/inventario_de_escolha.rpy:140
     old "Esta é a pista de que eu preciso?"
-    new ""
-
+    new "Is this the clue that I need?"

@@ -12,7 +12,11 @@ label DEMISSAO:
     hide sheppard neutro with dissolve
 
     "*Sheppard fecha a porta*"
-    $renpy.notify("Conquista - Caso da \"Mão Sem Grana\"!")
+    python:
+        if config.language == "english":
+            renpy.notify("Achievement - \"No Cash in Hand\" Case!")
+        else:
+            renpy.notify("Conquista - Caso da \"Mão Sem Grana\"!")
     $persistent.conquista_demitido = True
     $conferir_todas_conquistas()
 

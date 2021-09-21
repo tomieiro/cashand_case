@@ -28,7 +28,7 @@ translate english CONCLUINDO_DIA1_a645ba3b:
 translate english CONCLUINDO_DIA1_c4c33dbb:
 
     # "É isso. O assassino está entre os herdeiros..."
-    "That's it. The assassin is among the heirs..."
+    "That's it. The assassin is among the inheritors..."
 
 # game/cenas/dia1/cenas/concluindo_dia1.rpy:18
 translate english CONCLUINDO_DIA1_a20cefa7:
