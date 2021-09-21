@@ -13,6 +13,8 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("Cashand Case")
+#define config.language = "none"
+define config.language = "english"
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

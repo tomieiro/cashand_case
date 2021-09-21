@@ -57,7 +57,10 @@ label SUCESSO_LOP_3X3_DIA01:
     python:
         if lop_rapido:
             persistent.rapido1 = True
-            renpy.notify("Conquista - Relógio Falso!")
+            if config.language == "english":
+                renpy.notify("Achievement - Fake Watch!")
+            else:
+                renpy.notify("Conquista - Relógio Falso!")
             conferir_todas_conquistas()
     hide screen lights_out_puzzle with puzzle_transition8
     return

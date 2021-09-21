@@ -47,7 +47,10 @@ label FIM_TELA_PAC_DIA3:
         if(len(pac1_itens_no_inventario) == 3):
             #pegou apenas o lenco, o cofre e a chave
             persistent.pac3 = True
-            renpy.notify("Conquista - Passado Guardado!")
+            if config.language == "english":
+                renpy.notify("Achievement - Retained Past!")
+            else:
+                renpy.notify("Conquista - Passado Guardado!")
             conferir_todas_conquistas()
     hide screen point_and_click_dia3 with dissolve
     return

@@ -82,7 +82,10 @@ label SUCESSO_SLP_3X3_DIA02_2:
     python:
         if lop_rapido:
             persistent.rapido3 = True
-            renpy.notify("Conquista - O Lápis e a Mola!")
+            if config.language == "english":
+                renpy.notify("Achievement - The Pencil and the Spring!")
+            else:
+                renpy.notify("Conquista - O Lápis e a Mola!")
             conferir_todas_conquistas()
     hide screen slider_puzzle with puzzle_transition8
     return

@@ -332,11 +332,11 @@ screen navigation():
 
         if (persistent.ganhou_tudo):
         #if (True):
-            textbutton "Galeria" action ShowMenu("gallery")
+            textbutton _("Galeria") action ShowMenu("gallery")
 
         if (persistent.ganhou_tudo):
         #if (True):
-            textbutton "Músicas" action ShowMenu("music_room")
+            textbutton _("Músicas") action ShowMenu("music_room")
 
         if _in_replay:
 
@@ -1558,7 +1558,7 @@ screen achievements():
                 xalign 0.5
                 yalign 0.5
                 background "#fff0"
-                text "É necessário terminar o jogo para desbloquear a tela de conquistas.":
+                text _("É necessário terminar o jogo para desbloquear a tela de conquistas. / It is required to finish the game to unlock the achievements screen."):
                     text_align 0.5
                     color "#cccc00"
                     size 30
@@ -1580,11 +1580,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Mestre dos Detetives":
+                        label _("Mestre dos Detetives"):
                             style "history_name"
-                            substitute False
-                        text "Realizou todas as outras conquistas. Desbloqueia as telas {b}Galeria{/b} e {b}Músicas{/b}.":
-                            substitute False
+                            #substitute False
+                        text _("Realizou todas as outras conquistas. Desbloqueia as telas {b}Galeria{/b} e {b}Músicas{/b}.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1595,11 +1595,11 @@ screen achievements():
                             selected_idle "gui/check_true.png"
                             selected_hover "gui/check_true.png"
                             action NullAction()
-                        label "Caso da \"Mão Sem Grana\"":
+                        label _("Caso da \"Mão Sem Grana\""):
                             style "history_name"
-                            substitute False
-                        text "Foi demitido pelo senhor Sheppard.":
-                            substitute False
+                            #substitute False
+                        text _("Foi demitido pelo senhor Sheppard.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1610,11 +1610,11 @@ screen achievements():
                             selected_idle "gui/check_true.png"
                             selected_hover "gui/check_true.png"
                             action NullAction()
-                        label "Destino":
+                        label _("Destino"):
                             style "history_name"
-                            substitute False
-                        text "Escolheu tanto contar quanto não contar sobre o culpado para o senhor Sheppard e viu as consequências das duas escolhas.":
-                            substitute False
+                            #substitute False
+                        text _("Escolheu tanto contar quanto não contar sobre o culpado para o senhor Sheppard e viu as consequências das duas escolhas.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1625,11 +1625,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Biscoitos Thorn":
+                        label _("Biscoitos Thorn"):
                             style "history_name"
-                            substitute False
-                        text "Presenciou uma cena um pouco... estranha... ao ser apresentado ao Hugo. (Dica: a cena é aleatória, talvez seja necessário iniciar um novo jogo para presenciá-la)":
-                            substitute False
+                            #substitute False
+                        text _("Presenciou uma cena um pouco... estranha... ao ser apresentado ao Hugo. (Dica: a cena é aleatória, talvez seja necessário iniciar um novo jogo para presenciá-la)")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1640,11 +1640,11 @@ screen achievements():
                             selected_idle "gui/check_true.png"
                             selected_hover "gui/check_true.png"
                             action NullAction()
-                        label "Relógio Falso":
+                        label _("Relógio Falso"):
                             style "history_name"
-                            substitute False
-                        text "Resolveu o puzzle do relógio em 1:00 minuto.":
-                            substitute False
+                            #substitute False
+                        text _("Resolveu o puzzle do relógio em 1:00 minuto.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1655,11 +1655,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Uma Última Nota":
+                        label _("Uma Última Nota"):
                             style "history_name"
-                            substitute False
-                        text "Resolveu o puzzle do bilhete em 1:00 minuto.":
-                            substitute False
+                            #substitute False
+                        text _("Resolveu o puzzle do bilhete em 1:00 minuto.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1670,11 +1670,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "O Lápis e a Mola":
+                        label _("O Lápis e a Mola"):
                             style "history_name"
-                            substitute False
-                        text "Resolveu o puzzle do gravador(trava) em 1:00 minuto.":
-                            substitute False
+                            #substitute False
+                        text _("Resolveu o puzzle do gravador(trava) em 1:00 minuto.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1685,11 +1685,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Senha Luminosa":
+                        label _("Senha Luminosa"):
                             style "history_name"
-                            substitute False
-                        text "Resolveu o puzzle do gravador(senha) em 1:00 minuto.":
-                            substitute False
+                            #substitute False
+                        text _("Resolveu o puzzle do gravador(senha) em 1:00 minuto.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1700,11 +1700,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Cofre Simbólico":
+                        label _("Cofre Simbólico"):
                             style "history_name"
-                            substitute False
-                        text "Resolveu o puzzle do cofre em 1:30 minutos.":
-                            substitute False
+                            #substitute False
+                        text _("Resolveu o puzzle do cofre em 1:30 minutos.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1715,11 +1715,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Questão de Tempo":
+                        label _("Questão de Tempo"):
                             style "history_name"
-                            substitute False
-                        text "Coletou, no dia 1, apenas as pistas necessárias para a investigação do mesmo dia.":
-                            substitute False
+                            #substitute False
+                        text _("Coletou, no dia 1, apenas as pistas necessárias para a investigação do mesmo dia.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1730,11 +1730,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Verdade Gravada":
+                        label _("Verdade Gravada"):
                             style "history_name"
-                            substitute False
-                        text "Coletou, no dia 2, apenas as pistas necessárias para a investigação do mesmo dia.":
-                            substitute False
+                            #substitute False
+                        text _("Coletou, no dia 2, apenas as pistas necessárias para a investigação do mesmo dia.")
+                            #substitute False
 
                 window:
                     hbox:
@@ -1745,11 +1745,11 @@ screen achievements():
                             selected_hover "gui/check_true.png"
                             action NullAction()
                         spacing 10
-                        label "Passado Guardado":
+                        label _("Passado Guardado"):
                             style "history_name"
-                            substitute False
-                        text "Coletou, no dia 3, apenas as pistas necessárias para a investigação do mesmo dia.":
-                            substitute False
+                            #substitute False
+                        text _("Coletou, no dia 3, apenas as pistas necessárias para a investigação do mesmo dia.")
+                            #substitute False
 
 
 init python:
@@ -1857,7 +1857,7 @@ screen gallery:
 
     # The screen is responsible for returning to the main menu. It could also
     # navigate to other gallery screens.
-    text "Galeria":
+    text _("Galeria"):
         xalign 0.00
         yalign 0.0
         color "#cccc00"
@@ -1869,7 +1869,7 @@ screen gallery:
 
     # The screen is responsible for returning to the main menu. It could also
     # navigate to other gallery screens.
-    textbutton "Voltar":
+    textbutton _("Voltar"):
         action Return()
         xalign 0.00
         yalign 1.0
@@ -1928,24 +1928,24 @@ screen music_room:
             hbox:
                 spacing 10
                 # Buttons that let us advance tracks.
-                textbutton "Anterior" action mr.Previous() text_size 25 text_align 0.5  xalign 1.0
-                textbutton "Próxima" action mr.Next() text_size 25 text_align 0.5 xalign 1.0
+                textbutton _("Anterior") action mr.Previous() text_size 25 text_align 0.5  xalign 1.0
+                textbutton _("Próxima") action mr.Next() text_size 25 text_align 0.5 xalign 1.0
                 #null height 20
 
         # The buttons that play each track.
-        textbutton "Ambiente" action mr.Play("audio/musicas/Ambiente.mp3") text_size 26 xalign 0.5
-        textbutton "Decisao" action mr.Play("audio/musicas/Decisao.mp3") text_size 26 xalign 0.5
-        textbutton "Descobrimento" action mr.Play("audio/musicas/Descobrimento.mp3") text_size 26 xalign 0.5
-        textbutton "Dilema" action mr.Play("audio/musicas/Dilema.mp3") text_size 26 xalign 0.5
-        textbutton "Fim" action mr.Play("audio/musicas/Fim.mp3") text_size 26 xalign 0.5
-        textbutton "Menu" action mr.Play("audio/musicas/Menu.mp3") text_size 26 xalign 0.5
-        textbutton "OFim" action mr.Play("audio/musicas/OFim.mp3") text_size 26 xalign 0.5
-        textbutton "Onde" action mr.Play("audio/musicas/Onde.mp3") text_size 26 xalign 0.5
-        textbutton "Palavras" action mr.Play("audio/musicas/Palavras.mp3") text_size 26 xalign 0.5
-        textbutton "Pistas" action mr.Play("audio/musicas/Pistas.mp3") text_size 26 xalign 0.5
-        textbutton "Rapidez" action mr.Play("audio/musicas/Rapidez.mp3") text_size 26 xalign 0.5
-        textbutton "Revelacao" action mr.Play("audio/musicas/Revelacao.mp3") text_size 26 xalign 0.5
-        textbutton "Tensao" action mr.Play("audio/musicas/Tensao.mp3") text_size 26 xalign 0.5
+        textbutton _("Ambiente") action mr.Play("audio/musicas/Ambiente.mp3") text_size 26 xalign 0.5
+        textbutton _("Decisao") action mr.Play("audio/musicas/Decisao.mp3") text_size 26 xalign 0.5
+        textbutton _("Descobrimento") action mr.Play("audio/musicas/Descobrimento.mp3") text_size 26 xalign 0.5
+        textbutton _("Dilema") action mr.Play("audio/musicas/Dilema.mp3") text_size 26 xalign 0.5
+        textbutton _("Fim") action mr.Play("audio/musicas/Fim.mp3") text_size 26 xalign 0.5
+        textbutton _("Menu") action mr.Play("audio/musicas/Menu.mp3") text_size 26 xalign 0.5
+        textbutton _("OFim") action mr.Play("audio/musicas/OFim.mp3") text_size 26 xalign 0.5
+        textbutton _("Onde") action mr.Play("audio/musicas/Onde.mp3") text_size 26 xalign 0.5
+        textbutton _("Palavras") action mr.Play("audio/musicas/Palavras.mp3") text_size 26 xalign 0.5
+        textbutton _("Pistas") action mr.Play("audio/musicas/Pistas.mp3") text_size 26 xalign 0.5
+        textbutton _("Rapidez") action mr.Play("audio/musicas/Rapidez.mp3") text_size 26 xalign 0.5
+        textbutton _("Revelacao") action mr.Play("audio/musicas/Revelacao.mp3") text_size 26 xalign 0.5
+        textbutton _("Tensao") action mr.Play("audio/musicas/Tensao.mp3") text_size 26 xalign 0.5
         #null height 20
 
         # The button that lets the user exit the music room.
@@ -1953,7 +1953,7 @@ screen music_room:
 
     # The screen is responsible for returning to the main menu. It could also
     # navigate to other gallery screens.
-    text "Músicas":
+    text _("Músicas"):
         xalign 0.00
         yalign 0.0
         color "#cccc00"
@@ -1965,7 +1965,7 @@ screen music_room:
 
     # The screen is responsible for returning to the main menu. It could also
     # navigate to other gallery screens.
-    textbutton "Voltar":
+    textbutton _("Voltar"):
         action ShowMenu("main_menu")
         xalign 0.00
         yalign 1.0
