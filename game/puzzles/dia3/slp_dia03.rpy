@@ -93,7 +93,7 @@ label SUCESSO_SLP_4X4_DIA03:
     python:
         if lop_rapido:
             persistent.rapido5 = True
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - Symbolic Safe!")
             else:
                 renpy.notify("Conquista - Cofre Simbólico!")

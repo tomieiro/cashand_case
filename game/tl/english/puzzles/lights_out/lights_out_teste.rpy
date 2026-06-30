@@ -4,23 +4,23 @@
 translate english LIGHTS_OUT_TEST_44394522:
 
     # "Hmmm, que interessante..."
-    ""
+    "Hmmm, how interesting..."
 
 # game/puzzles/lights_out/lights_out_teste.rpy:12
 translate english LIGHTS_OUT_TEST_8f42474c:
 
     # "Parece que temos que resolver um puzzle..."
-    ""
+    "Looks like we have to solve a puzzle..."
 
 # game/puzzles/lights_out/lights_out_teste.rpy:13
 translate english LIGHTS_OUT_TEST_d2ef1b11:
 
     # "Vamos lá!"
-    ""
+    "Let's go!"
 
 # game/puzzles/lights_out/lights_out_teste.rpy:21
 translate english FIM_LOP_TESTE_a887476b:
 
     # "Droga, vamos tentar novamente"
-    ""
+    "Darn, let's try again"
 

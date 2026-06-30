@@ -57,7 +57,7 @@ label SUCESSO_LOP_3X3_DIA01:
     python:
         if lop_rapido:
             persistent.rapido1 = True
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - Fake Watch!")
             else:
                 renpy.notify("Conquista - Relógio Falso!")

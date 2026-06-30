@@ -4,11 +4,11 @@
 translate english APP_DIA2_GAME_OVER_54ceb729:
 
     # "Não era isso..."
-    ""
+    "That wasn't it..."
 
 # game/puzzles/dia2/app_dia02.rpy:37
 translate english APP_DIA2_GAME_OVER_f2e92058:
 
     # "Vou tentar novamente!"
-    ""
+    "I'll try again!"
 

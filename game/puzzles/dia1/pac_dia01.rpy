@@ -52,7 +52,7 @@ label CHAMA_TELA_PAC_DIA1:
     #Inicializa as variáveis necessárias
     python:
 
-        if config.language == "english":
+        if is_english():
             pac3_item_lenco[1] = "Mr. Sheppard's handkerchief. I miss him ..."
             pac2_item_papel[1] = "Torn paper. It was taken from... Kamira's mouth..."
             pac3_item_lenco_pelos[1] = "There is hair inside the handkerchief. Probably, it's from some animal..."
@@ -90,7 +90,7 @@ label FIM_TELA_PAC_DIA1:
         if(len(pac1_itens_no_inventario) == 2):
             #pegou apenas o relogio e a mancha
             persistent.pac1 = True
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - A Matter of Time!")
             else:
                 renpy.notify("Conquista - Questão de Tempo!")
@@ -214,7 +214,7 @@ label PAC1_SELECIONA_ESTANTE:
         hide screen mostra_item with dissolve
         #hide sheppard onlayer screens with dissolve
         python:
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Collected Clue - Bloodstain!")
             else:
                 renpy.notify("Coletou Pista - Mancha de Sangue!")
@@ -251,7 +251,7 @@ label PAC1_SELECIONA_RELOGIO:
         hide screen mostra_item with dissolve
         #hide sheppard onlayer screens with dissolve
         python:
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Collected Clue - Watch!")
             else:
                 renpy.notify("Coletou Pista - Relógio!")
@@ -286,7 +286,7 @@ label PAC1_SELECIONA_LAPIS:
     "Vou levar, talvez me seja útil futuramente..."
     hide screen mostra_item with dissolve
     python:
-        if config.language == "english":
+        if is_english():
             renpy.notify("Collected Clue - Pencil!")
         else:
             renpy.notify("Coletou Pista - Lápis!")
@@ -321,7 +321,7 @@ label PAC1_SELECIONA_LIVROS:
         "Voltando à investigação..."
         hide screen mostra_item with dissolve
         python:
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Collected Clue - Books!")
             else:
                 renpy.notify("Coletou Pista - Livros!")
@@ -347,7 +347,7 @@ label PAC1_SELECIONA_CAMERA:
         "Devem ser bem ricos mesmo."
         hide screen mostra_item with dissolve
         python:
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Collected Clue - Camera!")
             else:
                 renpy.notify("Coletou Pista - Câmera!")

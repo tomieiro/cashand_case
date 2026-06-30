@@ -76,7 +76,7 @@ label CENA21:
 
     python:
         if(persistent.conquista_sheppard1 and persistent.conquista_sheppard2):
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - Fate...")
             else:
                 renpy.notify("Conquista - Destino...")

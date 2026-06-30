@@ -13,8 +13,10 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("Cashand Case")
-#define config.language = "none"
-define config.language = "english"
+## Idioma padrão antes da escolha do jogador. None = idioma de origem
+## (Português). A escolha feita na tela inicial (lang.rpy) é gravada nas
+## preferências e restaurada automaticamente nas próximas execuções.
+define config.language = None
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

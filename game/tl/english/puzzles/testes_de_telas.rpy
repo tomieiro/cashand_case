@@ -4,17 +4,17 @@
 translate english FIM_PAC_TESTE_fcdf5a8b:
 
     # "Prontooo, agora vamos escolhê-los"
-    ""
+    "Doneee, now let's choose them"
 
 # game/puzzles/testes_de_telas.rpy:8
 translate english FIM_PAC_TESTE_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/puzzles/testes_de_telas.rpy:9
 translate english FIM_PAC_TESTE_c67f8372:
 
     # "Bom, tô com fome véi..."
-    ""
+    "Well, I'm hungry, man..."
 

@@ -4,17 +4,17 @@
 translate english SLIDER_TEST_44394522:
 
     # "Hmmm, que interessante..."
-    ""
+    "Hmmm, how interesting..."
 
 # game/puzzles/slider/slider_teste.rpy:14
 translate english SLIDER_TEST_8f42474c:
 
     # "Parece que temos que resolver um puzzle..."
-    ""
+    "Looks like we have to solve a puzzle..."
 
 # game/puzzles/slider/slider_teste.rpy:15
 translate english SLIDER_TEST_d2ef1b11:
 
     # "Vamos lá!"
-    ""
+    "Let's go!"
 

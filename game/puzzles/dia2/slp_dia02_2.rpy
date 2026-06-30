@@ -82,7 +82,7 @@ label SUCESSO_SLP_3X3_DIA02_2:
     python:
         if lop_rapido:
             persistent.rapido3 = True
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - The Pencil and the Spring!")
             else:
                 renpy.notify("Conquista - O Lápis e a Mola!")
