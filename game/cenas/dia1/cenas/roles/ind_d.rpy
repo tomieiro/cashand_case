@@ -66,7 +66,7 @@ label DIALOGO_HUGO_12_D:
     hugo "Uma delícia."
     hugo "Toma Thorn, você merece."
     python:
-        if config.language == "english":
+        if is_english():
             renpy.notify("Achievement - Thorn Snacks!")
         else:
             renpy.notify("Conquista - Biscoitos Thorn!")

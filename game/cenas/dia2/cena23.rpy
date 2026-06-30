@@ -1,5 +1,16 @@
 label CENA23:
 
+    # Traduz os termos de parentesco ([ind_X_info[2]]/[3]) para o ingles quando
+    # o idioma ativo e o ingles. Feito em tempo de execucao para nao alterar o
+    # texto-fonte dos dialogos (o que invalidaria as traducoes ja existentes).
+    python:
+        if is_english():
+            _rel_pt_en = {"pai": "father", "tio": "uncle", "irmão": "brother", "irmã": "sister"}
+            for _info in (ind_a_info, ind_b_info, ind_c_info, ind_d_info):
+                if len(_info) >= 4:
+                    _info[2] = _rel_pt_en.get(_info[2], _info[2])
+                    _info[3] = _rel_pt_en.get(_info[3], _info[3])
+
     play music "audio/musicas/Pistas.mp3" fadein 2.0
 
     $flag_kamira = 0

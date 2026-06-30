@@ -13,7 +13,7 @@ label DEMISSAO:
 
     "*Sheppard fecha a porta*"
     python:
-        if config.language == "english":
+        if is_english():
             renpy.notify("Achievement - \"No Cash in Hand\" Case!")
         else:
             renpy.notify("Conquista - Caso da \"Mão Sem Grana\"!")

@@ -47,7 +47,7 @@ label FIM_TELA_PAC_DIA3:
         if(len(pac1_itens_no_inventario) == 3):
             #pegou apenas o lenco, o cofre e a chave
             persistent.pac3 = True
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - Retained Past!")
             else:
                 renpy.notify("Conquista - Passado Guardado!")

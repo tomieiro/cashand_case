@@ -8,7 +8,7 @@ label APP_DIA1:
         app_gabarito = []
         app_letras = []
 
-        if config.language == 'english':
+        if is_english():
             #inheritors
             app_resposta = ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
             app_pre_resposta = "The culprit is one of the..."
