@@ -83,7 +83,7 @@ label SUCESSO_SLP_3X3_DIA02:
     python:
         if lop_rapido:
             persistent.rapido2 = True
-            if config.language == "english":
+            if is_english():
                 renpy.notify("Achievement - One Last Note...")
             else:
                 renpy.notify("Conquista - Uma Última Nota...")

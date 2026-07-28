@@ -2,6 +2,9 @@
 
 translate english strings:
 
+    old "Idioma"
+    new "Language"
+
     # game/screens.rpy:271
     old "Voltar"
     new "Back"

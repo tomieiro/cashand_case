@@ -4,89 +4,89 @@
 translate english IDE_03_2_ESCOLHEU_LENCO_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:71
 translate english IDE_03_2_ESCOLHEU_LENCO_3c90c5f3:
 
     # "Não sei... acho que não é isso..."
-    ""
+    "I don't know... I don't think that's it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:76
 translate english IDE_03_2_ESCOLHEU_LENCO_29f37890:
 
     # "Já usei essa pista antes... não é isso..."
-    ""
+    "I've used this clue before... that's not it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:90
 translate english IDE_03_2_ESCOLHEU_TELEFONE_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:96
 translate english IDE_03_2_ESCOLHEU_TELEFONE_3c90c5f3:
 
     # "Não sei... acho que não é isso..."
-    ""
+    "I don't know... I don't think that's it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:101
 translate english IDE_03_2_ESCOLHEU_TELEFONE_29f37890:
 
     # "Já usei essa pista antes... não é isso..."
-    ""
+    "I've used this clue before... that's not it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:115
 translate english IDE_03_2_ESCOLHEU_VITROLA_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:121
 translate english IDE_03_2_ESCOLHEU_VITROLA_3c90c5f3:
 
     # "Não sei... acho que não é isso..."
-    ""
+    "I don't know... I don't think that's it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:126
 translate english IDE_03_2_ESCOLHEU_VITROLA_29f37890:
 
     # "Já usei essa pista antes... não é isso..."
-    ""
+    "I've used this clue before... that's not it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:140
 translate english IDE_03_2_ESCOLHEU_VELA_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:146
 translate english IDE_03_2_ESCOLHEU_VELA_3c90c5f3:
 
     # "Não sei... acho que não é isso..."
-    ""
+    "I don't know... I don't think that's it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:151
 translate english IDE_03_2_ESCOLHEU_VELA_29f37890:
 
     # "Já usei essa pista antes... não é isso..."
-    ""
+    "I've used this clue before... that's not it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:165
 translate english IDE_03_2_ESCOLHEU_RADIO_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:171
 translate english IDE_03_2_ESCOLHEU_RADIO_3c90c5f3:
 
     # "Não sei... acho que não é isso..."
-    ""
+    "I don't know... I don't think that's it..."
 
 # game/puzzles/dia3/ide_dia03_2.rpy:176
 translate english IDE_03_2_ESCOLHEU_RADIO_29f37890:
 
     # "Já usei essa pista antes... não é isso..."
-    ""
+    "I've used this clue before... that's not it..."
 
